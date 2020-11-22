@@ -88,7 +88,7 @@ Several users are a member of the **'I fried my serial port and now i'm using a 
 
 Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well. 
 
-In order to connect via Serial to a Flight Controller the following must be connected:
+In order to connect via Serial to a Flight Controller the following pins must be connected:
 
 | Raspberry Pi | Flight Controller |
 | :--- | :--- |
