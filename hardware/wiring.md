@@ -88,6 +88,18 @@ Several users are a member of the **'I fried my serial port and now i'm using a 
 
 Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well. 
 
+In order to connect via Serial to a Flight Controller the following must be connected:
+
+| Raspberry Pi | Flight Controller |
+| :--- | :--- |
+| TX | RX |
+| RX | TX |
+| GND | GND |
+
+
+
+Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
+
 The Raspberry Pi uses **3.3V** for it's UART, while most Flight Controllers and Micro controllers such as the Arduino use **5V**. Directly connecting these to the Raspberry Pi will ensure membership of the aforementioned club. As with most issues there are two ways around this, a nice way and a cheap and easy way.
 
 #### Cheap
@@ -100,5 +112,11 @@ Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) con
 
 A better solution with more guarantees, but slightly more expensive and slightly more complex to wire up is an actual Logic Level Converter. These come in many forms, but in principle they all do the same. Make sure only 3.3V shows up at the Pi and making sure 5V is sent to the connected Flight- or Micro controller.
 
+There are many different types of logic level converters out there, they are mostly very cheap and come with easy enough manuals. You don't need bi-directional logic level converters for serial communication since the flow only goes one way through the wires.
 
+To see some background, please check this [Sparkfun](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all) link.
+
+### Antenna tracker
+
+On the ground SBC you might want to attach an Antenna Tracker, most of these units require us to output the Mavlink data via Serial communication. When only connecting the TX from the Raspberry Pi to the RX of the Ground station.
 
