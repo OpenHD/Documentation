@@ -2,6 +2,10 @@
 
 ## Wiring the system for stability
 
+{% hint style="danger" %}
+Without exaggeration, over **80%** of the **issues** raised on the support forum and Telegram group can be traced back to improper **wiring and/or shielding**. The reduce the load on the team, please make sure you have followed the instructions in this chapter, we will point you here **without** much explanation if we suspect your problem is power or shielding related.
+{% endhint %}
+
 While it may seem like you could just connect the WiFi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple.
 
 Some lower power WiFi adapter such as the _TPLink 722n_ may work out that way, but others may not. If your WiFi adapter needs more power than it is able to draw from the Raspberry Pi USB port, you will see "interference" that isn't really interference, dropped video frames, and potentially sudden video blackout. **That could happen** _**during flight**_ **if you don't take some simple steps to avoid it**.
@@ -62,7 +66,7 @@ Soldering as much of these connections as possible will prevent accidental disco
 
 ### Air
 
-Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle. 
+Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will absolutely cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle. 
 
 {% hint style="success" %}
 JST connectors can be used as they lock into place and these can be had for quite cheap. The 4 pin variant can be used to replace the standard USB cords. 
