@@ -13,7 +13,7 @@
 
 * [Wiring](hardware/wiring.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
-* [SBC's](hardware/sbcs.md)
+* [Supported SBC's](hardware/sbcs.md)
 * [Cameras](hardware/cameras.md)
 * [Displays](hardware/displays.md)
 

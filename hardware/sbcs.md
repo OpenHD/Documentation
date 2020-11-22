@@ -1,4 +1,4 @@
-# SBC's
+# Supported SBC's
 
 While support for SBC's other than the Raspberry Pi is underway, currently the only officially supported devices are:
 
