@@ -74,7 +74,7 @@ JST connectors can be used as they lock into place and these can be had for quit
 
 When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB data lines to the points shown in this diagram:
 
-![Proper Power and USB wiring for the Raspberry Pi Zero](../.gitbook/assets/image%20%287%29.png)
+![Proper Power and USB wiring for the Raspberry Pi Zero](../.gitbook/assets/image%20%288%29.png)
 
 ## Other connections
 
@@ -92,11 +92,11 @@ In order to connect via Serial to a Flight Controller the following must be conn
 
 | Raspberry Pi | Flight Controller |
 | :--- | :--- |
-| TX | RX |
-| RX | TX |
-| GND | GND |
+| TX \(Pin 8\) | RX |
+| RX \(Pin 10\) | TX |
+| GND \(Any Ground\) | GND |
 
-
+![](../.gitbook/assets/image%20%286%29.png)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 
@@ -106,7 +106,7 @@ The Raspberry Pi uses **3.3V** for it's UART, while most Flight Controllers and 
 
 Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V\(-ish\). The outgoing 3.3V will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://OscarLiang.net) for an example.
 
-![Using a voltage divider](../.gitbook/assets/image%20%286%29.png)
+![Using a voltage divider](../.gitbook/assets/image%20%287%29.png)
 
 #### Good
 
