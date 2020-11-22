@@ -1,7 +1,5 @@
 # SmartSync
 
-* [ ] Rewrite this to be a little more first-time user friendly and current, no need to show our history
-
 ## What is SmartSync and why do i need it?
 
 To understand the need for SmartSync we need to refresh the basics.
@@ -11,7 +9,7 @@ When Open.HD first started development we wanted to easily change settings as ma
 We accomplished a lot by using a dedicated settings and OSD [application ](../ground-station-software/qopen.hd-recommended.md)which makes it easy to change settings on the fly. This left us with two issues:
 
 1. By nature, this all-in-one fpv, telemetry and control system is primarily **optimized** to send video data from the **air to ground** with some **up-link** capability for **RC and Telemetry** as well. So, the [QOpen.HD app](../ground-station-software/qopen.hd-recommended.md) is able to **save** **settings to both air and ground** pretty well however, it can take quite a long time to upload a large number of changes and under some circumstances, **settings can be lost** in the process, then during reboot if your video or radio function was changed and not saved you no longer have your communication link in place to assign the correct settings. As such, this requires removing the SD cards and manually editing the configuration.
-2. In the case where an FPV Pilot who goes to the field with 3 different vehicles i.e. a mini quad optimized for 720x480p low latency video on 5.8ghz ; A medium range drone set to high data rate for HQ video ; And a long range FPV Plane set to low data rate... Without identical settings on each side, The process of matching settings would include removing the SD card from at least one of the sides and manually changing the parameters when switching between drones.
+2. In the case where an FPV Pilot who goes to the field with **3 different vehicles** i.e. a mini quad optimized for 720x480p low latency video on 5.8ghz ; A medium range drone set to high data rate for HQ video ; And a long range FPV Plane set to low data rate... Without **identical settings** on both **Ground and Air**, the process of matching settings would include **removing the SD** card from at least one of the sides and **manually** changing the parameters when switching between drones.
 
 **What is SmartSync?**
 
