@@ -33,11 +33,13 @@ It is also strongly recommended that you solder the USB data lines. On some wifi
 * The system can potentially interfere with 433Mhz, 868Mhz LRS, or GPS
   * If you encounter problems like this, consider separating, shielding or changing some of the components \(ask us for help\)
 
-![Wiring-Pi0\_sm.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi0_sm.jpg) ![Wiring-Pi3\_sm.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi3_sm.jpg) ![Wiring-052nh.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Wiring-052nh.jpg) ![Wiring-Pi1B.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi1B.jpg)
+   
+
+![Powering the Raspberry Pi and the WiFi card from the ESC](../.gitbook/assets/image%20%283%29.png)
 
 Example of a raspberry pi powered through the GPIO pins \(+ 5V -&gt; pin 4 / ground -&gt; pin 6\) :
 
-![groundPi\_power\_wiring.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Yes21_groundPi_power_wiring.jpg)
+![Raspberry Pi powered from ESC](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Yes21_groundPi_power_wiring.jpg)
 
 The 3A BEC can also power a 7" HDMI screen with a micro USB connector.
 

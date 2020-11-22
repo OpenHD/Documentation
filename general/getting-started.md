@@ -38,6 +38,8 @@ When you have verified the output of the ESC, we can connect it to the Raspberry
 
 This can be done easily by just plugging in the JST header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
 
+![Raspberry Pi Powered from Pin Header](../.gitbook/assets/image%20%281%29.png)
+
 {% hint style="warning" %}
 For all following steps, make sure to disconnect the power before attaching anything to the Raspberry Pi unless explicitly stated.
 {% endhint %}
@@ -47,6 +49,8 @@ For all following steps, make sure to disconnect the power before attaching anyt
 Now that we have power going to the Raspberry Pi it's time to complicate things. Attaching WiFi cards should be as easy as plugging them into the Pi's USB ports, unfortunately it isn't. Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
 
 So we need to make sure we provide enough power to the WiFi card while still attaching it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create an modified USB cable.
+
+![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
 
 TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier?
 
