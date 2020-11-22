@@ -26,10 +26,10 @@ Now that you have your prerequisite hard- and software, we can get down to busin
 
 ### Step 1: Powering the Ground SBC
 
-This is where the ESC's come in. Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. The Raspberry Pi and the WiFi cards all use 5V, which is what most ESC's produce. So hook up one of your SBC's to a LiPo battery and use a multimeter to double-check the output is 5V.
+This is where the ESC's come in. Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. The Raspberry Pi and the WiFi cards all use 5V, which is what most ESC's produce. So hook up one of your SBC's to a LiPo battery and use a multimeter to double-check the output is +5V.
 
 {% hint style="info" %}
-The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than 5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to 5.3V. Do not go higher than 5.4V or you will damage your Raspberry Pi and/or WiFi cards!
+The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
 {% endhint %}
 
 When you have verified the output of the ESC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
@@ -52,7 +52,11 @@ So we need to make sure we provide enough power to the WiFi card while still att
 
 ![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
 
-TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier?
+TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier? Do not solder to PI warning!
+
+{% hint style="danger" %}
+While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected.
+{% endhint %}
 
 ### Step 3: Connecting a display
 
