@@ -21,7 +21,6 @@
 
 * [Telemetry and OSD](software-setup/telemetry-and-osd.md)
 * [SmartSync](software-setup/smartsync.md)
-* [Test](software-setup/test.md)
 
 ## Ground Station Software
 
