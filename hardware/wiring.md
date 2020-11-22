@@ -32,13 +32,41 @@ It is also strongly recommended that you solder the USB data lines. On some WiFi
 * The system can potentially interfere with 433Mhz, 868Mhz LRS, or GPS
   * If you encounter problems like this, consider separating, shielding or changing some of the components \(ask us for help\)
 
-   
+## Power wiring
+
+### Ground
+
+Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. The Raspberry Pi and the WiFi cards all use 5V, which is what most ESC's produce. So hook up one of your SBC's to a LiPo battery and use a multi meter to double-check the output is +5V.
+
+{% hint style="info" %}
+The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
+{% endhint %}
+
+When you have verified the output of the ESC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
+
+![The Raspberry Pi GPIO Pin Header \(Raspberry Pi Spy\)](../.gitbook/assets/image.png)
+
+This can be done easily by just plugging in the Servo header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
+
+The 3A BEC can also power a 7" HDMI screen with a micro USB connector.
+
+![Raspberry Pi Powered from Pin Header](../.gitbook/assets/image%20%281%29.png)
+
+Now that we have power going to the Raspberry Pi it's time to power the WiFi adapter\(s\). Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
+
+To mitigate this problem it is necessary to power the WiFi card\(s\) directly from the ESC as well. Please refer to the diagram below to see how. Please note that **5V** and **GND** are **NOT** connected to the Raspberry Pi USB Port.
 
 ![Powering the Raspberry Pi and the WiFi card from the ESC](../.gitbook/assets/image%20%283%29.png)
 
-Example of a raspberry pi powered through the GPIO pins \(+ 5V -&gt; pin 4 / ground -&gt; pin 6\) :
+Soldering as much of these connections as possible will prevent accidental disconnects. On the Ground side, soldering might be optional, on the Air side it is mandatory as it is subjected to greater vibrations.
 
-![Raspberry Pi powered from ESC](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Hardware_Propper%20Wiring/Yes21_groundPi_power_wiring.jpg)
+### Air
 
-The 3A BEC can also power a 7" HDMI screen with a micro USB connector.
+Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle. 
+
+{% hint style="success" %}
+JST connectors can be used as they lock into place and these can be had for quite cheap. The 4 pin variant can be used to replace the standard USB cords. 
+{% endhint %}
+
+
 

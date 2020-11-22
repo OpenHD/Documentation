@@ -36,7 +36,7 @@ When you have verified the output of the ESC, we can connect it to the Raspberry
 
 ![The Raspberry Pi GPIO Pin Header \(Raspberry Pi Spy\)](../.gitbook/assets/image.png)
 
-This can be done easily by just plugging in the JST header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
+This can be done easily by just plugging in the Servo header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
 
 ![Raspberry Pi Powered from Pin Header](../.gitbook/assets/image%20%281%29.png)
 
