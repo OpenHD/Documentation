@@ -120,5 +120,5 @@ To see some background, please check this [Sparkfun](https://learn.sparkfun.com/
 
 On the ground SBC you might want to attach an Antenna Tracker, most of these units require us to output the Mavlink data via Serial communication. When only connecting the TX from the Raspberry Pi to the RX of the Ground station no special consideration needs to be given to the voltage levels. Most Micro controllers will allow the 3.3V of the Raspberry Pi as a logic signal.
 
-When connecting the RX on the Raspberry Pi as well, however, earlier warnings mentioned for the Flight Controller come into play. The Raspberry Pi uses 3.3V Serial, while most Micro controllers use 5V. Putting 5V on the Raspberry Pi RX pin will permanently damage the Serial controller. Please refer to the '[cheap](wiring.md#cheap)' and '[good](wiring.md#good)' solutions mentioned under the Flight Controller section.
+When connecting the RX on the Raspberry Pi as well, however, earlier warnings mentioned for the [Flight Controller](wiring.md#flight-controller) come into play. The Raspberry Pi uses **3.3V** Serial, while most Micro controllers use **5V**. Putting **5V** on the Raspberry Pi RX pin will **permanently damage** the Serial controller. Please refer to the '[cheap](wiring.md#cheap)' and '[good](wiring.md#good)' solutions mentioned under the Flight Controller section.
 
