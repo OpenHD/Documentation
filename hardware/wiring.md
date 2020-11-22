@@ -72,5 +72,33 @@ Much of the explanation for the Ground wiring also applies to the Air, except th
 JST connectors can be used as they lock into place and these can be had for quite cheap. The 4 pin variant can be used to replace the standard USB cords. 
 {% endhint %}
 
+When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB data lines to the points shown in this diagram:
+
+![Proper Power and USB wiring for the Raspberry Pi Zero](../.gitbook/assets/image%20%287%29.png)
+
+## Other connections
+
+### Flight Controller
+
+With Power and WiFi connected the system basics should work, in most cases  however, you will want to hook up some form of flight controller. While the setup of such a controller is covered in [Software Setup](../software-setup/telemetry-and-osd.md), the physical connection also requires some special attention.
+
+{% hint style="danger" %}
+Several users are a member of the **'I fried my serial port and now i'm using a USB to Serial Adapter**'-club. Te prevent membership, please read how to properly connect your Flight Controller.
+{% endhint %}
+
+Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well. 
+
+The Raspberry Pi uses **3.3V** for it's UART, while most Flight Controllers and Micro controllers such as the Arduino use **5V**. Directly connecting these to the Raspberry Pi will ensure membership of the aforementioned club. As with most issues there are two ways around this, a nice way and a cheap and easy way.
+
+#### Cheap
+
+Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V\(-ish\). The outgoing 3.3V will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://OscarLiang.net) for an example.
+
+![Using a voltage divider](../.gitbook/assets/image%20%286%29.png)
+
+#### Good
+
+A better solution with more guarantees, but slightly more expensive and slightly more complex to wire up is an actual Logic Level Converter. These come in many forms, but in principle they all do the same. Make sure only 3.3V shows up at the Pi and making sure 5V is sent to the connected Flight- or Micro controller.
+
 
 
