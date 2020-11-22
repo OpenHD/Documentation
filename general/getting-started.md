@@ -26,11 +26,29 @@ Now that you have your prerequisite hard- and software, we can get down to busin
 
 ### Step 1: Powering the Ground SBC
 
-TODO
+This is where the ESC's come in. Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. The Raspberry Pi and the WiFi cards all use 5V, which is what most ESC's produce. So hook up one of your SBC's to a LiPo battery and use a multimeter to double-check the output is 5V.
+
+{% hint style="info" %}
+The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than 5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to 5.3V. Do not go higher than 5.4V or you will damage your Raspberry Pi and/or WiFi cards!
+{% endhint %}
+
+When you have verified the output of the ESC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
+
+![The Raspberry Pi GPIO Pin Header \(Raspberry Pi Spy\)](../.gitbook/assets/image.png)
+
+This can be done easily by just plugging in the JST header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
+
+{% hint style="warning" %}
+For all following steps, make sure to disconnect the power before attaching anything to the Raspberry Pi unless explicitly stated.
+{% endhint %}
 
 ### Step 2: Connecting the WiFi Adapter
 
-TODO
+Now that we have power going to the Raspberry Pi it's time to complicate things. Attaching WiFi cards should be as easy as plugging them into the Pi's USB ports, unfortunately it isn't. Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
+
+So we need to make sure we provide enough power to the WiFi card while still attaching it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create an modified USB cable.
+
+TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier?
 
 ### Step 3: Connecting a display
 
