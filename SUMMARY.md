@@ -25,6 +25,7 @@
 
 ## Ground Station Software
 
+* [QOpen.HD \(recommended\)](ground-station-software/qopen.hd-recommended.md)
 * [Mission Planner](ground-station-software/mission-planner.md)
 * [QGroundControl](ground-station-software/qgroundcontrol.md)
 * [Tower](ground-station-software/tower.md)
