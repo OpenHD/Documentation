@@ -22,8 +22,8 @@ Assuming you are starting with nothing, we recommend you get the following hardw
 * An HDMI capable screen \(use your TV for testing!\)
 * Two High class SD Cards of 8Gb or more
 * An SD card Adapter for your computer to flash the cards.
-* A mobile device capable of running QOpen.HD and connecting to the Ground SBC \(optional\)
-* Two BEC's for powering the Air and Ground SBC's. \(See Wiring -&gt; Power\)
+* A mobile device capable of running QOpen.HD and connecting to the Ground SBC \(_optional_\)
+* Two BEC's for powering the Air and Ground SBC's. \(See [Guidelines](../hardware/wiring.md#general-tips-and-guidelines)\)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
 
