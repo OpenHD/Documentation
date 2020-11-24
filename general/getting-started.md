@@ -169,7 +169,7 @@ Good, now it's a **simple** matter of **inserting** the **SD card** into the Air
 
 ### Step 10: Bask in the glory of your work
 
-So now comes the moment of **truth**, apply power to the **Ground** SBC and subsequently apply power to the **Air** SBC. Allow both to **boot** completely, most CSI cams have a small LED that lights up when the camera is **activated**, this is a good indication the boot went well and the system has started. 
+So now comes the moment of **truth**, apply power to the **Ground** SBC and subsequently apply power to the **Air** SBC. Allow both to **boot** completely, most CSI cameras have a small LED that lights up when the camera is **activated**, this is a good indication the boot went well and the system has started. 
 
 {% hint style="warning" %}
 The Raspberry Pi Zero might take a **long** while to boot up, please allow a couple of **minutes** before despairing! 
@@ -178,4 +178,8 @@ The Raspberry Pi Zero might take a **long** while to boot up, please allow a cou
 When all went **well**, and for the sake of this step-by-step we will assume so, you will be **greeted** by a nice crisp HD **video** streaming from your Air SBC to your Ground SBC, go ahead and **wave** at yourself to get a feel for the **latency**. Please notice that when using the HDMI out to a TV, the TV itself might introduce quite some latency.
 
 Go ahead, **celebrate** your success, and please **let us know** if it worked for you! If for some reason the system does **not** work for you and you are sure you have **followed** all the **steps**, please **contact** us on [Telegram ](https://web.telegram.org/#/im?p=@OpenHD_HDFPV)or on the [Forums ](https://discuss.openhdfpv.com/c/help/6)to get help.
+
+### Next steps
+
+Logically most user will want to connect their Flight Controller to the system to actually see the OSD do it's thing. To do this, follow the steps outlined in [Wiring ](../hardware/wiring.md)-&gt; [Flight Controller](../hardware/wiring.md#flight-controller) and then make sure to use the correct settings in [Telemetry and OSD](../software-setup/telemetry-and-osd.md).
 
