@@ -3,7 +3,7 @@
 ## Wiring the system for stability
 
 {% hint style="danger" %}
-Without exaggeration, over **80%** of the **issues** raised on the support forum and Telegram group can be traced back to improper **wiring and/or shielding**. The reduce the load on the team, please make sure you have followed the instructions in this chapter, we will point you here **without** much explanation if we suspect your problem is power or shielding related.
+Without exaggeration, over **80%** of the **issues** raised on the support forum and Telegram group can be traced back to improper **wiring and/or shielding**. To reduce the load on the team, please make sure you have followed the instructions in this chapter, we will point you here **without** much explanation if we suspect your problem is power or shielding related.
 {% endhint %}
 
 While it may seem like you could just connect the WiFi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple.
