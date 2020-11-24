@@ -5,7 +5,7 @@
 Virtually any screen/monitor connected to the HDMI port on your Pi will work. Besides that the following displays have been successfully tested:
 
 * Samsung 32 inch TV connected via HDMI to Pi.
-* Pi Official Screen connected to DSI port on your Pi. Resolution 800x480.
+* Pi Official Touch Screen connected to DSI port on your Pi. Resolution 800x480.
 * An LCD module from old 17 inch laptop with eBay driver [\(for example this\)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
 * Goggles One \(1920x1080\) \(set to fixed 1920x1080 resolution in config.txt!\)
 * Headplay HD \(1280x800\)
@@ -28,10 +28,10 @@ Regardless of the monitor attached directly to the Ground SBC you can use a phon
 * [RaspberryPi Camera Viewer](../ground-station-software/raspberrypi-camera-viewer.md)
 
 {% hint style="info" %}
-When using your phone or tablet we recommend using the QOpenHD app which was designed specifically for this project.
+When using your phone or tablet we recommend using the QOpen.HD app which was designed specifically for this project.
 {% endhint %}
 
-The phone can be connected either via USB Tethering or by connectiing to the Hotspot WiFi network started by the Ground SBC if the SBC has an internal WiFi capable of working on a band other than the active Air connection.
+The phone can be connected either via USB Tethering or by connecting to the Hotspot WiFi network started by the Ground SBC if the SBC has an internal WiFi capable of working on a band other than the active Air connection.
 
 ## Using a Ground Station
 
@@ -44,11 +44,11 @@ Common examples of ground stations are:
 
 ## Dual Display Setup
 
-If you would like to use the Raspberry DSI "ribbon" style connection with the popular Raspberry Pi 7" lcd display, you can simply connect it and power it up.
+If you would like to use the Raspberry DSI "ribbon" style connection with the popular Raspberry Pi 7" LCD display, you can simply connect it and power it up.
 
-The same goes for any HDMI display, however, by default they cannot be used simutaneously. A patch was created with the intention of implementing it with the stock image however, it created problems with the new Pi3 A+ because the patch did not work and the Pi3 A+ only has 512MB ram
+The same goes for any HDMI display, however, by default they cannot be used simultaneously. A patch was created with the intention of implementing it with the stock image however, it created problems with the new Pi3 A+ because the patch did not work and the Pi3 A+ only has 512MB ram
 
-#### If you want to use MIPI-DSI & HDMI Simutaneously:
+#### If you want to use MIPI-DSI & HDMI Simultaneously:
 
 **You might need to set resolution manually so HDMI matches the default Raspberry Pi DSI LCD Display.**
 
