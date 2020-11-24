@@ -20,5 +20,5 @@ In short QOpen.HD allows you to setup anything Open.HD related, like frequencies
 
 ## What QOpen.HD isn't
 
-Where QOpen.HD differs from the other Ground Station Software in the list is that it doesn't do any actual vehicle related stuff. You can't setup your Mavlink parameters or load a mission for instance. Now if you don't use any of that you can just use QOpen.HD and nothing else. Most users however require more advanced features like changing parameters and uploading mission plans. That's what the other Ground Control Software in the list is for, but remember to always use QOpen.HD for anything Open.HD related!
+Where QOpen.HD differs from the other Ground Station Software in the list is that it doesn't do any actual vehicle related stuff. You can't setup your Mavlink parameters or load a mission for instance. Now if you don't use any of that you can just use QOpen.HD and nothing else. Most users however require more advanced features like changing parameters and uploading mission plans. That's what the other Ground Control Software in the list is for, but remember to always use QOpen.HD for changing settings that are  Open.HD related!
 
