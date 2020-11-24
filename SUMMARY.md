@@ -16,6 +16,7 @@
 * [Supported SBC's](hardware/sbcs.md)
 * [Cameras](hardware/cameras.md)
 * [Displays](hardware/displays.md)
+* [Audio](hardware/audio.md)
 
 ## Software Setup
 
