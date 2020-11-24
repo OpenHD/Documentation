@@ -22,6 +22,13 @@
 * [Telemetry and OSD](software-setup/telemetry-and-osd.md)
 * [SmartSync](software-setup/smartsync.md)
 
+## Advanced Setup
+
+* [Bidirectional Telemetry](advanced-setup/bidirectional-telemetry.md)
+* [USB Tethering](advanced-setup/usb-tethering.md)
+* [WiFi Hotspot](advanced-setup/wifi-hotspot.md)
+* [Ethernet Hotspot](advanced-setup/ethernet-hotspot.md)
+
 ## Ground Station Software
 
 * [QOpen.HD \(recommended\)](ground-station-software/qopen.hd-recommended.md)
@@ -32,10 +39,4 @@
 * [GStreamer](ground-station-software/gstreamer.md)
 * [FishingFanCam](ground-station-software/fishingfancam.md)
 * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
-
-## Advanced Setup
-
-* [Bidirectional Telemetry](advanced-setup/bidirectional-telemetry.md)
-* [USB Tethering](advanced-setup/usb-tethering.md)
-* [WiFi Hotspot](advanced-setup/wifi-hotspot.md)
 
