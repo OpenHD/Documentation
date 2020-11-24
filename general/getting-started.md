@@ -64,11 +64,15 @@ While it may seem tempting to solder the +5V and GND to the solder points on the
 
 ### Step 3: Connecting a display
 
-TODO
+For this step-by-step we will just connect a display to the HDMI port, any TV or monitor with HDMI in will be useable. Bear in mind that bringing your 85" flatscreen TV to the field might be impractical. So for a more portable setup use a small HDMI capabable monitor or use the 7" Raspberry Pi Touch Screen and create the ultimate GCS. \(See examples [here](https://discuss.openhdfpv.com/c/custom-tx-aio/9)\)
 
 ### Step 4: Starting the Ground SBC for the first time
 
-TODO
+Now that we have everything connected to the Ground SBC, it's time to plug in the power. 
+
+{% hint style="danger" %}
+When bench-testing you can use a bench power supply instead of a LiPo to prevent draining the LiPo, but make sure it can supply the required Amps, when using a LiPo, connect a LiPo warning device to prevent over-discharging!
+{% endhint %}
 
 ### Step 5: Connecting QOpenHD to the Ground SBC
 
