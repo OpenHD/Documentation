@@ -88,7 +88,9 @@ These are spare parts for an RCA smart television, and contain a Mediatek mt7601
 
 These are not high powered cards and should not require a heatsink, but do not produce anywhere near the power output of some of the other cards.
 
+{% hint style="warning" %}
 They do not currently work with the Open.HD RC system but that should be resolved soon \(it's a bug not a problem with the card\).
+{% endhint %}
 
 ### Finding alternatives
 
@@ -97,22 +99,22 @@ The following USB WiFi dongles with the following chipsets work and are actively
 * Atheros AR9271 \(2.3-2.6G ONLY!\)
 * Realtek RTL8812AU \(5.8G ONLY!\)
 
-For cheap alternatives check out the usual computer stores and maybe consider Aliexpress. Be a little careful, some cards are of questionable quality. Generally, High-Quality/Brand Name modules from ALFA WIRELESS with the AR9271 or RTL8812 chipsets perform best.
+For cheap alternatives check out the usual computer stores and maybe consider AliExpress. Be a little careful, some cards are of questionable quality. Generally, High-Quality/Brand Name modules from ALFA WIRELESS with the AR9271 or RTL8812 chipsets perform best.
 
-A good way to find out more about wifi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
+A good way to find out more about WiFi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
 
 Search the web for those numbers and also these two very helpful sites:
 
 * [https://fccid.io/](https://fccid.io/) \(FCC documents which contain internal photos\)
-* [https://wikidevi.com/wiki/](https://wikidevi.com/wiki/) \(general infos and sometimes photos\)
+* [https://wikidevi.com/wiki/](https://wikidevi.com/wiki/) \(general info and sometimes photos\)
 
 When you have found photos, google for the numbers on the amps to find a datasheet giving a rough estimate about the expectable output power.
 
-It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
+It would be nice if you report back your findings in case you tried a WiFi card that is not listed here.
 
 ### External amp
 
-Another way to increase output power is to use a low-power wifi stick combined with an external amp like this "2W" amp:
+Another way to increase output power is to use a low-power WiFi stick combined with an external amp like this "2W" amp:
 
 [https://www.banggood.com/2\_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search](https://www.banggood.com/2_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search)
 
