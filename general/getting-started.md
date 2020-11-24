@@ -71,7 +71,7 @@ For this step-by-step we will just connect a display to the HDMI port, any TV or
 Now that we have everything connected to the Ground SBC, it's time to plug in the power. 
 
 {% hint style="danger" %}
-When bench-testing you can use a bench power supply instead of a LiPo to prevent draining the LiPo, but make sure it can supply the required Amps, when using a LiPo, connect a LiPo warning device to prevent over-discharging!
+When bench-testing you can use a bench power supply instead of a LiPo to prevent draining the LiPo, but make sure it can supply the required Amps \(minimum 3A\). When using a LiPo, connect a LiPo warning device to prevent over-discharging!
 {% endhint %}
 
 ### Step 5: Connecting QOpenHD to the Ground SBC
