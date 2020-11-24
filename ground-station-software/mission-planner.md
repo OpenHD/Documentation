@@ -24,7 +24,7 @@ Now, Let's gets get started:
 
 1. Enable the WiFi-Hotspot on your GroundPi by editing the openhd-settings-1.txt. Set the following parameters: `TELEMETRY_UPLINK=mavlink` `ENABLE_RC=mavlink` `WIFI_HOTSPOT=Y`
 2. Next power on your Air- and GroundPi
-3. Connect to the OpenHD WiFi with your computer Default SSID is "Open.HD", default password is "wifiopenhd", channel is 1.
+3. Connect to the OpenHD WiFi with your computer Default SSID is "Open.HD", default password is "wifiopenhd", channel is 1. 
 
    ![MissionPlanner\_BiTelem\_01.JPG](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/GCS_Mission%20Planner/MissionPlanner_BiTelem_01.JPG)
 
