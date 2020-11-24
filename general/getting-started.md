@@ -53,13 +53,13 @@ For all following steps, make sure to disconnect the power before attaching anyt
 
 ### Step 2: Connecting the WiFi Adapter
 
-Now that we have power going to the Raspberry Pi it's time to complicate things. Attaching WiFi cards should be as easy as plugging them into the Pi's USB ports, unfortunately it isn't. Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
+Now that we have **power** going to the Raspberry Pi it's time to **complicate** things. Attaching **WiFi** cards should be as **easy** as **plugging** them into the Pi's USB ports, unfortunately **it isn't**. Due to the way the Raspberry Pi is **designed** the USB ports do not receive **enough power** to drive the WiFi cards, especially when connecting **more** than one WiFi card as is often the case on a ground station.
 
-So we need to make sure we provide enough power to the WiFi card while still attaching it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create an modified USB cable.
+So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create an **modified** USB **cable**.
 
 ![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
 
-Using the diagram above create a USB cable with the D+ and D- soldered to the Raspberry Pi and the +5V and GND soldered to the ESC.
+Using the diagram above **create** a USB cable with the D+ and D- **soldered** to the Raspberry Pi and the +5V and GND **soldered** to the **ESC**.
 
 {% hint style="danger" %}
 While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected to the Pi.
