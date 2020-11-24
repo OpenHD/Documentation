@@ -2,7 +2,7 @@
 
 ### What is the minimum hardware I need to try this?
 
-Two Raspberry Pi, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI Adapter\), and 2 good quality \(preferably Industrial micro SD Cards\). 
+Two Raspberry Pi, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI Adapter\), and 2 good quality \(preferably Industrial micro SD Cards\). See [Getting Started](getting-started.md) for a minimal example.
 
 {% hint style="warning" %}
 Please read the rest of the documentation and do your homework when you make your purchases! Only specific WiFi cards will work due to the unique requirements of the system.
