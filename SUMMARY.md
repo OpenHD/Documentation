@@ -5,9 +5,9 @@
 ## General
 
 * [Features](general/features.md)
+* [Getting Started](general/getting-started.md)
 * [FAQ](general/faq.md)
 * [Contributing](general/contributing.md)
-* [Getting Started](general/getting-started.md)
 
 ## Hardware
 
