@@ -83,7 +83,7 @@ When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB 
 With Power and WiFi connected the system basics should work, in most cases  however, you will want to hook up some form of flight controller. While the setup of such a controller is covered in [Software Setup](../software-setup/telemetry-and-osd.md), the physical connection also requires some special attention.
 
 {% hint style="danger" %}
-Several users are a member of the **'I fried my serial port and now i'm using a USB to Serial Adapter**'-club. Te prevent membership, please read how to properly connect your Flight Controller.
+Several users are a member of the **'I fried my serial port and now I'm using a USB to Serial Adapter**'-club. To prevent membership, please read how to properly connect your Flight Controller.
 {% endhint %}
 
 Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well. 
@@ -104,7 +104,7 @@ The Raspberry Pi uses **3.3V** for it's UART, while most Flight Controllers and 
 
 #### Cheap
 
-Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V\(-ish\). The outgoing 3.3V will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://OscarLiang.net) for an example.
+Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V\(-ish\). The **outgoing** 3.3V from the Pi's TX will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://OscarLiang.net) for an example.
 
 ![Using a voltage divider](../.gitbook/assets/image%20%287%29.png)
 
