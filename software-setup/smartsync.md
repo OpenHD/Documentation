@@ -21,7 +21,7 @@ Be aware that the settings of the **GROUND** station are applied to the **AIR** 
 
 ## **Basic Configuration**
 
-If you change any setting in QOpenHD and save them with the AIR vehicle connected, they will be persisted automatically. SmartSync comes into play at boot, by default you don't have to worry about it, if you every have trouble, remember that **GROUND** has to be started **before AIR** and by default SmartSync is **disabled**!
+If you change any setting in QOpen.HD and save them with the AIR vehicle connected, they will be persisted automatically. SmartSync comes into play at boot, by default you don't have to worry about it, if you every have trouble, remember that **GROUND** has to be started **before AIR** and by default SmartSync is **disabled**!
 
 ## Advanced scenario's
 
