@@ -34,7 +34,7 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 
 ### Latency considerations
 
-When very low latency is required, every part of the system from glass-to-glass must be carefully chosen and tuned. In some cases a particular combination of SBC+camera sensor may be required.
+When very low latency is required, every part of the system from glass-to-glass must be carefully chosen and tuned. In some cases a particular combination of SBC + camera sensor may be required.
 
 Generally, there must be an **h264/h265 encoder** inside the camera board itself, or there must be a CSI connection between the sensor and the SBC to ensure that frames are transferred and encoded as fast as possible.
 
@@ -46,7 +46,7 @@ IP cameras are not specifically designed for low latency, and many of them have 
 
 ### Logitech C920
 
-Note that in recent years Logitech has been removing the h264 encoder from all of their webcams, if you buy one new it may not actually have an h264 encoder inside and that would prevent it from being used properly in OpenHD.
+Note that in recent years Logitech has been removing the h264 encoder from all of their webcams, if you buy one new it may not actually have an h264 encoder inside and that would prevent it from being used properly in Open.HD.
 
 #### C1 series from Kurokesu
 
@@ -72,7 +72,7 @@ This is a limitation of the CSI connection between the adapter and the pi. The R
 
 ### Latency test
 
-This was done by Bortek, using the Auvidea B102 with a Gopro4 camera.
+This was done by the user _Bortek_, using the Auvidea B102 with a Gopro4 camera.
 
 [![IMAGE ALT TEXT HERE](https://camo.githubusercontent.com/d7e0dfc1302d703f485402c61091b91c247da8c179e48b2e40af8a6506dfb1ae/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f494242594e314931594f552f302e6a7067)](https://www.youtube.com/watch?v=IBBYN1I1YOU)
 
@@ -105,7 +105,7 @@ You may need to change the resolution/framerate on the camera itself so that it 
 
 AliExpress link: [DCDZ HDMI CSI-2 adapter](https://www.aliexpress.com/item/4000152180240.html)
 
-Very widely used for OpenHD, but only available through AliExpress and Taobao, so those of you in the U.S. or Europe may have trouble getting them quickly. See the similar geekworm board below, those are available on Amazon.
+Very widely used for Open.HD, but only available through AliExpress and Taobao, so those of you in the U.S. or Europe may have trouble getting them quickly. See the similar Geekworm board below, those are available on Amazon.
 
 Has a connector for both the Raspberry Pi Zero and full size Raspberry Pi models, none of the other cards do.
 
@@ -232,7 +232,7 @@ In some cases a thermal camera may require a different SBC, a video adapter of s
 
 ![flir one g2](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/flir-one-g2.jpeg)
 
-These are designed to connect to a smartphone, there were iOS and Android versions with different connectors. The Android version has a standard Micro USB connector and can be connected to an OpenHD system with a USB OTG cable.
+These are designed to connect to a smartphone, there were iOS and Android versions with different connectors. The Android version has a standard Micro USB connector and can be connected to an Open.HD system with a USB OTG cable.
 
 Many people use these cameras, they are well known and they do work, despite the low resolution and thermal performance.
 
@@ -248,7 +248,7 @@ DO NOT BUY THESE, they are _significantly_ worse than a G2. Even when the G2 was
 
 These are largely identical to the G2, they have a Lepton 3 sensor with 160x120 resolution.
 
-FLIR created 2 different price points with the G3 and G3 Pro. The Pro is significantly more expensive now than the G2 was when it was being manufactured and sold, but you can still find used G2 cameras for $120-200 on ebay and other websites.
+FLIR created 2 different price points with the G3 and G3 Pro. The Pro is significantly more expensive now than the G2 was when it was being manufactured and sold, but you can still find used G2 cameras for $120-200 on eBay and other websites.
 
 #### Seek Compact \([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B00NYWAHHM)\)
 
@@ -298,11 +298,11 @@ Note that you may have trouble getting 25hz video streams out of these when used
 
 A 320x256 thermal imager "core", full 60hz frame rate but FLIR makes a 9hz version as well. They are fairly expensive but have Germanium lenses.
 
-Unlike most of the other cameras these are not designed for a smartphone, they are designed for integration in something like a larger camera system or a drone. You must buy an appropriate connection board to snap on to the back of the camera, some have USB while others have analog video output. For OpenHD you would want the USB kind, analog video requires a special adapter to digitize it again and most of them will not work well with a raspberry pi.
+Unlike most of the other cameras these are not designed for a smartphone, they are designed for integration in something like a larger camera system or a drone. You must buy an appropriate connection board to snap on to the back of the camera, some have USB while others have analog video output. For Open.HD you would want the USB kind, analog video requires a special adapter to digitize it again and most of them will not work well with a raspberry pi.
 
 These are export controlled items due to the very high frame rate.
 
-**Note**: as of the time this wiki page is being written, I am not aware of anyone having used a Boson with OpenHD, there may be some changes required in software to make them work.
+**Note**: as of the time this wiki page is being written, I am not aware of anyone having used a Boson with Open.HD, there may be some changes required in software to make them work.
 
 Real world flight video:
 
