@@ -28,6 +28,7 @@
 * [USB Tethering](advanced-setup/usb-tethering.md)
 * [WiFi Hotspot](advanced-setup/wifi-hotspot.md)
 * [Ethernet Hotspot](advanced-setup/ethernet-hotspot.md)
+* [Ground Recording](advanced-setup/ground-recording.md)
 
 ## Ground Station Software
 
