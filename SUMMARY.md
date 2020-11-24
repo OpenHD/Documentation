@@ -33,3 +33,7 @@
 * [FishingFanCam](ground-station-software/fishingfancam.md)
 * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
 
+## Advanced Setup
+
+* [Bidirectional Telemetry](advanced-setup/bidirectional-telemetry.md)
+
