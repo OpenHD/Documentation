@@ -14,12 +14,10 @@ Currently 3 tested options
 
 ### Audio out on Ground
 
-For hardware you can use the 3.5 jack, or HDMI output on the ground station. Please make the following modifications in the `openhd-settings-1.txt` file in the `boot` partition of the SD card for both Air and Ground unit.
+For hardware you can use the 3.5 jack, or HDMI output on the ground station. Please make the following modifications in the `openhd-settings-1.txt` file in the `boot`partition of the SD card for both Air and Ground unit.
 
 ```text
-IsAudioTransferEnabled=1
-#0 Auto, 1 Analog, 2 HDMI
-DefaultAudioOut=2
+DefaultAudioOut=2 #0 Auto, 1 Analog, 2 HDMI
 IsAudioTransferEnabled=1
 MicBoost=75
 SpeakersLevel=75
