@@ -54,7 +54,7 @@ Note that webcams and other USB video devices that do not have an internal h264 
 
 ### Which WiFi adapters do I need?
 
-See the wiki: [Supported WiFi Adapters](https://github.com/HD-Fpv/Open.HD/wiki/Hardware-~-Supported-WiFi-adapters)
+See [Supported WiFi Adapters](../hardware/wifi-adapters.md)
 
 ### Can I use this other WiFi adapter that’s not on the list?
 
