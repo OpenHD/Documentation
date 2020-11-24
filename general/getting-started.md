@@ -19,7 +19,7 @@ Assuming you are starting with nothing, we recommend you get the following hardw
 * Two WiFi cards that support the band you want to use. \(See [WiFi Adapters](../hardware/wifi-adapters.md)\)
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen \(use your TV for testing!\)
-* A mobile device capable of running QOpenHD and connecting to the Ground SBC
+* A mobile device capable of running QOpen.HD and connecting to the Ground SBC
 * Two BEC's for powering the Air and Ground SBC's. \(See Wiring -&gt; Power\)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
@@ -59,7 +59,7 @@ So we need to make sure we provide enough power to the WiFi card while still att
 TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier? Do not solder to PI warning!
 
 {% hint style="danger" %}
-While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected.
+While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected to the Pi.
 {% endhint %}
 
 ### Step 3: Connecting a display
