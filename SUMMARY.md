@@ -36,4 +36,5 @@
 ## Advanced Setup
 
 * [Bidirectional Telemetry](advanced-setup/bidirectional-telemetry.md)
+* [USB Tethering](advanced-setup/usb-tethering.md)
 
