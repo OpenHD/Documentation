@@ -28,13 +28,13 @@ It is highly recommended to read through a Git tutorial and to use a Git GUI cli
 
 A GUI is not strictly required, but makes a lot of things _much_ easier, particularly if you need to see which commits are in a specific branch, or whether 2 branches have been merged yet. It also makes it much easier to create tags in a particular place in the repository history and "cherry-pick" specific commits into a separate branch, in order to create a pull request on Github.
 
-A Git GUI can also automate the process of "logging in" to your Github fork whenever you push changes to it, without it you either need to setup ssh keys \(requires several steps, but not particularly complicated\), or enter your Github password every time you push changes back to Github.
+A Git GUI can also automate the process of "logging in" to your Github fork whenever you push changes to it, without it you either need to setup SSH keys \(requires several steps, but not particularly complicated\), or enter your Github password every time you push changes back to Github.
 
 This document will give instructions for the command line, because they can be used anywhere and the exact steps can be easily provided.
 
 ### Contributing a fix or feature
 
-This is not intended to be a full guide to using Git \(it does not cover pulling changes from the upstream OpenHD repository, [merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing), or other advanced concepts\), but it will walk through the steps needed to contribute a change or bugfix using the "feature branch" style workflow.
+This is not intended to be a full guide to using Git \(it does not cover pulling changes from the upstream Open.HD repository, [merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing), or other advanced concepts\), but it will walk through the steps needed to contribute a change or bugfix using the "feature branch" style workflow.
 
 You should fork the [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD) repository on Github _first_ before making any changes or cloning anything to your local machine, and then clone your fork rather than the main OpenHD/Open.HD repository. This ensures that the `origin` remote is pointing to your fork, which makes a lot of things easier if you're new to Git.
 
@@ -114,7 +114,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-We changed the render.c file, but we haven't yet _staged_ those changes.
+We changed the `render.c` file, but we haven't yet _staged_ those changes.
 
 Staging allows us to select which particular changes we want to commit right now, which makes it possible to commit things separately, even individual lines in a file. This is _significantly_ easier in a Git GUI, but for now all of our changes are in one file and they all go together, so we can stage all of our changes in that file:
 
@@ -222,5 +222,5 @@ Keep in mind that this command will _also_ push any commits in your local `maste
 
 Once you have created a new tag, head over to the [Github Releases](https://github.com/OpenHD/Open.HD/releases) page and click "Draft a new release". You will be able to select your new tag at the top of the screen and enter any release notes or other information about the release in the box below it. You can refer to Issues that have been fixed/closed using the syntax `#1`, which automatically creates a link to issue 1. You can also just make a list and copy/paste any commit messages that outline changes/bugfixes.
 
-You can then click the "Attach binaries" area and select any files you would like to be part of the release, such as SD card images or Android apk files.
+You can then click the "Attach binaries" area and select any files you would like to be part of the release, such as SD card images or Android APK files.
 
