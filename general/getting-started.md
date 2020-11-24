@@ -59,7 +59,7 @@ So we need to make sure we provide enough power to the WiFi card while still att
 
 ![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
 
-TODO: Pics of cable assembly, is this really the least tricky way? Perhaps cheap USB HUB + Hack would be easier? Do not solder to PI warning!
+Using the diagram above create a USB cable with the D+ and D- soldered to the Raspberry Pi and the +5V and GND soldered to the ESC.
 
 {% hint style="danger" %}
 While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected to the Pi.
