@@ -19,7 +19,7 @@ Assuming you are starting with nothing, we recommend you get the following hardw
 * A Raspberry Pi V1 or V2 camera with CSI connector \(Raspberry Pi Zero needs a different CSI cable\)
 * Two WiFi cards that support the band you want to use. \(See [WiFi Adapters](../hardware/wifi-adapters.md)\)
 * An HDMI cable for connecting the Ground SBC to a screen
-* An HDMI capable screen \(use your TV for testing!\)
+* An HDMI capable screen \(you can use your TV for testing!\)
 * Two High class SD Cards of 8Gb or more
 * An SD card Adapter for your computer to flash the cards.
 * A mobile device capable of running QOpen.HD and connecting to the Ground SBC \(_optional_\)
