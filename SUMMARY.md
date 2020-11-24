@@ -22,6 +22,12 @@
 * [Telemetry and OSD](software-setup/telemetry-and-osd.md)
 * [SmartSync](software-setup/smartsync.md)
 
+## RC Control
+
+* [General](rc-control/general.md)
+* [RC over MAVLink](rc-control/rc-over-mavlink.md)
+* [RC over Serial](rc-control/rc-over-serial.md)
+
 ## Advanced Setup
 
 * [Bidirectional Telemetry](advanced-setup/bidirectional-telemetry.md)
