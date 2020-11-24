@@ -1,3 +1,7 @@
+---
+description: Open.HD for Dummies (for Marvin Lange)
+---
+
 # Getting Started
 
 When a project reaches a certain stage, the amount of options to choose from can get pretty overwhelming. This section of the documentation is intended to help guide newcomers to the project towards their first functional Open.HD implementation. 
