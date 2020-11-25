@@ -31,7 +31,7 @@ Regardless of the monitor attached directly to the Ground SBC you can use a phon
 When using your phone or tablet we recommend using the QOpen.HD app which was designed specifically for this project.
 {% endhint %}
 
-The phone can be connected either via USB Tethering or by connecting to the Hotspot WiFi network started by the Ground SBC if the SBC has an internal WiFi capable of working on a band other than the active Air connection.
+The phone can be connected either via [USB Tethering](../advanced-setup/usb-tethering.md) or by connecting to the [Hotspot WiFi ](../advanced-setup/wifi-hotspot.md)network started by the Ground SBC if the SBC has an internal WiFi capable of working on a band other than the active Air connection.
 
 ## Using a Ground Station
 
