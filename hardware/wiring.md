@@ -48,7 +48,7 @@ The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly
 
 When you have verified the output of the ESC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
 
-![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2823%29.png)
+![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29.png)
 
 This can be done easily by just plugging in the Servo header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
 
@@ -96,7 +96,7 @@ In order to connect via Serial to a Flight Controller the following pins must be
 | RX \(Pin 10\) | TX |
 | GND \(Any Ground\) | GND |
 
-![](../.gitbook/assets/image%20%286%29.png)
+![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2823%29.png)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 
