@@ -14,7 +14,7 @@ In addition, if the USB connection is briefly moved or subjected to vibration, i
 
 The solution for those kinds of problems is to solder power from a BEC or other 5v power supply, to the WiFi adapter\(s\).
 
-It is also strongly recommended that you solder the USB data lines. On some WiFi adapters this is easy because they have ready to use solder pads, or have a mini-USB connector on the adapter \(in which case you don't have to solder anything to the adapter itself, just the other end of the cable\).
+It is also **strongly recommended** that you solder the USB data lines. On some WiFi adapters this is easy because they have ready to use solder pads, or have a mini-USB connector on the adapter \(in which case you don't have to solder anything to the adapter itself, just the other end of the cable\).
 
 ### General tips and guidelines
 
