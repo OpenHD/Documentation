@@ -4,7 +4,7 @@ description: Open.HD for Dummies (for Marvin Lange)
 
 # Getting Started
 
-When a project reaches a certain stage, the number of options can be very overwhelming. This section of the documentation is intended to help guide newcomers towards their first functional Open.HD implementation. 
+When a project reaches a certain stage, the number of options can be very overwhelming. This section of the documentation is intended to help guide newcomers towards their first functional Open.HD implementation.
 
 {% hint style="warning" %}
 If you have a pre-existing hardware requirement that is not met in this guide, it is still a good idea to follow the guide and make sure you have this, the simplest setup, working before venturing into more complex builds. Every setup, no matter how complex uses the elements in this guide as it's base.
@@ -89,7 +89,7 @@ Now that we have all the hardware connected to the Ground SBC it's time to put *
 
 ### Step 4: Starting the Ground SBC for the first time
 
-Now that we have everything connected to the Ground SBC, it's time to plug in the power. 
+Now that we have everything connected to the Ground SBC, it's time to plug in the power.
 
 {% hint style="danger" %}
 When bench-testing you can use a bench power supply instead of a LiPo to prevent draining the LiPo, but make sure it can supply the required Amps \(minimum 3A\). When using a LiPo, connect a LiPo warning device to prevent over-discharging!
@@ -115,7 +115,7 @@ Since it is quite common to use a Raspberry Pi Zero for the Air SBC here are som
 
 ![Properly wired Raspberry Pi Zero](../.gitbook/assets/image%20%2810%29.png)
 
-As you can see both the USB Cable and the Pi are fed power from the ESC. 
+As you can see both the USB Cable and the Pi are fed power from the ESC.
 
 {% hint style="danger" %}
 Please make sure the USB connector on the WiFi Adapter side is also secured, some people solder the USB connectors together, some people use glue, whatever you do, make sure it can **not wig**gle or **disconnect**. Even an tiny wiggle might **temporarily disconnect** the WiFi card resulting in a complete **loss of signal** from the Air SBC.
@@ -151,14 +151,14 @@ Now using **equal** pressure on **both** sides gently **push** the locking tab a
 
 ![Use equal pressure to lock the tab](../.gitbook/assets/image%20%289%29.png)
 
-Make sure the cable is **properly seated** before continuing. 
+Make sure the cable is **properly seated** before continuing.
 
 ![A properly seated CSI cable](../.gitbook/assets/image%20%2815%29.png)
 
 Now do the **same** on the **Camera** connector. The procedure on the Raspberry Pi Zero is the **same**, the CSI connector is a bit **smaller** and in a different place, but it works the same. Be aware that you need a **different** CSI **cable** for the Raspberry Pi Zero due to the smaller **connector**.
 
 {% hint style="warning" %}
-The CSI camera is the **simplest** option to use and usually yields the best **performance**. The CSI cables however, are quite susceptible to **noise** and **interference**. If you see **horizontal lines** or odd **discoloration** in the image, **shield** the CSI cable by wrapping it in **tin foil** or other conductive material. 
+The CSI camera is the **simplest** option to use and usually yields the best **performance**. The CSI cables however, are quite susceptible to **noise** and **interference**. If you see **horizontal lines** or odd **discoloration** in the image, **shield** the CSI cable by wrapping it in **tin foil** or other conductive material.
 {% endhint %}
 
 ### Step 9: Preparing the SD card
@@ -169,10 +169,10 @@ Good, now it's a **simple** matter of **inserting** the **SD card** into the Air
 
 ### Step 10: Bask in the glory of your work
 
-So now comes the moment of **truth**, apply power to the **Ground** SBC and subsequently apply power to the **Air** SBC. Allow both to **boot** completely, most CSI cameras have a small LED that lights up when the camera is **activated**, this is a good indication the boot went well and the system has started. 
+So now comes the moment of **truth**, apply power to the **Ground** SBC and subsequently apply power to the **Air** SBC. Allow both to **boot** completely, most CSI cameras have a small LED that lights up when the camera is **activated**, this is a good indication the boot went well and the system has started.
 
 {% hint style="warning" %}
-The Raspberry Pi Zero might take a **long** while to boot up, please allow a couple of **minutes** before despairing! 
+The Raspberry Pi Zero might take a **long** while to boot up, please allow a couple of **minutes** before despairing!
 {% endhint %}
 
 When all went **well**, and for the sake of this step-by-step we will assume so, you will be **greeted** by a nice crisp HD **video** streaming from your Air SBC to your Ground SBC, go ahead and **wave** at yourself to get a feel for the **latency**. Please notice that when using the HDMI out to a TV, the TV itself might introduce quite some latency.

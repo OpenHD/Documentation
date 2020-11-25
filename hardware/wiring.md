@@ -8,7 +8,7 @@ Without exaggeration, over **80%** of the **issues** raised on the support forum
 
 While it may seem like you could just connect the WiFi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple.
 
-Some lower power WiFi adapter such as the _TPLink 722n_ may work out that way, but others may not. If your WiFi adapter needs more power than it is able to draw from the Raspberry Pi USB port, you will see "interference" that isn't really interference, dropped video frames, and potentially sudden video blackout. **That could happen** _**during flight**_ **if you don't take some simple steps to avoid it**.
+Some lower power WiFi adapter such as the _TPLink 722n V1_ may work out that way, but others may not. If your WiFi adapter needs more power than it is able to draw from the Raspberry Pi USB port, you will see "interference" that isn't really interference, dropped video frames, and potentially sudden video blackout. **That could happen** _**during flight**_ **if you don't take some simple steps to avoid it**.
 
 In addition, if the USB connection is briefly moved or subjected to vibration, it may cause the WiFi adapter to reset or disconnect from the system, just long enough to completely stop the connection between ground and air.
 

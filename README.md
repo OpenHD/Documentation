@@ -22,6 +22,6 @@ If you have a problem with a specific version of Open.HD, please check the name 
 {% endhint %}
 
 {% hint style="info" %}
- If you don't have or remember the version of Open.HD you used for your SD cards, you can find out what it was by looking in the `root` partition of the image \(either connect the SD card it to a Linux machine or connect to the pi via SSH\). There will be a file called `/openhd_version.txt` containing the exact version of the image.
+If you don't have or remember the version of Open.HD you used for your SD cards, you can find out what it was by looking in the `root` partition of the image \(either connect the SD card it to a Linux machine or connect to the pi via SSH\). There will be a file called `/openhd_version.txt` containing the exact version of the image.
 {% endhint %}
 
