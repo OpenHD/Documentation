@@ -41,7 +41,7 @@ The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly
 
 When you have **verified** the output of the ESC, we can **connect** it to the Raspberry Pi, to do this, we have two **options**. **Soldering** or using the **GPIO Pin Header**, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we **recommend soldering**. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this **diagram**:
 
-![The Raspberry Pi GPIO Pin Header \(Raspberry Pi Spy\)](../.gitbook/assets/image.png)
+![Raspberry Pi GPIO header pins](../.gitbook/assets/image%20%2822%29.png)
 
 This can be done **easily** by just plugging in the Servo **header** that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED **wire** is connecting to Pin 2 or 4 and the BLACK **wire** is connecting to PIN 6. Now when you **connect power** to the ESC, the Raspberry Pi will power up!
 
