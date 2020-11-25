@@ -4,10 +4,10 @@ description: Open.HD for Dummies (for Marvin Lange)
 
 # Getting Started
 
-When a project reaches a certain stage, the amount of options to choose from can get pretty overwhelming. This section of the documentation is intended to help guide newcomers to the project towards their first functional Open.HD implementation. 
+When a project reaches a certain stage, the number of options can be very overwhelming. This section of the documentation is intended to help guide newcomers towards their first functional Open.HD implementation. 
 
 {% hint style="warning" %}
-If you have a pre-existing hardware requirement that is not met in this guide, it is still a good idea to follow the guide and make sure you have this, the simplest setup, working before venturing into the more complex setups. Every setup, no matter how complex uses the elements in this guide at it's base.
+If you have a pre-existing hardware requirement that is not met in this guide, it is still a good idea to follow the guide and make sure you have this, the simplest setup, working before venturing into more complex builds. Every setup, no matter how complex uses the elements in this guide as it's base.
 {% endhint %}
 
 ## Sourcing hardware
@@ -55,7 +55,7 @@ For all following steps, make sure to disconnect the power before attaching anyt
 
 Now that we have **power** going to the Raspberry Pi it's time to **complicate** things. Attaching **WiFi** cards should be as **easy** as **plugging** them into the Pi's USB ports, unfortunately **it isn't**. Due to the way the Raspberry Pi is **designed** the USB ports do not receive **enough power** to drive the WiFi cards, especially when connecting **more** than one WiFi card as is often the case on a ground station.
 
-So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create an **modified** USB **cable**.
+So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create a **modified** USB **cable**.
 
 ![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
 
