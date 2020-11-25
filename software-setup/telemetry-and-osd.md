@@ -6,7 +6,7 @@ With Ardupilot you may need to enable certain "stream rate" parameters on the fl
 
 ### General
 
-By default the Open.HD system will use it's own transmission system to send the Telemetry for the Air unit to the Gound unit. This is controlled by the `TELEMETRY_TRANSMISSION` parameter in the `openhd-settings-1.txt` file in the `boot` partition of the SD card.
+By default the Open.HD system will use it's own transmission system to send the Telemetry for the Air unit to the Ground unit. This is controlled by the `TELEMETRY_TRANSMISSION` parameter in the `openhd-settings-1.txt` file in the `boot` partition of the SD card.
 
 * If you want to connect your flight controller to the Air unit and use Open.HD for telemetry transmission, leave `TELEMETRY_TRANSMISSION=wbc`
 * If you have some other means of transmitting the telemetry to the ground \(e.g. a Long Range System with serial downlink or 3DR dongles\) choose `TELEMETRY_TRANSMISSION=external` to receive the telemetry stream on the Ground unit serial port.  If using external telemetry transmission, also configure `EXTERNAL_TELEMETRY_SERIALPORT_GROUND=` and `EXTERNAL_TELEMETRY_SERIALPORT_GROUND_BAUDRATE=`
@@ -57,7 +57,7 @@ When connecting a Flight Controller with Ardupilot installed, it is important to
 
 You can choose from different subsets of telemetry information and how often you want the Flight Controller \(FC\) to stream that particular set of data per second \(defined in Hz\). These parameters are the so called `SRx_Parameters` where x represents the serial port number. In this walk-through we are using `Telem1` \(aka Serial1\) - hence X=1.
 
-In order not to transmit telemetry data too often over our radio link, we have to select just the necessary data \(the right subsets of information\) and at the same time find a good compromise on how often this data should be send and thus be updated. The following parameters have to be found working very reliably:
+In order to avoid transmitting telemetry data too often over our radio link, we have to select just the necessary data \(the right subsets of information\) and at the same time find a good compromise on how often this data should be send and thus be updated. The following parameters have to be found working very reliably:
 
 ```text
 SR1_ADSB=5
