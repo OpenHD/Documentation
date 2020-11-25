@@ -4,7 +4,7 @@
 
 Welcome to the Open.HD Introduction Page!
 
-Open.HD uses off-the-shelf WiFi adapters available for purchase online, however it is not standard WiFi, which is unsuitable for low-latency or very long distance transmission. Instead, Open.HD configures the WiFi adapter in a way that is closer to a simple broadcast, much like analog video transmission hardware you may be using already.
+Open.HD uses off-the-shelf WiFi adapters available for purchase online, however it is not standard WiFi, which is unsuitable for low-latency or very long distance transmission. Instead, Open.HD configures the WiFi adapter in a way that is similar to a simple broadcast, much like analog video transmission hardware you may be using already.
 
 High definition video, 2-way UAV telemetry, audio, and RC control signals can all be sent over a single transmission channel.
 
