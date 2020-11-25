@@ -4,7 +4,7 @@ The features as per the latest [release ](https://github.com/OpenHD/Open.HD/rele
 
 * [x] Supports Pi A+, Pi1B+, Pi2B, Pi3B, Pi3B+, Pi3A+, Pi4, Pi Zero, Pi Zero W, Odroid-W, Pi V1 and V2 cam  \(NOTE: Ground Pi should be Pi2B or higher\)
 * [x] Maximum possible resolutions \(depending on cam used\): 1280x720p 60fps 1296x972p 42fps 1640x922p 40fps 1920x1080p 30fps
-* [x] Maximum possible video bitrate about 12Mbit
+* [x] Maximum possible video bitrate about 12Mbit \(not achievable on a Pi Zero\)
 * [x] Latency ~125ms with 720p 48fps default settings, minimum possible latency roughly around 110ms
 * [x] Support for 2.3/2.4/2.5Ghz bands and 5.2Ghz to 5.8Ghz bands
 * [x] 2.4Ghz on 3dbi omni antennas: About 1-1.5km range with ~70mw wifi sticks, about 2-3km with ~300mW high-power cards \(with default settings, about 50% higher range is possible with lower bitrate "longrange mode"\)
