@@ -6,7 +6,7 @@ Follow the instructions for [general ](general.md)RC setup first.
 
 ### Fundamentals of RC Control via MAVLink
 
-MAVLink defines certain **message** types one of which is "[RC\_CHANNELS\_OVERRIDE](https://mavlink.io/en/messages/common.html#RC_CHANNELS_OVERRIDE)" message. These messages are used to **command** the Flight Controller \(FC\) to **ignore** all **inputs** from the **regular** RC-**Receiver** \(SBUS, SUMD, CPPM, etc\) and **instead** override the RC channels with the information that is sent as a **payload** with the MAVLink `RC_CHANNELS_OVERRIDE` messages. Thus this feature can be **used** to **override** the RC Transmitter and **control** the vehicle from a Ground Control Station but it can also be used as the **sole** way to **fly** the vehicle. There is **no** need to have a **standard** RC **receiver** connected to the FC.
+MAVLink defines certain **message** types one of which is "[RC\_CHANNELS\_OVERRIDE](https://mavlink.io/en/messages/common.html#RC_CHANNELS_OVERRIDE)" message. These messages are used to **command** the Flight Controller \(FC\) to **ignore** all **inputs** from the **regular** RC-**Receiver** \(SBUS, SUMD, CPPM, etc.\) and **instead** override the RC channels with the information that is sent as a **payload** with the MAVLink `RC_CHANNELS_OVERRIDE`messages. Thus this feature can be **used** to **override** the RC Transmitter and **control** the vehicle from a Ground Control Station but it can also be used as the **sole** way to **fly** the vehicle. There is **no** need to have a **standard** RC **receiver** connected to the FC.
 
 {% hint style="info" %}
 MAVLink **v1** supports **8** channels **maximum**. The new MAVLink **v2** standard supports **8 axis** channels and **16 button** \(on/off\) channels.
