@@ -37,11 +37,17 @@ Start by selecting the correct type of serial in the `openhd-settings-1.txt` fil
 {% endtab %}
 {% endtabs %}
 
+### iNav Configurator Settings
+
+1. Connect your flight controller to the configurator and open the Ports tab
+2. Turn on “Serial RX” on the UART you have connected the wire from the Air Pi TX pin. Now save settings
+3. Open the Configuration tab. Under Receiver Mode select “RX\_SERIAL” and the protocol you choose above. Now save settings
+
 ### Wiring
 
 Please make sure to follow the guidelines and precautions outlined in [Wiring ](../hardware/wiring.md)-&gt; [Flight Controller](../hardware/wiring.md#flight-controller), but since most INav boards function a bit differently in regards to the serial communication observe the following:
 
-1. Connect the Air Pi tx pin to your flight controller UART RX pin. This is the same UART you have selected in the configurator. This UART might also be shared and/or labeled as the designated serial RX pin \(serial RX, SBUS, ppm\) it depends on your board. Keep in mind some boards have soft serial capability thereby allowing an uninverted serial connection to be made. **NOTE:** softserial connections are limited to **19200** baud. This limits you to the msp protocol in Open.HD, which is msp v1. Users have had success with msp RC but beware.
+1. Connect the Air Pi tx pin to your flight controller UART RX pin.  This is the same UART you have selected in the configurator.  This UART might also be shared and/or labeled as the designated serial RX pin \(serial RX, SBUS, ppm\) it depends on your board. Keep in mind some boards have soft serial capability thereby allowing an uninverted serial connection to be made.  **NOTE:** softserial connections are limited to **19200** baud. This limits you to the msp protocol in Open.HD, which is msp v1. Users have had success with msp RC but beware.
 2. Test. Power everything while the FC is connected to the iNav configurator and view the receiver tab
 
 {% hint style="warning" %}
