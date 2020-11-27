@@ -43,5 +43,5 @@ ZT_IP=<The ip of the device you want to VIEW the video on>
 
 
 * Troubleshooting: If you do not see your LTE stick connecting to ZeroTier its probably a problem with the install on the Air unit. You can delete `ZeroTier tracker.txt` file created in `boot` partition of the Air unit SD card \(this will force a reinstall attempt\) and hook up a monitor to Air unit to see what's going on. The ZeroTier tracker file gets created upon every install attempt. If that fails you can look at an Open.HD image or in the GitHub repo within `wifibroadcast scripts` and the file `lte_functions.sh`. Within `lte_functions.sh` are the install steps- try those manually on a pi with your LTE stick and attempt a manual installation
-* Some of these 3g/4g cards pull a lot of amps. YOU MUST SUPPLY SUFFICIENT POWER TO AIRPI AND NICS
+* Some of these 3g/4g cards pull a lot of amps. **YOU MUST SUPPLY SUFFICIENT POWER TO AIR UNIT AND WiFi ADAPTERS!**
 
