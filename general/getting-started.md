@@ -181,5 +181,5 @@ Go ahead, **celebrate** your success, and please **let us know** if it worked fo
 
 ### Next steps
 
-Logically most user will want to connect their Flight Controller to the system to actually see the OSD do it's thing. To do this, follow the steps outlined in [Wiring ](../hardware/wiring.md)-&gt; [Flight Controller](../hardware/wiring.md#flight-controller) and then make sure to use the correct settings in [Telemetry and OSD](../software-setup/telemetry-and-osd.md).
+Logically most user will want to connect their Flight Controller to the system to actually see the OSD do it's thing. To do this, follow the steps outlined in [Wiring ](../hardware/wiring.md)-&gt; [Flight Controller](../hardware/wiring.md#flight-controller) and then make sure to use the correct settings in [Telemetry and OSD](../software-setup/telemetry-and-osd.md). After that, you can look into [RC Control](../rc-control/general.md) over Open.HD as well as the subjects in the Advanced Setup.
 
