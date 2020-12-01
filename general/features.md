@@ -2,37 +2,35 @@
 
 The features as per the latest [release ](https://github.com/OpenHD/Open.HD/releases)include:
 
-* [x] Supports Pi A+, Pi1B+, Pi2B, Pi3B, Pi3B+, Pi3A+, Pi4, Pi Zero, Pi Zero W, Odroid-W, Pi V1 and V2 cam  \(NOTE: Ground Pi should be Pi2B or higher\)
-* [x] Maximum possible resolutions \(depending on cam used\): 1280x720p 60fps 1296x972p 42fps 1640x922p 40fps 1920x1080p 30fps
-* [x] Maximum possible video bitrate about 12Mbit \(not achievable on a Pi Zero\)
-* [x] Latency ~125ms with 720p 48fps default settings, minimum possible latency roughly around 110ms
-* [x] Support for 2.3/2.4/2.5Ghz bands and 5.2Ghz to 5.8Ghz bands
-* [x] 2.4Ghz on 3dbi omni antennas: About 1-1.5km range with ~70mw wifi sticks, about 2-3km with ~300mW high-power cards \(with default settings, about 50% higher range is possible with lower bitrate "longrange mode"\)
-* [x] 5Ghz on 3dbi omni antennas: ~250m range with 25mW wifi sticks, about 1km range with ~300mW high-power cards
-* [x] Configuration can be done from Windows, no Linux knowledge required
+* [x] Supports the following single board computers \(SBC\): - Pi Zero, Pi Zero W \(constraint in several aspects such as bitrate but working\) - Pi2B, Pi3B, Pi3B+, Pi3A+, Pi4, Odroid-W, Pi  \(NOTE: Ground Pi shall be Pi2B or higher\)
+* [x] Support of numerous camera modules: - Raspberry Foundation V1, V2 and HQ cameras - InnoMaker line of CSI cameras \(e.g. MIPI CAM 290-ISP, MIPI CAM 327-ISP\) - IP cameras capable of h.264/265 \(e.g. Hi3516C based models\) - USB cameras \(e.g.  Logitech C920\)
+* [x] Multi camera support \(e.g. secondary thermal camera\)
+* [x] HiRes video transmission \(typical resolutions/fps\): - 1280x720p 60fps, 1296x972p 42fps, 1640x922p 40fps, 1920x1080p 30fps
+* [x] High bitrate of up to 12Mbit 
+* [x] Low Latency \(~125ms typical, ~110ms minimum\)
+* [x] Support for various RF bands: - 2.3/2.4/2.5Ghz; 5.2-5.8Ghz 
+* [x] Typical range \(3dbi omni antennas anticipated\): - 2,4Ghz: 1-1.5km \(~70mW\), 2-3km \(~300mW\) - 5Ghz: 250m \(~25mW\), 1km \(~300mW\)
+* [x] Extreme range \(record flights with directional antennas/antenna tracking\) - 2,4Ghz: approx 30km - 5Ghz: approx 70km
+* [x] Easy Configuration  - File based configuration \(can be done from Windows, no Linux knowledge required\) - Change Settings via QOpen.HD App
 * [x] Supports different configuration profiles selectable on the field via jumpers or DIP switches
-* [x] Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
-* [x] Bi-directional mavlink telemetry support \(uplink not 100% compatible with all FCs yet\)
-* [x] Support for video and telemetry inside Tower App, QGroundcontrol, Mission Planner
-* [x] Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
-* [x] 2 wifi sticks transmit diversity on two different frequencies for bulletproof videolink
-* [x] 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink \(or 2x Atheros and 2x Ralink\)
-* [x] Integrated high resolution fully customizeable OSD with support for Mavlink, Frsky, LTM, Smartport telemetry
+* [x] Forwarding of video stream and telemetry data to 2nd display via: USB TetheringWifi Hotspot, Ethernet, Wifibroadcast relay mode
+* [x] Bi-directional Mavlink telemetry support
+* [x] Complete Mavlink v1 and v2 support
+* [x] Integrated high resolution fully customizeable OSD with support for:  Mavlink, Frsky, LTM, Smartport telemetry
+* [x] Support for video and telemetry inside: QOpen.HD, FPV-VR, QGroundcontrol, Mission Planner, Tower App
+* [x] Automatic detection of 2nd display, just plug it in or connect via Hotspot 
+* [x] Receive Diversity: - 3 times receive diversity support for 2,4Ghz Atheros - 5 times receive diversity support for 5Ghz Realtek 
 * [x] .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 * [x] Automatic graphing of RSSI, packetloss, video bitrate and other data
-* [x] No issues as with standard wifi, no disconnection, video freeze etc, video will quickly recover
+* [x] No issues as with standard WiFi, no disconnection, video freeze etc, video will quickly recover
 * [x] Live and responsive RSSI display with defective blocks and packetloss display
-* [x] Video reception is very stable even in difficult multipathing environments, no constant glitching as with analog
-* [x] OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly
-* [x] Debug logs and screenshot will be saved to sdcard in case of errors
-* [x] Low-latency/high update-rate RC over wifibroadcast via Joystick \(Atheros only\)
+* [x] Stable video reception even in multipathing environments \(no constant glitching as with analog\)
+* [x] Groundside OSD rendering \(stays clear and functional even if video breaks up\)
+* [x] Low-latency/high update-rate RC via USB-Joystick
 * [x] Encrypted RC
-* [x] Audio
-* [x] Settings controlled by android app
-* [x] Multi camera support
-* [x] Frequency Band switching ability
 * [x] Ability to designate strongest WiFi adapter for RC
-* [x] New OSD elements
-* [x] More WiFi adapter options
-* [x] Mavlink 2 support
+* [x] Audio
+* [x] Frequency Band switching ability
+
+
 

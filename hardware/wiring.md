@@ -48,7 +48,7 @@ The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly
 
 When you have verified the output of the ESC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
 
-![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29.png)
+![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29%20%282%29.png)
 
 This can be done easily by just plugging in the Servo header that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the ESC, the Raspberry Pi will power up!
 
@@ -60,7 +60,7 @@ Now that we have power going to the Raspberry Pi it's time to power the WiFi ada
 
 To mitigate this problem it is necessary to power the WiFi card\(s\) directly from the ESC as well. Please refer to the diagram below to see how. Please note that **5V** and **GND** are **NOT** connected to the Raspberry Pi USB Port.
 
-![Powering the Raspberry Pi and the WiFi card from the ESC](../.gitbook/assets/image%20%283%29.png)
+![Powering the Raspberry Pi and the WiFi card from the ESC](../.gitbook/assets/image%20%284%29.png)
 
 Soldering as much of these connections as possible will prevent accidental disconnects. On the Ground side, soldering might be optional, on the Air side it is mandatory as it is subjected to greater vibrations.
 
@@ -74,7 +74,7 @@ JST connectors can be used as they lock into place and these can be had for quit
 
 When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB data lines to the points shown in this diagram:
 
-![Proper Power and USB wiring for the Raspberry Pi Zero](../.gitbook/assets/image%20%288%29.png)
+![Proper Power and USB wiring for the Raspberry Pi Zero](../.gitbook/assets/image%20%288%29%20%281%29.png)
 
 ## Other connections
 
@@ -96,7 +96,7 @@ In order to connect via Serial to a Flight Controller the following pins must be
 | RX \(Pin 10\) | TX |
 | GND \(Any Ground\) | GND |
 
-![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2823%29.png)
+![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29%20%281%29.png)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 

@@ -41,7 +41,7 @@ The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly
 
 When you have **verified** the output of the ESC, we can **connect** it to the Raspberry Pi, to do this, we have two **options**. **Soldering** or using the **GPIO Pin Header**, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we **recommend soldering**. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this **diagram**:
 
-![Raspberry Pi GPIO header pins](../.gitbook/assets/image%20%2822%29.png)
+![Raspberry Pi GPIO header pins](../.gitbook/assets/image%20%2824%29.png)
 
 This can be done **easily** by just plugging in the Servo **header** that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED **wire** is connecting to Pin 2 or 4 and the BLACK **wire** is connecting to PIN 6. Now when you **connect power** to the ESC, the Raspberry Pi will power up!
 
@@ -57,7 +57,7 @@ Now that we have **power** going to the Raspberry Pi it's time to **complicate**
 
 So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create a **modified** USB **cable**.
 
-![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29.png)
+![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29%20%281%29.png)
 
 Using the diagram above **create** a USB cable with the D+ and D- **soldered** to the Raspberry Pi and the +5V and GND **soldered** to the **ESC**.
 
@@ -113,7 +113,7 @@ Power for the Air SBC is much like powering the Ground SBC. So use the steps des
 
 Since it is quite common to use a Raspberry Pi Zero for the Air SBC here are some schematics for hooking up power AND connecting the WiFi card to that SBC.
 
-![Properly wired Raspberry Pi Zero](../.gitbook/assets/image%20%2810%29.png)
+![Properly wired Raspberry Pi Zero](../.gitbook/assets/image%20%288%29.png)
 
 As you can see both the USB Cable and the Pi are fed power from the ESC.
 
@@ -129,7 +129,7 @@ This step is mostly covered in the diagram shown above. Let's reiterate that, ho
 
 We will now **attach** the CSI **camera** to the Air SBC, this is a very **simple** procedure, but you need to make sure to connect the cable '**the right way around**' on both ends. First let's take a look at the ports on the Raspberry Pi's.
 
-![The Raspberry Pi Zero CSI connector, notice the pins are on the side near the PCB](../.gitbook/assets/image%20%2818%29.png)
+![The Raspberry Pi Zero CSI connector, notice the pins are on the side near the PCB](../.gitbook/assets/image%20%2818%29%20%281%29.png)
 
 ![The Raspberry Pi 3B CSI connector, notice the pins are facing away from the white locking tab](../.gitbook/assets/image%20%2814%29.png)
 
