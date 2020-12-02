@@ -46,7 +46,7 @@ Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. 
 The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
 {% endhint %}
 
-When you have verified the output of the BEC, we can connect it to the Raspberry Pi, to do this, we have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the BEC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
+When you have verified the output of the BEC, you can connect it to the Raspberry Pi, to do this, you have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the BEC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
 
 ![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29%20%282%29.png)
 
