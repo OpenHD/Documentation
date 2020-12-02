@@ -67,17 +67,6 @@ While many cameras can potentially work, latency is the biggest issue. Please re
       <td style="text-align:left">Amazing in low light</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane">Hawkeye Firefly Split Mini Version 4K</a>
-      </td>
-      <td style="text-align:left">HDMI</td>
-      <td style="text-align:left">CMOS</td>
-      <td style="text-align:left">4K(record)
-        <br />1080p sream</td>
-      <td style="text-align:left">60</td>
-      <td style="text-align:left">$75</td>
-      <td style="text-align:left">WDR, HDMI-CSI board, Onboard Rec</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="https://www.logitech.com/en-gb/product/hd-pro-webcam-c920">Logitech C920</a>
       </td>
       <td style="text-align:left">USB</td>
@@ -138,7 +127,7 @@ While many cameras can potentially work, latency is the biggest issue. Please re
       <td style="text-align:left">h264, WDR/HDR</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="https://a.aliexpress.com/_BPMdpz">FF Split</a>
+      <td style="text-align:left"><a href="https://a.aliexpress.com/_BPMdpz">Firefly Split</a>
       </td>
       <td style="text-align:left">HDMI</td>
       <td style="text-align:left">Unknown</td>
