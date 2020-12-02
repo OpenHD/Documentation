@@ -32,6 +32,15 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 * HDMI connection implies the use of an HDMI adapter card and incurs additional latency
 * Many users report success with HDMI adapter cards and cameras with low latency HDMI out. GoPro and similar are popular and offer perhaps some of the best image quality at the expense of greater size, weight, cost and depending on the camera, latency
 
+### CSI Camera cables for Raspberry Pi Zero
+
+The Raspberry Pi Zero requires special CSI cables since it has a smaller CSI connector on the board. You can find these on sites like AliExpress, we have included two example links:
+
+* Short Raspberry Zero CSI cable: [https://www.aliexpress.com/item/32861638369.html](https://www.aliexpress.com/item/32861638369.html)
+* 8 Cm Raspberry Pi Zero CSI cable: [https://www.aliexpress.com/item/33032182445.html](https://www.aliexpress.com/item/33032182445.html)
+
+Feel free to use any other cable you might find, these two are known to work.
+
 ### Latency considerations
 
 When very low latency is required, every part of the system from glass-to-glass must be carefully chosen and tuned. In some cases a particular combination of SBC + camera sensor may be required.
