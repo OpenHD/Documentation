@@ -71,10 +71,11 @@ While many cameras can potentially work, latency is the biggest issue. Please re
       </td>
       <td style="text-align:left">HDMI</td>
       <td style="text-align:left">CMOS</td>
-      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">4K(record)
+        <br />1080p sream</td>
       <td style="text-align:left">60</td>
       <td style="text-align:left">$75</td>
-      <td style="text-align:left">Good WDR, Onboard Rec</td>
+      <td style="text-align:left">WDR, HDMI-CSI board, Onboard Rec</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="https://www.logitech.com/en-gb/product/hd-pro-webcam-c920">Logitech C920</a>
@@ -147,7 +148,7 @@ While many cameras can potentially work, latency is the biggest issue. Please re
       </td>
       <td style="text-align:left">60</td>
       <td style="text-align:left">$70</td>
-      <td style="text-align:left">WDR, HDMI-CSI board</td>
+      <td style="text-align:left">WDR, HDMI-CSI board, Onboard Rec</td>
     </tr>
   </tbody>
 </table>
