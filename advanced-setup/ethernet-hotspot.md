@@ -12,7 +12,7 @@ In some cases you want to use the Ethernet port of the Ground SBC to connect to 
 {% endtabs %}
 
 {% hint style="info" %}
-Don't use a switch or Hub, directly connect the RJ-45 cable. The Pi will be IP `192.168.1.1` the connected PC will be `192.168.1.2`
+Don't use a switch or Hub, directly connect the RJ-45 cable. The Pi will be IP `192.168.1.1` the connected PC will be `192.168.1.2`. Using a Switch or Hub won't work since the current implementation only supports one connected device.
 {% endhint %}
 
 {% hint style="warning" %}
