@@ -7,7 +7,7 @@ You can change the way the Hotspot behaves by changing the `WIFI_HOTSPOT` parame
 | Value | Description |
 | :--- | :--- |
 | auto | Automatically selects a WiFi Band and channel that allows for the least amount of interference with the 'main' WiFi reception of the Air SBC |
-| y | Uses the static Band and Channel settings for manual control |
+| y | Uses the [custom ](wifi-hotspot.md#custom-band-and-channel-settings)Band and Channel settings for manual control |
 | n | Disables the WiFi Hotspot functionality altogether |
 
 ### Default SSID an Password
