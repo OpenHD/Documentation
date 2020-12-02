@@ -118,7 +118,15 @@ It would be nice if you report back your findings in case you tried a WiFi card 
 
 Another way to increase output power is to use a low-power WiFi stick combined with an external amp like this "2W" amp:
 
-[https://www.banggood.com/2\_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search](https://www.banggood.com/2_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search)
+#### Banggood amp
+
+{% embed url="https://www.banggood.com/2\_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search" %}
 
 Real output power is around 600mW with a low-power AR9271 stick.
+
+#### AliExpress bi-directional amp
+
+{% embed url="https://www.aliexpress.com/item/32865062382.html" %}
+
+Allows for bi-directional communication and amplification, great in combination with a low power "Green Stick".
 
