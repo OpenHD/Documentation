@@ -17,6 +17,7 @@ Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp
 | AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
 | AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
 | "[Blue Stick](https://www.aliexpress.com/item/4000051464939.html)" | 2.3-2.4 | 1200mW+ | AR9271 |  | X | X | 1x u.fl or  1x RP-SMA |
+| "[Green Stick](https://www.aliexpress.com/item/32954949341.html?sku_id=66407945777)" | 2.3-2.4 | 50mW | AR9271 |  | X |  | 1x u.fl |
 | "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | re3332r0115 | 2.4 | 50mW | mt7601u | X |  |  | 1x u.fl |
 | ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
