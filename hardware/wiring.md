@@ -19,7 +19,7 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 ### General tips and guidelines
 
 * use short wires
-* use wires with at least 20AWG gauge \(0.5mm²\)
+* use wires with at least 20AWG gauge \(0.5mm²\) for any **power** wires. **Signal** wires can be a lot **thinner**.
 * solder _**everything**_, avoid any USB cables or plugs without a latching mechanism
 * use a quality **BEC** with at least **3A**
 * consider adding low-ESR electrolytic **capacitors** near the **WiFi** adapters and the raspberry pi
