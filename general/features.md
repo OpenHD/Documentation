@@ -18,7 +18,7 @@ The features as per the latest [release ](https://github.com/OpenHD/Open.HD/rele
 * [x] Complete Mavlink v1 and v2 support
 * [x] Integrated high resolution fully customizeable OSD with support for:  Mavlink, Frsky, LTM, Smartport telemetry
 * [x] Support for video and telemetry inside: QOpen.HD, FPV-VR, QGroundcontrol, Mission Planner, Tower App
-* [x] Automatic detection of 2nd display, just plug it in or connect via Hotspot 
+* [x] Automatic detection of portable device \(Phone or Tablet\) as a second display, just plug it in or connect via Hotspot 
 * [x] Receive Diversity: - 3 times receive diversity support for 2,4Ghz Atheros - 5 times receive diversity support for 5Ghz Realtek 
 * [x] .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 * [x] Automatic graphing of RSSI, packetloss, video bitrate and other data
