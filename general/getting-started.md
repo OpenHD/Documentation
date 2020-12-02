@@ -33,17 +33,17 @@ Now that you have your prerequisite hard- and software, we can get down to busin
 
 ### Step 1: Powering the Ground SBC
 
-This is where the **ESC's** come in. Much like the Air SBC, the Ground SBC will likely be **powered** by a **LiPo** battery. The Raspberry Pi and the WiFi cards all use **5V**, which is what most ESC's **produce**. So hook up one of your SBC's to a LiPo battery and use a **multimeter** to double-check the **output** is +5V.
+This is where the BE**C's** come in. Much like the Air SBC, the Ground SBC will likely be **powered** by a **LiPo** battery. The Raspberry Pi and the WiFi cards all use **5V**, which is what most BEC's **produce**. So hook up one of your SBC's to a LiPo battery and use a **multimeter** to double-check the **output** is +5V.
 
 {% hint style="info" %}
 The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
 {% endhint %}
 
-When you have **verified** the output of the ESC, we can **connect** it to the Raspberry Pi, to do this, we have two **options**. **Soldering** or using the **GPIO Pin Header**, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we **recommend soldering**. Connect the output from the ESC to the PI on pins 2 and 6 \(or 4 and 6\) according to this **diagram**:
+When you have **verified** the output of the BEC, we can **connect** it to the Raspberry Pi, to do this, we have two **options**. **Soldering** or using the **GPIO Pin Header**, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we **recommend soldering**. Connect the output from the BEC to the PI on pins 2 and 6 \(or 4 and 6\) according to this **diagram**:
 
 ![Raspberry Pi GPIO header pins](../.gitbook/assets/image%20%2824%29.png)
 
-This can be done **easily** by just plugging in the Servo **header** that comes with most ESC's into the Raspberry Pi Pin Header. Make sure the RED **wire** is connecting to Pin 2 or 4 and the BLACK **wire** is connecting to PIN 6. Now when you **connect power** to the ESC, the Raspberry Pi will power up!
+This can be done **easily** by just plugging in the Servo **header** that comes with most BECs into the Raspberry Pi Pin Header. Make sure the RED **wire** is connecting to Pin 2 or 4 and the BLACK **wire** is connecting to PIN 6. Now when you **connect power** to the BEC, the Raspberry Pi will power up!
 
 ![Raspberry Pi Powered from Pin Header](../.gitbook/assets/image%20%281%29.png)
 
@@ -55,11 +55,11 @@ For all following steps, make sure to disconnect the power before attaching anyt
 
 Now that we have **power** going to the Raspberry Pi it's time to **complicate** things. Attaching **WiFi** cards should be as **easy** as **plugging** them into the Pi's USB ports, unfortunately **it isn't**. Due to the way the Raspberry Pi is **designed** the USB ports do not receive **enough power** to drive the WiFi cards, especially when connecting **more** than one WiFi card as is often the case on a ground station.
 
-So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the ESC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create a **modified** USB **cable**.
+So we need to make sure we provide **enough** power to the WiFi card while still **attaching** it to the Raspberry Pi's USB port. There are several ways to do this, including using a USB HUB and powering that from the BEC. Take a look at [Wiring](../hardware/wiring.md) for inspiration. For this step-by-step we will create a **modified** USB **cable**.
 
 ![The basic diagram we want to achieve for this step](../.gitbook/assets/image%20%284%29%20%281%29.png)
 
-Using the diagram above **create** a USB cable with the D+ and D- **soldered** to the Raspberry Pi and the +5V and GND **soldered** to the **ESC**.
+Using the diagram above **create** a USB cable with the D+ and D- **soldered** to the Raspberry Pi and the +5V and GND **soldered** to the **BEC**.
 
 {% hint style="danger" %}
 While it may seem tempting to solder the +5V and GND to the solder points on the Raspberry Pi, doing so is not OK! We will be feeding +5V into the circuit of the Pi where this is not intended, probably destroying the USB controller. Make sure the +5V wire of the USB cable is no longer connected on the Pi side. GND is OK connected or unconnected to the Pi.
@@ -109,13 +109,13 @@ TODO: Picture
 
 ### Step 6: Powering the Air SBC
 
-Power for the Air SBC is much like powering the Ground SBC. So use the steps described there to make sure you hook up an ESC with enough Amps to the Air SBC. Please try to solder as much of the connections that you can, soldering will prevent many troubleshooting steps later on.
+Power for the Air SBC is much like powering the Ground SBC. So use the steps described there to make sure you hook up an BEC with enough Amps to the Air SBC. Please try to solder as much of the connections that you can, soldering will prevent many troubleshooting steps later on.
 
 Since it is quite common to use a Raspberry Pi Zero for the Air SBC here are some schematics for hooking up power AND connecting the WiFi card to that SBC.
 
 ![Properly wired Raspberry Pi Zero](../.gitbook/assets/image%20%288%29.png)
 
-As you can see both the USB Cable and the Pi are fed power from the ESC.
+As you can see both the USB Cable and the Pi are fed power from the BEC.
 
 {% hint style="danger" %}
 Please make sure the USB connector on the WiFi Adapter side is also secured, some people solder the USB connectors together, some people use glue, whatever you do, make sure it can **not wig**gle or **disconnect**. Even an tiny wiggle might **temporarily disconnect** the WiFi card resulting in a complete **loss of signal** from the Air SBC.
