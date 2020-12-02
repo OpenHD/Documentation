@@ -96,7 +96,7 @@ In order to connect via Serial to a Flight Controller the following pins must be
 | RX \(Pin 10\) | TX |
 | GND \(Any Ground\) | GND |
 
-![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29%20%281%29.png)
+![Correctly wiring the Flight Controller](../.gitbook/assets/image.png)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 
