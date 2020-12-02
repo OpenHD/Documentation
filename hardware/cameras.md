@@ -273,7 +273,7 @@ The adapter has LED's that will tell you whether the camera connection is OK.
 
 An HDMI camera specifically designed for drones, has onboard recording to Micro-SD on the camera itself, WDR support and weighs 60 g.
 
-Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model.
+Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model. See the [website ](https://www.fireflycameras.com/products/hawkeye-firefly-split-4k-160-degree-hd-recording-dvr-mini-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane?_pos=1&_sid=77d319bcd&_ss=r)for more details.
 
 **Note**: to use this camera for Open.HD you need an [HDMI Input](cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4K recording it only outputs 1080p30 or 720p60 on the HDMI port.
 
