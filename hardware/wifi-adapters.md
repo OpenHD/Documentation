@@ -32,21 +32,21 @@ This adapter is currently the most popular for OpenHD. Its small size makes it e
 This adapter is highly recommended as it is easy to find and works well. Ideal for long range as it will provide around 280mW output power. Ranges of several kilometers have been reported \(with directional antennas though\).
 
 * [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=G%2Bnb%2FcnfLEByfpIAnz2OrQ%3D%3D&fcc_id=UQ23668)
-* [WikiDevi](https://wikidevi.com/wiki/ALFA_Network_AWUS036NHA)
+* [WikiDevi](https://deviwiki.com/wiki/ALFA_Network_AWUS036NHA)
 
 #### **Ubiquit Wifistations**
 
 This adapter is quite large, but seems to have a good quality amp on it. Useable TXPower is not yet determined, but should be slightly higher than the AWUSH036NHA.
 
 * [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=KhauP%2FSwGKHZGHiW1vSYvA%3D%3D&fcc_id=SWX-M2USB)
-* [WikiDevi](https://wikidevi.com/wiki/Ubiquiti_Networks_WiFiStation_EXT)
+* [WikiDevi](https://deviwiki.com/wiki/Ubiquiti_Networks_WiFiStation_EXT)
 
 #### **TL-WN722N V1**
 
 This adapter will provide around 60mW output power. Range should be roughly around 800-1000m with 2.1dbi stock antennas.
 
 * [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=%2BnZ3HSATHmzb0LSclLcZxA%3D%3D&fcc_id=TE7WN722NV2)
-* [WikiDevi](https://wikidevi.com/wiki/TP-LINK_TL-WN722N_v1.x)
+* [WikiDevi](https://deviwiki.com/wiki/TP-LINK_TL-WN722N_v1.x)
 
 _**NOTE:**_ There have been reports that the TL-WN722N V1 seems to be replaced by V2 and V3 versions. These new versions use a completely different chipset and are _not_ compatible. Consider asking the seller for the version, if it says "V2" or "V3" on the back of the dongle it's the wrong chipset!
 
