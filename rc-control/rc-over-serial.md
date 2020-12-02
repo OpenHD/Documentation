@@ -1,7 +1,7 @@
 # RC over Serial
 
 {% hint style="info" %}
-he instructions for [general ](general.md)RC setup first.
+Follow the instructions for [general ](general.md)RC setup first.
 {% endhint %}
 
 {% hint style="warning" %}
