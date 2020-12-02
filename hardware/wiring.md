@@ -64,6 +64,8 @@ To mitigate this problem it is necessary to power the WiFi card\(s\) directly fr
 
 Soldering as much of these connections as possible will prevent accidental disconnects. On the Ground side, soldering might be optional, on the Air side it is mandatory as it is subjected to greater vibrations.
 
+To monitor the power on the ground unit, please take a look at the [Ground Power Monitoring](../advanced-setup/ground-power-monitoring.md) section.
+
 ### Air
 
 Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will absolutely cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle. 
@@ -96,7 +98,7 @@ In order to connect via Serial to a Flight Controller the following pins must be
 | RX \(Pin 10\) | TX |
 | GND \(Any Ground\) | GND |
 
-![Correctly wiring the Flight Controller](../.gitbook/assets/image.png)
+![Correctly wiring the Flight Controller](../.gitbook/assets/image%20%283%29.png)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 

@@ -41,6 +41,7 @@
 * [Using an IP or USB Camera as second camera](advanced-setup/using-an-ip-or-usb-camera-as-second-camera.md)
 * [Bandwidth switching](advanced-setup/bandwidth-switching.md)
 * [LTE Connection](advanced-setup/lte-connection.md)
+* [Ground Power Monitoring](advanced-setup/ground-power-monitoring.md)
 
 ## Ground Station Software
 
