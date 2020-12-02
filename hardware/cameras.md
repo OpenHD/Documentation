@@ -12,20 +12,145 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
-| Name | Connection | Sensor | Resolution | FPS | Price | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | FPS depends on resolution |
-| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | FPS depends on resolution |
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution, See [link ](https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107)for improved lens holder to reduce weight. |
-| [Veye/Innomaker 290](https://www.inno-maker.com/product/mipi-cam-290) | CSI | IMX290 | 1080p | 30 | $90 | Amazing in low light |
-| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | HDMI | CMOS | 1080p | 60 | $75 | Good WDR, Onboard Rec |
-| [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) | USB | -- | 1080p | 30 | $95 | Reportedly "low" latency for usb |
-| [Hi3518](http://www.hisilicon.com/en/Products) | IP | -- | 1080p | 30 | -- | h264/h265 |
-| [C1 Micro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12) | USB | AR0330 | 1080p | 30 | €112 | h264, 12g weight |
-| [C1](https://www.kurokesu.com/shop/cameras/CAMUSB1) | USB | AR0330 | 1080p | 30 | €100 | h264 |
-| [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO) | USB | IMX290 | 1080p | 30 | €139 | h264 |
-| [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp) | USB | IMX290 | 1080p | 60 | $240 | h264, WDR/HDR |
-| [FF Split](https://a.aliexpress.com/_BPMdpz) | HDMI | Unknown | 4k | 60 | $70 | WDR, HDMI-CSI board |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Connection</th>
+      <th style="text-align:left">Sensor</th>
+      <th style="text-align:left">Resolution</th>
+      <th style="text-align:left">FPS</th>
+      <th style="text-align:left">Price</th>
+      <th style="text-align:left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V1</a>
+      </td>
+      <td style="text-align:left">CSI</td>
+      <td style="text-align:left">OV5647</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30-90</td>
+      <td style="text-align:left">$25</td>
+      <td style="text-align:left">FPS depends on resolution</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V2</a>
+      </td>
+      <td style="text-align:left">CSI</td>
+      <td style="text-align:left">IMX219</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30-90</td>
+      <td style="text-align:left">$25</td>
+      <td style="text-align:left">FPS depends on resolution</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam HQ</a>
+      </td>
+      <td style="text-align:left">CSI</td>
+      <td style="text-align:left">IMX477</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30-120</td>
+      <td style="text-align:left">$50</td>
+      <td style="text-align:left">FPS depends on resolution, See <a href="https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107">link </a>for
+        improved lens holder to reduce weight.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.inno-maker.com/product/mipi-cam-290">Veye/Innomaker 290</a>
+      </td>
+      <td style="text-align:left">CSI</td>
+      <td style="text-align:left">IMX290</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">$90</td>
+      <td style="text-align:left">Amazing in low light</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane">Hawkeye Firefly Split Mini Version 4K</a>
+      </td>
+      <td style="text-align:left">HDMI</td>
+      <td style="text-align:left">CMOS</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">60</td>
+      <td style="text-align:left">$75</td>
+      <td style="text-align:left">Good WDR, Onboard Rec</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.logitech.com/en-gb/product/hd-pro-webcam-c920">Logitech C920</a>
+      </td>
+      <td style="text-align:left">USB</td>
+      <td style="text-align:left">--</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">$95</td>
+      <td style="text-align:left">Reportedly &quot;low&quot; latency for usb</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="http://www.hisilicon.com/en/Products">Hi3518</a>
+      </td>
+      <td style="text-align:left">IP</td>
+      <td style="text-align:left">--</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">--</td>
+      <td style="text-align:left">h264/h265</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12">C1 Micro</a>
+      </td>
+      <td style="text-align:left">USB</td>
+      <td style="text-align:left">AR0330</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">&#x20AC;112</td>
+      <td style="text-align:left">h264, 12g weight</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMUSB1">C1</a>
+      </td>
+      <td style="text-align:left">USB</td>
+      <td style="text-align:left">AR0330</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">&#x20AC;100</td>
+      <td style="text-align:left">h264</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO">C1 Pro</a>
+      </td>
+      <td style="text-align:left">USB</td>
+      <td style="text-align:left">IMX290</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">&#x20AC;139</td>
+      <td style="text-align:left">h264</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp">e-con Hyperyon</a>
+      </td>
+      <td style="text-align:left">USB</td>
+      <td style="text-align:left">IMX290</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">60</td>
+      <td style="text-align:left">$240</td>
+      <td style="text-align:left">h264, WDR/HDR</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://a.aliexpress.com/_BPMdpz">FF Split</a>
+      </td>
+      <td style="text-align:left">HDMI</td>
+      <td style="text-align:left">Unknown</td>
+      <td style="text-align:left">
+        <p>4k(record)</p>
+        <p>1080p stream</p>
+      </td>
+      <td style="text-align:left">60</td>
+      <td style="text-align:left">$70</td>
+      <td style="text-align:left">WDR, HDMI-CSI board</td>
+    </tr>
+  </tbody>
+</table>
 
 * Resolutions are maximum, which might not be ideal for performance
 * Higher FPS is possible in certain cases with some cams
@@ -160,7 +285,7 @@ An HDMI camera specifically designed for drones, has onboard recording to Micro-
 
 Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model.
 
-**Note**: to use this camera for Open.HD you need an [HDMI Input](cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4K resolution, the Raspberry Pi is not capable of encoding 4K video. However some other boards supported by Open.HD like the Jetson Nano can handle it.
+**Note**: to use this camera for Open.HD you need an [HDMI Input](cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4K recording it only outputs 1080p30 or 720p60 on the HDMI port.
 
 ## Thermal Cameras
 
