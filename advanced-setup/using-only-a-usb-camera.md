@@ -34,9 +34,9 @@ to
 USBCamera="gst-launch-1.0 videotestsrc... 
 ```
 
-Now turn on the Air and Ground unit. If all is working as intended you will see a test video stream. Now that you know the basics are working we can send the actual video by changing the `USBCamera` setting.
+Now turn on the Air and Ground unit. If all is working as intended you will see a test video stream. Now that you know the basics are working we can send the actual video by changing the `USBCamera` setting to an appropriate pipeline for your USB camera. 
 
-To an appropriate pipeline for your USB camera. Since this depends heavily on the camera used there is no single solution. We are working on adding predefined pipelines for known cameras. Several examples are included in the config file for now, use these as a starting point.
+Since this depends heavily on the camera used there is no single solution. We are working on adding predefined pipelines for known cameras. Several examples are included in the config file for now, use these as a starting point.
 
 
 
