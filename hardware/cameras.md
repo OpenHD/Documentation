@@ -16,7 +16,7 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | FPS depends on resolution |
 | [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | FPS depends on resolution |
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution |
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution, See [link ](https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107)for improved lens holder to reduce weight. |
 | [Veye/Innomaker 290](https://www.inno-maker.com/product/mipi-cam-290) | CSI | IMX290 | 1080p | 30 | $90 | Amazing in low light |
 | [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | HDMI | CMOS | 1080p | 60 | $75 | Good WDR, Onboard Rec |
 | [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) | USB | -- | 1080p | 30 | $95 | Reportedly "low" latency for usb |
