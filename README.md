@@ -6,7 +6,7 @@ Welcome to the Open.HD Introduction Page!
 
 Open.HD uses commercial off-the-shelf \(COTS\) WiFi adapters, however it does not operate them in standard WiFi mode, which is unsuitable for low-latency or very long distance video transmission. Instead, Open.HD configures the WiFi adapter in a way that is similar to a simple broadcast, much like analog video transmission hardware you may be using already.
 
-High definition video, bidrectional UAV telemetry, audio, and RC control signals can all be sent over a single radio link.
+High definition video, bidirectional UAV telemetry, audio, and RC control signals can all be sent over a single radio link.
 
 A multi-platform [Open.HD app ](https://github.com/OpenHD/QOpenHD/releases)is available for live video with a customizable OSD.
 
