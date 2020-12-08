@@ -1,6 +1,6 @@
 # SmartSync
 
-## What is SmartSync and why do i need it?
+## What is SmartSync and why do I need it?
 
 To understand the need for SmartSync we need to refresh the basics.
 
