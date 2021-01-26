@@ -55,7 +55,7 @@ Save the settings and disconnect the Flight Controller.
 
 When connecting a Flight Controller with Ardupilot installed, it is important to also set the correct Stream rates. Else nothing will be shown on the OSD.
 
-You can choose from different subsets of telemetry information and how often you want the Flight Controller \(FC\) to stream that particular set of data per second \(defined in Hz\). These parameters are the so called `SRx_Parameters` where x represents the serial port number. In this walk-through we are using `Telem1` \(aka Serial1\) - hence X=1.
+You can choose from different subsets of telemetry information and how often you want the Flight Controller \(FC\) to stream that particular set of data per second \(defined in Hz\). These parameters are the so called `SRx_Parameters` where x represents the serial ports using Mavlink in an ascending order. (If SERIAL0, SERIAL2, SERIAL6 are using Mavlink, the corresponding Paramaters are SR0_, SR1_ and SR2_).
 
 In order to avoid transmitting telemetry data too often over our radio link, we have to select just the necessary data \(the right subsets of information\) and at the same time find a good compromise on how often this data should be send and thus be updated. The following parameters have to be found working very reliably:
 
