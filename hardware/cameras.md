@@ -10,6 +10,11 @@ While many cameras can potentially work, latency is the biggest issue. Please re
  For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
 {% endhint %}
 
+{% hint style="success" %}
+The best value csi camera is the "small" version of hq camera (IMX477) from arducam
+The best value usb camera is the veye 
+{% endhint %}
+
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
 <table>
