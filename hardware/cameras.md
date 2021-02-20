@@ -11,7 +11,8 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 {% endhint %}
 
 {% hint style="success" %}
-The best value csi camera is the "small" version of hq camera (IMX477) from arducam
+The best value csi camera is the "small" version of hq camera (IMX477) from arducam.
+
 The best value usb camera is the veye 
 {% endhint %}
 
