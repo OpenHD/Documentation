@@ -19,5 +19,9 @@ Don't use a switch or Hub, directly connect the RJ-45 cable. The Pi will be IP `
 When the Ethernet hotspot is on, the WiFi hotspot doesn't work.
 {% endhint %}
 
+{% hint style="warning" %}
+If you are trying to ssh into the groundpi, turn OFF the Ethernet hotspot setting
+{% endhint %}
+
 
 
