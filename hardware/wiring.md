@@ -40,23 +40,16 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 In General plan to specifically allocate power to the PI and specifically to the Wifi Card
 
 POWER PI options:
-
 A-micro usb (not recommended) 
-
 B-soldered wires to micro usb points
-
 C-through soldered wires to gpio (recommend)
 
 AND
 
 POWER WIFI options:
-
 1-micro usb plug only (DOESNT WORK)
-
 2-solder wires from the micro usb power point to the pi wifi usb power points (not recommended)
-
 3-solder wires to the pi USB Power points  (not recommended, could be ok if card is really secure)
-
 4-solder wires directly to wifi card (recommend)
 
 
