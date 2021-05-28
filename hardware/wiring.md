@@ -49,7 +49,7 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 **POWER WIFI options:**
 * **1** micro usb plug only (DOESNT WORK)
 * **2** solder wires from the micro usb power point to the pi wifi usb power points (not recommended)
-* **3** solder wires to the pi USB Power points  (not recommended, could be ok if card is really secure)
+* **3** solder wires to the pi USB Power points 
 * **4** solder wires directly to wifi card (**recommend**)
 
 
