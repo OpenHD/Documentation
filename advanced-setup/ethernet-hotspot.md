@@ -23,5 +23,3 @@ When the Ethernet hotspot is on, the WiFi hotspot doesn't work.
 If you are trying to ssh into the groundpi, turn OFF the Ethernet hotspot setting. If ethernet is connected to a router then get the pi IP address from the router.
 {% endhint %}
 
-
-

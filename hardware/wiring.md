@@ -40,18 +40,19 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 **In General plan to specifically allocate power to the PI and specifically to the Wifi Card**
 
 **POWER PI options:**
-* **A** micro usb (not recommended) 
+
+* **A** micro usb \(not recommended\) 
 * **B** solder wires from bec to micro usb points
-* **C** solder wires from bec to gpio (**recommend**)
+* **C** solder wires from bec to gpio \(**recommend**\)
 
 **AND**
 
 **POWER WIFI options:**
-* **1** micro usb plugged into pi. No other wiring... (DOESNT WORK)
-* **2** solder wires from the micro usb power point to the pi wifi usb power points (not recommended)
-* **3** solder wires from bec to the pi USB Power points 
-* **4** solder wires from bec to wifi card (**recommend**)
 
+* **1** micro usb plugged into pi. No other wiring... \(DOESNT WORK\)
+* **2** solder wires from the micro usb power point to the pi wifi usb power points \(not recommended\)
+* **3** solder wires from bec to the pi USB Power points 
+* **4** solder wires from bec to wifi card \(**recommend**\)
 
 ## Power wiring
 
@@ -85,10 +86,10 @@ To monitor the power on the ground unit, please take a look at the [Ground Power
 
 ### Air
 
-Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will absolutely cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle. 
+Much of the explanation for the Ground wiring also applies to the Air, except that where it is likely no problem to use USB adapters on the Ground, using them in the Air will absolutely cause problems. It is therefore absolutely recommended to solder as much as possible in the Air setup and if you want to use connectors, please use connectors that can withstand the vibrations and stresses of being in a vehicle.
 
 {% hint style="success" %}
-JST connectors can be used as they lock into place and these can be had for quite cheap. The 4 pin variant can be used to replace the standard USB cords. 
+JST connectors can be used as they lock into place and these can be had for quite cheap. The 4 pin variant can be used to replace the standard USB cords.
 {% endhint %}
 
 When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB data lines to the points shown in this diagram:
@@ -99,13 +100,13 @@ When using the Raspberry Pi Zero as an Air SBC you can solder the power and USB 
 
 ### Flight Controller
 
-With Power and WiFi connected the system basics should work, in most cases  however, you will want to hook up some form of flight controller. While the setup of such a controller is covered in [Software Setup](../software-setup/telemetry-and-osd.md), the physical connection also requires some special attention.
+With Power and WiFi connected the system basics should work, in most cases however, you will want to hook up some form of flight controller. While the setup of such a controller is covered in [Software Setup](../software-setup/telemetry-and-osd.md), the physical connection also requires some special attention.
 
 {% hint style="danger" %}
 Several users are a member of the **'I fried my serial port and now I'm using a USB to Serial Adapter**'-club. To prevent membership, please read how to properly connect your Flight Controller.
 {% endhint %}
 
-Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well. 
+Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well.
 
 In order to connect via Serial to a Flight Controller the following pins must be connected:
 

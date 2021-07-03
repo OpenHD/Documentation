@@ -7,16 +7,16 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 {% endhint %}
 
 {% hint style="success" %}
- For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
+For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
 {% endhint %}
 
 {% hint style="success" %}
-The best value csi camera is the "small" version of hq camera (IMX477) from arducam.
+The best value csi camera is the "small" version of hq camera \(IMX477\) from arducam.
 
-The best value usb camera is the veye 
+The best value usb camera is the veye
 {% endhint %}
 
- If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
+If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
 <table>
   <thead>
@@ -59,7 +59,7 @@ The best value usb camera is the veye
       <td style="text-align:left">1080p</td>
       <td style="text-align:left">30-120</td>
       <td style="text-align:left">$50</td>
-      <td style="text-align:left">FPS depends on resolution, See <a href="https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107">link </a>for
+      <td style="text-align:left">FPS depends on resolution, See <a href="https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107">link</a> for
         improved lens holder to reduce weight.</td>
     </tr>
     <tr>
@@ -249,7 +249,7 @@ Amazon store: [Geekworm HDMI CSI2 adapter](https://www.amazon.com/Geekworm-Raspb
 
 Geekworm store: [Geekworm HDMI CSI2 adapter](https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable)
 
-Has a connector compatible with the full size pi models. 
+Has a connector compatible with the full size pi models.
 
 ### Auvidea B102
 
