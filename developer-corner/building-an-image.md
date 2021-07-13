@@ -1,20 +1,18 @@
 # Building an Image
 
+This is one of the first things any new comer to the developer side of the project will want to attempt. This image builder is really designed to distribute images. It takes a base image, downloads and installs packages we need (some our own and others from sources), then applies patches and other changes to suit our needs. 
+
 As of now in all repos “master” branch is referred to as 3.0 and is the new stuff. Branch “2.0” is the working current version of OpenHD for the pi as of this writing. In a few places \(cloudsmith or maybe droneio\) there are “2.1” references which again is the “new” 3.0   
   
 Instructions for build:  
 `git clone https://github.com/OpenHD/Open.HD_Image_Builder.git  
 cd Open.HD_Image_Builder  
 git checkout 2.0`  
-  
-Now you have to modify one line within the image builder code to reflect the build you want...   
-In a text editor go to: `/Open.HD_Image_Builder/stages/02-Packages/00-run-chroot.sh`  
-  
-Change this line to:  
-`OPENHD_PACKAGES="openhd=2.0.10"`  
-  
-now in a console/terminal /Open.HD\_Image\_Builder  
-`./build.sh pi buster`  
+   
+`./build.sh pi buster 2.0.10` 
+
+NOTE for Master branch the build.sh is slightly different where you will have to go into another script and change the package target.  
+In a text editor go to: `00-run-chroot.sh` This is NOT REQUIRED FOR 2.0 BRANCH
 
 
 {% hint style="info" %}
