@@ -14,7 +14,7 @@ Drone.io if successful pushes the Open.HD packages to [cloudsmith](https://cloud
 In summary, if you want to try new code you commit to github, it gets merged, docker builds it automatically with drone.io, new package appears in cloudsmith. Of course it is recommended you build on your local machine and test any code prior to committing to github.
 
 {% hint style="info" %}
-For QOpenHD it is the 2.0-testing repo that gets updated
+untagged commits go to "testing" cloudsmith packages only
 {% endhint %}
 
 {% hint style="info" %}
