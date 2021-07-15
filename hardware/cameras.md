@@ -7,6 +7,10 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 {% endhint %}
 
 {% hint style="success" %}
+An empty air.txt file in the boot partition allows testing without a camera
+{% endhint %}
+
+{% hint style="success" %}
 For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
 {% endhint %}
 
