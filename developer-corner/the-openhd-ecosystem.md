@@ -4,10 +4,10 @@
 
 Github is where all of our code is stored. "Master" branches are the new future 3.0 OpenHD and is unfinished. 2.0 branches are where the current working code resides.
 
-For distribution Open.HD makes use of a build-pipeline in order to speed up the build process and automate some tasks that otherwise would have to be done via means of tedious manual commands.   
-  
-The pipeline starts with Github repository \([Open.HD · GitHub](https://github.com/OpenHD)\).   
-Once new code gets comitted/merged drone.io \([Drone.io](https://cloud.drone.io/)\), which is an "_Open source continuous integration platform built on Docker_" starts taking over. Drone.io uses configuration *.yml files in each github repository and builds a package from a script, packaage.sh, found in the same github repository.  
+For distribution Open.HD makes use of a build-pipeline in order to speed up the build process and automate some tasks that otherwise would have to be done via means of tedious manual commands.
+
+The pipeline starts with Github repository \([Open.HD · GitHub](https://github.com/OpenHD)\).  
+Once new code gets comitted/merged drone.io \([Drone.io](https://cloud.drone.io/)\), which is an "_Open source continuous integration platform built on Docker_" starts taking over. Drone.io uses configuration \*.yml files in each github repository and builds a package from a script, packaage.sh, found in the same github repository.
 
 Drone.io if successful pushes the Open.HD packages to [cloudsmith](https://cloudsmith.io/repos/), which is a universal package management solution, allowing creation, storeage, and shareing ready to install Linux packages.
 
@@ -20,11 +20,4 @@ untagged commits go to "testing" cloudsmith packages only
 {% hint style="info" %}
 In the past, travis was also used to package openhd 2.0
 {% endhint %}
-
-  
-
-
-
-
-
 
