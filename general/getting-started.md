@@ -177,7 +177,7 @@ The Raspberry Pi Zero might take a **long** while to boot up, please allow a cou
 
 When all went **well**, and for the sake of this step-by-step we will assume so, you will be **greeted** by a nice crisp HD **video** streaming from your Air SBC to your Ground SBC, go ahead and **wave** at yourself to get a feel for the **latency**. Please notice that when using the HDMI out to a TV, the TV itself might introduce quite some latency.
 
-Go ahead, **celebrate** your success, and please **let us know** if it worked for you! If for some reason the system does **not** work for you and you are sure you have **followed** all the **steps**, please **contact** us on [Telegram ](https://web.telegram.org/#/im?p=@OpenHD_HDFPV)or on the [Forums ](https://discuss.openhdfpv.com/c/help/6)to get help.
+Go ahead, **celebrate** your success, and please **let us know** if it worked for you! If for some reason the system does **not** work for you and you are sure you have **followed** all the **steps**, please **contact** us on [Telegram ](https://t.me/OpenHD_User)or on the [Forums ](https://discuss.openhdfpv.com/c/help/6)to get help.
 
 ### Next steps
 
