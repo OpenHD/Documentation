@@ -120,7 +120,7 @@ In order to connect via Serial to a Flight Controller the following pins must be
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 
-The Raspberry Pi uses **3.3V** for it's UART, while most Flight Controllers and Micro controllers such as the Arduino use **5V**. Directly connecting these to the Raspberry Pi will ensure membership of the aforementioned club. As with most issues there are two ways around this, a nice way and a cheap and easy way.
+The Raspberry Pi uses **3.3V** level for it's UART, like most Flight Controllers available today (including but not limited to: pixhawk v1, Cube black, Cube orange, Matek FC, holybro FC) while Micro controllers such as the Arduino use **5V**. Directly connecting these to the Raspberry Pi will ensure membership of the aforementioned club. As with most issues there are two ways around this, a nice way and a cheap and easy way.
 
 #### Cheap
 
