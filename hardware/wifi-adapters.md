@@ -40,11 +40,11 @@ This adapter is highly recommended as it is easy to find and works well. Ideal f
 
 #### **Chinese generic RTL8812AU single antenna**
 
-Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theorical power around 2-300mw, it has 1x RPSMA connector and a secondary internal antenna than can be hacked to exclude and use a secondary custom antenna. Relatively easy to make lightweight by removing plastic shell and desoldering USB port. Tested on a 250g drone reached 3km with no problem with stock antenna. Further test will follow. [product example](https://zsecurity.org/product/realtek-rtl8812au-2-4-5-ghz-usb-wireless-adapter/) [alternative example](https://de.aliexpress.com/item/32664378094.html/)
+Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theoretical power around 2-300mw, it has 1x RPSMA connector and a secondary internal antenna that can be hacked to be excluded and use a secondary custom antenna. Relatively easy to make lightweight by removing plastic shell and desoldering USB port. Tested on a 250g drone reached 3km with no problem with stock antenna. Further test will follow. [product example](https://zsecurity.org/product/realtek-rtl8812au-2-4-5-ghz-usb-wireless-adapter/) [alternative example](https://de.aliexpress.com/item/32664378094.html/)
 
 #### **Chinese generic RTL8812AU double antenna**
 
-Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theorical power around 2-300mw, it has 2x RPSMA connectors  Relatively easy to make lightweight by removing plastic shell, removing RP-SMA connectors and desoldering USB port. It require additional cooling if used in high power configuration. Further test will follow. [product example](https://www.alibaba.com/product-detail/High-power-1200Mbps-Realtek-RTL8812au-wifi_62453551219.html/)  [alternative example](https://de.aliexpress.com/item/1005002036043894.html/)
+Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theoretical power around 2-300mw, it has 2x RPSMA connectors  Relatively easy to make lightweight by removing plastic shell, removing RP-SMA connectors and desoldering USB port. It require additional cooling if used in high power configuration. Further test will follow. [product example](https://www.alibaba.com/product-detail/High-power-1200Mbps-Realtek-RTL8812au-wifi_62453551219.html/)  [alternative example](https://de.aliexpress.com/item/1005002036043894.html/)
 
 #### **Ubiquit Wifistations**
 
