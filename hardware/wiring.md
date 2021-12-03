@@ -136,6 +136,19 @@ There are many different types of logic level converters out there, they are mos
 
 To see some background, please check this [Sparkfun](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all) link.
 
+### Camera extension cables
+
+
+#### CSI camera
+
+Is certally possible extend CSI camera cables if needed. There are 2 type of cables: "Pi Zero" stype with 22 pin and 0.5mm pitch and "normal" pi with 15 pin and 1mm pitch. 
+Cables are usually available from Pi store or usual Ali Express [15 pin example](https://thepihut.com/products/flex-cable-for-raspberry-pi-camera-or-display-1-meter/) [22 pin example](https://thepihut.com/products/raspberry-pi-zero-camera-cable-300mm/) [15 pin Aliepress](https://www.aliexpress.com/item/32766766890.html/) [22 pin Aliepress](https://www.aliexpress.com/item/32762343933/). Different lenght are available depending from the source. 
+It is also possible use adapters in order to use 15pin cables with 22 pin cables. [15 pin to 22 pin adapter](https://thepihut.com/products/camera-cable-joiner-for-raspberry-pi-15-pin-to-22-pin/) or simply extend current cable using [15 pin to 15 pin joyner](https://thepihut.com/products/camera-cable-joiner-extender-for-raspberry-pi/) or [22 pin to 22pin joyner](https://thepihut.com/products/zero-camera-cable-joiner-for-raspberry-pi-22-pin-to-22-pin/).
+As side note, the last 2 adapter, cannot be used with cables with exposed pin on the same side because they mirror the pinout ( 1,2,...15 to 15,14,...1) so cables with pin on the opposite side must be use in order to restore correct pinout. In general nothing happen if the wrong cable is use because there are built in protections but of couse OpenHD will not complete the boot due to unable to detect camera. 
+
+It is also important to advice that longer is the cable, easieris to receive and transmit interferences. Is so suggested to keep cables and short as possible and in case of interference on video or to other components (such like WiFi card, FC, servos etc) shield the cable using aluminium foil. 
+
+
 ### Antenna tracker
 
 On the ground SBC you might want to attach an Antenna Tracker, most of these units require us to output the Mavlink data via Serial communication. When only connecting the TX from the Raspberry Pi to the RX of the Ground station no special consideration needs to be given to the voltage levels. Most Micro controllers will allow the 3.3V of the Raspberry Pi as a logic signal.
