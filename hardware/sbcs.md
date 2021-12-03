@@ -13,13 +13,13 @@ While support for SBC's other than the Raspberry Pi is underway, currently the o
 | Raspberry Pi 4B | ✔ | ✔ |  |
 | Raspberry Pi Zero | ✔ | ❌ | 1 |
 | Raspberry Pi Zero W | ✔ | ❌ | 1 |
-| Raspberry Pi Zero 2 W | ✔ | ❌ | 1 |
+| Raspberry Pi Zero 2 W | ✔ | ❌ | 1, 4 |
 | Raspberry Pi Compute Module CM3+ | ✔ | ✔ | 3 |
 
 1. it is **not** a good **idea** to use a Pi **Zero**, Pi **Zero 2 W**  or a Pi **3A\(+\)** on the **ground** side, you **may** get it to **work** but the resource requirements \(particularly GPU **memory**\) on the ground are **higher** than they are on the **air** side.
 2. Will **work** but does **not** have internal dual band **hotspot** which will reduce functionality
 3. Requires a `dt-blob.bin` file for your **carrier** board when used as AIR to support **dual cameras** at the moment, ask for help in Telegram
-
+4. Zero 2w is currently supported by replacing files in the SD whit the one available on the telegram support group. Once SD has been flashed, need to be read by the pc and file replaced. Future version of OpenHD will have dedicate correct file for this board. 
 ### Future support
 
 The team is hard at work to support more SBC's. Active development is done on these SBC's:
