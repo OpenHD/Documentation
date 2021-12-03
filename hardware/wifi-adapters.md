@@ -10,6 +10,8 @@ Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ALFA AWUS036ACH | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
 | ASUS USB-AC56 | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
+| Chinese generic RTL8812AU single antenna | 5.8 | unknown | RTL8812AU | X | X |  |1x RP-SMA |
+| Chinese generic RTL8812AU double antenna | 5.8 | unknown | RTL8812AU | X | X |  |2x RP-SMA |
 | ALFA AWUS036NHA | 2.3-2.4 | 280mW | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation EXT | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
@@ -35,6 +37,14 @@ This adapter is highly recommended as it is easy to find and works well. Ideal f
 
 * [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=G%2Bnb%2FcnfLEByfpIAnz2OrQ%3D%3D&fcc_id=UQ23668)
 * [WikiDevi](https://deviwiki.com/wiki/ALFA_Network_AWUS036NHA)
+
+#### **Chinese generic RTL8812AU single antenna**
+
+Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theorical power around 2-300mw, it has 1x RPSMA connector and a secondary internal antenna than can be hacked to exclude and use a secondary custom antenna. Relatively easy to make lightweight by removing plastic shell and desoldering USB port. Tested on a 250g drone reached 3km with no problem with stock antenna. Further test will follow. [product example](https://zsecurity.org/product/realtek-rtl8812au-2-4-5-ghz-usb-wireless-adapter/) [alternative example](https://de.aliexpress.com/item/32664378094.html/)
+
+#### **Chinese generic RTL8812AU double antenna**
+
+Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theorical power around 2-300mw, it has 2x RPSMA connectors  Relatively easy to make lightweight by removing plastic shell, removing RP-SMA connectors and desoldering USB port. It require additional cooling if used in high power configuration. Further test will follow. [product example](https://www.alibaba.com/product-detail/High-power-1200Mbps-Realtek-RTL8812au-wifi_62453551219.html/)  [alternative example](https://de.aliexpress.com/item/1005002036043894.html/)
 
 #### **Ubiquit Wifistations**
 
