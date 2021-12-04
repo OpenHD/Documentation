@@ -55,6 +55,16 @@ If you have tested a camera, please let us know how it performs by filling out t
       <td style="text-align:left">$25</td>
       <td style="text-align:left">FPS depends on resolution</td>
     </tr>
+     <tr>
+      <td style="text-align:left"><a href="https://uk.pi-supply.com/products/camera-module-for-official-raspberry-pi-camera-board-v2-8mp-sensor-160-degree">Pi Cam V2 plus OTS (off the shelf) sensor</a>
+      </td>
+      <td style="text-align:left">CSI</td>
+      <td style="text-align:left">IMX219</td>
+      <td style="text-align:left">1080p</td>
+      <td style="text-align:left">30-90<4/td>
+      <td style="text-align:left">$25 + $20</td>
+      <td style="text-align:left">FPS depends on resolution. 3rd party sensor with 160 FOV 8mm lens. Custom lens possible plus more light for the sensor</td>
+    </tr>
     <tr>
       <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam HQ</a>
       </td>
@@ -165,6 +175,12 @@ The Raspberry Pi Zero requires special CSI cables since it has a smaller CSI con
 * 8 Cm Raspberry Pi Zero CSI cable: [https://www.aliexpress.com/item/33032182445.html](https://www.aliexpress.com/item/33032182445.html)
 
 Feel free to use any other cable you might find, these two are known to work.
+
+### OTS sensor plus lens for Pi camera V2
+
+Not official from Raspberry but this 3rd party sensor has support for 8mm lens allowing the user to select any OTS 8mm mounth lens for custom FOV. Compared to original optic, this one provide more light to the sensor allowing it to operate better. It is plug and play and doesn't require almost any tool for replacement (double side tape provided)
+* [Aliexpress example](https://www.aliexpress.com/i/33015616449.html)
+* [Amazon example](https://www.amazon.co.uk/MakerHawk-Raspberry-Compatible-Supporting-Resolution/dp/B07HL3Q58Z)
 
 ### Latency considerations
 
