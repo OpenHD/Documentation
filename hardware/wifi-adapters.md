@@ -10,8 +10,8 @@ Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ALFA AWUS036ACH | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
 | ASUS USB-AC56 | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
-| Chinese generic RTL8812AU single antenna | 5.8 | unknown (stimated 2-300mw) | RTL8812AU | X | X |  |1x RP-SMA |
-| Chinese generic RTL8812AU double antenna | 5.8 | unknown (stimated 2-300mw) | RTL8812AU | X | X | X |2x RP-SMA |
+| Chinese generic RTL8812AU single antenna | 5.8 | unknown (estimated 2-300mw) | RTL8812AU | X | X |  |1x RP-SMA |
+| Chinese generic RTL8812AU double antenna | 5.8 | unknown (estimated 2-300mw) | RTL8812AU | X | X | X |2x RP-SMA |
 | ALFA AWUS036NHA | 2.3-2.4 | 280mW | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation EXT | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
@@ -49,7 +49,7 @@ Included antenna works ok but is quite big and heavy. It is suggested to replace
 #### **Chinese generic RTL8812AU double antenna**
 
 Cheap and functional RTL8812AU card. This adapter can be found under different names on Ali Express, Amazon, Ebay etc. Theoretical power around 2-300mw, it has 2x RPSMA connectors  Relatively easy to make lightweight by removing plastic shell, removing RP-SMA connectors and desoldering USB port. It require additional cooling if used in high power configuration. It has been tested with maximum power = 58. Further test will follow. 
-Included antennae work ok but they are quite big and heavy. It is suggested to replace them with proper 5-5.9ghz antenna in long range setups 
+Included antennae works ok but they are quite big and heavy. It is suggested to replace them with proper 5-5.9ghz antenna in long range setups 
 
 * [product example](https://www.alibaba.com/product-detail/High-power-1200Mbps-Realtek-RTL8812au-wifi_62453551219.html) 
 * [alternative example](https://de.aliexpress.com/item/1005002036043894.html)
