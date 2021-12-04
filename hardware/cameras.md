@@ -178,7 +178,7 @@ Feel free to use any other cable you might find, these two are known to work.
 
 ### OTS sensor plus lens for Pi camera V2
 
-Not official from Raspberry but this 3rd party sensor has support for 8mm lens allowing the user to select any OTS 8mm mounth lens for custom FOV. Compared to original optic, this one provide more light to the sensor allowing it to operate better. It is plug and play and doesn't require almost any tool for replacement (double side tape provided)
+Not official from Raspberry but this 3rd party sensor has support for 8mm lens allowing the user to select any OTS 8mm mount lens for custom FOV. Compared to original optic, this one provides more light to the sensor allowing it to operate better. It is plug and play and doesn't require almost any tool for replacement (double side tape provided)
 * [Aliexpress example](https://www.aliexpress.com/i/33015616449.html)
 * [Amazon example](https://www.amazon.co.uk/MakerHawk-Raspberry-Compatible-Supporting-Resolution/dp/B07HL3Q58Z)
 
