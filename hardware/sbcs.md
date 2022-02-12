@@ -2,19 +2,19 @@
 
 While support for SBC's other than the Raspberry Pi is underway, currently the only officially supported devices are:
 
-| SBC                                  | AIR | GROUND | Notes |
-| ------------------------------------ | :-: | :----: | ----- |
-| Raspberry Pi 2B+                     |  ✔  |    ❌   |       |
-| Raspberry Pi 3A                      |  ✔  |    ❌   | 1     |
-| Raspberry Pi 3A+                     |  ✔  |    ❌   | 1     |
-| Raspberry Pi 3B                      |  ✔  |    ✔   | 2     |
-| Pi 3B mini (unofficial)              |  ✔  |    ❌   | 2     |
-| Raspberry Pi 3B+                     |  ✔  |    ✔   |       |
-| Raspberry Pi 4B                      |  ✔  |    ✔   |       |
-| Raspberry Pi Zero (not recommended)  |  ✔  |    ❌   | 1     |
-| Raspberry Pi Zero W (not recommended |  ✔  |    ❌   | 1     |
-| Raspberry Pi Zero 2 W                |  ✔  |    ❌   | 1, 4  |
-| Raspberry Pi Compute Module CM3+     |  ✔  |    ✔   | 3     |
+| SBC                                   | AIR | GROUND | Notes |
+| ------------------------------------- | :-: | :----: | ----- |
+| Raspberry Pi 2B+                      |  ✔  |    ❌   |       |
+| Raspberry Pi 3A                       |  ✔  |    ❌   | 1     |
+| Raspberry Pi 3A+                      |  ✔  |    ❌   | 1     |
+| Raspberry Pi 3B                       |  ✔  |    ✔   | 2     |
+| Pi 3B mini (unofficial)               |  ✔  |    ❌   | 2     |
+| Raspberry Pi 3B+                      |  ✔  |    ✔   |       |
+| Raspberry Pi 4B                       |  ✔  |    ✔   |       |
+| Raspberry Pi Zero (not recommended)   |  ✔  |    ❌   | 1     |
+| Raspberry Pi Zero W (not recommended) |  ✔  |    ❌   | 1     |
+| Raspberry Pi Zero 2 W                 |  ✔  |    ❌   | 1, 4  |
+| Raspberry Pi Compute Module CM3+      |  ✔  |    ✔   | 3     |
 
 1. it is **not** a good **idea** to use a Pi **Zero**, Pi **Zero 2 W** or a Pi **3A(+)** on the **ground** side, you **may** get it to **work** but the resource requirements (particularly GPU **memory**) on the ground are **higher** than they are on the **air** side.
 2. Will **work** but does **not** have internal dual band **hotspot** which will reduce functionality
