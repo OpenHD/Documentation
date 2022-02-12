@@ -12,7 +12,11 @@ While support for SBC's other than the Raspberry Pi is underway, currently the o
 | Raspberry Pi 4B                       |          yes         | yes |       |
 | Raspberry Pi Zero (not recommended)   | not yet, maybe never |  no |       |
 | Raspberry Pi Zero W (not recommended) | not yet, maybe never |  no |       |
+| Raspberry Pi Zero 2                   |          yes         |  no |       |
+| Raspberry Pi Zero 2 W                 |          yes         |  no |       |
 | Raspberry Pi Compute Module CM3+      |          yes         | yes | 3     |
+| Jetson Nano 2gb                       |          yes         | yes |       |
+| Jetson Nano 4gb                       |          yes         | yes |       |
 
 
 
