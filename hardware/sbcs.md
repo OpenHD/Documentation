@@ -2,21 +2,22 @@
 
 While support for SBC's other than the Raspberry Pi is underway, currently the only officially supported devices are:
 
-| SBC                                   |          AIR         | GND | Notes |
-| ------------------------------------- | :------------------: | :-: | ----- |
-| Raspberry Pi 2B+                      |          yes         |  no |       |
-| Raspberry Pi 3A                       |          yes         |  no | 1     |
-| Raspberry Pi 3A+                      |          yes         |  no | 1     |
-| Raspberry Pi 3B                       |          yes         | yes | 2     |
-| Raspberry Pi 3B+                      |          yes         | yes |       |
-| Raspberry Pi 4B                       |          yes         | yes |       |
-| Raspberry Pi Zero (not recommended)   | not yet, maybe never |  no |       |
-| Raspberry Pi Zero W (not recommended) | not yet, maybe never |  no |       |
-| Raspberry Pi Zero 2                   |          yes         |  no |       |
-| Raspberry Pi Zero 2 W                 |          yes         |  no |       |
-| Raspberry Pi Compute Module CM3+      |          yes         | yes | 3     |
-| Jetson Nano 2gb                       |          yes         | yes |       |
-| Jetson Nano 4gb                       |          yes         | yes |       |
+| SBC                                   |          AIR         | GND | Notes | recommended for |
+| ------------------------------------- | :------------------: | :-: | ----- | --------------- |
+| Raspberry Pi 2B+                      |          yes         |  no |       |                 |
+| Raspberry Pi 3A                       |          yes         |  no | 1     |                 |
+| Raspberry Pi 3A+                      |          yes         |  no | 1     |                 |
+| Raspberry Pi 3B                       |          yes         | yes | 2     |                 |
+| Raspberry Pi 3B+                      |          yes         | yes |       |                 |
+| Raspberry Pi 4B                       |          yes         | yes |       |      Ground     |
+| Raspberry Pi Zero (not recommended)   | not yet, maybe never |  no |       |                 |
+| Raspberry Pi Zero W (not recommended) | not yet, maybe never |  no |       |                 |
+| Raspberry Pi Zero 2                   |          yes         |  no |       |                 |
+| Raspberry Pi Zero 2 W                 |          yes         |  no |       |                 |
+| Raspberry Pi Compute Module CM3+      |          yes         | yes | 3     |                 |
+| Raspberry Pi Compute Module CM4       |          yes         | yes | 3     |      Ground     |
+| Jetson Nano 2gb                       |          yes         | yes |       |       Air       |
+| Jetson Nano 4gb                       |          yes         | yes |       |       Air       |
 
 
 
