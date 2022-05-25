@@ -10,8 +10,8 @@ While support for SBC's other than the Raspberry Pi is underway, currently the o
 | Raspberry Pi 3B                       |  yes      | yes | 2     |                   |
 | Raspberry Pi 3B+                      |  yes      | yes |       |                   |
 | Raspberry Pi 4B                       |  yes      | yes |       |       Ground      |
-| Raspberry Pi Zero (not recommended)   |  no       |  no | 4     |                   |
-| Raspberry Pi Zero W (not recommended) |  no       |  no | 4     |                   |
+| Raspberry Pi Zero                     |  no       |  no | 4     |                   |
+| Raspberry Pi Zero W                   |  no       |  no | 4     |                   |
 | Raspberry Pi Zero 2                   |  yes      |  no |       |                   |
 | Raspberry Pi Zero 2 W                 |  yes      |  no |       |                   |
 | Raspberry Pi Compute Module CM3+      |  yes      | yes | 3     |                   |
