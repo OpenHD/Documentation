@@ -11,9 +11,16 @@ You can make a single or monthly donation of any amount.
 ### Contributing to Open.HD
 
 The Open.HD project uses github to manage its source code.
-The Code is split into multiple Repositories which itself have multiple repositories.
+The Code is split into multiple Repositories which itself have multiple Branches.
 Github is also used to build all Packages and Images.
 Packages are hosted on Cloudsmith, which sponsors OpenHD and provides it's service for free to us.
+
+### Contacting Developers
+
+If you're interested in contributing to Open.HD the easiest way is to join our [Telegram Development Channel](https://t.me/openhddev).
+The Core-Development Group is also doing weekly meetings on Discord, those are not open for everyone, but occasionally we invite guests.
+If you are interested in cooperating with OpenHD, just write us a message at: developers@openhdfpv.org and we'll schedule a meeting.
+
 
 ### Repositories
 
@@ -22,7 +29,14 @@ The most important ones are:
 * [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD), the main Software, which handles all the features which are needed to run the OpenHD Project.
 * [OpenHD/QOpenHD](https://github.com/OpenHD/QOpenHD), the GUI/Configuator App which displays the Video and OSD, but also is the interface for OpenHD.
 * [OpenHD/Open.HD\_Image\_Builder](https://github.com/OpenHD/Open.HD_Image_Builder), the repository containing the Script which builds all our Images.
-* [OpenHD/Open.HD\ Kernel\_Builder](https://github.com/OpenHD/OpenHDKernelBuilder), the repository containing the Script which builds all our Kernels.
+* [OpenHD/Open.HD\_Image\_Builder](https://github.com/OpenHD/OpenHDKernelBuilder), the repository containing the Script which builds all our Kernels.
+
+### Branches
+
+The most stable code is usually hosted in #master.
+The CoreDevs usually use branches like "consti-test", "rapha-test",... .
+Currently the code which is actively developed is in #2.1-milestones.
+
 
 ### Git
 
@@ -174,11 +188,13 @@ Notice that our new branch has been created on Github as well, but in our own ac
 
 Now we need to open a pull request, and Git has helpfully provided a link we can copy/paste \(or depending on the terminal you're using, click\).
 
-In your pull request, make sure you describe what you changed, why it was needed, and the result of any testing you've done with those changes. If you need help building a new Raspberry Pi image that can be tested, ask in the [Telegram channel](https://t.me/OpenHD_HDFPV).
+In your pull request, make sure you describe what you changed, why it was needed, and the result of any testing you've done with those changes. If you need help building a new Image that can be tested, ask in the [Telegram Development Channel](https://t.me/openhddev).
 
 ### Releases \(for those managing official releases\)
 
-To make a new release, you just need to create a tag in your local Open.HD repo and push it to the `HD-Fpv/Open.HD` repository on Github.
+Releases are only made by the Core-Dev-Team, so please do not try to do it yourself. It's
+
+To make a new release, you just need to create a tag in your local Open.HD repo and push it to the `Open.HD` repository on Github.
 
 In a Git GUI client, this very easy but how you do it will differ in each client. You can still follow the general steps below but use the GUI to do the same thing the commands do.
 

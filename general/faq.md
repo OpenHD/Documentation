@@ -12,7 +12,9 @@ Please read the rest of the documentation and do your homework when you make you
 
 On a Raspberry Pi, 110ms “glass to glass”. Although most setups are in the 125ms range.
 
-On other boards it can be significantly lower, as low as 40-60ms has been demonstrated with the Jetson Nano and a carefully selected camera. A public release supporting SBC's other than the Raspberry is forthcoming.
+On other boards it can be significantly lower, as low as NOOFFICIALNUMBER has been demonstrated with the Jetson Nano and a carefully selected camera.
+
+The lowest latency can be archieved with Custom Hardware, which is currently in development. (https://www.patreon.com/OpenHD)
 
 #### What kind of range can I expect?
 
@@ -24,7 +26,8 @@ Carefully chosen WiFi cards, antennas, and optionally an antenna tracker should 
 
 How long does OpenHD take to regain a lost “connection”?
 
-It depends on the kind of camera you are using, if it is a Raspberry Pi camera and the settings are still left on the defaults, the system should recover from serious interference within 300ms at most, more likely the interference will only partially disrupt the video and you will see momentary noise that will clear up rapidly.
+#Needs Testing
+<!-- It depends on the kind of camera you are using, if it is a Raspberry Pi camera and the settings are still left on the defaults, the system should recover from serious interference within 300ms at most, more likely the interference will only partially disrupt the video and you will see momentary noise that will clear up rapidly.  -->
 
 #### When I lose connection will I see a “blue screen”?
 
@@ -33,6 +36,8 @@ OpenHD does not generate a solid blue screen when interference is encountered. I
 #### Does OpenHD interfere with my RC transmitter?
 
 You can use 2 different bands, 5.8Ghz for OpenHD, and 2.4Ghz for RC. You can also send RC control through OpenHD itself, and avoid using 2 different transmitters. There are tradeoffs however, control latency may be slightly higher than a dedicated RC system, and there are currently some limitations on the channel count.
+
+If you're planning a long range flight and have the "best" setup for range, we advise to use the OpenHD ControlLink, because even with carefully seperated frequencies the range can be affected by any radio signal, because it "increases the noise floor".
 
 #### What is a Raspberry Pi?
 
@@ -48,23 +53,27 @@ You can optionally use 2x WiFi adapters on the ground side for "diversity", whic
 
 In OpenHD 2.0, no. The system is designed around the Raspberry Pi as it is cheap, widely available, and the video encoder/decoder hardware works properly.
 
-In OpenHD 2.1, several other boards will be supported, however there will be some hardware limitations. Most other boards do not have anywhere near the level of stable software support that the Raspberry Pi benefits from. Most other boards also do not have a CSI camera connector, and even those that do may not have properly working video encoder hardware. On those boards, the only option will be IP/USB cameras that have an internal h264 video encoder.
+In OpenHD 2.2, most of the code has been rewritten, this means that we're much less hardware bound.
+We support the Nvidia Jetson Platform, which will inprove latency a lot. We've also opend up the possibility to add other platforms, but those need long testing and evaluation and development work before being supported. This progress is quite a lot of work, so most boards will not get support ever. 
 
-Note that webcams and other USB video devices that do not have an internal h264 video encoder are not usable with OpenHD, the USB interface is not capable of transferring 720p60 or 1080p30/60 video.
 
 #### Which WiFi adapters do I need?
 
-See the wiki: [Supported WiFi Adapters](https://github.com/HD-Fpv/Open.HD/wiki/Hardware-~-Supported-WiFi-adapters)
+See the wiki: [Supported WiFi Adapters](link of the wifi-card-page)
 
 #### Can I use this other WiFi adapter that’s not on the list?
 
-Perhaps, but most likely not.
-
 Only a few WiFi adapters are able to work the way OpenHD needs them to, which limits the selection of WiFi adapters you can use.
+We use a custom Kernel, which needs drivers for each new card. Basic requierements are Monitor Mode and Package injection.
+If the card is stable in both and the injection rate is high enough we can potentionally integrate it.
 
 #### Why can’t I just use the Raspberry Pi onboard WiFi?
 
 The built-in WiFi chip on the Raspberry Pi does not work the way OpenHD needs it to for video broadcast, however it can still be used for "hotspot" purposes, the you can connect Android and other devices to the ground station over normal WiFi to receive the video signal.
+
+#### Why can’t I use the wifi-hotspot on Nvidia Jetson?
+
+The Jetson does not have an included wifi-card, so it can't be used to make a hotspot. But you can use usb-tethering or Ethernet.
 
 #### Why am I seeing noise or interference in the video?
 
@@ -80,11 +89,13 @@ It is generally necessary to solder power wires and even the USB data wires dire
 
 #### Why do I get a low power warning?
 
-In OpenHD 2.0 you should not be seeing a power warning, however you must still carefully check and wire the WiFi cards correctly to avoid power issues.
+In OpenHD 2.2 you can get low poer warnings, when your BEC is not able to supply enough power. Please change it to a more powerfull one.
+In addition to that carefully check and wire the WiFi cards correctly to avoid power issues.
 
 #### How many WiFi adapters can I use?
 
-2x on the air side, 3x on the ground with a Pi3b+. If you are going to connect this many WiFi adapters you are strongly encouraged to use a Pi4b instead of a Pi3b+ for stability.
+Currently only one Wifi adapter is usable, but this will change in later releases.
+<!-- 2x on the air side, 3x on the ground with a Pi3b+. If you are going to connect this many WiFi adapters you are strongly encouraged to use a Pi4b instead of a Pi3b+ for stability. -->
 
 You can use 4x with a Pi4b, but this is overkill.
 
@@ -96,15 +107,16 @@ You can use 4x with a Pi4b, but this is overkill.
 * AliExpress
 * TaoBao \(chinese marketplace\)
 
-Raspberry Pi are the easiest to find, and you can use any model, but there is no reason to use the old original Raspberry Pi and it is unlikely to work very well.
+Currently it's not that easy to buy all the hardware you need, just because of the Global Chip Shortage.
+Try to use https://rpilocator.com/ or buy used Hardware
+
+Keep in mind that OpenHD2.2 dropped support for Pi-Zero, Pi1, Pi2 (lower than 1.2)
 
 #### Is OpenHD legal to use?
 
 OpenHD uses normal WiFi hardware, which is perfectly legal to buy and use.
 
-However, some frequencies such as the 2.3Ghz range, and high power settings, might not be legal in your location.
-
-OpenHD can be disruptive to nearby WiFi networks due to the continuous broadcast, and some of the things that can be changed in the OpenHD settings file can make this worse.
+OpenHD can be disruptive to nearby WiFi networks due to the continuous broadcast, OpenHD starts with 25mw, which is allowed in every part of the world. But it can be set up to use power levels and frequencies, which might not be legal in your location.
 
 You are responsible for your use of the system, but please ask us for advice if you are concerned about a particular setting or use case.
 
@@ -112,7 +124,7 @@ You are responsible for your use of the system, but please ask us for advice if 
 
 Yes, you can receive the video with any GroundPi that is configured to the same frequency as your AirPi.
 
-The system is not encrypted in OpenHD 2.0, but encryption is being added.
+The system is not encrypted in OpenHD 2.2, encryption is currently not on the ToDo list, because we do not want any affiliation with military usage.
 
 #### Where did my recorded video go?
 
@@ -120,11 +132,13 @@ See the wiki: [Ground Recording](https://github.com/OpenHD/Open.HD/wiki/Software
 
 #### Why is the OSD not on the video recording?
 
-In older versions of OpenHD, this was not easily possible due to the way the GPU works in the Raspberry Pi, however it is being added in the new QOpenHD OSD, which can run on the ground station.
+Since the Video-Stream does not include the OSD, because it is overlayed by QOpenHD, it can not be directly recorded on the ground. However you can use a tethered device and record it's screen via e.g. OBS.
 
 #### What is diversity?
 
 A way to improve the reliability and quality of video reception.
+
+Diversity is currently not enabled in 2.2 but will be added in later versions.
 
 If you connect 2 or more WiFi adapters to the GroundPi, whichever adapter is currently receiving the best signal will be used. This is entirely automatic and occurs in realtime, you do not have to change any settings or monitor anything.
 
@@ -140,11 +154,11 @@ There is a cost to using FEC, the radio bandwidth is a little bit higher \(or vi
 
 #### Is latency going to improve in future updates?
 
-Latency is almost entirely a result of the kind of video encoder and decoder hardware being used on the AirPi and GroundPi.
+Latency is almost entirely a result of the kind of video encoder and decoder hardware being used on the AirPi and GroundPi. And the latency of the HDMI-Screen.
+With the Raspberry Pi, as encoder there is a lower limit to the minimum latency that can be achieved. 
+h265 can lower the latency a lot, but there is no raspberrySBC which is able to encode h265, but the Nvidia jetson will reduce latency.
 
-With the Raspberry Pi, there is a lower limit to the minimum latency that can be achieved. This is generally somewhere between 80-90ms, and that requires a particular configuration.
-
-On other boards, latency as low as 40-60ms is possible with a carefully selected camera and video decode/receive hardware.
+With custom Hardware we are able to reduce the latency even more, but NDA's forbid us to release how.
 
 #### What do these numbers mean on the OSD display?
 
@@ -152,21 +166,16 @@ See  [Telemetry and OSD](../software-setup/telemetry-and-osd.md)
 
 #### Which RC protocols are supported?
 
-The AirPi can send SUMD/Graupner, IBUS/FlySky, SRXL/Multiplex, and Mavlink to the flight controller board.
-
-If you are using Mavlink for both RC and telemetry you will only need to wire 1 pair of UART wires between the AirPi and the flight controller.
+We reduced the RC protocols down to only MAVlink, because nearly every hardware supports Mavlink.
 
 #### Which telemetry protocols are supported?
 
-Mavlink, FrSky, LTM, Vector, and a few others will work with the OSD.
-
-Mavlink supports 2-way communication in OpenHD, which means you can connect a GCS to the ground station and the GCS can change the flight controller settings \(for Ardupilot in this case\).
+We reduced the telemetry protocols down to only MAVlink, because nearly every hardware supports Mavlink Telemetry.
 
 #### What is an AirPi / GroundPi?
 
-This is a shorter way to refer to which Raspberry Pi is transmitting video and which one is transmitting RC and/or uplink telemetry.
-
-They are configured a bit differently depending on their role, and it is critical for each one to know what it is supposed to be doing. At the moment this is determined by looking for a Raspberry Pi camera or a file called /boot/air.txt, if either are found the system knows it is supposed to act as an AirPi and will configure itself accordingly.
+This is a shorter way to refer to which SBC is transmitting video and which one is transmitting RC and/or uplink telemetry.
+Both are using the same images.
 
 #### How about Circular vs. Linear polarized antennas?
 
@@ -186,7 +195,7 @@ Use the system! There are a _lot_ of different features and settings and possibl
 
 We also frequently need translators who can read/write both english and another language, as the system supports translation in the OSD.
 
-And of course if you have an idea for something you would like to see use add or change, let us know in Github Issues, on the forum, or on Telegram.
+And of course if you have an idea for something you would like to see use add or change, let us know in Github Issues, on the Forum, Discord, or on Telegram.
 
 If you want to support the project financially, you can do so via [OpenCollective](https://opencollective.com/openhd).
 
