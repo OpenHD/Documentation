@@ -10,15 +10,19 @@ You can make a single or monthly donation of any amount.
 
 ### Contributing to Open.HD
 
-The Open.HD project uses git to manage the source code used to build Raspberry Pi images, as well as companion apps for desktops and smartphones.
+The Open.HD project uses github to manage its source code.
+The Code is split into multiple Repositories which itself have multiple repositories.
+Github is also used to build all Packages and Images.
+Packages are hosted on Cloudsmith, which sponsors OpenHD and provides it's service for free to us.
 
 ### Repositories
 
 There are several repositories for different parts of the Open.HD system.
-
-* [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD), the main repository containing the custom code for sending/receiving video, telemetry, and RC control data
-* [OpenHD/Open.HD\_Image\_Builder](https://github.com/OpenHD/Open.HD_Image_Builder), the repository containing the scripts used to build air/ground images for the Raspberry Pi
-* [OpenHD/QOpenHD](https://github.com/OpenHD/QOpenHD), the new desktop/smartphone/ground station OSD and settings app
+The most important ones are:
+* [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD), the main Software, which handles all the features which are needed to run the OpenHD Project.
+* [OpenHD/QOpenHD](https://github.com/OpenHD/QOpenHD), the GUI/Configuator App which displays the Video and OSD, but also is the interface for OpenHD.
+* [OpenHD/Open.HD\_Image\_Builder](https://github.com/OpenHD/Open.HD_Image_Builder), the repository containing the Script which builds all our Images.
+* [OpenHD/Open.HD\ Kernel \_Builder](https://github.com/OpenHD/OpenHDKernelBuilder), the repository containing the Script which builds all our Kernels.
 
 ### Git
 
