@@ -22,7 +22,7 @@ The most important ones are:
 * [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD), the main Software, which handles all the features which are needed to run the OpenHD Project.
 * [OpenHD/QOpenHD](https://github.com/OpenHD/QOpenHD), the GUI/Configuator App which displays the Video and OSD, but also is the interface for OpenHD.
 * [OpenHD/Open.HD\_Image\_Builder](https://github.com/OpenHD/Open.HD_Image_Builder), the repository containing the Script which builds all our Images.
-* [OpenHD/Open.HD\ Kernel \_Builder](https://github.com/OpenHD/OpenHDKernelBuilder), the repository containing the Script which builds all our Kernels.
+* [OpenHD/Open.HD\ Kernel\_Builder](https://github.com/OpenHD/OpenHDKernelBuilder), the repository containing the Script which builds all our Kernels.
 
 ### Git
 
