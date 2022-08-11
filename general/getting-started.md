@@ -11,12 +11,12 @@ If you have a pre-existing hardware requirement that is not met in this guide, i
 Assuming you are starting with nothing, we recommend you get the following hardware:
 
 * A Raspberry Pi4B for the Ground SBC
-* A Raspberry Pi3A+ or Raspberry Pi Zero for the Air SBC
+* A Raspberry Raspberry Pi Zero 2 for the Air SBC or a Nvidia Jetson Nano (for lower latency)
 * Two WiFi cards that support the band you want to use. \(See [WiFi Adapters](../hardware/wifi-adapters.md)\)
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen \(use your TV for testing!\)
 * A mobile device capable of running QOpenHD and connecting to the Ground SBC
-* Two BEC's for powering the Air and Ground SBC's. \(See Wiring -&gt; Power\)
+* Four BEC's for powering the Air and Ground SBC's, and the Wifi-Adapters independently. \(See Wiring -&gt; Power\)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
 
@@ -26,21 +26,26 @@ Now that you have your prerequisite hard- and software, we can get down to busin
 
 ### Step 1: Powering the Ground SBC
 
-TODO
+The ground SBC needs enough "juice" to be able to decode, display and control the OpenHD-Link.
+That's why we recommend the more "performant" device to be used on the Ground.
+We recommend 3A for a Raspberry Pi and 5A for a Nvidia Jetson.
+
 
 ### Step 2: Connecting the WiFi Adapter
 
-TODO
+Since we use pretty powerfull WiFi-Cards and most SBC's have limited USB-Output-Power, we need a dedicated BEC for the Card.
+In Addition to that it's common practice to notconnect the Wifi-Card directly to the SBC. On the Air-SBC Vibrations and movement in general will result in connection problems, that's why we recommend to remove the USB-Connector or at least solder to the USB-Connector.
+If you need help with that look in our forums, there are some extensive guides how to do it nicely. Also writing in the Telegram or Discord Chat can help you.
 
 ### Step 3: Connecting a display
 
-TODO
+Just connect an HDMI-Display, most Displays should just work out of the box.
 
 ### Step 4: Starting the Ground SBC for the first time
 
-TODO
+Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and Fail.
 
-### Step 5: Connecting QOpenHD to the Ground SBC
+### Step 5: Starting the Air SBC
 
-TODO
+Check wiring and plug in the SBC, keep in mind that the WiFi-card and Camera needs to be connected before you plug in the SBC, if not OpenHD will stop and Fail.
 

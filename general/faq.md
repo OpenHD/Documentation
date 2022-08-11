@@ -193,6 +193,8 @@ However, circular antennas still have some advantages compared to linear antenna
 
 Use the system! There are a _lot_ of different features and settings and possible hardware combinations, it can be very difficult to test everything each time we release an update. As a result, we depend on users to tell use when something is wrong, or whether something should be improved.
 
+If you have any development experiences and time, we're always open to new developers, which help us to improve and extend our codebase.
+
 We also frequently need translators who can read/write both english and another language, as the system supports translation in the OSD.
 
 And of course if you have an idea for something you would like to see use add or change, let us know in Github Issues, on the Forum, Discord, or on Telegram.
