@@ -14,7 +14,7 @@ Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot t
 * Now a debug screen appears, select all on the upper bar, delete all parameters and set:
 
 ```text
-udpsrc port=5000 ! h264parse ! avdec_h264 ! autovideosink sync=false
+udpsrc port=TODO ! h264parse ! avdec_h264 ! autovideosink sync=false
 ```
 
 Set `FORWARD_STREAM=raw` in openhd-settings-1.txt to send a raw h264 stream
