@@ -6,14 +6,18 @@
 While many cameras can potentially work, latency is the biggest issue. Please read this page to completely understand the available options and pros and cons of each.
 {% endhint %}
 
+{% hint style="danger" %}
+Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
+{% endhint %}
+
 {% hint style="success" %}
  For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
 {% endhint %}
 
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
-| Name | Connection | Sensor | Resolution | FPS | Price | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Name | Connection | Sensor | Resolution | FPS | Price | Compatibility | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | FPS depends on resolution |
 | [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | FPS depends on resolution |
 | [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution |
