@@ -7,7 +7,7 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 {% endhint %}
 
 {% hint style="danger" %}
-Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
+Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera. () means support will be added
 {% endhint %}
 
 {% hint style="success" %}
@@ -18,18 +18,18 @@ Since we now support multiple platforms, Camea-Support needs to be split into mu
 
 | Name | Connection | Sensor | Resolution | FPS | Price | Compatibility | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | FPS depends on resolution |
-| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | FPS depends on resolution |
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution |
-| [Veye/Innomaker 290](https://www.inno-maker.com/product/mipi-cam-290) | CSI | IMX290 | 1080p | 30 | $90 | Amazing in low light |
-| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | HDMI | CMOS | 1080p | 60 | $75 | Good WDR, Onboard Rec |
-| [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) | USB | -- | 1080p | 30 | $95 | Reportedly "low" latency for usb |
-| [Hi3518](http://www.hisilicon.com/en/Products) | IP | -- | 1080p | 30 | -- | h264/h265 |
-| [C1 Micro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12) | USB | AR0330 | 1080p | 30 | €112 | h264, 12g weight |
-| [C1](https://www.kurokesu.com/shop/cameras/CAMUSB1) | USB | AR0330 | 1080p | 30 | €100 | h264 |
-| [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO) | USB | IMX290 | 1080p | 30 | €139 | h264 |
-| [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp) | USB | IMX290 | 1080p | 60 | $240 | h264, WDR/HDR |
-| [FF Split](https://a.aliexpress.com/_BPMdpz) | HDMI | Unknown | 4k | 60 | $70 | WDR, HDMI-CSI board |
+| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | only Pi | FPS depends on resolution |
+| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | Pi, Jetson | FPS depends on resolution |
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | Pi, Jetson | FPS depends on resolution |
+| [Veye/Innomaker 290](https://www.inno-maker.com/product/mipi-cam-290) | CSI | IMX290 | 1080p | 30 | $90 | Pi,(Jetson)  | Amazing in low light |
+| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | HDMI | CMOS | 1080p | 60 | $75 | Pi, (Jetson) | Good WDR, Onboard Rec |
+| [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) | USB | -- | 1080p | 30 | $95 | All Platforms | Reportedly "low" latency for usb |
+| [Hi3518](http://www.hisilicon.com/en/Products) | IP | -- | 1080p | 30 | -- | All Platforms | h264/h265 |
+| [C1 Micro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12) | USB | AR0330 | 1080p | 30 | €112 | All Platforms | h264, 12g weight |
+| [C1](https://www.kurokesu.com/shop/cameras/CAMUSB1) | USB | AR0330 | 1080p | 30 | €100 | All Platforms | h264 |
+| [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO) | USB | IMX290 | 1080p | 30 | €139 | All Platforms | h264 |
+| [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp) | USB | IMX290 | 1080p | 60 | $240 | All Platforms | h264, WDR/HDR |
+| [FF Split](https://a.aliexpress.com/_BPMdpz) | HDMI | Unknown | 4k | 60 | $70 | Pi, (Jetson) | WDR, HDMI-CSI board |
 
 * Resolutions are maximum, which might not be ideal for performance
 * Higher FPS is possible in certain cases with some cams
