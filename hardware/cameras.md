@@ -38,13 +38,13 @@ Since we now support multiple platforms, Camea-Support needs to be split into mu
 
 ### Latency considerations
 
-When very low latency is required, every part of the system from glass-to-glass must be carefully chosen and tuned. In some cases a particular combination of SBC+camera sensor may be required.
+Lowest latency can be achieved with OpenHD-Custom Hardware. Because of carefully selected SBC and Camera and a little "magic", which can't be reproduced on "normal" SBC's. This has the ability to cut the latency in half.
 
-Generally, there must be an **h264/h265 encoder** inside the camera board itself, or there must be a CSI connection between the sensor and the SBC to ensure that frames are transferred and encoded as fast as possible.
+Second lowest latency can be archieved with an SBC, which can hardware encode in h265. Currently only Jetson Nano can do this, but other Hardware will follow.
 
-Some USB 3.0 cameras _might_ be capable of ultra-low latency when paired with a suitable SBC with a zero-copy video processing pipeline, but in most cases USB cameras are only suitable when they have an internal h264 encoder.
+Some USB 3.0 cameras _might_ be capable of ultra-low latency when paired with a suitable SBC with a zero-copy video processing pipeline, but in most cases USB cameras are only suitable when they have an internal h264/h265 encoder. (currently there is no known usb camera, which is able to achieve lower latency then a csi camera)
 
-IP cameras are not specifically designed for low latency, and many of them have latency upwards of 500ms+, but there are specific cameras available for purchase that have reasonable latency closer to 100-200ms.
+IP-Cameras are not specifically designed for low latency, and many of them have latency upwards of 500ms+, but there are specific cameras available for purchase that have reasonable latency closer to 100-200ms. Remember this latency will be added to the "normal" latency your system has. So most IP-Camera Setups will have 300-600ms latency. It is not recommended to use an IP-Camera as primary camera.
 
 ## USB Cameras
 
@@ -58,7 +58,7 @@ These are exceptionally well made USB h264 cameras built with high quality senso
 
 ### [e-con Systems Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp)
 
-A USB h264 camera with an IMX290 sensor and an onboard ISP tuned for low light, also supports HDR/WDR. Should work with every board supported by Open.HD, including the Nanopi series. It is expensive, but may be useful to someone.
+A USB h264 camera with an IMX290 sensor and an onboard ISP tuned for low light, also supports HDR/WDR. Should work with every board supported by Open.HD. It is expensive, but may be useful to someone.
 
 Comes with an M12 lens with 132° FOV.
 
