@@ -10,6 +10,20 @@ While many cameras can potentially work, latency is the biggest issue. Please re
  For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md#hdmi-input) Section
 {% endhint %}
 
+{% tabs %}
+{% tab title="Plain Text" %}
+```
+$ give me super-powers
+```
+{% endtab %}
+
+{% tab title="" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
 | Name | Connection | Sensor | Resolution | FPS | Price | Notes |
