@@ -16,23 +16,31 @@ Since we now support multiple platforms, Camea-Support needs to be split into mu
 
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
-{% tabs first="Erster Tab", second="Zweiter Tab", third="Dritter Tab" %}
-{% content "first" %}
-# Erster Tab
-Das ist der erste Tab.
-> Innerhalb der Tabs kann Markdown normal verwendet werden. 
+---
+title: Use tabs to organize content
+output: html_document
+---
 
-{% content "second" %}
-# Zweiter Tab
-Das ist der zweite Tab.
-> Innerhalb der Tabs kann Markdown normal verwendet werden.
+You can turn parallel sections to tabs in `html_document` output.
 
-{% content "third" %}
-# Dritter Tab
-Das ist der 3. Tab.
-> Innerhalb der Tabs kann Markdown normal verwendet werden.
+## Results {.tabset}
 
-{% endtabs %}
+### Plots
+
+We show a scatter plot in this section.
+
+```{r, fig.dim=c(5, 3)}
+par(mar = c(4, 4, .5, .1))
+plot(mpg ~ hp, data = mtcars, pch = 19)
+```
+
+### Tables
+
+We show the data in this tab.
+
+```{r}
+head(mtcars)
+```
 
 
 | Name | Connection | Sensor | Resolution | FPS | Price | Compatibility | Notes |
