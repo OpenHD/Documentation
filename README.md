@@ -15,12 +15,12 @@ A multi-platform [Open.HD app ](https://github.com/OpenHD/QOpenHD/releases)is av
 * [OpenHD Forum](https://discuss.openhdfpv.com)
 * Public [Telegram](https://t.me/OpenHD\_User) and [Discord](https://discord.com/channels/913528547023396894/933085907379171418/937448198568562718) groups for lots of immediate interaction
 * Please document problems on [Github](https://github.com/OpenHD/Open.HD/issues)
-* First Intro to Open.HD from CurryKitten on [Youtube](https://www.youtube.com/playlist?list=PL7WaECFssECJWfTc0vKYTfUdH5y8UgdI9) (2 of x parts availible)
+* First Intro to Open.HD from CurryKitten on [Youtube](https://www.youtube.com/playlist?list=PL7WaECFssECJWfTc0vKYTfUdH5y8UgdI9)
 
 {% hint style="warning" %}
 If you have a problem with a specific version of Open.HD, please check the name of the image you used to burn your SD cards and provide it to us in Telegram so we can help narrow down the cause and find a solution.
 {% endhint %}
 
 {% hint style="info" %}
-&#x20;If you don't have or remember the version of Open.HD you used for your SD cards, you can find out what it was by looking in the `root` partition of the image (either connect the SD card it to a Linux machine or connect to the pi via SSH). There will be a file called `/openhd_version.txt` containing the exact version of the image.
+If you activate debugging, detailed debug logs can be found on the SD-Card and should be provided, when discussing a problem.
 {% endhint %}

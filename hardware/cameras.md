@@ -16,6 +16,25 @@ Since we now support multiple platforms, Camea-Support needs to be split into mu
 
  If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
+{% tabs first="Erster Tab", second="Zweiter Tab", third="Dritter Tab" %}
+{% content "first" %}
+# Erster Tab
+Das ist der erste Tab.
+> Innerhalb der Tabs kann Markdown normal verwendet werden. 
+
+{% content "second" %}
+# Zweiter Tab
+Das ist der zweite Tab.
+> Innerhalb der Tabs kann Markdown normal verwendet werden.
+
+{% content "third" %}
+# Dritter Tab
+Das ist der 3. Tab.
+> Innerhalb der Tabs kann Markdown normal verwendet werden.
+
+{% endtabs %}
+
+
 | Name | Connection | Sensor | Resolution | FPS | Price | Compatibility | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | only Pi | FPS depends on resolution |
