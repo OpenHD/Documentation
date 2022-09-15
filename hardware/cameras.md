@@ -11,20 +11,8 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 {% endhint %}
 
 {% tabs %}
-{% tab title="Plain Text" %}
+{% tab title="Raspberry Pi" %}
 ```
-$ give me super-powers
-```
-{% endtab %}
-
-{% tab title="" %}
-```
-
-```
-{% endtab %}
-{% endtabs %}
-
- If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
 | Name | Connection | Sensor | Resolution | FPS | Price | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -40,6 +28,18 @@ $ give me super-powers
 | [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO) | USB | IMX290 | 1080p | 30 | €139 | h264 |
 | [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp) | USB | IMX290 | 1080p | 60 | $240 | h264, WDR/HDR |
 | [FF Split](https://a.aliexpress.com/_BPMdpz) | HDMI | Unknown | 4k | 60 | $70 | WDR, HDMI-CSI board |
+
+```
+{% endtab %}
+
+{% tab title="" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
+ If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
 * Resolutions are maximum, which might not be ideal for performance
 * Higher FPS is possible in certain cases with some cams
