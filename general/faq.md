@@ -10,11 +10,13 @@ Please read the rest of the documentation and do your homework when you make you
 
 #### What is the lowest latency I can achieve?
 
-On a Raspberry Pi, 110ms “glass to glass”. Although most setups are in the 125ms range.
+On a Raspberry Pi, 100ms “glass to glass”. Although most setups are in the 125ms range.
 
-On other boards it can be significantly lower, as low as NOOFFICIALNUMBER has been demonstrated with the Jetson Nano and a carefully selected camera.
+On a Jetson Nano as Air-SBC you can expect to lower the latency, but no official numbers are published, yet.
 
-The lowest latency can be archieved with Custom Hardware, which is currently in development. (https://www.patreon.com/OpenHD)
+On our own custom Hardware, the latency is the lowes, there are official numbers, yet, but you can expect to half your latency with that Hardware, which makes OpenHD repsonsive enough to fly on Race/Freestyle-Setups.
+It's not released, yet, but you can follow the project here: (https://www.patreon.com/OpenHD)
+
 
 #### What kind of range can I expect?
 
@@ -53,7 +55,12 @@ You can optionally use 2x WiFi adapters on the ground side for "diversity", whic
 
 In OpenHD 2.0, no. The system is designed around the Raspberry Pi as it is cheap, widely available, and the video encoder/decoder hardware works properly.
 
-In OpenHD 2.2, most of the code has been rewritten, this means that we're much less hardware bound.
+In OpenHD > 2.2, most of the code has been rewritten, this means that we're much less hardware bound.
+Officially we currently differentiate between Air and Ground.
+
+The most optimised Platform on Ground is the Raspberry-Pi, but if you have quite capable hardware, X86 will give you even better latency than the Pi. 
+_**NOTE:**_Not every USB-Port is able to supply the Wifi-Adapter with enough juice. Please check before flying if it gets enough power. The standart 500ma isn't enough, also if you do any PowerMods, we're not responsible for any damage. 
+
 We support the Nvidia Jetson Platform, which will inprove latency a lot. We've also opend up the possibility to add other platforms, but those need long testing and evaluation and development work before being supported. This progress is quite a lot of work, so most boards will not get support ever. 
 
 

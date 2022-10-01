@@ -33,10 +33,8 @@ The most important ones are:
 
 ### Branches
 
-The most stable code is usually hosted in #master.
+The most stable code is hosted in #master.
 The CoreDevs usually use branches like "consti-test", "rapha-test",... .
-Currently the code which is actively developed is in #2.1-milestones.
-
 
 ### Git
 
@@ -191,56 +189,5 @@ Now we need to open a pull request, and Git has helpfully provided a link we can
 In your pull request, make sure you describe what you changed, why it was needed, and the result of any testing you've done with those changes. If you need help building a new Image that can be tested, ask in the [Telegram Development Channel](https://t.me/openhddev).
 
 ### Releases \(for those managing official releases\)
-
-Releases are only made by the Core-Dev-Team, so please do not try to do it yourself. It's
-
-To make a new release, you just need to create a tag in your local Open.HD repo and push it to the `Open.HD` repository on Github.
-
-In a Git GUI client, this very easy but how you do it will differ in each client. You can still follow the general steps below but use the GUI to do the same thing the commands do.
-
-From the command line, you would need to do the following steps:
-
-1. Make sure the local repo is in the state you want it. Check to make sure you're in the right branch \(run `git branch`\):
-
-   ```text
-    * master
-    (END)
-   ```
-
-2. Make sure that you're tagging the commit you want to tag \(run `git log`, check the top commit\):
-
-   ```text
-    commit e868ff303a846793ae5cb9eab42c58b61db6321d
-    Author: Luke <pilotnbr1@gmail.com>
-    Date:   Sun Nov 24 17:56:44 2019 +0100
-
-        rssirx.c with ant 0 and radiotap_rc
-
-    commit feac7fd9cc7ff759f14249455799ef90b993894b
-    Author: Luke <pilotnbr1@gmail.com>
-    Date:   Thu Nov 21 22:59:26 2019 +0100
- 
-        Fix rssi dbm just showing best and better
-
-        This is a bandaid fix some sane numbers... untested
-   ```
-
-3. Run `git tag -a -m '' 2.0.0rc1.2`, or whatever you would like the tag to be.
-4. Check the tag to make sure it shows up where you expected, run `git log` and you should see your new tag on the most recent commit in parenthesis:
-
-   ```text
-    commit e868ff303a846793ae5cb9eab42c58b61db6321d (tag: 2.0.0rc1.2)
-    Author: Luke <pilotnbr1@gmail.com>
-    Date:   Sun Nov 24 17:56:44 2019 +0100
- 
-        rssirx.c with ant 0 and radiotap_rc
-   ```
-
-5. Push the new tag to the main repo on Github \(run `git push origin master --tags`\)
-
-Keep in mind that this command will _also_ push any commits in your local `master` branch that are not already in the main repo on Github.
-
-Once you have created a new tag, head over to the [Github Releases](https://github.com/OpenHD/Open.HD/releases) page and click "Draft a new release". You will be able to select your new tag at the top of the screen and enter any release notes or other information about the release in the box below it. You can refer to Issues that have been fixed/closed using the syntax `#1`, which automatically creates a link to issue 1. You can also just make a list and copy/paste any commit messages that outline changes/bugfixes.
-
-You can then click the "Attach binaries" area and select any files you would like to be part of the release, such as SD card images or Android apk files.
+Releases are made by the Core-Dev-Team.
 
