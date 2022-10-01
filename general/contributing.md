@@ -188,6 +188,3 @@ Now we need to open a pull request, and Git has helpfully provided a link we can
 
 In your pull request, make sure you describe what you changed, why it was needed, and the result of any testing you've done with those changes. If you need help building a new Image that can be tested, ask in the [Telegram Development Channel](https://t.me/openhddev).
 
-### Releases \(for those managing official releases\)
-Releases are made by the Core-Dev-Team.
-
