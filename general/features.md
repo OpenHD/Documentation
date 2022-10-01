@@ -2,7 +2,7 @@
 
 The features as per the latest evo [release ](https://github.com/OpenHD/Open.HD/releases)include:
 
-* We officially support Pi2B(Version 1.2+) , Pi3B, Pi3B+, Pi3A+, Pi4, Pi Zero 2, Nvidia Jetson Nano,Nvidia Jetson Nano 2GB  \(NOTE: Ground Pi needs at least 1GB RAM\)
+* We officially support Pi2B(Version 1.2+) , Pi3B, Pi3B+, Pi3A+, Pi4, Pi Zero 2, Nvidia Jetson Nano,Nvidia Jetson Nano 2GB  \(NOTE: We currently only support Pi(min 1GB Ram) and X86 on the Ground\)
 <!-- * Maximum possible resolutions \(depending on cam used\): 1280x720p 60fps 1296x972p 42fps 1640x922p 40fps 1920x1080p 30fps
 * Maximum possible video bitrate about 12Mbit -->
 * Latency values have changed with EVO and are currently changing a lot, official numbers will follow later.

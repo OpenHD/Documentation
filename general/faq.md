@@ -1,5 +1,9 @@
 # FAQ
 
+#### Where are the config-files ?
+
+With 2.2-evo we removed the complex config files, everything is set up in QOpenhd, or the configuator which will come in the Future 
+
 #### What is the minimum hardware I need to try this?
 
 Two Raspberry Pi, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI Adapter\), and 2 good quality \(preferably Industrial micro SD Cards\). 
@@ -51,17 +55,35 @@ No, just one for ground and one for air.
 
 You can optionally use 2x WiFi adapters on the ground side for "diversity", which improves signal reception.
 
-#### Can I run OpenHD on this other board \(Orange Pi, Banana Pi, BeagleBoard\)?
+#### Can I run OpenHD different Platforms ? \(Orange Pi, Banana Pi, BeagleBoard\)?
 
 In OpenHD 2.0, no. The system is designed around the Raspberry Pi as it is cheap, widely available, and the video encoder/decoder hardware works properly.
 
 In OpenHD > 2.2, most of the code has been rewritten, this means that we're much less hardware bound.
 Officially we currently differentiate between Air and Ground.
 
-The most optimised Platform on Ground is the Raspberry-Pi, but if you have quite capable hardware, X86 will give you even better latency than the Pi. 
-_**NOTE:**_Not every USB-Port is able to supply the Wifi-Adapter with enough juice. Please check before flying if it gets enough power. The standart 500ma isn't enough, also if you do any PowerMods, we're not responsible for any damage. 
+Ground:
 
-We support the Nvidia Jetson Platform, which will inprove latency a lot. We've also opend up the possibility to add other platforms, but those need long testing and evaluation and development work before being supported. This progress is quite a lot of work, so most boards will not get support ever. 
+The most optimised Platform on Ground is the Raspberry-Pi, but if you have quite capable hardware, X86 will give you even better latency than the Pi. 
+{% hint style="warning" %}
+Not every USB-Port is able to supply the Wifi-Adapter with enough juice. Please check before flying if it gets enough power. The standart 500ma isn't enough, also if you do any PowerMods, we're not responsible for any damage. 
+{% endhint %}
+{% hint style="warning" %}
+Older Computers or SBC's may be not capable enough to run OpenHD.
+{% endhint %}
+
+Air:
+
+The lowest Latency Platform is our Custom Hardware.
+The second best Latency will be with the Jetson-Nano.
+The most flexible Platform will be the Pi, but it can not encode h265, which will increase latency.
+
+#### What about Orange Pi, Banana Pi, BeagleBoard ?
+
+Officially we can not support every platform, but we optimized OpenHD to be easily portable to different SBC's.
+
+You can also run the groundstation (including QOpenHD), on different platforms, but since every SBC handles Decoding/Compositing/Rendering different, we can't really optimize everything and the workload for our devteam is limited.
+So we officially only support Pi and X86 on the Ground.
 
 
 #### Which WiFi adapters do I need?
@@ -131,15 +153,7 @@ You are responsible for your use of the system, but please ask us for advice if 
 
 Yes, you can receive the video with any GroundPi that is configured to the same frequency as your AirPi.
 
-The system is not encrypted in OpenHD 2.2, encryption is currently not on the ToDo list, because we do not want any affiliation with military usage.
-
-#### Where did my recorded video go?
-
-See the wiki: [Ground Recording](https://github.com/OpenHD/Open.HD/wiki/Software-~-Advanced-~-Ground-Recording)
-
-#### Why is the OSD not on the video recording?
-
-Since the Video-Stream does not include the OSD, because it is overlayed by QOpenHD, it can not be directly recorded on the ground. However you can use a tethered device and record it's screen via e.g. OBS.
+In future releases we'll add a "BindMode" which will only allow people with a passphrase to view your video.
 
 #### What is diversity?
 
@@ -161,11 +175,10 @@ There is a cost to using FEC, the radio bandwidth is a little bit higher \(or vi
 
 #### Is latency going to improve in future updates?
 
-Latency is almost entirely a result of the kind of video encoder and decoder hardware being used on the AirPi and GroundPi. And the latency of the HDMI-Screen.
-With the Raspberry Pi, as encoder there is a lower limit to the minimum latency that can be achieved. 
-h265 can lower the latency a lot, but there is no raspberrySBC which is able to encode h265, but the Nvidia jetson will reduce latency.
-
-With custom Hardware we are able to reduce the latency even more, but NDA's forbid us to release how.
+In OpenHD 2.2 we started to highly focus on latency.
+The first releases will have a pretty average latency, but currently we're saving every ms we can.
+But with 2.2 we returned to the same latency, which ez-wifibroadcast had, which was significally lower than OpenHD.
+With h265 and custom Hardware we are able to reduce the latency even more.
 
 #### What do these numbers mean on the OSD display?
 
@@ -179,7 +192,7 @@ We reduced the RC protocols down to only MAVlink, because nearly every hardware 
 
 We reduced the telemetry protocols down to only MAVlink, because nearly every hardware supports Mavlink Telemetry.
 
-#### What is an AirPi / GroundPi?
+#### What is an AirSBC / GroundSBC?
 
 This is a shorter way to refer to which SBC is transmitting video and which one is transmitting RC and/or uplink telemetry.
 Both are using the same images.

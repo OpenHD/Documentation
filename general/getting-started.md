@@ -43,9 +43,9 @@ Just connect an HDMI-Display, most Displays should just work out of the box.
 
 ### Step 4: Starting the Ground SBC for the first time
 
-Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and Fail.
+Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail.
 
 ### Step 5: Starting the Air SBC
 
-Check wiring and plug in the SBC, keep in mind that the WiFi-card and Camera needs to be connected before you plug in the SBC, if not OpenHD will stop and Fail.
+Check wiring and plug in the SBC, keep in mind that the WiFi-card and Camera needs to be connected before you plug in the SBC, if not OpenHD will stop and fail.
 
