@@ -2,7 +2,7 @@
 
 | Name | Sensor | Field of use | Price |
 | :--- | :--- | :--- | :--- |
-| [[Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | CMOS | Good WDR | $75 |
+| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | CMOS | Good WDR | $75 |
 | [FF Split](https://a.aliexpress.com/_BPMdpz) | Unknown | Good WDR | $75 |
 
 
