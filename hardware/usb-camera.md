@@ -28,7 +28,7 @@ Note that in recent years Logitech has been removing the h264 encoder from all o
 
 These are exceptionally well made USB h264 cameras built with high quality sensors and a Sonix chip to handle image processing and h264 encoding. Latency is reported to be 90-125ms minimum.
 
-### [e-con Systems Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp)
+### e-con Systems Hyperyon
 
 A USB h264 camera with an IMX290 sensor and an onboard ISP tuned for low light, also supports HDR/WDR. Should work with every board supported by Open.HD. It is expensive, but may be useful to someone.
 
