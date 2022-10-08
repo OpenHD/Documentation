@@ -49,18 +49,20 @@ First you should download our latest stable release and unpack it on your Comput
 
 ### Step 6: Flashing the AIR SBC for the first time
 
-If using the Ochin board, you first need to install your CM4 into the Ochin board.
+If using the Ochin board, you first need to install your CM4 into the Ochin board and flash it.
+The Ochin board requires external power even when the usb-c is connected.
+To enter the "flash-mode" push the Button while connecting power. Now you can continue with the normal setup shown in this Video. And choose our image.
 
-{% embed url="https://www.youtube.com/watch?v=jp_mF1RknU4" %}
+{% embed url="https://www.youtube.com/watch?v=jp_mF1RknU4&t=70s" %}
 
-### Step 4: Starting the Ground SBC for the first time
+Keep in mind, flashing is very slow, because some limitations of the RPi-Foundation. Do not disconnect while flashing, it can brick your device.
 
-Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail. On most SBC's there will also be a LED blinking about once a second to show that no WiFi-Card is detected.
-
-### Step 5: Starting the Air SBC
-
-Prepare
-
-### Step 6: Starting the Air SBC
+### Step 7: Starting the Ground SBC for the first time
 
 Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail. On most SBC's there will also be a LED blinking about once a second to show that no WiFi-Card is detected.
+The first boot can take several minutes, so be patient, reboots are normal.
+
+### Step 7: Starting the Air SBC
+
+Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail. On most SBC's there will also be a LED blinking about once a second to show that no WiFi-Card is detected.
+The first boot can take several minutes, so be patient, reboots are normal.
