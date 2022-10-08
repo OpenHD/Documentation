@@ -10,15 +10,14 @@ If you have a pre-existing hardware requirement that is not met in this guide, i
 
 {% hint style="info" %}
 In today's Chip Shortage sourcing hardware can be stressful, but there are a few hints to get your Raspberry devices even when they're quite hard to get.
-In Europe \([Berrybase](https://www.berrybase.de/)\) alwasy have some devices in stock for it's club members (membership is free).
+In Europe \([Berrybase](https://www.berrybase.de/)\) always have some devices in stock for it's club members (membership is free).
 In addition to that \([RpiLocator](https://rpilocator.com/)\) can help you get raspberry hardware worldwide.
 {% endhint %}
 
 Assuming you are starting with nothing, we recommend you get the following Hardware:
 
-
 * A Raspberry Pi4B for the Ground SBC
-* A 
+* A Raspberry CM4 with an \([Ochin](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html)\) board
 * Two WiFi cards that support the band you want to use. \(See [WiFi Adapters](../hardware/wifi-adapters.md)\)
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen \(use your TV for testing!\)
