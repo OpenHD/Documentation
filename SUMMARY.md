@@ -7,6 +7,8 @@
 * [Features](general/features.md)
 * [FAQ](general/faq.md)
 * [Contributing](general/contributing.md)
+* [Team](general/team.md)
+
 
 ## Hardware
 
