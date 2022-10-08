@@ -5,7 +5,7 @@ Single Board Computers are little computer's like the Raspberry Pi, which are bu
 For the sake of simplicity we also include X86-Computers to that definition, even if they aren't sbc's at all.
 {% endhint %}
 
-With the 2.2-evo releases OpenHD managed the step to be less platform independend, which means that we not only support the RaspberryPi, but can add additional platforms in the future.
+With the 2.2-evo releases OpenHD managed the step to be less platform independend, which means that we not only support the RaspberryPi, but can be used on multiple platforms.
 This step also complicates setup a little, because not every device is compatible with any sbc.
 
 That's why we split our Wiki in multiple sub-menus.
