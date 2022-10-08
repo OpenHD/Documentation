@@ -14,6 +14,8 @@
 * [SBC's](hardware/sbcs.md)
   * [Raspberry](hardware/raspberry.md)
   * [Advanced](hardware/advancedSBC.md)
+    * [Jetson](hardware/jetson.md)
+    * [X86](hardware/X86.md)
   * [Custom Hardware](hardware/custom-hardware.md)
 * [Cameras](hardware/cameras.md)
   * [Raspberry](hardware/raspberry-cameras.md)
