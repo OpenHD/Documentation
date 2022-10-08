@@ -34,11 +34,12 @@
 ## Ground Station Software
 
 * [Standart](ground-station-software/mission-planner.md)
+    * [QOpenHD](ground-station-software/mission-planner.md)
     * [Mission Planner](ground-station-software/mission-planner.md)
     * [QGroundControl](ground-station-software/qgroundcontrol.md)
     * [Tower](ground-station-software/tower.md)
     * [FPV\_VR](ground-station-software/fpv_vr.md)
-* [Advanced](ground-station-software/mission-planner.md) 
+* [Advanced](ground-station-software/mission-planner.md)
     * [GStreamer](ground-station-software/gstreamer.md)
     * [FishingFanCam](ground-station-software/fishingfancam.md)
     * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
