@@ -14,9 +14,15 @@
 * [Wiring](hardware/wiring.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [SBC's](hardware/sbcs.md)
+    * [Raspberry](hardware/raspberry.md)
+    * [Advanced](hardware/advancedSBC.md)
+    * [Custom Hardware](hardware/custom-hardware.md)
 * [Cameras](hardware/cameras.md)
-    * [Libcamera](hardware/libcamera.md)
+    * [Raspberry](hardware/raspberry-cameras.md)
         * [Libcamera](hardware/libcamera.md)
+        * [Raspicam](hardware/raspicamsrc.md)
+    * [Jetson Nano](hardware/jetson-cameras.md)
+    * [Custom Hardware](hardware/custom-cameras.md)
 * [Displays](hardware/displays.md)
 
 ## Software Setup
