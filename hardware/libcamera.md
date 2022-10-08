@@ -11,11 +11,11 @@ Currently Libcamera induces a slightly higher latency.
 {% endhint %}
 
 
-| Name | Sensor | Usage | Price |
+| Name | Sensor | Field of use | Price |
 | :--- | :--- | :--- | :--- |
 | [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | OV5647 | Normal | $25 |
 | [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX219 | Normal | $25 |
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX477 | Normal | $50 | 
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX477 | bigger Vehicles | $50 | 
 
 
 
