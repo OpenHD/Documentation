@@ -17,12 +17,13 @@ In addition to that \([RpiLocator](https://rpilocator.com/)\) can help you get r
 Assuming you are starting with nothing, we recommend you get the following Hardware:
 
 * A Raspberry Pi4B for the Ground SBC
-* A Raspberry CM4 with an \([Ochin](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html)\) board
+* A Raspberry CM4 with an \([Ochin](../hardware/ochin.md)\) board
 * Two WiFi cards that support the band you want to use. \(See [WiFi Adapters](../hardware/wifi-adapters.md)\)
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen \(use your TV for testing!\)
 * A mobile device capable of running QOpenHD and connecting to the Ground SBC
 * Four BEC's for powering the Air and Ground SBC's, and the Wifi-Adapters independently. \(See Wiring -&gt; Power\)
+* A supported Camera, for the first setup we recommend a \([Original Raspberry Camera](../hardware/raspicamsrc.md)\) and the required cable (keep in mind, the ochin uses a zero-csi cable)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
 
