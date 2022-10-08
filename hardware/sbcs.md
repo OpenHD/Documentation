@@ -1,29 +1,22 @@
-# SBC's
+# Single Board Computers
 
-While support for SBC's other than the Raspberry Pi is underway, currently the only officially supported devices are:
+{% hint style="info" %}
+Single Board Computers are little computer's like the Raspberry Pi, which are build to run computing tasks efficiently and without additional components. 
+For the sake of simplicity we also include X86-Computers to that definition, even if they aren't sbc's at all.
+{% endhint %}
 
-| SBC                                   |  AIR      | GND | Notes | recommended for   |
-| ------------------------------------- | :-------: | :-: | ----- | :---------------: |
-| Raspberry Pi 2B+                      |  yes      |  no |       |                   |
-| Raspberry Pi 3A                       |  yes      |  no | 1     |                   |
-| Raspberry Pi 3A+                      |  yes      |  no | 1     |                   |
-| Raspberry Pi 3B                       |  yes      | yes | 2     |                   |
-| Raspberry Pi 3B+                      |  yes      | yes |       |                   |
-| Raspberry Pi 4B                       |  yes      | yes |       |       Ground      |
-| Raspberry Pi Zero                     |  no       |  no | 4     |                   |
-| Raspberry Pi Zero W                   |  no       |  no | 4     |                   |
-| Raspberry Pi Zero 2                   |  yes      |  no |       |                   |
-| Raspberry Pi Compute Module CM3+      |  yes      | yes | 3     |                   |
-| Raspberry Pi Compute Module CM4       |  yes      | yes | 3     |       Ground      |
-| Jetson Nano 2gb                       |  yes      | yes |       |         Air       |
-| Jetson Nano 4gb                       |  yes      | yes |       |         Air       |
-| OpenHD-Air (custom)                   |  yes      | no  | 4     |         Air       |
+With the 2.2-evo releases OpenHD managed the step to be less platform independend, which means that we not only support the RaspberryPi, but can add additional platforms in the future.
+This step also complicates setup a little, because not every device is compatible with any sbc.
 
+That's why we split our Wiki in multiple sub-menus.
+Since the [RaspberryPi](../hardware/raspberry.md) is the most stable and most supported SBC we'll recommend starting with that platform.
 
+We also support more advanced setups, which require much more work.
+One of this Platforms is the Nvidia Jetson and X86, for which we also actively build images.
 
+In addition to that we are right now building our own custom Hardware, which has very specific compatibilities. And allow custom builds based on our OpenHD code, which are compatible with the OpenHD-System.
 
-1. it is not a good idea to use a Pi Zero or a Pi 3A(+) on the ground side, you may get it to work but the resource requirements (particularly GPU memory) on the ground are higher than they are on the air side.
-2. Will work but does not have internal dual band hotspot which will reduce functionality
-3. Requires a dt-blob.bin file for your carrier board when used as AIR to support dual cameras at the moment, ask for help in Telegram
-4. There is a small possibility that those boards are readded later in the developing phase with reduced features and significantly more latency
-5. Currently not avaliable
+{% hint style="danger" %}
+Currently we only support RaspberryPi and X86 for the GroundSBC
+{% endhint %}
+
