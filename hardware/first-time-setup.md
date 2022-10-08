@@ -59,10 +59,11 @@ Keep in mind, flashing is very slow, because some limitations of the RPi-Foundat
 
 ### Step 7: Starting the Ground SBC for the first time
 
-Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail. On most SBC's there will also be a LED blinking about once a second to show that no WiFi-Card is detected.
+Plug in the Wifi-Stick,SD-Card and Monitor.Power up the SBC.
 The first boot can take several minutes, so be patient, reboots are normal.
+When initialised QOpenHD should automatically start and show our OSD.
 
 ### Step 7: Starting the Air SBC
 
-Check wiring and plug in the SBC, keep in mind that the WiFi-card needs to be connected before you plug in the SBC, if not OpenHD will stop and fail. On most SBC's there will also be a LED blinking about once a second to show that no WiFi-Card is detected.
-The first boot can take several minutes, so be patient, reboots are normal.
+Plug in the Wifi-Stick, connect the camera (please use copper tape to protect against interference)
+Check wiring and plug in the Power. The first boot will take several Minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct. 
