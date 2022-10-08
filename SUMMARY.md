@@ -35,14 +35,10 @@
 ## Software Setup
 
 * [Telemetry and OSD](software-setup/telemetry-and-osd.md)
-* [SmartSync](software-setup/smartsync.md)
-* [Test](software-setup/test.md)
 
 ## Ground Station Software
 
-* [Standart](ground-station-software/mission-planner.md)
-  *
-  *
+* [Standart](ground-station-software/qopenhd.md)
   * [QGroundControl](ground-station-software/qgroundcontrol.md)
   * [Tower](ground-station-software/tower.md)
   * [FPV\_VR](ground-station-software/fpv\_vr.md)
