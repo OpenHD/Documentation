@@ -20,3 +20,10 @@ In addition to that we are right now building our own [custom Hardware](../hardw
 Currently we only support RaspberryPi and X86 for the GroundSBC
 {% endhint %}
 
+### Latency considerations
+
+Lowest latency can be achieved with OpenHD-Custom Hardware. Because of carefully selected SBC and Camera and a little "magic", which can't be reproduced on "normal" SBC's. This has the ability to cut the latency in half.
+
+Second lowest latency can be archieved with an SBC, which can hardware encode in h265. Currently only Jetson Nano can do this, but other Hardware will follow.
+
+For receiving lowest latency, currently the Pi4 or a X86 System with great performance is needed.
