@@ -23,7 +23,7 @@ Assuming you are starting with nothing, we recommend you get the following Hardw
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen (use your TV for testing!)
 * Four BEC's for powering the Air and Ground SBC's, and the Wifi-Adapters independently. (See Wiring -> Power)
-* A supported Camera ([Original Raspberry Camera](raspicamsrc.md)) and the required cable (keep in mind, the ochin uses a zero-csi cable)
+* A supported Camera ([Original Raspberry Camera](broken-reference)) and the required cable (keep in mind, the ochin uses a zero-csi cable)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
 
@@ -49,9 +49,7 @@ First you should download our latest stable release and unpack it on your Comput
 
 ### Step 6: Flashing the AIR SBC for the first time
 
-If using the Ochin board, you first need to install your CM4 into the Ochin board and flash it.
-The Ochin board requires external power even when the usb-c is connected.
-To enter the "flash-mode" push the Button while connecting power. Now you can continue with the normal setup shown in this Video. And choose our image.
+If using the Ochin board, you first need to install your CM4 into the Ochin board and flash it. The Ochin board requires external power even when the usb-c is connected. To enter the "flash-mode" push the Button while connecting power. Now you can continue with the normal setup shown in this Video. And choose our image.
 
 {% embed url="https://www.youtube.com/watch?v=jp_mF1RknU4&t=70s" %}
 
@@ -59,11 +57,8 @@ Keep in mind, flashing is very slow, because some limitations of the RPi-Foundat
 
 ### Step 7: Starting the Ground SBC for the first time
 
-Plug in the Wifi-Stick,SD-Card and Monitor.Power up the SBC.
-The first boot can take several minutes, so be patient, reboots are normal.
-When initialised QOpenHD should automatically start and show our OSD.
+Plug in the Wifi-Stick,SD-Card and Monitor.Power up the SBC. The first boot can take several minutes, so be patient, reboots are normal. When initialised QOpenHD should automatically start and show our OSD.
 
 ### Step 7: Starting the Air SBC
 
-Plug in the Wifi-Stick, connect the camera (please use copper tape to protect against interference)
-Check wiring and plug in the Power. The first boot will take several Minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct. 
+Plug in the Wifi-Stick, connect the camera (please use copper tape to protect against interference) Check wiring and plug in the Power. The first boot will take several Minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct.
