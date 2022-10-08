@@ -2,8 +2,8 @@
 
 ## The OpenHD Core Team consists of
 
-
-|   |   |   |   |
+| Name | Name | Name | Name |
+| :--- | :--- | :--- | :--- |
 | Thomas B. | Constantin G. | Raphael S. | Max P. |
 | Project Lead | Lead Software Developer | Lead Platform Developer | Lead Hardware Developer|
 
