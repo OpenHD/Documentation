@@ -11,17 +11,12 @@ Currently Libcamera induces a slightly higher latency.
 {% endhint %}
 
 
-| Name | Connection | Sensor | Resolution | FPS | Price | Compatibility | Notes |
+| Name | Connection | Sensor | Resolution | FPS | Price | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | only Pi | FPS depends on resolution |
-| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | Pi, Jetson | FPS depends on resolution |
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | Pi, Jetson | FPS depends on resolution |
-| [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) | USB | -- | 1080p | 30 | $95 | All Platforms | Reportedly "low" latency for usb |
-| [Hi3518](http://www.hisilicon.com/en/Products) | IP | -- | 1080p | 30 | -- | All Platforms | h264/h265 |
-| [C1 Micro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12) | USB | AR0330 | 1080p | 30 | €112 | All Platforms | h264, 12g weight |
-| [C1](https://www.kurokesu.com/shop/cameras/CAMUSB1) | USB | AR0330 | 1080p | 30 | €100 | All Platforms | h264 |
-| [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO) | USB | IMX290 | 1080p | 30 | €139 | All Platforms | h264 |
-| [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp) | USB | IMX290 | 1080p | 60 | $240 | All Platforms | h264, WDR/HDR |
+| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | OV5647 | 1080p | 30-90 | $25 | FPS depends on resolution |
+| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX219 | 1080p | 30-90 | $25 | FPS depends on resolution |
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | CSI | IMX477 | 1080p | 30-120 | $50 | FPS depends on resolution |
+
 
 
 * Resolutions are maximum, which might not be ideal for performance
