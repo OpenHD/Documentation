@@ -24,6 +24,8 @@
     * [Raspicam](hardware/raspicamsrc.md)
   * [Jetson Nano](hardware/jetson-cameras.md)
   * [Custom Hardware](hardware/custom-cameras.md)
+  * [USB Cameras](hardware/usb-camera.md)
+  * [HDMI Cameras](hardware/hdmi-camera.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [Wiring](hardware/wiring.md)
 * [Displays](hardware/displays.md)
