@@ -1,18 +1,14 @@
----
-description: Team
----
 
-# Team
 
 ## The OpenHD Core Team consists of
 
 
 
-Thomas B. Project Lead&#x20;
+Thomas B. Project Lead
 
-Constantin G. Lead Software Developer&#x20;
+Constantin G. Lead Software Developer
 
-Raphael S. Lead Platform Developer&#x20;
+Raphael S. Lead Platform Developer
 
 Max P. Lead Hardware Developer
 
