@@ -9,7 +9,6 @@
 * [Contributing](general/contributing.md)
 * [Team](general/team.md)
 
-
 ## Hardware
 
 * [First Time Setup](hardware/first-time-setup.md)
@@ -40,7 +39,7 @@
 
 ## Ground Station Software
 
-* [Standart](ground-station-software/qopenhd.md)
+* [Standart](ground-station-software/standart/README.md)
   * [QGroundControl](ground-station-software/qgroundcontrol.md)
   * [Tower](ground-station-software/tower.md)
   * [FPV\_VR](ground-station-software/fpv\_vr.md)
