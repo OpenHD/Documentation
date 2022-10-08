@@ -5,7 +5,11 @@ Using this SBC's is not recommended for Beginners.
 
 Currently that's 
 
-X86
-Jetson Nano 2GB
-Jetson Nano 4GB
+| SBC                                   |  Notes  |
+| ------------------------------------- | :-----: |
+| Jetson Nano 2GB                       |  1      |
+| Jetson Nano 4GB                       |  1      |
+| X86                                   |         |
 
+
+1. Will only be usable as AirSBC
