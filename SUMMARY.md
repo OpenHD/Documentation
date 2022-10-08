@@ -15,6 +15,7 @@
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [SBC's](hardware/sbcs.md)
 * [Cameras](hardware/cameras.md)
+    * [Libcamera](hardware/libcamera.md)
 * [Displays](hardware/displays.md)
 
 ## Software Setup

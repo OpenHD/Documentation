@@ -2,11 +2,11 @@
 
 #### Where are the config-files ?
 
-With 2.2-evo we removed the complex config files, everything is set up in QOpenhd, or the configuator which will come in the Future 
+With 2.2-evo we removed the complex config files, everything is set up in QOpenhd, or the Configuator which will come in the future 
 
 #### What is the minimum hardware I need to try this?
 
-Two Raspberry Pi, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI Adapter\), and 2 good quality \(preferably Industrial micro SD Cards\). 
+Two Raspberry Pi's, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI Adapter\), and 2 good quality \(preferably Industrial micro SD Cards\). 
 
 {% hint style="warning" %}
 Please read the rest of the documentation and do your homework when you make your purchases! Only specific WiFi cards will work due to the unique requirements of the system.
