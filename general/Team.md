@@ -1,6 +1,4 @@
-# Team
-
-## The OpenHD Core Team consists of
+The OpenHD Core Team consists of
 
 | Name | Name | Name | Name |
 | :--- | :--- | :--- | :--- |
