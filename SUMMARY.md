@@ -13,6 +13,7 @@
 * [First Time Setup](hardware/first-time-setup.md)
 * [SBC's](hardware/sbcs.md)
   * [Raspberry](hardware/raspberry.md)
+    * [Ochin CM4 Carrier](hardware/ochin.md)
   * [Advanced](hardware/advancedSBC.md)
     * [Jetson](hardware/jetson.md)
     * [X86](hardware/X86.md)
