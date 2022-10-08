@@ -11,8 +11,6 @@
 ## Hardware
 
 * [First Time Setup](hardware/first-time-setup.md)
-* [Wiring](hardware/wiring.md)
-* [WiFi Adapters](hardware/wifi-adapters.md)
 * [SBC's](hardware/sbcs.md)
     * [Raspberry](hardware/raspberry.md)
     * [Advanced](hardware/advancedSBC.md)
@@ -23,6 +21,8 @@
         * [Raspicam](hardware/raspicamsrc.md)
     * [Jetson Nano](hardware/jetson-cameras.md)
     * [Custom Hardware](hardware/custom-cameras.md)
+* [WiFi Adapters](hardware/wifi-adapters.md)
+* [Wiring](hardware/wiring.md)
 * [Displays](hardware/displays.md)
 
 ## Software Setup
@@ -33,11 +33,13 @@
 
 ## Ground Station Software
 
-* [Mission Planner](ground-station-software/mission-planner.md)
-* [QGroundControl](ground-station-software/qgroundcontrol.md)
-* [Tower](ground-station-software/tower.md)
-* [FPV\_VR](ground-station-software/fpv_vr.md)
-* [GStreamer](ground-station-software/gstreamer.md)
-* [FishingFanCam](ground-station-software/fishingfancam.md)
-* [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
+* [Standart](ground-station-software/mission-planner.md)
+    * [Mission Planner](ground-station-software/mission-planner.md)
+    * [QGroundControl](ground-station-software/qgroundcontrol.md)
+    * [Tower](ground-station-software/tower.md)
+    * [FPV\_VR](ground-station-software/fpv_vr.md)
+* [Advanced](ground-station-software/mission-planner.md) 
+    * [GStreamer](ground-station-software/gstreamer.md)
+    * [FishingFanCam](ground-station-software/fishingfancam.md)
+    * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
 
