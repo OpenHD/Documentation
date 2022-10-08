@@ -1,6 +1,8 @@
 # Special Usecase Cameras
 
-
+{% hint style="danger" %}
+Special Usecase Cameras are currently only supported on the Raspberry Pi
+{% endhint %}
 
 ## Thermal Cameras
 
