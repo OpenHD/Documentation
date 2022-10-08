@@ -7,10 +7,10 @@
 * [Features](general/features.md)
 * [FAQ](general/faq.md)
 * [Contributing](general/contributing.md)
-* [Getting Started](general/getting-started.md)
 
 ## Hardware
 
+* [First Time Setup](hardware/first-time-setup.md)
 * [Wiring](hardware/wiring.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [SBC's](hardware/sbcs.md)
