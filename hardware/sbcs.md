@@ -12,9 +12,9 @@ That's why we split our Wiki in multiple sub-menus.
 Since the [RaspberryPi](../hardware/raspberry.md) is the most stable and most supported SBC we'll recommend starting with that platform.
 
 We also support more advanced setups, which require much more work.
-One of this Platforms is the Nvidia Jetson and X86, for which we also actively build images.
+One of this Platforms is the [Nvidia Jetson](../hardware/jetson.md) and [X86](../hardware/X86.md), for which we also actively build images.
 
-In addition to that we are right now building our own custom Hardware, which has very specific compatibilities. And allow custom builds based on our OpenHD code, which are compatible with the OpenHD-System.
+In addition to that we are right now building our own [custom Hardware](../hardware/custom-hardware.md), which has very specific compatibilities. And allow custom builds based on our OpenHD code, which are compatible with the OpenHD-System.
 
 {% hint style="danger" %}
 Currently we only support RaspberryPi and X86 for the GroundSBC
