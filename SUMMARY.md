@@ -16,6 +16,7 @@
 * [SBC's](hardware/sbcs.md)
 * [Cameras](hardware/cameras.md)
     * [Libcamera](hardware/libcamera.md)
+        * [Libcamera](hardware/libcamera.md)
 * [Displays](hardware/displays.md)
 
 ## Software Setup
