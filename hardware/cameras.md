@@ -8,8 +8,6 @@ While many cameras can potentially work, latency is the biggest issue. Please re
 
 Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
 
-The Raspberry Foundation developed a new Camera-Subsystem called Libcamera, this is an opensource Project, but currently lacks some features and introduced additional latency.
-
 USB-Cameras are generally usable with any SBC.
 HDMI-Cameras and IP-Cameras are currently only supported on the Pi-SBC's.
 
