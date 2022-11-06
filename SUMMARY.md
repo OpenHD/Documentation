@@ -46,11 +46,11 @@
 
 ## Ground Station Software
 
-* [QOpen.HD \(recommended\)](ground-station-software/qopen.hd-recommended.md)
+* [QOpen.HD (recommended)](ground-station-software/qopen.hd-recommended.md)
 * [Mission Planner](ground-station-software/mission-planner.md)
 * [QGroundControl](ground-station-software/qgroundcontrol.md)
 * [Tower](ground-station-software/tower.md)
-* [FPV\_VR](ground-station-software/fpv_vr.md)
+* [FPV\_VR](ground-station-software/fpv\_vr.md)
 * [GStreamer](ground-station-software/gstreamer.md)
 * [FishingFanCam](ground-station-software/fishingfancam.md)
 * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
@@ -63,5 +63,4 @@
 * [Change packet source on a Pi](developer-corner/change-packet-source-on-a-pi.md)
 * [Building an Image](developer-corner/building-an-image.md)
 * [Essentials](developer-corner/essentials.md)
-* [QOpenhd and custom Mavlink](developer-corner/qopenhd-and-custom-mavlink.md)
-
+* [QOpenhd Tips](developer-corner/qopenhd-and-custom-mavlink.md)

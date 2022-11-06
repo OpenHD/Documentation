@@ -12,14 +12,14 @@ Some lower power WiFi adapter such as the _TPLink 722n V1_ may work out that way
 
 In addition, if the USB connection is briefly moved or subjected to vibration, it may cause the WiFi adapter to reset or disconnect from the system. This disruption might be just long enough to completely stop the connection between ground and air.
 
-The solution for those kinds of problems is to solder power from a BEC or other 5v power supply, to the WiFi adapter\(s\).
+The solution for those kinds of problems is to solder power from a BEC or other 5v power supply, to the WiFi adapter(s).
 
-It is also **strongly recommended** that you solder the USB data lines. On some WiFi adapters this is easy because they have ready to use solder pads, or have a mini-USB connector on the adapter \(in which case you don't have to solder anything to the adapter itself, just the other end of the cable\).
+It is also **strongly recommended** that you solder the USB data lines. On some WiFi adapters this is easy because they have ready to use solder pads, or have a mini-USB connector on the adapter (in which case you don't have to solder anything to the adapter itself, just the other end of the cable).
 
 ### General tips and guidelines
 
 * use short wires
-* use wires with at least 20AWG gauge \(0.5mm²\) for any **power** wires. **Signal** wires can be a lot **thinner**.
+* use wires with at least 20AWG gauge (0.5mm²) for any **power** wires. **Signal** wires can be a lot **thinner**.
 * use a shielded USB cable with the shield soldered to ground. If you use unshielded cables, twist the signal wires.
 * solder _**everything**_, avoid any USB cables or plugs without a latching mechanism
 * use a quality **BEC** with at least **3A**
@@ -35,24 +35,24 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 * Keep the antenna away from the camera and camera cable
 * If you see **straight vertical** **lines** in the video, you may need to use a **shorter** camera cable or **shield** it with foil
 * The system can potentially interfere with 433Mhz, 868Mhz LRS, or GPS
-  * If you encounter problems like this, consider separating, shielding or changing some of the components \(ask us for help\)
+  * If you encounter problems like this, consider separating, shielding or changing some of the components (ask us for help)
 
 **In General plan to specifically allocate power to the PI and specifically to the Wifi Card**
 
 **POWER PI options:**
 
-* **A** micro usb \(not recommended\) 
+* **A** micro usb (not recommended)
 * **B** solder wires from bec to micro usb points
-* **C** solder wires from bec to gpio \(**recommend**\)
+* **C** solder wires from bec to gpio (**recommend**)
 
 **AND**
 
 **POWER WIFI options:**
 
-* **1** micro usb plugged into pi. No other wiring... \(DOESNT WORK\)
-* **2** solder wires from the micro usb power point to the pi wifi usb power points \(not recommended\)
-* **3** solder wires from bec to the pi USB Power points 
-* **4** solder wires from bec to wifi card \(**recommend**\)
+* **1** micro usb plugged into pi. No other wiring... (DOESNT WORK)
+* **2** solder wires from the micro usb power point to the pi wifi usb power points (not recommended)
+* **3** solder wires from bec to the pi USB Power points
+* **4** solder wires from bec to wifi card (**recommend**)
 
 ## Power wiring
 
@@ -61,24 +61,24 @@ It is also **strongly recommended** that you solder the USB data lines. On some 
 Much like the Air SBC, the Ground SBC will likely be powered by a LiPo battery. The Raspberry Pi and the WiFi cards all use 5V, which is what most BEC's produce. So hook up one of your SBC's to a LiPo battery and use a multi meter to double-check the output is +5V.
 
 {% hint style="info" %}
-The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V ~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
+The Raspberry Pi and most WiFi adapters actually like the voltage to be slightly higher than +5V, along the lines of 5.2V \~ 5.4V. If you have a variable output, best set it to +5.3V. Do not go higher than +5.4V or you will damage your Raspberry Pi and/or WiFi cards!
 {% endhint %}
 
-When you have verified the output of the BEC, you can connect it to the Raspberry Pi, to do this, you have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the BEC to the PI on pins 2 and 6 \(or 4 and 6\) according to this diagram:
+When you have verified the output of the BEC, you can connect it to the Raspberry Pi, to do this, you have two options. Soldering or using the GPIO Pin Header, for the Ground SBC it's OK to use the GPIO Pin Header, for the Air unit we recommend soldering. Connect the output from the BEC to the PI on pins 2 and 6 (or 4 and 6) according to this diagram:
 
-![The Raspberry Pi GPIO Pin Header](../.gitbook/assets/image%20%2824%29%20%282%29%20%282%29.png)
+![The Raspberry Pi GPIO Pin Header](<../.gitbook/assets/image (24) (2) (2) (1) (1).png>)
 
 This can be done easily by just plugging in the Servo header that comes with most BEC's into the Raspberry Pi Pin Header. Make sure the RED wire is connecting to Pin 2 or 4 and the BLACK wire is connecting to PIN 6. Now when you connect power to the BEC, the Raspberry Pi will power up!
 
 The 3A BEC can also power a 7" HDMI screen with a micro USB connector.
 
-![Raspberry Pi Powered from Pin Header](../.gitbook/assets/image%20%281%29.png)
+![Raspberry Pi Powered from Pin Header](<../.gitbook/assets/image (1).png>)
 
-Now that we have power going to the Raspberry Pi it's time to power the WiFi adapter\(s\). Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
+Now that we have power going to the Raspberry Pi it's time to power the WiFi adapter(s). Due to the way the Raspberry Pi is designed the USB ports do not receive enough power to drive the WiFi cards, especially when connecting more than one WiFi card as is often the case on a ground station.
 
-To mitigate this problem it is necessary to power the WiFi card\(s\) directly from the BEC as well. Please refer to the diagram below to see how. Please note that **5V** and **GND** are **NOT** connected to the Raspberry Pi USB Port.
+To mitigate this problem it is necessary to power the WiFi card(s) directly from the BEC as well. Please refer to the diagram below to see how. Please note that **5V** and **GND** are **NOT** connected to the Raspberry Pi USB Port.
 
-![Powering the Raspberry Pi and the WiFi card from the BEC](../.gitbook/assets/image%20%284%29%20%282%29%20%289%29%20%286%29.png)
+![Powering the Raspberry Pi and the WiFi card from the BEC](<../.gitbook/assets/image (4) (2) (9) (1).png>)
 
 Soldering as much of these connections as possible will prevent accidental disconnects. On the Ground side, soldering might be optional, on the Air side it is mandatory as it is subjected to greater vibrations.
 
@@ -106,17 +106,17 @@ With Power and WiFi connected the system basics should work, in most cases howev
 Several users are a member of the **'I fried my serial port and now I'm using a USB to Serial Adapter**'-club. To prevent membership, please read how to properly connect your Flight Controller.
 {% endhint %}
 
-Most Flight Controllers will allow for Serial \(UART\) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well.
+Most Flight Controllers will allow for Serial (UART) connections, while some may only output Telemetry, most modern Flight Controllers will allow true bi-directional communication, allowing the system to send commands to the Flight Controller as well.
 
 In order to connect via Serial to a Flight Controller the following pins must be connected:
 
-| Raspberry Pi | Flight Controller |
-| :--- | :--- |
-| TX \(Pin 8\) | RX |
-| RX \(Pin 10\) | TX |
-| GND \(Any Ground\) | GND |
+| Raspberry Pi     | Flight Controller |
+| ---------------- | ----------------- |
+| TX (Pin 8)       | RX                |
+| RX (Pin 10)      | TX                |
+| GND (Any Ground) | GND               |
 
-![Correctly wiring the Flight Controller](../.gitbook/assets/image%20%283%29.png)
+![Correctly wiring the Flight Controller](<../.gitbook/assets/image (3).png>)
 
 Refer to the schematics of your specific Flight Controller to find the right connections for the UART you want to use. Most Flight Controllers have more than one UART, so pay attention!
 
@@ -124,9 +124,9 @@ The Raspberry Pi uses **3.3V** level for it's UART, like most Flight Controllers
 
 #### Cheap
 
-Use two resistors to create a voltage divider circuit on the INCOMING \(RX\) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V\(-ish\). The **outgoing** 3.3V from the Pi's TX will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://OscarLiang.net) for an example.
+Use two resistors to create a voltage divider circuit on the INCOMING (RX) connection to the Raspberry Pi. This will scale the incoming 5V to a safer 3.3V(-ish). The **outgoing** 3.3V from the Pi's TX will in most cases still be recognized by the Flight controller. See the diagram below from [OscarLiang.net](http://oscarliang.net) for an example.
 
-![Using a voltage divider](../.gitbook/assets/image%20%287%29.png)
+![Using a voltage divider](<../.gitbook/assets/image (7).png>)
 
 #### Good
 
@@ -138,21 +138,14 @@ To see some background, please check this [Sparkfun](https://learn.sparkfun.com/
 
 ### Camera extension cables
 
-
 #### CSI camera
 
-It is certainly possible to extend CSI camera cables if needed. There are 2 type of cables: "Pi Zero" style with 22 pins and 0.5mm pitch and "normal" pi with 15 pins and 1mm pitch. 
-Cables are usually available from Pi store or Ali Express [15 pin cable extension](https://thepihut.com/products/flex-cable-for-raspberry-pi-camera-or-display-1-meter) [22 pin cable extension](https://thepihut.com/products/raspberry-pi-zero-camera-cable-300mm) [15 pin extension Aliepress](https://www.aliexpress.com/item/32766766890.html) [22 pin extension Aliexpress](https://www.aliexpress.com/item/32762343933.html). Different lengths are available depending on the source. 
-It is also possible to use adapters in order to use 15pin cables with 22 pin cables. This [15 pin to 22 pin adapter](https://thepihut.com/products/camera-cable-joiner-for-raspberry-pi-15-pin-to-22-pin/) allow to convert Pi Zero cameras to normal Raspberry 15 pin connector or simply extend standard cable using [15 pin to 15 pin joyner](https://thepihut.com/products/camera-cable-joiner-extender-for-raspberry-pi) or [22 pin to 22pin joyner](https://thepihut.com/products/zero-camera-cable-joiner-for-raspberry-pi-22-pin-to-22-pin).
-As a side note, the last 2 adapters cannot be used with cables with exposed pin on the same side because adapters mirror the pinout ( 1,2,...15 to 15,14,...1) so cables with pin on the opposite side must be use in order to restore correct pinout. In general nothing bad will happen if the wrong cable is used because there is built in protections but of course OpenHD will not complete the boot due to no camera being detected. 
+It is certainly possible to extend CSI camera cables if needed. There are 2 type of cables: "Pi Zero" style with 22 pins and 0.5mm pitch and "normal" pi with 15 pins and 1mm pitch. Cables are usually available from Pi store or Ali Express [15 pin cable extension](https://thepihut.com/products/flex-cable-for-raspberry-pi-camera-or-display-1-meter) [22 pin cable extension](https://thepihut.com/products/raspberry-pi-zero-camera-cable-300mm) [15 pin extension Aliepress](https://www.aliexpress.com/item/32766766890.html) [22 pin extension Aliexpress](https://www.aliexpress.com/item/32762343933.html). Different lengths are available depending on the source. It is also possible to use adapters in order to use 15pin cables with 22 pin cables. This [15 pin to 22 pin adapter](https://thepihut.com/products/camera-cable-joiner-for-raspberry-pi-15-pin-to-22-pin/) allow to convert Pi Zero cameras to normal Raspberry 15 pin connector or simply extend standard cable using [15 pin to 15 pin joyner](https://thepihut.com/products/camera-cable-joiner-extender-for-raspberry-pi) or [22 pin to 22pin joyner](https://thepihut.com/products/zero-camera-cable-joiner-for-raspberry-pi-22-pin-to-22-pin). As a side note, the last 2 adapters cannot be used with cables with exposed pin on the same side because adapters mirror the pinout ( 1,2,...15 to 15,14,...1) so cables with pin on the opposite side must be use in order to restore correct pinout. In general nothing bad will happen if the wrong cable is used because there is built in protections but of course OpenHD will not complete the boot due to no camera being detected.
 
-It is also important to advise that longer the cable is, the easier it is to absorb and transmit interferences. It is suggested to keep cables as short as possible and in case of interference on video or to other components (such as WiFi card, FC, servos etc) shield the cable using aluminium foil.
-Flat cables can be easy bed a fold to avoid loosing wires. 
-
+It is also important to advise that longer the cable is, the easier it is to absorb and transmit interferences. It is suggested to keep cables as short as possible and in case of interference on video or to other components (such as WiFi card, FC, servos etc) shield the cable using aluminium foil. Flat cables can be easy bed a fold to avoid loosing wires.
 
 ### Antenna tracker
 
 On the ground SBC you might want to attach an Antenna Tracker, most of these units require us to output the Mavlink data via Serial communication. When only connecting the TX from the Raspberry Pi to the RX of the Ground station no special consideration needs to be given to the voltage levels. Most Micro controllers will allow the 3.3V of the Raspberry Pi as a logic signal.
 
 When connecting the RX on the Raspberry Pi as well, however, earlier warnings mentioned for the [Flight Controller](wiring.md#flight-controller) come into play. The Raspberry Pi uses **3.3V** Serial, while most Micro controllers use **5V**. Putting **5V** on the Raspberry Pi RX pin will **permanently damage** the Serial controller. Please refer to the '[cheap](wiring.md#cheap)' and '[good](wiring.md#good)' solutions mentioned under the Flight Controller section.
-

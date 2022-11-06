@@ -3,11 +3,11 @@
 In some cases you want to use the Ethernet port of the Ground SBC to connect to a laptop for instance. In this case you can enable the Ethernet Hotspot.
 
 {% tabs %}
-{% tab title="ETHERNET\_HOTSPOT" %}
-| Value | Description |
-| :--- | :--- |
-| Y | Enable the Ethernet hotspot |
-| N | Disable the Ethernet hotspot |
+{% tab title="ETHERNET_HOTSPOT" %}
+| Value | Description                  |
+| ----- | ---------------------------- |
+| Y     | Enable the Ethernet hotspot  |
+| N     | Disable the Ethernet hotspot |
 {% endtab %}
 {% endtabs %}
 
@@ -22,4 +22,3 @@ When the Ethernet hotspot is on, the WiFi hotspot doesn't work.
 {% hint style="warning" %}
 If you are trying to ssh into the groundpi, turn OFF the Ethernet hotspot setting. If ethernet is connected to a router then get the pi IP address from the router.
 {% endhint %}
-

@@ -13,7 +13,7 @@ We accomplished a lot by using a dedicated settings and OSD [application ](../gr
 
 **What is SmartSync?**
 
-SmartSync is a program that **guarantees synchronization** between **any vehicle** and the **ground station** that you have Open.HD installed on by making the air and ground always briefly start with fixed settings on a specific wifi channel \(settable in [QOpen.HD](../ground-station-software/qopen.hd-recommended.md)\) then automatically matches whatever settings happened to be applied on the ground.
+SmartSync is a program that **guarantees synchronization** between **any vehicle** and the **ground station** that you have Open.HD installed on by making the air and ground always briefly start with fixed settings on a specific wifi channel (settable in [QOpen.HD](../ground-station-software/qopen.hd-recommended.md)) then automatically matches whatever settings happened to be applied on the ground.
 
 {% hint style="warning" %}
 Be aware that the settings of the **GROUND** station are applied to the **AIR** vehicle. Make sure you **save** your _profiles_ on the Ground Station and **load** the appropriate one before connecting to the AIR vehicle.
@@ -36,35 +36,33 @@ If you want or need more control over SmartSync there are several options to pre
 Aside from the methods mentioned to prevent SmartSync, we also have complete control over the system in the settings. Again, all settings are best modified through the [QOpen.HD app](../ground-station-software/qopen.hd-recommended.md).
 
 {% tabs %}
-{% tab title="SmartSync\_StartupMode" %}
-| Value | Description |
-| :--- | :--- |
-| 0 _\(default\)_ | Disable SmartSync, this actually still gives you a couple of seconds to use either the joystick or the GPIO connected switch to force SmartSync. Otherwise it boots with the last know settings. This is the fastest way to start Open.HD. |
-| 1 | Unless overridden by either the Joystick or the GPIO switch the Ground will wait for an incoming connection from the Air for a specified period of time \(see _SmartSyncGround\_Countdown_\) and perform SmartSync if a connection is established within that time. |
+{% tab title="SmartSync_StartupMode" %}
+| Value         | Description                                                                                                                                                                                                                                                       |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0 _(default)_ | Disable SmartSync, this actually still gives you a couple of seconds to use either the joystick or the GPIO connected switch to force SmartSync. Otherwise it boots with the last know settings. This is the fastest way to start Open.HD.                        |
+| 1             | Unless overridden by either the Joystick or the GPIO switch the Ground will wait for an incoming connection from the Air for a specified period of time (see _SmartSyncGround\_Countdown_) and perform SmartSync if a connection is established within that time. |
 {% endtab %}
 
-{% tab title="SmartSyncRC\_Channel" %}
-| Value | Description |
-| :--- | :--- |
-| 0~12 | The RC channel to observe for enabling or disabling SmartSync during boot. Defaults to 2, which tends to be the Elevator channel on most setups. |
+{% tab title="SmartSyncRC_Channel" %}
+| Value | Description                                                                                                                                      |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0\~12 | The RC channel to observe for enabling or disabling SmartSync during boot. Defaults to 2, which tends to be the Elevator channel on most setups. |
 {% endtab %}
 
-{% tab title="SmartSyncGround\_Countdown" %}
-| Value | Description |
-| :--- | :--- |
-| 0~999 | The duration in seconds to wait for the Air unit to become available. |
-| _45_ | _Recommended when using a Raspberry Pi as an Air unit._ |
-| 0 | Wait indefinitely for the Air unit to become available |
+{% tab title="SmartSyncGround_Countdown" %}
+| Value  | Description                                                           |
+| ------ | --------------------------------------------------------------------- |
+| 0\~999 | The duration in seconds to wait for the Air unit to become available. |
+| _45_   | _Recommended when using a Raspberry Pi as an Air unit._               |
+| 0      | Wait indefinitely for the Air unit to become available                |
 {% endtab %}
 
-{% tab title="SmartSyncON/OFF\_RC\_Value" %}
-| Value | Description |
-| :--- | :--- |
-| 0~2500 | The PWM value above or below which the desired action \(On or OFF\) is triggered. |
-| 1700 | The default value above which SmartSync is considered ON |
-| 1300 | The default value below which SmartSync is considered OFF |
+{% tab title="SmartSyncON/OFF_RC_Value" %}
+| Value   | Description                                                                     |
+| ------- | ------------------------------------------------------------------------------- |
+| 0\~2500 | The PWM value above or below which the desired action (On or OFF) is triggered. |
+| 1700    | The default value above which SmartSync is considered ON                        |
+| 1300    | The default value below which SmartSync is considered OFF                       |
 {% endtab %}
 {% endtabs %}
-
-
 
