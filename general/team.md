@@ -12,6 +12,6 @@
 
 ### Additional Mentions
 
-Since OpenHD is an OpenSource project, it's hard to name every person who contributed to OpenHD, but here we want to add a few honorable mentions (for privacy reasons we'll only mention their nicknames)
+Since OpenHD is an open source project, it's hard to name every person who contributed to OpenHD over the years, but here we want to add a few honorable mentions (for privacy reasons we'll only mention their nicknames)
 
 <figure><img src="../.gitbook/assets/wordcloud.svg" alt=""><figcaption></figcaption></figure>
