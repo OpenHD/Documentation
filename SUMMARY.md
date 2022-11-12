@@ -9,6 +9,10 @@
 * [Contributing](general/contributing.md)
 * [Team](general/team.md)
 
+***
+
+* [Installation Guide](installation-guide.md)
+
 ## Hardware
 
 * [First Time Setup](hardware/first-time-setup.md)
