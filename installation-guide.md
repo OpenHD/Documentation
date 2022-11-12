@@ -18,7 +18,7 @@ Download and install the latest OpenHD imager (based on rpi imager) from \
 Step 2: (Only CM4 with emmc): Connect your CM4 via USB and initialize flashing (TODO)\
 \
 Step 3:\
-Open up the imager and select the latest OpenHD release from the drop down. The imager will automatically download the selected image. You can also download the image manually and flash it using the "Custom image" selector.
+Open up the imager and select the latest OpenHD release from the drop down. The imager will automatically download the selected image. You can also download the image manually and flash it using the "Custom image" selector. Make sure to unzipp the image externally first, then select the .img file (Not the .zip file)
 
 ![](<.gitbook/assets/Screenshot from 2022-11-12 16-47-39.png>)\
 \
