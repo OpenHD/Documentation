@@ -20,6 +20,8 @@ By default, UART telemetry is disabled in OpenHD. You can enable it in QOpenHD u
 __\
 _Make sure to select the baud rate matching your FC._
 
+__![](<../.gitbook/assets/Screenshot from 2022-11-12 19-19-37.png>)__
+
 ## 2) Wiring
 
 * Connect the serial port TX pin of your flight controller to the serial port RX pin on the Pi. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! So don't connect the + 5V ! (See [https://pinout.xyz/](https://pinout.xyz/) for pinout).\
