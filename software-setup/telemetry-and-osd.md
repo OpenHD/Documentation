@@ -16,7 +16,7 @@ With Ardupilot you may need to enable certain "stream rate" parameters on the fl
 
 ## **1)** En**able UART in OpenHD**
 
-By default, UART telemetry is disabled in OpenHD. You can enable it in QOpenHD using the AIR(TMP) Settings registry (FC\__UART\_CONN) and selecting serial0._\
+By default, UART telemetry is disabled in OpenHD. You can enable it using QOpenHD in the AIR(TMP) Settings registry (FC\__UART\_CONN) and selecting serial0._\
 __\
 _Make sure to select the baud rate matching your FC._
 
