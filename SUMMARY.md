@@ -41,6 +41,7 @@
 
 * [Telemetry](software-setup/telemetry-and-osd.md)
 * [Joystick RC](software-setup/joystick-rc.md)
+* [Camera Settings](software-setup/camera-settings.md)
 
 ## Ground Station Software
 
