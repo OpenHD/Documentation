@@ -22,7 +22,7 @@ Assuming you are starting with nothing, we recommend you get the following Hardw
 * Two WiFi cards that support the band you want to use. (See [WiFi Adapters](wifi-adapters.md))
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen (use your TV for testing!)
-* Four BEC's for powering the Air and Ground SBC's, and the Wifi-Adapters independently. (See Wiring -> Power)
+* High Quality BEC's, AT LEAST one for air or ground each. You can also use four BEC's for powering the Air and Ground SBC's, and the Wifi-Adapters independently. (See Wiring -> Power)
 * A supported Camera ([Original Raspberry Camera](broken-reference)) and the required cable (keep in mind, the ochin uses a zero-csi cable)
 * Various lengths of connection wires.
 * A soldering iron and required disposables.
