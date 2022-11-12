@@ -26,9 +26,16 @@ Step 4:\
 Insert your SD card into the card reader, and select it from the "Choose storage" option. If you are using a CM4, it'l show up like an SD card.\
 \
 Step 5:\
-Click on "Settings" on the lower right corner and select either air or ground (depending weather you want to flash an air or ground image). You cannot skip this step.\
+Click on "Settings" on the lower right corner and select either air or ground (depending weather you want to flash an air or ground image). You cannot skip this step. For a functional OpenHD setup, you need to flash one Air unit (select air) and one Ground unit (select ground).\
 \
 Step 6:\
-Flash your image by clicking on "Write". This might take a while.&#x20;
+Flash your image by clicking on "Write". This might take a while. \
+\
+\
+Manual install:\
+You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing.\
+For air: Create a file called air.tx under /boot/OpenHD/.\
+For ground: Create a file ground.txt under /boot/OpenHD/\
+Note: Filenames are case-sensitive. If you want to switch from air to ground, it is recommended to reflash your image, then create the air or ground file.
 
 \
