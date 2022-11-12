@@ -1,5 +1,5 @@
 ---
-description: Enable bidirectional telemetry
+description: Enable bidirectional telemetry between your FC and OpenHD
 ---
 
 # Telemetry
