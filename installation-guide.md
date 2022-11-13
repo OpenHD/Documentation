@@ -9,8 +9,10 @@ description: Flash your air and ground unit with OpenHD firmware
 ### Requirements
 
 1. A windows or linux PC (otherwise, read "manual install" below)
-2.1 For hardware that doesn't have soldered memory (e.g. RPI4): SD card reader and a high quality SD card at least 8GB in size (16GB or higher is recommended)
-2.2 For hardware with soldered memory (e.g. Ochin & CM4 with eMMC): High quality USB cable
+2. 
+    a) SD card reader and a high quality SD card at least 16GB in size (Rpi only needs 8GB)
+    b) High quality USB cable if you use Hardware with internal memory (e.g. Ochin & CM4 with eMMC)
+
 
 Step 1:\
 Download and install the latest OpenHD imager (based on rpi imager) from \
