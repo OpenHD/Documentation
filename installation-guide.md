@@ -14,13 +14,13 @@ description: Flash your air and ground unit with OpenHD firmware
 # Installation Guide
 
 Step 1: 
-Download and install the latest OpenHD imager (based on rpi imager) from \
-[https://github.com/OpenHD/OpenHD-ImageWriter](https://github.com/OpenHD/OpenHD-ImageWriter)\
-![](<.gitbook/assets/Screenshot from 2022-11-12 16-46-44.png>)\
+Download and install the latest OpenHD imager (based on rpi imager) from 
+[https://github.com/OpenHD/OpenHD-ImageWriter](https://github.com/OpenHD/OpenHD-ImageWriter)
+![](<.gitbook/assets/Screenshot from 2022-11-12 16-46-44.png>)
 
 
 Step 1.1: 
-(Only CM4 with emmc): Connect your CM4 via USB and initialize flashing (TODO)\
+(Only CM4 with emmc): Connect your CM4 via USB and initialize flashing (TODO)
 
 Step 3:
 Open up the imager and select the latest OpenHD release from the drop down. The imager will automatically download the selected image. You can also download the image manually and flash it using the "Custom image" selector. Make sure to unzipp the image externally first, then select the .img file (Not the .zip file)
@@ -38,9 +38,7 @@ Flash your image by clicking on "Write". This might take a while.
 
 
 ### Manual install:\
-You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing.\
-For air: Create a file called air.tx under /boot/OpenHD/.\
-For ground: Create a file ground.txt under /boot/OpenHD/\
+You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing.
+For air: Create a file called air.tx under /boot/OpenHD/.
+For ground: Create a file ground.txt under /boot/OpenHD/
 Note: Filenames are case-sensitive. If you want to switch from air to ground, it is recommended to reflash your image, then create the air or ground file.
-
-\
