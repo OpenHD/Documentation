@@ -4,7 +4,7 @@ description: Flash your air and ground unit with OpenHD firmware
 
 # Installation Guide
 
-Prerequisites:\
+### Prerequisites:\
 1\) A windows or linux PC (otherwise, read "manual install" below)\
 2.1) For hardware that doesn't have soldered memory (e.g. RPI4): SD card reader and a high quality SD card at least 8GB in size (16GB or higher is recommended)\
 2.2) For hardware with soldered memory (e.g. Ochin & CM4 with eMMC): High quality USB cable\
@@ -32,7 +32,7 @@ Step 6:\
 Flash your image by clicking on "Write". This might take a while. \
 \
 \
-Manual install:\
+### Manual install:\
 You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing.\
 For air: Create a file called air.tx under /boot/OpenHD/.\
 For ground: Create a file ground.txt under /boot/OpenHD/\
