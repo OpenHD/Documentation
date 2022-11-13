@@ -8,7 +8,7 @@ description: Flash your air and ground unit with OpenHD firmware
 
 {% hint style="info" %}
 
-### Requirements
+requirements
 
 
 1. A windows or linux PC (otherwise, read "manual install" below)
@@ -16,7 +16,7 @@ description: Flash your air and ground unit with OpenHD firmware
     a) SD card reader and a high quality SD card at least 16GB in size (Rpi only needs 8GB)
 
     b) High quality USB cable (if you use Hardware with internal memory (e.g. Ochin & CM4 with eMMC))
-    
+
 {% endhint %}
 
 
