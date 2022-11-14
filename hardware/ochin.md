@@ -18,7 +18,7 @@ The [ochin_CM4 board](https://github.com/ochin-space/ochin-CM4) is a carrier boa
 
 ## Wiring
 
-![wiring](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin1.png)
+![wiring](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin1.png)
 
 ## Important notices on the Ochin_CM4
 
@@ -46,17 +46,17 @@ Before positioning the CM4 module, it is advisable to check that there are no sp
 Place the module gently on the connectors until you feel they are seated in each other (there is a first zero force step where they snap into). When you are sure that the two boards are perfectly aligned and the connectors engaged, press the two long edges of the CM4 module until the connectors are fully inserted. 
 It is advisable to limit the disassembly of the CM4 module as much as possible to avoid damaging the connector contacts.
 
-![right](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin2.png)
-![wrong](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin3.png)
+![right](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin2.png)
+![wrong](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin3.png)
 
 
 To remove the CM4 module from the ochin board is always suggested to use the proper extractor. 
 
 You can find the .STL files to print [here](https://github.com/ochin-space/ochin-CM4/tree/master/3d/Covers%20turrets%20and%20extractors).
 
-![extractor](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin4.png)
-![extractor](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin5.png)
-![extractor](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin6.png)
+![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin4.png)
+![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin5.png)
+![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin6.png)
 
 
 ## Flashing the Ochin
@@ -67,7 +67,7 @@ The procedure to flash the CM4 eMMC it’s straightforward, what you need to do 
 •	Press the “nRPiboot” button and, keeping it pressed power up the board using the “Vin” Connector.
 •	Connect the board to your PC using the USB Type-C port
 
-![boot](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin7.png)
+![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin7.png)
 
  
 
@@ -80,7 +80,7 @@ The procedure to flash the CM4 eMMC it’s straightforward, what you need to do 
 The CSI camera can be connected to one of the two FFC connectors.
 If you want to use the "Camera0" connector, make sure that the two jumpers of the I2C (used for the camera config) are shorted.
 
-![boot](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin8.png)
+![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin8.png)
 
 
 ## Connecting the WiFi dongle:
@@ -90,7 +90,7 @@ The WiFi dongle can be connected to one of the 4 USB connectors on the board.
 
 In order to minimize the problems associated with connecting a "fast bus" such as USB, it is advisable to cut a USB extender and solder it to a GHS connector, leaving the wires on the connector side as short as possible.
 
-![boot](https://github.com/OpenHD/Open.HD/raw/evo/.gitbook/assets/Ochin/Ochin10.png)
+![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin10.png)
 
 
 ## Connecting the Telemetry
