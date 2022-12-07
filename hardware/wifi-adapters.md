@@ -1,7 +1,7 @@
 # WiFi Adapters
 
 Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! 
-If you are new to OpenHD and not familiar with all the advantages/disadvantages of differen wifi cards, get 2x ASUS USB-AC56 or 2x ALFA AWUS036ACH (RTL8812au).
+If you are new to OpenHD and not familiar with all the advantages/disadvantages of different wifi cards, get 2x ASUS USB-AC56 or a similar good quality adapter using RTL8812AU.
 
 When choosing between 2.4G and 5.8G, while 2.4G offers better penetration than 5.8G, it much more suspectible to common sources of interference and it can be hard to find a not polluted channel on 2.4G. 5.8G also allows you to use your existing 2.4G RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.
 
