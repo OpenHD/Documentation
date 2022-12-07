@@ -1,8 +1,12 @@
 # WiFi Adapters
 
-Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! We highly recommend at least 2 WiFi cards on the GroundPi. This will enable diversity and give you significant gains! The Pi3 can support 2-3 USB connections, and the Pi4 can support 4 or more.
+Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! 
+While you can use more than 1 wifi card for rx diversity on your ground station, this requires even more carefull wiring and power considerations.
+Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, it is recommened to get 2
+cards of the same type for the beginning.
 
-When choosing between 2.4 and 5.8ghz, know that 2.4 will get better range, but is susceptible to more common sources of interference. 2.4ghz RC transmitters and many common WiFi signals will interfere with 2.4ghz OpenHD. 5.8 WiFi is less common, for now, and it also conflicts less with most popular RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.
+When choosing between 2.4G and 5.8G, while 2.4G offers better penetration than 5.8G, it much more suspectible to common sources of interference and it can be hard to find a not polluted channel on 2.4G. 5.8G also allows you to use your existing 2.4G RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.
+
 
 Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp42enOvZxElc2p3ghEwpEpJphieajb2lJQ/viewform) to submit any WiFi Dongles you may have tested. We will add them to the matrix below!
 
