@@ -1,12 +1,13 @@
 # WiFi Adapters
 
 Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! 
-While you can use more than 1 wifi card for rx diversity on your ground station, this requires even more carefull wiring and power considerations.
-Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, it is recommened to get 2
-cards of the same type for the beginning.
+If you are new to OpenHD and not familiar with all the advantages/disadvantages of differen wifi cards, get 2x ASUS USB-AC56 or 2x ALFA AWUS036ACH (RTL8812au).
 
 When choosing between 2.4G and 5.8G, while 2.4G offers better penetration than 5.8G, it much more suspectible to common sources of interference and it can be hard to find a not polluted channel on 2.4G. 5.8G also allows you to use your existing 2.4G RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.
 
+RX diversity:
+You can use either a wifi card with multiple antennas or multiple wifi cards on your ground station for RX diversity. However, it is easy to mess up things by improper wiring and/or using wrong antennas when using more than one rx card. We therefore do not recommend more than one card for new users.
+Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, this is not recommended.
 
 Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp42enOvZxElc2p3ghEwpEpJphieajb2lJQ/viewform) to submit any WiFi Dongles you may have tested. We will add them to the matrix below!
 
