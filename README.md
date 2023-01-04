@@ -13,7 +13,7 @@ A multi-platform [Open.HD app ](https://github.com/OpenHD/QOpenHD/releases)is av
 **For support and further reading:**
 
 * [OpenHD Forum](https://forum.openhdfpv.org/)
-* Public [Telegram](https://t.me/OpenHD\_User) and [Discord](https://discord.com/channels/913528547023396894/933085907379171418/937448198568562718) groups for lots of immediate interaction
+* Public [Telegram](https://t.me/OpenHD\_User) and [Discord](https://discord.gg/N685WjnF) groups for lots of immediate interaction
 * Please document problems on [Github](https://github.com/OpenHD/Open.HD/issues)
 * First intro to Open.HD from CurryKitten on [Youtube](https://www.youtube.com/playlist?list=PL7WaECFssECJWfTc0vKYTfUdH5y8UgdI9)
 
