@@ -37,7 +37,7 @@ The ground SBC needs enough "juice" to be able to decode, display and control th
 
 ### Step 2: Connecting the WiFi Adapter
 
-Since we use pretty powerfull WiFi-Cards and most SBC's have limited USB-Output-Power, we need a dedicated BEC for that Card's. In Addition to that it's common practice to not connect the Wifi-Card directly to the SBC. On the Air-SBC Vibrations and movement in general will result in connection problems, that's why we recommend to remove the USB-Connector or at least solder to the USB-Connector. If you need help with that look in our forums, there are some extensive guides how to do it nicely. Also writing in the Telegram or Discord Chat can help you.
+Since we use very powerfull WiFi-Cards and most SBC's have limited USB-Output-Power, we need a dedicated BEC for that Card's. In Addition to that it's common practice to not connect the Wifi-Card directly to the SBC. On the Air-SBC Vibrations and movement in general will result in connection problems, that's why we recommend to remove the USB-Connector or at least solder to the USB-Connector. If you need help with that look in our forums, there are some extensive guides how to do it nicely. Also writing in the Telegram or Discord Chat can help you.
 
 ### Step 3: Connecting a display
 

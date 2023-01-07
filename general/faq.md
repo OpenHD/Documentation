@@ -2,14 +2,14 @@
 
 #### Where are the config-files ?
 
-With 2.2-evo we removed the complex config files. Everything is set up in QOpenhd or the Configuator, which will come in the future. 
+With 2.2-evo we removed the complex config files. Everything is set up in QOpenhd or the Configuator, which will come in the future.
 
 #### What is the minimum hardware I need to try this?
 
-Two Raspberry Pis, two supported WiFi adapters, one Pi cam \(Or CSI-HDMI adapter\), and 2 good quality \(preferably industrial micro SD cards\). 
+Two Raspberry Pis, two supported WiFi adapters, one Pi cam (Or CSI-HDMI adapter), and 2 good quality (preferably industrial micro SD cards).
 
 {% hint style="warning" %}
-Please read the rest of the documentation and do your homework when you make your purchases! Only specific WiFi cards will work due to the unique system requirements.
+Please read the rest of the documentation and do your homework when you make your purchases! Only specific WiFi cards will work due to the unique system requirements. Good results are only achieved with proper power supply and wiring!
 {% endhint %}
 
 #### What is the lowest latency I can achieve?
@@ -18,9 +18,7 @@ On a Raspberry Pi, 100ms “glass to glass”. Although most setups are in the 1
 
 On a Jetson Nano as Air-SBC you can expect to lower the latency, but no official numbers are published yet.
 
-The lowest latency can be achieved on our custom hardware. There are no official numbers yet, but you can expect to cut your latency in half, which makes OpenHD repsonsive enough to fly on race/freestyle-setups.
-It's not released yet, but you can follow the project here: (https://www.patreon.com/OpenHD)
-
+The lowest latency can be achieved on our custom hardware. There are no official numbers yet, but you can expect to cut your latency in half, which makes OpenHD repsonsive enough to fly on race/freestyle-setups. It's not released yet, but you can follow the project here: (https://www.patreon.com/OpenHD)
 
 #### What kind of range can I expect?
 
@@ -32,8 +30,7 @@ Carefully chosen WiFi cards, antennas, and optionally an antenna tracker should 
 
 #### How long does OpenHD take to regain a lost “connection”?
 
-#Needs Testing
-<!-- It depends on the kind of camera you are using, if it is a Raspberry Pi camera and the settings are still left on the defaults, the system should recover from serious interference within 300ms at most, more likely the interference will only partially disrupt the video and you will see momentary noise that will clear up rapidly.  -->
+\#Needs Testing
 
 #### Will I see a blue screen when I lose connection?
 
@@ -51,49 +48,43 @@ A computer on a single circuit board. In this case running a derivative of Linux
 
 #### Do I need a WiFi adapter for video, another for telemetry and another for RC control?
 
-No, just one adapter for ground and one for air.
-You can optionally use 2 WiFi adapters on the ground side for diversity, which improves signal reception.
+No, just one adapter for ground and one for air. You can optionally use 2 WiFi adapters on the ground side for diversity, which improves signal reception.
 
-#### Can I run OpenHD on different platforms ? \(Orange Pi, Banana Pi, BeagleBone\)?
+#### Can I run OpenHD on different platforms ? (Orange Pi, Banana Pi, BeagleBone)?
 
 Not in OpenHD 2.0. The system is designed around the Raspberry Pi as it is cheap, widely available and the video encoder/decoder hardware works properly.
 
-In OpenHD > 2.2 most of the code has been rewritten. This means that we're much less hardware bound and support for new SBCs could be added in the future.
-Officially we currently differentiate between air and ground.
+In OpenHD > 2.2 most of the code has been rewritten. This means that we're much less hardware bound and support for new SBCs could be added in the future. Officially we currently differentiate between air and ground.
 
 Ground:
 
-The most optimized Platform on the ground is the Raspberry Pi, but if you have quite capable hardware, x86 will give you even better latency than the Pi. 
+The most optimized Platform on the ground is the Raspberry Pi, but if you have quite capable hardware, x86 will give you even better latency than the Pi.
+
 {% hint style="warning" %}
-Not every USB-port is able to supply the Wifi-Adapter with enough power. Please ensure enough power is supplied to the WiFi adapter before flying. The standard 500mA isn't enough. Also, if you do any PowerMods, we're not responsible for any potential damage. 
+Not every USB-port is able to supply the Wifi-Adapter with enough power. Please ensure enough power is supplied to the WiFi adapter before flying. The standard 500mA isn't enough. Also, if you do any PowerMods, we're not responsible for any potential damage.
 {% endhint %}
+
 {% hint style="warning" %}
 Older computers or SBCs may not be fast enough to run OpenHD.
 {% endhint %}
 
 Air:
 
-The lowest latency platform is our custom hardware.
-The second best latency will be achieved with on Jetson Nano.
-The most flexible platform will be the Pi, but it can only encode h.264 video, which will result in increased latency.
+The lowest latency platform is our custom hardware. The second best latency will be achieved with on Jetson Nano. The most flexible platform will be the Pi, but it can only encode h.264 video, which will result in increased latency.
 
 #### What about Orange Pi, Banana Pi, BeagleBone ?
 
 Officially we can not support every platform, but we optimized OpenHD to be easily portable to different SBCs.
 
-You can also run the groundstation (including QOpenHD) on different platforms, but since every SBC handles decoding/compositing/rendering differently, we can't really optimize everything and the workload for our devteam is limited.
-Therefore we only officially support Pi and x86 on the ground.
-
+You can also run the groundstation (including QOpenHD) on different platforms, but since every SBC handles decoding/compositing/rendering differently, we can't really optimize everything and the workload for our devteam is limited. Therefore we only officially support Pi and x86 on the ground.
 
 #### Which WiFi adapters do I need?
 
-See the wiki: [Supported WiFi Adapters](link of the wifi-card-page)
+See the wiki: \[Supported WiFi Adapters]\(link of the wifi-card-page)
 
 #### Can I use this other WiFi adapter that's not on the list?
 
-Only a few WiFi adapters are able to work the way OpenHD needs them to, which limits the selection of WiFi adapters you can use.
-We use a custom kernel, which requires drivers for each new card. Basic requierements are monitor mode and packet injection.
-If the card is stable in both modes and the injection rate is high enough, we can potentionally integrate it.
+Only a few WiFi adapters are able to work the way OpenHD needs them to, which limits the selection of WiFi adapters you can use. We use a custom kernel, which requires drivers for each new card. Basic requierements are monitor mode and packet injection. If the card is stable in both modes and the injection rate is high enough, we can potentionally integrate it.
 
 #### Why can't I just use the Raspberry Pi onboard WiFi?
 
@@ -117,13 +108,11 @@ It is generally necessary to solder power wires and even the USB data wires dire
 
 #### Why do I get a low power warning?
 
-In OpenHD 2.2 you can get low power warnings when your BEC is not able to supply enough power. Please change it to a more powerful one.
-In addition to that, carefully check and wire the WiFi cards correctly in order to avoid power issues.
+In OpenHD 2.2 you can get low power warnings when your BEC is not able to supply enough power. Please change it to a more powerful one. In addition to that, carefully check and wire the WiFi cards correctly in order to avoid power issues.
 
 #### How many WiFi adapters can I use?
 
 Currently only one WiFi adapter is supported, but this will change in later releases.
-<!-- 2x on the air side, 3x on the ground with a Pi3b+. If you are going to connect this many WiFi adapters you are strongly encouraged to use a Pi4b instead of a Pi3b+ for stability. -->
 
 You can use 4x with a Pi4b, but this is overkill.
 
@@ -133,10 +122,9 @@ You can use 4x with a Pi4b, but this is overkill.
 * Amazon
 * banggood.com
 * AliExpress
-* TaoBao \(chinese marketplace\)
+* TaoBao (chinese marketplace)
 
-Due to the global chip shortage it is currently not that easy to buy all the required hardware.
-Try to use https://rpilocator.com/ or buy used hardware.
+Due to the global chip shortage it is currently not that easy to buy all the required hardware. Try to use https://rpilocator.com/ or buy used hardware.
 
 Keep in mind that OpenHD2.2 dropped support for Pi-Zero, Pi1 and Pi2 (lower than 1.2).
 
@@ -170,18 +158,15 @@ FEC is a way to add redundancy to the video stream.
 
 Since the latency must be kept to a minimum, there is no opportunity to retransmit parts of the video that were distorted by interference. Instead, the system will process the video in a way that allows for some of the data to be lost in transmission, without affecting the received video on the GroundPi.
 
-There is a cost to using FEC. The radio bandwidth is a little bit higher \(or viewed another way, the maximum video bitrate/quality is a little bit lower\). However it is mandatory for safe flight. Without FEC, the video would be very easily distorted.
+There is a cost to using FEC. The radio bandwidth is a little bit higher (or viewed another way, the maximum video bitrate/quality is a little bit lower). However it is mandatory for safe flight. Without FEC, the video would be very easily distorted.
 
 #### Is latency going to improve in future updates?
 
-In OpenHD 2.2 we started to highly focus on latency.
-The first releases will have a pretty average latency, but currently we're saving every ms we can.
-With 2.2 we returned to the same latency, which ez-wifibroadcast had, which was significantly lower than previous OpenHD releases.
-Thanks to the use of h.265 video encoding \(not available on Raspberry Pi\) and custom hardware we are able to reduce the latency even more.
+In OpenHD 2.2 we started to highly focus on latency. The first releases will have a pretty average latency, but currently we're saving every ms we can. With 2.2 we returned to the same latency, which ez-wifibroadcast had, which was significantly lower than previous OpenHD releases. Thanks to the use of h.265 video encoding (not available on Raspberry Pi) and custom hardware we are able to reduce the latency even more.
 
 #### What do these numbers mean on the OSD display?
 
-See  [Telemetry and OSD](../software-setup/telemetry-and-osd.md)
+See [Telemetry and OSD](../software-setup/telemetry-and-osd.md)
 
 #### Which RC protocols are supported?
 
@@ -193,14 +178,13 @@ We reduced the telemetry protocols down to only MAVlink, since nearly every FC f
 
 #### What is an AirSBC / GroundSBC?
 
-This is a shorter way to refer to which SBC is transmitting video from the UAV and which SBC is transmitting RC and/or uplink telemetry.
-Both are using the same OS images.
+This is a shorter way to refer to which SBC is transmitting video from the UAV and which SBC is transmitting RC and/or uplink telemetry. Both are using the same OS images.
 
 #### How about Circular vs. Linear polarized antennas?
 
-Circular antennas are known to be very effective in suppressing signal reflections \(multi-pathing\), which degrades the quality of analogue transmission.
+Circular antennas are known to be very effective in suppressing signal reflections (multi-pathing), which degrades the quality of analogue transmission.
 
-Digital systems are not affected by multi-pathing though \(and often can take advantage of it\). Circular antennas are not as important as they would be with an analog video system.
+Digital systems are not affected by multi-pathing though (and often can take advantage of it). Circular antennas are not as important as they would be with an analog video system.
 
 However, circular antennas still have some advantages compared to linear antennas:
 
@@ -219,4 +203,3 @@ We also frequently need translators who can read/write both english and another 
 And of course if you have an idea for something you would like to see us add or change, let us know in Github issues, on the Forum, Discord or on Telegram.
 
 If you want to support the project financially, you can do so via [OpenCollective](https://opencollective.com/openhd).
-
