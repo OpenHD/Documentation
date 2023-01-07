@@ -34,6 +34,7 @@
   * [Special Purpose Cameras](hardware/special-camera.md)
   * [Custom Hardware](hardware/custom-cameras.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
+* [Antennas](hardware/antennas.md)
 * [Wiring](hardware/wiring.md)
 * [Displays](hardware/displays.md)
 
