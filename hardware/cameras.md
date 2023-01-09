@@ -15,152 +15,28 @@ For using 3rd party cameras via HDMI please refer to the [HDMI Input](cameras.md
 {% endhint %}
 
 {% hint style="success" %}
-The best value csi camera is the "small" version of hq camera \(IMX477\) from arducam.
+The best value csi camera is the "small" version of hq camera (IMX477) from arducam.
 
 The best value usb camera is the veye
 {% endhint %}
 
-If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
+If you have tested a camera, please let us know how it performs by filling out this [form](https://docs.google.com/forms/d/e/1FAIpQLSc9hSLo\_BCuiZAzI6lTYKBLIlI07JjcbsiVbniP8zyEAgg8Aw/viewform). We will add the results to the camera matrix.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Connection</th>
-      <th style="text-align:left">Sensor</th>
-      <th style="text-align:left">Resolution</th>
-      <th style="text-align:left">FPS</th>
-      <th style="text-align:left">Price</th>
-      <th style="text-align:left">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V1</a>
-      </td>
-      <td style="text-align:left">CSI</td>
-      <td style="text-align:left">OV5647</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30-90</td>
-      <td style="text-align:left">$25</td>
-      <td style="text-align:left">FPS depends on resolution</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V2</a>
-      </td>
-      <td style="text-align:left">CSI</td>
-      <td style="text-align:left">IMX219</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30-90</td>
-      <td style="text-align:left">$25</td>
-      <td style="text-align:left">FPS depends on resolution</td>
-    </tr>
-     <tr>
-      <td style="text-align:left"><a href="https://uk.pi-supply.com/products/camera-module-for-official-raspberry-pi-camera-board-v2-8mp-sensor-160-degree">Pi Cam V2 plus OTS (off the shelf) sensor</a>
-      </td>
-      <td style="text-align:left">CSI</td>
-      <td style="text-align:left">IMX219</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30-90<4/td>
-      <td style="text-align:left">$25 + $20</td>
-      <td style="text-align:left">FPS depends on resolution. 3rd party sensor with 160 FOV 8mm lens. Custom lens possible plus more light for the sensor</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam HQ</a>
-      </td>
-      <td style="text-align:left">CSI</td>
-      <td style="text-align:left">IMX477</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30-120</td>
-      <td style="text-align:left">$50</td>
-      <td style="text-align:left">FPS depends on resolution, See <a href="https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107">link</a> for
-        improved lens holder to reduce weight.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.inno-maker.com/product/mipi-cam-290">Veye/Innomaker 290</a>
-      </td>
-      <td style="text-align:left">CSI</td>
-      <td style="text-align:left">IMX290</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">$90</td>
-      <td style="text-align:left">Amazing in low light</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.logitech.com/en-gb/product/hd-pro-webcam-c920">Logitech C920</a>
-      </td>
-      <td style="text-align:left">USB</td>
-      <td style="text-align:left">--</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">$95</td>
-      <td style="text-align:left">Reportedly &quot;low&quot; latency for usb</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="http://www.hisilicon.com/en/Products">Hi3518</a>
-      </td>
-      <td style="text-align:left">IP</td>
-      <td style="text-align:left">--</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">--</td>
-      <td style="text-align:left">h264/h265</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMERA_C1_MICRO_M12">C1 Micro</a>
-      </td>
-      <td style="text-align:left">USB</td>
-      <td style="text-align:left">AR0330</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">&#x20AC;112</td>
-      <td style="text-align:left">h264, 12g weight</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMUSB1">C1</a>
-      </td>
-      <td style="text-align:left">USB</td>
-      <td style="text-align:left">AR0330</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">&#x20AC;100</td>
-      <td style="text-align:left">h264</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.kurokesu.com/shop/cameras/CAMERA_C1_PRO">C1 Pro</a>
-      </td>
-      <td style="text-align:left">USB</td>
-      <td style="text-align:left">IMX290</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">30</td>
-      <td style="text-align:left">&#x20AC;139</td>
-      <td style="text-align:left">h264</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp">e-con Hyperyon</a>
-      </td>
-      <td style="text-align:left">USB</td>
-      <td style="text-align:left">IMX290</td>
-      <td style="text-align:left">1080p</td>
-      <td style="text-align:left">60</td>
-      <td style="text-align:left">$240</td>
-      <td style="text-align:left">h264, WDR/HDR</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://a.aliexpress.com/_BPMdpz">Firefly Split</a>
-      </td>
-      <td style="text-align:left">HDMI</td>
-      <td style="text-align:left">Unknown</td>
-      <td style="text-align:left">
-        <p>4k(record)</p>
-        <p>1080p stream</p>
-      </td>
-      <td style="text-align:left">60</td>
-      <td style="text-align:left">$70</td>
-      <td style="text-align:left">WDR, HDMI-CSI board, Onboard Rec</td>
-    </tr>
-  </tbody>
-</table>
+| Name                                                                                                                                                         | Connection | Sensor  | Resolution                           | FPS         | Price     | Notes                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------- | ------------------------------------ | ----------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/)                                                                                      | CSI        | OV5647  | 1080p                                | 30-90       | $25       | FPS depends on resolution                                                                                                                           |
+| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/)                                                                                      | CSI        | IMX219  | 1080p                                | 30-90       | $25       | FPS depends on resolution                                                                                                                           |
+| [Pi Cam V2 plus OTS (off the shelf) sensor](https://uk.pi-supply.com/products/camera-module-for-official-raspberry-pi-camera-board-v2-8mp-sensor-160-degree) | CSI        | IMX219  | 1080p                                | 30-90<4/td> | $25 + $20 | FPS depends on resolution. 3rd party sensor with 160 FOV 8mm lens. Custom lens possible plus more light for the sensor                              |
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/)                                                                                      | CSI        | IMX477  | 1080p                                | 30-120      | $50       | FPS depends on resolution, See [link](https://discuss.openhdfpv.com/t/m12-lens-holder-for-pi-hq-cam/107) for improved lens holder to reduce weight. |
+| [Veye](http://www.veye.cc/en/product/veye-mipi-327e/)                                                                                                        | CSI        | IMX327  | 1080p                                | 30          | $90       | Amazing in low light                                                                                                                                |
+| [Innomaker](https://www.inno-maker.com/product/mipi-cam-290)                                                                                                 | CSI        | IMX290  | 1080p                                |             |           |                                                                                                                                                     |
+| [Logitech C920](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920)                                                                                   | USB        | --      | 1080p                                | 30          | $95       | Reportedly "low" latency for usb                                                                                                                    |
+| [Hi3518](http://www.hisilicon.com/en/Products)                                                                                                               | IP         | --      | 1080p                                | 30          | --        | h264/h265                                                                                                                                           |
+| [C1 Micro](https://www.kurokesu.com/shop/cameras/CAMERA\_C1\_MICRO\_M12)                                                                                     | USB        | AR0330  | 1080p                                | 30          | €112      | h264, 12g weight                                                                                                                                    |
+| [C1](https://www.kurokesu.com/shop/cameras/CAMUSB1)                                                                                                          | USB        | AR0330  | 1080p                                | 30          | €100      | h264                                                                                                                                                |
+| [C1 Pro](https://www.kurokesu.com/shop/cameras/CAMERA\_C1\_PRO)                                                                                              | USB        | IMX290  | 1080p                                | 30          | €139      | h264                                                                                                                                                |
+| [e-con Hyperyon](https://www.e-consystems.com/usb-cameras/imx290-low-light-usb-camera.asp)                                                                   | USB        | IMX290  | 1080p                                | 60          | $240      | h264, WDR/HDR                                                                                                                                       |
+| [Firefly Split](https://a.aliexpress.com/\_BPMdpz)                                                                                                           | HDMI       | Unknown | <p>4k(record)</p><p>1080p stream</p> | 60          | $70       | WDR, HDMI-CSI board, Onboard Rec                                                                                                                    |
 
 * Resolutions are maximum, which might not be ideal for performance
 * Higher FPS is possible in certain cases with some cams
@@ -179,6 +55,7 @@ Feel free to use any other cable you might find, these two are known to work.
 ### OTS sensor plus lens for Pi camera V2
 
 Not official from Raspberry but this 3rd party sensor has support for 8mm lens allowing the user to select any OTS 8mm mount lens for custom FOV. Compared to original optic, this one provides more light to the sensor allowing it to operate better. It is plug and play and doesn't require almost any tool for replacement (double side tape provided)
+
 * [Aliexpress example](https://www.aliexpress.com/i/33015616449.html)
 * [Amazon example](https://www.amazon.co.uk/MakerHawk-Raspberry-Compatible-Supporting-Resolution/dp/B07HL3Q58Z)
 
@@ -233,14 +110,14 @@ This was done by the user _Bortek_, using the Auvidea B102 with a Gopro4 camera.
 
 **These cameras do not work!:**
 
-* Samsung NX500 \(1080p60, framerate too high\)
-* Canon EOS M \(1080i, interlaced output is not supported by these adapters\)
+* Samsung NX500 (1080p60, framerate too high)
+* Canon EOS M (1080i, interlaced output is not supported by these adapters)
 
 #### Settings
 
 They will be auto detected and do not require special settings, but you should still set the resolution and frame rate to match your camera in `openhd-settings-1.txt` like this:
 
-```text
+```
 WIDTH=1920
 HEIGHT=1080
 FPS=30
@@ -251,7 +128,7 @@ You may need to change the resolution/frame rate on the camera itself so that it
 
 ### DCDZ HDMI CSI-2 adapter
 
-![dcdz-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns_HDMI%20in%20Cards/dcdz-hdmi-csi.jpg)
+![dcdz-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/dcdz-hdmi-csi.jpg)
 
 AliExpress link: [DCDZ HDMI CSI-2 adapter](https://www.aliexpress.com/item/4000152180240.html)
 
@@ -261,7 +138,7 @@ Has a connector for both the Raspberry Pi Zero and full size Raspberry Pi models
 
 ### Geekworm HDMI CSI2 adapter
 
-![geekworm-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns_HDMI%20in%20Cards/geekworm-hdmi-csi.jpg)
+![geekworm-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/geekworm-hdmi-csi.jpg)
 
 Available on Amazon in the U.S., and is similar to the DCDZ adapter above.
 
@@ -283,23 +160,23 @@ More info: [Auvidea B101](https://auvidea.eu/b101-hdmi-to-csi-2-bridge-15-pin-fp
 
 Same basic capabilities as the others, has a connector compatible with the full size pi models.
 
-[Technical details](http://www.auvidea.eu/download/manual/B10x_technical_reference_1.3.pdf)
+[Technical details](http://www.auvidea.eu/download/manual/B10x\_technical\_reference\_1.3.pdf)
 
 ### Lintest Systems PiCapture HD1
 
 More info: [Lintest Systems PiCapture HD1](https://lintestsystems.com/products/picapture-hd1)
 
-This is a more complicated \(and expensive\) card, it supports HDMI just like the others \(with the same limitations\), but also supports analog component input, though it is unlikely that any camera worth putting on a drone will have component connections \(they were common on HDTV's and DVD players at one point\).
+This is a more complicated (and expensive) card, it supports HDMI just like the others (with the same limitations), but also supports analog component input, though it is unlikely that any camera worth putting on a drone will have component connections (they were common on HDTV's and DVD players at one point).
 
 The adapter has LED's that will tell you whether the camera connection is OK.
 
 ## HDMI Cameras
 
-### [FireFly Split](https://a.aliexpress.com/_BPMdpz)
+### [FireFly Split](https://a.aliexpress.com/\_BPMdpz)
 
 An HDMI camera specifically designed for drones, has onboard recording to Micro-SD on the camera itself, WDR support and weighs 60 g.
 
-Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model. See the [website ](https://www.fireflycameras.com/products/hawkeye-firefly-split-4k-160-degree-hd-recording-dvr-mini-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane?_pos=1&_sid=77d319bcd&_ss=r)for more details.
+Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model. See the [website ](https://www.fireflycameras.com/products/hawkeye-firefly-split-4k-160-degree-hd-recording-dvr-mini-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane?\_pos=1&\_sid=77d319bcd&\_ss=r)for more details.
 
 **Note**: to use this camera for Open.HD you need an [HDMI Input](cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4K recording it only outputs 1080p30 or 720p60 on the HDMI port.
 
@@ -333,18 +210,18 @@ There are Chinese companies such as Hti Instrument that sell directly on AliExpr
 
 ### Camera Overview
 
-| Name | Lens | Sensor | Resolution | FPS | Price | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| FLIR One G2 | Silicon | FLIR Lepton 3 | 160x120 | 7-9hz | $100-200 | Can be purchased used on eBay |
-| FLIR One G3 | Silicon | FLIR Lepton 2 | 80x60 | 7-9hz | $199 | DO NOT BUY, get a G2 if you can |
-| FLIR One G3 Pro | Silicon | FLIR Lepton 3 | 160x120 | 7-9hz | $399 | Get a G2 if you can |
-| Seek Compact | Chalcogenide | Raytheon | 206x156 | 7hz | $120-240 | Worse than FLIR One G2 \(maybe even G3\) |
-| Seek Compact Pro | Chalcogenide | Raytheon | 320x240 | 7hz | $250-499 | A bit noisy, get the FastFrame if possible |
-| Seek Compact Pro FastFrame | Chalcogenide | Raytheon | 320x240 | ~15hz | $430-600 | A bit noisy |
-| Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz | $200-300 | These are Seek Compact Pro clones |
-| Hti-301 | Germanium | iRay | 384x288 | 25hz | $760 | High quality but untested |
-| FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | ~$1500 | High quality, untested |
-| FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz | ~$3500 | High quality, untested |
+| Name                       | Lens         | Sensor        | Resolution | FPS      | Price    | Notes                                      |
+| -------------------------- | ------------ | ------------- | ---------- | -------- | -------- | ------------------------------------------ |
+| FLIR One G2                | Silicon      | FLIR Lepton 3 | 160x120    | 7-9hz    | $100-200 | Can be purchased used on eBay              |
+| FLIR One G3                | Silicon      | FLIR Lepton 2 | 80x60      | 7-9hz    | $199     | DO NOT BUY, get a G2 if you can            |
+| FLIR One G3 Pro            | Silicon      | FLIR Lepton 3 | 160x120    | 7-9hz    | $399     | Get a G2 if you can                        |
+| Seek Compact               | Chalcogenide | Raytheon      | 206x156    | 7hz      | $120-240 | Worse than FLIR One G2 (maybe even G3)     |
+| Seek Compact Pro           | Chalcogenide | Raytheon      | 320x240    | 7hz      | $250-499 | A bit noisy, get the FastFrame if possible |
+| Seek Compact Pro FastFrame | Chalcogenide | Raytheon      | 320x240    | \~15hz   | $430-600 | A bit noisy                                |
+| Hti-201                    | Chalcogenide | Raytheon      | 320x240    | 9hz      | $200-300 | These are Seek Compact Pro clones          |
+| Hti-301                    | Germanium    | iRay          | 384x288    | 25hz     | $760     | High quality but untested                  |
+| FLIR Boson 320             | Germanium    | FLIR          | 320x256    | 9hz/60hz | \~$1500  | High quality, untested                     |
+| FLIR Boson 640             | Germanium    | FLIR          | 640x512    | 9hz/60hz | \~$3500  | High quality, untested                     |
 
 ### Flying with a thermal camera
 
@@ -354,7 +231,7 @@ Very low resolution thermal cameras may allow you to see that a hot object is in
 
 Remember we're talking about sensors with very low resolution to begin with, for example a 1280x720 FPV camera has _48x_ the resolution of a 160x120 thermal camera. At longer range you may not even be able to see an object at all, even if you can still see it with the main FPV camera.
 
-Another consideration is the thermal "span" of the area in view of the thermal camera, if the ground is the same temperature as the trees, objects and animals \(for example they're all around 97F\), you will have trouble seeing anything but noise or a flat image with many cameras. In that case you would need to look for a camera with a low NETD rating, and a good sized lens.
+Another consideration is the thermal "span" of the area in view of the thermal camera, if the ground is the same temperature as the trees, objects and animals (for example they're all around 97F), you will have trouble seeing anything but noise or a flat image with many cameras. In that case you would need to look for a camera with a low NETD rating, and a good sized lens.
 
 **FLIR Tau 2 and range test**
 
@@ -366,7 +243,7 @@ Another consideration is the thermal "span" of the area in view of the thermal c
 
 ### Lenses
 
-The lens on a thermal camera is not ordinary glass \(which does not allow IR wavelengths to pass through\).
+The lens on a thermal camera is not ordinary glass (which does not allow IR wavelengths to pass through).
 
 Germanium lenses allow for high quality thermal images, but they are expensive. Most cheap/light thermal cameras will use Silicon or Chalcogenide lenses instead.
 
@@ -388,23 +265,23 @@ Many people use these cameras, they are well known and they do work, despite the
 
 The resolution is 160x120, which is _the absolute minimum_ you would want for drone flight. You will be able to see heat signatures but without much detail.
 
-The sensor inside the FLIR One G2 is a FLIR Lepton 3 \(confusing, yes\), which is a very good thermal image sensor. However FLIR's lens and image processing choices reduce the image quality.
+The sensor inside the FLIR One G2 is a FLIR Lepton 3 (confusing, yes), which is a very good thermal image sensor. However FLIR's lens and image processing choices reduce the image quality.
 
-#### FLIR One G3 \([Amazon](https://www.amazon.com/FLIR-One-Thermal-Imager-Android/dp/B0728C7KNC)\)
+#### FLIR One G3 ([Amazon](https://www.amazon.com/FLIR-One-Thermal-Imager-Android/dp/B0728C7KNC))
 
 DO NOT BUY THESE, they are _significantly_ worse than a G2. Even when the G2 was new, it was only about $50 more than the G3 is now, it's a very bad deal.
 
-#### FLIR One G3 Pro \([Amazon](https://www.amazon.com/FLIR-ONE-Pro-Professional-Smartphones/dp/B085DW3NSF)\)
+#### FLIR One G3 Pro ([Amazon](https://www.amazon.com/FLIR-ONE-Pro-Professional-Smartphones/dp/B085DW3NSF))
 
 These are largely identical to the G2, they have a Lepton 3 sensor with 160x120 resolution.
 
 FLIR created 2 different price points with the G3 and G3 Pro. The Pro is significantly more expensive now than the G2 was when it was being manufactured and sold, but you can still find used G2 cameras for $120-200 on eBay and other websites.
 
-#### Seek Compact \([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B00NYWAHHM)\)
+#### Seek Compact ([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B00NYWAHHM))
 
 These are cheap, but have always had significant issues due to the lens and the sensor. You are **much** better off with a FLIR One G2 if cost is your primary reason for looking at these cameras.
 
-#### Seek Compact Pro \([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B07V34RFLW)\)
+#### Seek Compact Pro ([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B07V34RFLW))
 
 ![seek compact pro compared to flir one g2](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/seek-compact-pro-compare.jpeg)
 
@@ -416,7 +293,7 @@ There is still a fair amount of noise in the system, these are better for scenes
 
 Note that Seek has quietly updated these cameras over time, so you may have one that works more like a FastFrame even though it wasn't marketed that way when purchased. They have also made some improvements to the sensor and firmware over time.
 
-#### Seek Compact Pro FastFrame \([manufacturer](https://www.thermal.com/compact-series.html), [DigiKey](https://www.digikey.com/en/products/detail/seek-thermal/UQ-AAAX/10230124)\)
+#### Seek Compact Pro FastFrame ([manufacturer](https://www.thermal.com/compact-series.html), [DigiKey](https://www.digikey.com/en/products/detail/seek-thermal/UQ-AAAX/10230124))
 
 Model numbers for these cameras end with an X, like UQ-AAAX. The UQ-EAAX is an export version but is otherwise identical.
 
@@ -424,7 +301,7 @@ Same as the regular Pro, but the frame rate is never locked to 9 Hz, and can ins
 
 These are export controlled items because of the frame rate, you can buy them easily in many countries but you may have trouble ordering one if you have to ship across a border.
 
-#### Hti-201 \([manufacturer](https://hti-instrument.com/products/ht-201-mobile-phone-thermal-imager)\)
+#### Hti-201 ([manufacturer](https://hti-instrument.com/products/ht-201-mobile-phone-thermal-imager))
 
 ![Hti-201 Thermal Camera](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/hti-201.jpg)
 
@@ -432,7 +309,7 @@ These are basically clones of the Seek Compact Pro.
 
 The camera housing has a very awkward shape compared to most other thermal cameras, the side with the sensor and lens has a significant bump.
 
-#### Hti-301 \([manufacturer](https://hti-instrument.com/products/ht-301-mobile-phone-thermal-imager), [Amazon](https://www.amazon.com/Resolution-Infrared-Thermal-Smartphone-Hti-Xintai/dp/B07Z7J6LXD)\)
+#### Hti-301 ([manufacturer](https://hti-instrument.com/products/ht-301-mobile-phone-thermal-imager), [Amazon](https://www.amazon.com/Resolution-Infrared-Thermal-Smartphone-Hti-Xintai/dp/B07Z7J6LXD))
 
 ![Hti-301 Thermal Camera](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/hti-301.jpg)
 
@@ -442,7 +319,7 @@ These cameras are designed to work like a normal webcam, in that there is no spe
 
 Note that you may have trouble getting 25 Hz video streams out of these when used with a raspberry pi due to USB limitations.
 
-#### FLIR Boson 320 \([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-320)\)
+#### FLIR Boson 320 ([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-320))
 
 ![FLIR Boson 320 Thermal Core](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/flir-boson-320.jpg)
 
@@ -458,7 +335,6 @@ Real world flight video:
 
 [![FLIR Boson 320 flight](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/Thermal-Cameras/flir-boson-320-flight.jpg)](https://www.youtube.com/watch?v=PQGDQzf-Z50)
 
-#### FLIR Boson 640 \([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-640)\)
+#### FLIR Boson 640 ([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-640))
 
 Same as the 320 model, but with higher resolution.
-
