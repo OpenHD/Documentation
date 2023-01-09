@@ -26,6 +26,7 @@
 * [Cameras](hardware/cameras.md)
   * [Raspberry Pi CSI](hardware/raspberry-cameras.md)
     * [Libcamera](hardware/libcamera.md)
+    * [Gstreamer](hardware/gstreamer.md)
     * [Raspicam](hardware/raspicamsrc.md)
   * [Jetson Nano CSI](hardware/jetson-cameras.md)
   * [USB Cameras](hardware/usb-camera.md)
