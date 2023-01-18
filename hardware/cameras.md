@@ -6,6 +6,11 @@
 While many cameras can potentially work, latency is the biggest issue. Please read the Camera pages to fully understand all variables.
 {% endhint %}
 
+{% hint style="danger" %}
+With the upcoming of many new camera's there is one thing we need to mention.
+OpenHD is not supporting ANY autofocus cameras, since they are basically not usable on equipment with vibrations (like drones), this also includes the Raspberry V3-lineup
+{% endhint %}
+
 Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
 
 USB-Cameras are generally usable with any SBC.
