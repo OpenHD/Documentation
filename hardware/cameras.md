@@ -6,6 +6,11 @@
 While many cameras can potentially work, latency is the biggest issue. Please read this page to completely understand the available options and pros and cons of each.
 {% endhint %}
 
+{% hint style="danger" %}
+With the upcoming of many new camera's there is one thing we need to mention.
+OpenHD 2.0 is not supporting ANY CSI cameras which are not listed below, also some IMX477 boards now only support libcamera, which is not supported by OpenHD2.0, this includes the Raspberry-V3 lineup, and even the IMX477 mini from Arducam (if it is the newer version)
+{% endhint %}
+
 {% hint style="success" %}
 An empty air.txt file in the boot partition allows testing without a camera
 {% endhint %}
