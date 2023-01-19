@@ -26,7 +26,6 @@ Supported Raspberry's for the GroundSBC in descending order from good to worse
 | Raspberry Pi 3B+                      |         |
 | Raspberry Pi 3A                       |         |
 | Raspberry Pi Compute Module CM3+      |   1     |
-| Raspberry Pi 2B+                      |         |
 
 
 Earlier Raspberrys might work, but can't be officially supported anymore.
