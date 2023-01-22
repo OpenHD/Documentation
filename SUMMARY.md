@@ -44,6 +44,9 @@
 * [Telemetry](software-setup/telemetry-and-osd.md)
 * [Joystick RC](software-setup/joystick-rc.md)
 * [Camera Settings](software-setup/camera-settings.md)
+* [Ethernet](software-setup/ethernet-hotspot.md)
+* [Wifi-Hotspot](software-setup/wifi-hotspot.md)
+
 
 ## Ground Station Software
 
