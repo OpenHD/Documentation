@@ -60,4 +60,4 @@
 
 ## Group 1
 
-* [Record video](group-1/record-video.md)
+* [Air recording](group-1/air-recording.md)

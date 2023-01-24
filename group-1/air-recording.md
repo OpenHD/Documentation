@@ -2,7 +2,7 @@
 description: Air recording for youtube or similar (without OSD).
 ---
 
-# Record video
+# Air recording
 
 You can record your flight locally on your air unit with close to none performance hit. The recorded video uses the same bitrate like the video transmitted over the link, but is free of any breakups from packet loss (since it is recorded locally on your air unit, not your ground unit
 
