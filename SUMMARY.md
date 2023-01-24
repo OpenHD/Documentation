@@ -47,7 +47,6 @@
 * [Ethernet](software-setup/ethernet-hotspot.md)
 * [Wifi-Hotspot](software-setup/wifi-hotspot.md)
 
-
 ## Ground Station Software
 
 * [Standart](ground-station-software/standart/README.md)
@@ -58,3 +57,7 @@
   * [GStreamer](ground-station-software/gstreamer.md)
   * [FishingFanCam](ground-station-software/fishingfancam.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
+
+## Group 1
+
+* [Record video](group-1/record-video.md)
