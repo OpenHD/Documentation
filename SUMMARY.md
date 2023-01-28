@@ -47,6 +47,10 @@
 * [Ethernet](software-setup/ethernet-hotspot.md)
 * [Wifi-Hotspot](software-setup/wifi-hotspot.md)
 
+## Advanced Setup
+
+* [Air recording](group-1/air-recording.md)
+
 ## Ground Station Software
 
 * [Standart](ground-station-software/standart/README.md)
@@ -58,6 +62,4 @@
   * [FishingFanCam](ground-station-software/fishingfancam.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
 
-## Group 1
 
-* [Air recording](group-1/air-recording.md)
