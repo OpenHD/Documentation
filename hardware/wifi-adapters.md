@@ -9,8 +9,6 @@ RX diversity:
 You can use either a wifi card with multiple antennas or multiple wifi cards on your ground station for RX diversity. However, it is easy to mess up things by improper wiring and/or using wrong antennas when using more than one rx card. We therefore do not recommend more than one card for new users.
 Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, this is not recommended.
 
-Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp42enOvZxElc2p3ghEwpEpJphieajb2lJQ/viewform) to submit any WiFi Dongles you may have tested. We will add them to the matrix below!
-
 Recommended Wifi-Dongles:
 
 | Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
