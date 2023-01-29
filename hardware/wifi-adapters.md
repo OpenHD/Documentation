@@ -24,6 +24,13 @@ Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp
 | "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | re3332r0115 | 2.4 | 50mW | mt7601u | X |  |  | 1x u.fl |
 | ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
+| Tenda U12 | 5.8 | ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
+| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
+| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
+| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
+
+
+
 
 #### **ASUS AC56**
 
