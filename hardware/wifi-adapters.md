@@ -11,26 +11,32 @@ Also, while you can mix cards (given they support the same frequency) with diffe
 
 Please use this [form](https://docs.google.com/forms/d/e/1FAIpQLSd_03vS1duD0oFZp42enOvZxElc2p3ghEwpEpJphieajb2lJQ/viewform) to submit any WiFi Dongles you may have tested. We will add them to the matrix below!
 
+Recommended Wifi-Dongles:
+
 | Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ALFA AWUS036ACH | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
 | ASUS USB-AC56 | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
+| "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
+| ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
+| Tenda U12 | 5.8 | ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
+
+*there are a lot more devices with are supported, this lists only show tested devices. 
+
+Additional Wifi-Devices with reduced functions:
+
 | ALFA AWUS036NHA | 2.3-2.4 | 280mW | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation EXT | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
 | TPLink TL-WN722N V1 | 2.3-2.4 | 60mW | AR9271 |  | X |  | 1x RP-SMA |
 | AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
 | AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
-| "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | re3332r0115 | 2.4 | 50mW | mt7601u | X |  |  | 1x u.fl |
-| ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
-| Tenda U12 | 5.8 | ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
 | Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
 | Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
 | COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
 
-
-
+*these devices are supported, but doesn't have all functions like 40MHZ mode or different MCS-Indexes
 
 #### **ASUS AC56**
 
