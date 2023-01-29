@@ -25,6 +25,8 @@ Recommended Wifi-Dongles:
 
 Additional Wifi-Devices with reduced functions:
 
+| Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ALFA AWUS036NHA | 2.3-2.4 | 280mW | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
 | Ubiquiti Wifistation EXT | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
