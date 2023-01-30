@@ -27,6 +27,7 @@ It depends. 1-3KM is easy to achieve, even with low power WiFi cards and the ant
 Carefully chosen WiFi cards, antennas, and optionally an antenna tracker should put 20km+ within reach. The current record is 75km on 5.8GHz frequency with a 30dbi gain panel antenna.
 
 [60km flight](https://youtu.be/bcYOgW3WmS4)
+[75km flight](https://youtu.be/IVSJwuuuo7o?t=78)
 
 #### How long does OpenHD take to regain a lost “connection”?
 
