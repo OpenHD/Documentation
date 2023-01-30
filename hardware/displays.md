@@ -20,6 +20,7 @@ The type and model of your monitor will affect the latency, since response time,
 * Zeiss Cinemizer OLED
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define your (custom) monitor resolution in config.txt statically though to be able to connect the monitor after the Pi is already running.
+You also have to uncomment "hdmi_force_hotplug=1", so you will be able to "hotplug" your hdmi monitor / goggles.
 
 ## Using a phone or tablet
 
@@ -32,11 +33,10 @@ Regardless of the monitor attached directly to the Ground SBC you can use a phon
 * [RaspberryPi Camera Viewer](broken-reference)
 
 {% hint style="info" %}
-When using your phone or tablet we recommend using the QOpenHD app which was designed specifically for this project.
+When using your phone or tablet we recommend using the QOpenHD app which was designed specifically for this project. Will be updated to fully support EVO.
 {% endhint %}
 
-The phone can be connected either via USB Tethering or by connectiing to the Hotspot WiFi network started by the Ground SBC if the SBC has an internal WiFi capable of working on a band other than the active Air connection.
-
+The phone can be connected either via USB Tethering or by connecting to the Hotspot WiFi network started by the Ground SBC. In EVO releases, band selection it's automated now. Also, an ethernet to usb adapter can be used, just enable ethernet hotspot in ground pi's settings in User Interface.
 ## Using a Ground Station
 
 In this scenario the Ground SBC acts as a proxy for the Video and Telemetry for a separate Groundstation. This can be anything you can think of as longs as it is able to interpret the Video and Telemetry and is able to connect to the Ground SBC.
@@ -58,7 +58,7 @@ The same goes for any HDMI display, however, by default they cannot be used simu
 
 The official 7" Raspberry Pi LCD which is 800 x 480 might need to be set as the default resolution to match so that both displays come up.
 
-**In the Openhd-settings.txt file**
+(**In the Openhd-settings.txt file**
 
 ```
  #
