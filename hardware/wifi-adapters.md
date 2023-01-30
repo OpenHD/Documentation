@@ -9,6 +9,15 @@ RX diversity:
 You can use either a wifi card with multiple antennas or multiple wifi cards on your ground station for RX diversity. However, it is easy to mess up things by improper wiring and/or using wrong antennas when using more than one rx card. We therefore do not recommend more than one card for new users.
 Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, this is not recommended.
 
+Since Version 2.3 various new Chipsets are supported, including:
+
+RTL8812AU
+RTL8812BU
+RTL8811AU
+AR9271
+mt7601u
+
+
 Recommended Wifi-Dongles:
 
 | Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
@@ -110,12 +119,7 @@ They do not currently work with the Open.HD RC system but that should be resolve
 
 ### Finding alternatives
 
-The following USB WiFi dongles with the following chipsets work and are actively supported:
-
-* Atheros AR9271 \(2.3-2.6G ONLY!\)
-* Realtek RTL8812AU \(5.8G ONLY!\)
-
-For cheap alternatives check out the usual computer stores and maybe consider Aliexpress. Be a little careful, some cards are of questionable quality. Generally, High-Quality/Brand Name modules from ALFA WIRELESS with the AR9271 or RTL8812 chipsets perform best.
+For cheap alternatives check out the usual computer stores and maybe consider Aliexpress. Be a little careful, some cards are of questionable quality. Generally, High-Quality/Brand Name modules with RTL8812au chipsets perform best.
 
 A good way to find out more about wifi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
 
@@ -130,9 +134,4 @@ It would be nice if you report back your findings in case you tried a wifi card 
 
 ### External amp
 
-Another way to increase output power is to use a low-power wifi stick combined with an external amp like this "2W" amp:
-
-[https://www.banggood.com/2\_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search](https://www.banggood.com/2_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search)
-
-Real output power is around 600mW with a low-power AR9271 stick.
-
+Another way to increase output power is to use a low-power wifi stick combined with an external amplifier.
