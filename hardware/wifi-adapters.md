@@ -27,6 +27,8 @@ Recommended Wifi-Dongles:
 | "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
 | Tenda U12 | 5.8 | ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
+| Netgear A6100 | 5.8 - 2.4 | ? | RTL8811AU |  |  |  |1x internal |
+
 
 *there are a lot more devices with are supported, this lists only show tested devices. 
 
