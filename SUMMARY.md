@@ -5,7 +5,8 @@
 ## General
 
 * [Features](general/features.md)
-* [FAQ](general/faq.md)
+* [General-FAQ](general/faq.md)
+* [Software-FAQ](general/software-faq.md)
 * [Contributing](general/contributing.md)
 * [Team](general/team.md)
 
@@ -49,7 +50,7 @@
 
 ## Advanced Setup
 
-* [Air recording](group-1/air-recording.md)
+* [Air recording](advanced-setup/air-recording.md)
 
 ## Ground Station Software
 
@@ -57,7 +58,7 @@
   * [QGroundControl](ground-station-software/qgroundcontrol.md)
   * [Tower](ground-station-software/tower.md)
   * [FPV\_VR](ground-station-software/fpv\_vr.md)
-* [Advanced](ground-station-software/advanced/README.md)
+  * [Advanced](ground-station-software/advanced/README.md)
   * [GStreamer](ground-station-software/gstreamer.md)
   * [FishingFanCam](ground-station-software/fishingfancam.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
