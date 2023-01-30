@@ -1,6 +1,10 @@
 # FAQ
 
+#### I can't find the images.
 
+The easiest way to flash OpenHD images is to use our ImageWriter, just select the Image in the drop down and click flash.
+
+In the advanced tabs there are the images for X86 and Jetson devices.
 
 #### Where are the config-files ?
 
