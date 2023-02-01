@@ -22,15 +22,15 @@ Recommended Wifi-Dongles:
 
 | Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ALFA AWUS036ACH | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
-| ASUS USB-AC56 | 5.8 | 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
-| "Taobao Card" | 5.8 | 500mW | RTL8812AU | X | X | X | 2x u.fl |
-| ALFA AWUS1900 | 5.8 | 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
-| Tenda U12 | 5.8 | ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
-| Netgear A6100 | 5.8 - 2.4 | ? | RTL8811AU |  |  |  |1x internal |
+| ALFA AWUS036ACH | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
+| ASUS USB-AC56 | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
+| "Taobao Card" | 5.8 -2.4 *| 500mW | RTL8812AU | X | X | X | 2x u.fl |
+| ALFA AWUS1900 | 5.8 -2.4 *| 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
+| Tenda U12 | 5.8 -2.4 | ? *| RTL8812AU |  |  |  | 2x u.fl 2x internal |
 
+*we recommend using this Chipset in 5.8Ghz mode
 
-*there are a lot more devices with are supported, this lists only show tested devices. 
+There are a lot more devices with are supported, this lists only show tested devices. 
 
 Additional Wifi-Devices with reduced functions:
 
@@ -46,8 +46,11 @@ Additional Wifi-Devices with reduced functions:
 | Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
 | Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
 | COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
+| Netgear A6100 | 5.8 - 2.4 *| ? | RTL8811AU |  |  |  |1x internal |
 
-*these devices are supported, but doesn't have all functions like 40MHZ mode or different MCS-Indexes
+*we recommend using this Chipset in 5.8Ghz mode
+
+These devices are supported, but doesn't have all functions like 40MHZ mode or different MCS-Indexes
 
 #### **ASUS AC56**
 
