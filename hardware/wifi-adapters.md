@@ -26,7 +26,7 @@ Recommended Wifi-Dongles:
 | ASUS USB-AC56 | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
 | "Taobao Card" | 5.8 -2.4 *| 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | ALFA AWUS1900 | 5.8 -2.4 *| 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
-| Tenda U12 | 5.8 -2.4 | ? *| RTL8812AU |  |  |  | 2x u.fl 2x internal |
+| Tenda U12 | 5.8 -2.4 *| ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
 
 *we recommend using this Chipset in 5.8Ghz mode
 
