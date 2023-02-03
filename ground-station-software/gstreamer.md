@@ -1,4 +1,4 @@
-# GStreamer
+# Gstreamer
 
 ## Displaying the video stream via _**GStreamer**_
 
