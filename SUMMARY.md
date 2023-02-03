@@ -59,8 +59,7 @@
   * [Tower](ground-station-software/tower.md)
   * [FPV\_VR](ground-station-software/fpv\_vr.md)
   * [Advanced](ground-station-software/advanced/README.md)
-  * [GStreamer](ground-station-software/gstreamer.md)
-  * [FishingFanCam](ground-station-software/fishingfancam.md)
+  * [v4l2](ground-station-software/v4l2.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
 
 

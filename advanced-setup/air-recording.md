@@ -29,3 +29,7 @@ Option b: After a flight, enable "wifi hotspot" on your air pi (requires pi with
 Connect phone or pc to pi's wifi, open a browser in your pc/phone, type in pi's address, you'll find it's web interface, you'll see a tab called Files, open it, there are the video files.\
 \
 \
+
+# Recording Widget
+
+You can now start the recording with the record widget, it also displays how much space is left on your card.
