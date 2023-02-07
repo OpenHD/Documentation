@@ -42,7 +42,7 @@ Additional Wifi-Devices with reduced functions:
 | TPLink TL-WN722N V1 | 2.3-2.4 | 60mW | AR9271 |  | X |  | 1x RP-SMA |
 | AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
 | AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
-| re3332r0115 | 2.4 | 50mW | mt7601u | X |  |  | 1x u.fl |
+| re3332r0115 | 2.4 | 50mW | mt7601u | X | X |  | 1x u.fl |
 | Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
 | Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
 | COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
@@ -84,7 +84,7 @@ _**NOTE:**_ There have been reports that the TL-WN722N V1 seems to be replaced b
 
 _**NOTE:**_ The PCB antenna causes packetloss and bad reception under certain circumstances. It is recommended to disconnect the antenna by moving the SMD component as shown below: 
 
-![TP-Link\_722N-mod.jpg](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/Hardware_Supported%20WiFi%20adapters/TP-Link_722N-mod.jpg)
+![TP-Link\_722N-mod.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/TP-Link_722N-mod.jpg)
 
 #### AW-NU138
 
@@ -114,7 +114,7 @@ It supports 2x u.fl antenna connectors.
 
 #### re3332r0115
 
-![re3332r0115.jpg](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/Hardware_Supported%20WiFi%20adapters/re3332r0115.jpg)
+![re3332r0115.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/re3332r0115.jpg)
 
 These are spare parts for an RCA smart television, and contain a Mediatek mt7601u chipset along with a single u.fl connector. They are extremely small, barely larger than a few microSD cards lined up, and only weigh 2.7 grams.
 
