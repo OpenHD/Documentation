@@ -102,7 +102,7 @@ Very similar to the NU138. Reported power is 70mW. I-PEX antenna connector allow
 
 #### Taobao Card
 
-![taobaocard.jpg](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/Hardware_Supported%20WiFi%20adapters/taobaocard.jpg)
+![taobaocard.jpg](https://github.com/OpenHD/OpenHD/blob/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/taobaocard.jpg?raw=true)
 
 [Store link](https://a.aliexpress.com/_rIjofM)
 
