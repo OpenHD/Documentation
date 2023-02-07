@@ -1,0 +1,56 @@
+---
+description: What do all these settings do.
+---
+
+# Settings
+
+## WB LINK FREQ
+This inherrits all the settings for the WifiBoradcast Link
+
+FIND AIR UNIT
+scans channels for the air-unit
+
+Frequency
+needs to be set to a frequency the Wifi-Dongle supports
+
+Bandwith
+20MHZ more resilience, less data (Standart)
+40MHZ more twice the bandwith, greater interference (only works on 8812au)
+
+MCs Index
+sets the mode of opperation, the lower the mcs the higher the range, but the higher the mcs the higher the bandwith(some cards only support MCS3)
+
+## AIR CAMERA
+
+VIDEO_CODEC
+h264,h265,Mjpeg (h265 encoding does not work on the raspberry)
+h264:standart
+h265:lower bandwith, lower latency (encoding needs to be done on a non raspberry sbc)
+Mjpeg: lower latency, higher bandwith 
+
+V_AIR_Recording
+enable recording
+
+V_AWB_MODE*
+change whitebalance mode
+
+V_BITRATE_MBITS*
+sets the target bitrate for the video
+
+V_BRIGHTNESS*
+sets video brightness 
+
+V_CAM_ROT_DEG*
+sets camera rotation
+
+V_EXP_MODE*
+sets camera exposure mode
+
+V_E_STREAMING
+
+V_HORIZ_FLIP
+
+V_INTRA_REFRESH
+
+
+*only enabled on MMAL-Cameras

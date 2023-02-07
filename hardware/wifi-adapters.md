@@ -26,7 +26,7 @@ Recommended Wifi-Dongles:
 | ASUS USB-AC56 | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
 | "Taobao Card" | 5.8 -2.4 *| 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | ALFA AWUS1900 | 5.8 -2.4 *| 500W | RTL8814AU | X | ? |  | 4x RP-SMA |
-| Tenda U12 | 5.8 -2.4 *| ? | RTL8812AU |  |  |  | 2x u.fl 2x internal |
+| Tenda U12 | 5.8 -2.4 *| ? | RTL8812AU | X | X |  | 2x u.fl 2x internal |
 
 *we recommend using this Chipset in 5.8Ghz mode
 
@@ -43,10 +43,10 @@ Additional Wifi-Devices with reduced functions:
 | AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
 | AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
 | re3332r0115 | 2.4 | 50mW | mt7601u | X |  |  | 1x u.fl |
-| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
-| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
-| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  |  |  | internal |
-| Netgear A6100 | 5.8 - 2.4 *| ? | RTL8811AU |  |  |  |1x internal |
+| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| Netgear A6100 | 5.8 - 2.4 *| ? | RTL8811AU |  | X |  |1x internal |
 
 *we recommend using this Chipset in 5.8Ghz mode
 
