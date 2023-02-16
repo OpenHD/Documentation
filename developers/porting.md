@@ -1,4 +1,4 @@
-# Running OpenHD and QOpenHD on "unsupported" Hardware
+# Running OpenHD and QOpenHD on "unsupported" Hardware WIP
 
 {% hint style="warning" %}
 This isn't a complete guide, also it does require deep insights how linux is working and needs manual debugging.
@@ -74,7 +74,7 @@ Before starting to build QOpenHD we need to explain how QOpenHD runs on our SBC'
 
 1. we use QT 5.15.x, lower versions will not work*
 2. we use EGLFS for SBC'S to get the most out of that hardware*
-3. if you do not have support for multiple HW-layers, like on the Pi with KMS you need to write a decoder which copies the video to a texture and build a renderer for it.
+3. if you do not have support for multiple HW-layers, like on the Pi with KMS you need to write a decoder-helper which copies the video to a texture and build a renderer for it.
 
 * if your linux is to old, you need to build QT yourself, this is a pretty intense process and can take up to 20h to build on lower end SBC'S (the pi4 needs about 8h)
 it also needs modifications and you need a mkspecs configuation(for that platform) to build QT on the hardware itself
