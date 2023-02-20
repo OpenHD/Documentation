@@ -13,9 +13,9 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 
 | Name                                                                    | Sensor | Field of use    | Price | Overlay |
 | ----------------------------------------------------------------------- | ------ | --------------- | ----- | ------- |         
-| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | OV5647 | Normal          | $25   |         |  
-| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX219 | Normal          | $25   |         |  
-| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX477 | Bigger Vehicles | $50   |         |  
+| [Pi Cam V1](https://www.raspberrypi.org/documentation/hardware/camera/) | OV5647 | Normal          | $25   |   MMAL  |  
+| [Pi Cam V2](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX219 | Normal          | $25   |   MMAL  |  
+| [Pi Cam HQ](https://www.raspberrypi.org/documentation/hardware/camera/) | IMX477 | Bigger Vehicles | $50   |   MMAL  |  
 
 
 ### Arducam CSI cameras
