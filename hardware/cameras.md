@@ -39,18 +39,17 @@ Recommends: They provide unique benefits, like superb image quality, low latency
 ### Thermal/USB Cameras
 
 
-| Name | Lens | Sensor | Resolution | FPS | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz |
+| Name | Lens | Sensor | Resolution | FPS |
+| :--- | :--- | :--- | :--- | :--- |
+| Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz | 
 | Hti-301 | Germanium | iRay | 384x288 | 25hz |
 | FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | 
 | FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz |
 
 ### other Cameras
 
-Other cameras can also be used, but we cannot provide an out of the box experience for them
-Wide variety of [USB cameras](#thermalusb-cameras)
-[Generic IP cameras](#ip-cameras)
+Other cameras can also be used, but we cannot provide an out of the box experience for them,
+this includes aw ide variety of [USB cameras](#thermalusb-cameras) and [generic IP cameras](#ip-cameras)
 
 ### get your camera supported
 
