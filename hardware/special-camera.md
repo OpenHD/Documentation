@@ -9,18 +9,6 @@ Special Usecase Cameras are currently only supported on the Raspberry Pi
 
 ### Camera Overview
 
-| Name | Lens | Sensor | Resolution | FPS | Price | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| FLIR One G2 | Silicon | FLIR Lepton 3 | 160x120 | 7-9hz | $100-200 | Can be purchased used on eBay |
-| FLIR One G3 | Silicon | FLIR Lepton 2 | 80x60 | 7-9hz | $199 | DO NOT BUY, get a G2 if you can |
-| FLIR One G3 Pro | Silicon | FLIR Lepton 3 | 160x120 | 7-9hz | $399 | Get a G2 if you can |
-| Seek Compact | Chalcogenide | Raytheon | 206x156 | 7hz | $120-240 | Worse than FLIR One G2 \(maybe even G3\) |
-| Seek Compact Pro | Chalcogenide | Raytheon | 320x240 | 7hz | $250-499 | A bit noisy, get the FastFrame if possible |
-| Seek Compact Pro FastFrame | Chalcogenide | Raytheon | 320x240 | ~15hz | $430-600 | A bit noisy |
-| Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz | $200-300 | These are Seek Compact Pro clones |
-| Hti-301 | Germanium | iRay | 384x288 | 25hz | $760 | High quality but untested |
-| FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | ~$1500 | High quality, untested |
-| FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz | ~$3500 | High quality, untested |
 
 Open.HD supports several thermal cameras, including the FLIR One, the Seek Compact, Hti-301, and others.
 
