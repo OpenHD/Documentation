@@ -57,10 +57,9 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 | :--- | :--- | :--- |
 | [HC100F](https://www.waveshare.com/hdmi-to-csi-adapter.htm) | 2 | up to 1080p@30fps |
 | [Geekworn C779](https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable) | 2 | up to 1080p@30fps |
-| [Geekworm C790](https://geekworm.com/products/c790?_pos=1&_sid=605794d2b&_ss=r)  | 4  | up to 1080p@60fps* |
+| [Geekworm C790](https://geekworm.com/products/c790?_pos=1&_sid=605794d2b&_ss=r)  | 4  | up to 1080p@30fps |
 
 More information about CSI-HDMI can be found [here](hdmi-cameras.md).
-*only supports more than 1080@30fpv on CM4
 
 ### Other Cameras
 
