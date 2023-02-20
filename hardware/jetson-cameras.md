@@ -10,7 +10,6 @@ Currently the Support is limited to
 | ------------------------------------- | :-----: |
 | IMX219                                |         |
 | IMX477                                |  1      |
-| Veye-Camera                           |  1      |
 
 
-1. Cameras need to be manually enabled, not easily doable
+1. Cameras need to be manually enabled with [jetson-io.py](https://docs.arducam.com/Nvidia-Jetson-Camera/Application-note/Jetson-io/)

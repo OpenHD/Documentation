@@ -46,12 +46,12 @@ Recommends: They provide unique benefits, like superb image quality, low latency
 | FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | 
 | FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz |
 
-### other Cameras
+### Other Cameras
 
 Other cameras can also be used, but we cannot provide an out of the box experience for them,
-this includes aw ide variety of [USB cameras](#thermalusb-cameras) and [generic IP cameras](#ip-cameras)
+this includes a wide variety of [USB cameras](#thermalusb-cameras) and [generic IP cameras](#ip-cameras)
 
-### get your camera supported
+### Get your camera supported !
 
 Cameras not listed here may potentionally work, but aren't tested and configured.
 
