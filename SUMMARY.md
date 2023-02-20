@@ -32,7 +32,7 @@
   * [Jetson Nano CSI](hardware/jetson-cameras.md)
   * [USB Cameras](hardware/usb-camera.md)
   * [HDMI Cameras](hardware/hdmi-camera.md)
-  * [IP Cameras](hardware/ip-camera.md)
+  * [IP Cameras](hardware/ip-cameras.md)
   * [Special Purpose Cameras](hardware/special-camera.md)
   * [Custom Hardware](hardware/custom-cameras.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)

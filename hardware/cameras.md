@@ -36,20 +36,26 @@ Recommends: They provide unique benefits, like superb image quality, low latency
 | [VEYE IMX385](http://www.veye.cc/en/product/veye-mipi-imx385/)                | Ultra Low Light                           | $80   |   veye_cam2m  |
 | [Innomaker IMX290](https://www.inno-maker.com/product/mipi-cam-290/)          | Low Light                                 | $90   |     veye327   |
 
+### Thermal/USB Cameras
+
+
+| Name | Lens | Sensor | Resolution | FPS | Price | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz |
+| Hti-301 | Germanium | iRay | 384x288 | 25hz | $760 | 
+| FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | 
+| FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz |
+
+### other Cameras
+
+Other cameras can also be used, but we cannot provide an out of the box experience for them
+Wide variety of [USB cameras](#thermalusb-cameras)
+[Generic IP cameras](#ip-cameras)
+
 
 {% hint style="danger" %}
 While many cameras can potentially work, latency is the biggest issue. Please read the Camera pages to fully understand all variables.
 {% endhint %}
-
-Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
-
-USB-Cameras are generally usable with any SBC.
-HDMI-Cameras are currently only supported on the Pi-SBC's.
-IP-Camera support is not ready, yet.
-
-Some USB 3.0 cameras _might_ be capable of ultra-low latency when paired with a suitable SBC with a zero-copy video processing pipeline, but in most cases USB cameras are only suitable when they have an internal h264/h265 encoder. (currently there is no known usb camera, which is able to achieve lower latency then a csi camera)
-
-IP-Cameras are not specifically designed for low latency, and many of them have latency upwards of 500ms+, but there are specific cameras available for purchase that have reasonable latency closer to 100-200ms. Remember this latency will be added to the "normal" latency your system has. So most IP-Camera Setups will have 300-600ms latency. It is not recommended to use an IP-Camera as primary camera.
 
 {% hint style="danger" %}
 When using multiple Cameras you need to choose one Camera-Subsystem, so you can not use libcamera and raspicam at the same time.

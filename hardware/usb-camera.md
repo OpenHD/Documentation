@@ -6,6 +6,11 @@
 Most USB Cameras will create higher latency.
 {% endhint %}
 
+### Warnings
+
+Some USB 3.0 cameras _might_ be capable of ultra-low latency when paired with a suitable SBC with a zero-copy video processing pipeline, but in most cases USB cameras are only suitable when they have an internal h264/h265 encoder. (currently there is no known usb camera, which is able to achieve lower latency then a csi camera)
+
+
 
 | Name | Sensor | Field of use | Price |
 | :--- | :--- | :--- | :--- |
