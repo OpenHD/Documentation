@@ -39,10 +39,10 @@ Recommends: They provide unique benefits, like superb image quality, low latency
 ### Thermal/USB Cameras
 
 
-| Name | Lens | Sensor | Resolution | FPS | Price | Notes |
+| Name | Lens | Sensor | Resolution | FPS | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Hti-201 | Chalcogenide | Raytheon | 320x240 | 9hz |
-| Hti-301 | Germanium | iRay | 384x288 | 25hz | $760 | 
+| Hti-301 | Germanium | iRay | 384x288 | 25hz |
 | FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | 
 | FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz |
 
@@ -52,6 +52,13 @@ Other cameras can also be used, but we cannot provide an out of the box experien
 Wide variety of [USB cameras](#thermalusb-cameras)
 [Generic IP cameras](#ip-cameras)
 
+### get your camera supported
+
+Cameras not listed here may potentionally work, but aren't tested and configured.
+
+We only integrate Cameras which are tested and fitting to the purpose of openhd.
+If you want to get new cameras supported ask your camera vender to support OpenHD development with their hardware, 
+but contact us first at developer@openhdfpv.org
 
 {% hint style="danger" %}
 While many cameras can potentially work, latency is the biggest issue. Please read the Camera pages to fully understand all variables.
