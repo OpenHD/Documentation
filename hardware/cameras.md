@@ -61,10 +61,13 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 
 More information about CSI-HDMI can be found [here](hdmi-cameras.md).
 
-### Other Cameras
+### USB Cameras
 
-Other cameras can also be used, but we cannot provide an out of the box experience for them,
-this includes a wide variety of [USB cameras](special-camera.md) and [generic IP cameras](ip-cameras.md)
+[Read here](special-camera.md) 
+
+### IP Cameras
+
+[Read heres](ip-cameras.md)
 
 ### Get your camera supported !
 
