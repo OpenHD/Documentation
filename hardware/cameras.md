@@ -2,10 +2,10 @@
 
 OpenHD supports and recommends the following cameras on the Raspberry Pi:
 
-## Supports: 
+### Supports: 
 Can be enabled and used easily (No custom scripting), in case things don't work you can ask us for help.
 
-## Recommends:
+### Recommends:
 They provide unique benefits, like superb image quality, low latency, a good feature set and/or professional use cases.
 
 ### Raspberry Pi foundation CSI cameras
@@ -59,13 +59,13 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 | [Geekworn C779](https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable) | 2 | up to 1080p@30fps |
 | [Geekworm C790](https://geekworm.com/products/c790?_pos=1&_sid=605794d2b&_ss=r)  | 4  | up to 1080p@60fps* |
 
-More information about CSI-HDMI can be found [here](hardware/hdmi-cameras.md).
+More information about CSI-HDMI can be found [here](hdmi-cameras.md).
 *only supports more than 1080@30fpv on CM4
 
 ### Other Cameras
 
 Other cameras can also be used, but we cannot provide an out of the box experience for them,
-this includes a wide variety of [USB cameras](hardware/thermalusb-cameras.md) and [generic IP cameras](hardware/ip-cameras.md)
+this includes a wide variety of [USB cameras](special-camera.md) and [generic IP cameras](ip-cameras.md)
 
 ### Get your camera supported !
 
