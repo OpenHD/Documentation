@@ -50,6 +50,9 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 | FLIR Boson 320 | Germanium | FLIR | 320x256 | 9hz/60hz | 
 | FLIR Boson 640 | Germanium | FLIR | 640x512 | 9hz/60hz |
 
+[Read here](special-camera.md) 
+
+
 ### HDMI CSI Adapter
 
 
@@ -63,7 +66,7 @@ More information about CSI-HDMI can be found [here](hdmi-cameras.md).
 
 ### USB Cameras
 
-[Read here](special-camera.md) 
+[Read here](usb-camera.md) 
 
 ### IP Cameras
 
