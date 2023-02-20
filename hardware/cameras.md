@@ -14,7 +14,8 @@ OpenHD is not supporting ANY autofocus cameras, since they are basically not usa
 Since we now support multiple platforms, Camea-Support needs to be split into multiple cathegories, since not every platform supports every camera.
 
 USB-Cameras are generally usable with any SBC.
-HDMI-Cameras and IP-Cameras are currently only supported on the Pi-SBC's.
+HDMI-Cameras are currently only supported on the Pi-SBC's.
+IP-Camera support is not ready, yet.
 
 Some USB 3.0 cameras _might_ be capable of ultra-low latency when paired with a suitable SBC with a zero-copy video processing pipeline, but in most cases USB cameras are only suitable when they have an internal h264/h265 encoder. (currently there is no known usb camera, which is able to achieve lower latency then a csi camera)
 
@@ -25,4 +26,6 @@ When using multiple Cameras you need to choose one Camera-Subsystem, so you can 
 This means f.e. you can not use an Veye-Camera and an Arducam camera at the same time.
 {% endhint %}
 
-
+{% hint style="danger" %}
+When using multiple Cameras the second camera is using Software decoding and encoding, it is not recommended to use a high quality camera. It is generally made for a thermal camera or something with lower resolutions.
+{% endhint %}

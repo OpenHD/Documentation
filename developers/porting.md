@@ -14,30 +14,48 @@ If you want to run OpenHD on "unsupported" hardware you need to first look at th
 4. at least 512MB RAM*
 5. a modern Linux kernel 5.0+ *
 6. a USB port
-7. you need to find a low latency Gstreamer encode pipeline
+7. you need to find a low latency Gstreamer encode pipeline**
 
 
 *can also be done with less memory and a lower kernel number, but this will further complicate the situation
+**there is no general rule, how to find a low latency encoder, in general you need to look after it being HW-accelerated and test and optimize it
+
+
+{% hint style="info" %}
+Here is a example pipeline, which was used on the raspberry pi for debugging:
+
+gst-launch-1.0 v4l2src io-mode=dmabuf device=/dev/video0 ! "video/x-raw,format=(string)UYVY, width=(int)1920, height=(int)1080,framerate=(fraction)30/1" ! v4l2h264enc extra-controls="controls,repeat_sequence_header=1,h264_profile=1,h264_level=11,video_bitrate=5000000,h264_i_frame_period=15,h264_minimum_qp_value=10" ! "video/x-h264,level=(string)4" ! queue ! h264parse config-interval=-1 ! rtph264pay mtu=1024 ! udpsink host=127.0.0.1 port=5500
+{% endhint %}
+
 
 
 ### Camera support
 
-First thing you need to look after is that your SBC has a mipi connector for plugging in low latency cameras.
-If the SBC-Vendor lists official Camera support the next steps could not be necessary.
+First thing you need to look after is that your SBC has a mipi-csi connector for plugging in low latency cameras.
 
 Sadly MIPI is only a connector Standart, it doesn't mean that all mipi cameras can be connected.
 You need a Kernel Overlay (dto/dtbo/dts), with you can use to compile your kernel with camera support.* If you can't find any or do only find support for bad camera, you are stuck and can't just write the files yourself.
 For most Cameras you also need a tuning file, in which special parameters are setup.
 
-*This files are board specific, even if you find a SOC with the same processor you can not just use that
+If the SBC-Vendor lists official Camera support the above step could not be necessary.
+
+*This files are board specific, even if you find a SOC with the same processor you can not just use that, it includes specific things like the pin-out and much more.
 
 ### What do we need before we can start porting OpenHD (for Ground)
 
 For the ground we need to make sure that the SBC has a potent h264/h265 decoder, and a good documentation. 
 
-1. find a low latency Gstreamer decode pipeline
-2. look up how the compositor on you sbc works*
+1. find a low latency Gstreamer decode pipeline*
+2. look up how the compositor on you sbc works
 3. have a relative new Kernel (5.0+)[makes the experience easier]
+
+* there is no general rule, how to find a low latency encoder, in general you need to look after it being HW-accelerated and test and optimize it
+
+{% hint style="info" %}
+Here is a example pipeline, which was used on the raspberry pi for debugging:
+
+gst-launch-1.0 udpsrc port=5600 caps='application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264' ! rtph264depay ! 'video/x-h264,stream-format=byte-stream' ! fdsink | hello_video.bin
+{% endhint %}
 
 The easiest way is to look if your SBC allows multiple layers in your compositor, which allow the video to run behind QT and make the QT background invisible.
 
