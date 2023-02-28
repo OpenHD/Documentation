@@ -11,8 +11,10 @@ This step also complicates setup a little, because not every device is compatibl
 That's why we split our Wiki in multiple sub-menus.
 Since the [RaspberryPi](../hardware/raspberry.md) is the most stable and most supported SBC we'll recommend starting with that platform.
 
-We also support more advanced setups, which require much more work.
-One of this Platforms is the [Nvidia Jetson](../hardware/jetson.md) and [X86](../hardware/X86.md), for which we also actively build images.
+We also support more advanced setups, which require much more work and have a lesser function set.
+One of this Platforms is the [Nvidia Jetson](../hardware/jetson.md), which can only be used as Air, and has minimal camera support.
+
+And [X86](../hardware/X86.md), which doesn't support custom channels and higher tx power on 2.4 cards.
 
 In addition to that we are right now building our own [custom Hardware](../hardware/custom-hardware.md), which has very specific compatibilities. And allow custom builds based on our OpenHD code, which are compatible with the OpenHD-System.
 
