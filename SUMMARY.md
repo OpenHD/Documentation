@@ -60,6 +60,7 @@
   * [Advanced](ground-station-software/advanced/README.md)
   * [Gstreamer](ground-station-software/standart/gstreamer.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
+* [QOpenHD OSD backup](ground-station-software/qopenhd-osd-backup.md)
 
 ## Developers Corner
 
