@@ -13,7 +13,7 @@ AIR: Use a rpi 4 or at least a rpi 3 - the USB thermal image needs to be scaled 
 GROUND: Similar to air, the secondary video is decoded and displayed in a SW accelerated path, use pi4 or x86.\
 \
 Setup:\
-Step 1: Configure QOpenHD (your Ground controll station) to display 2 video feeds simultaneously - your primary video is always full screen, your secondary video (previously called pip) is in the lower right corner and can be maximized / minimzed / scaled to your liking:\
+Step 1: Configure QOpenHD (your Ground controll station) to display 2 video feeds simultaneously - your primary video is always full screen, your secondary video (previously called pip) is in the lower left corner and can be maximized / minimzed / scaled to your liking:\
 \
 Go to QOpenHD -> General -> N Cameras to control and set it to 2\
 Restart QOpenHD.\
