@@ -49,6 +49,7 @@
 ## Advanced Setup
 
 * [Air recording](advanced-setup/air-recording.md)
+* [Dual Camera](advanced-setup/dual-camera.md)
 
 ## Ground Station Software
 
@@ -57,10 +58,10 @@
   * [Tower](ground-station-software/tower.md)
   * [FPV\_VR](ground-station-software/fpv\_vr.md)
   * [Advanced](ground-station-software/advanced/README.md)
-  * [Gstreamer](ground-station-software/gestreamer.md)
+  * [Gstreamer](ground-station-software/standart/gstreamer.md)
   * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
+* [QOpenHD OSD backup](ground-station-software/qopenhd-osd-backup.md)
 
 ## Developers Corner
 
 * [Porting OpenHD](developers/porting.md)
-
