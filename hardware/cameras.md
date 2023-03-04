@@ -2,13 +2,17 @@
 
 OpenHD supports and recommends the following cameras on the Raspberry Pi:
 
+{% hint style="info" %}
 ### Supported Cameras \*
 
 Can be enabled and used easily (No custom scripting), in case things don't work you can ask us for help.
+{% endhint %}
 
-### Recommended Cameras \*\*:
+{% hint style="info" %}
+### Recommended Cameras \*\*
 
 They provide unique benefits, like superb image quality, low latency, a good feature set and/or professional use cases.
+{% endhint %}
 
 ### Raspberry Pi CSI cameras
 
