@@ -11,7 +11,7 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 ### Raspberry Pi foundation CSI cameras
 
 
-| Name                                                                    | Field of use    | <div style="width:50px">Price</div> | Overlay |
+| Name                                                                    | Field of use    | Price | Overlay |
 | ----------------------------------------------------------------------- | --------------- | ----- | ------- |         
 | [Pi Cam V1(OV5647)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal          | $25   |   MMAL  |  
 | [Pi Cam V2(IMX219)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal          | $25   |   MMAL  |  
