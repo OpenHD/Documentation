@@ -13,7 +13,7 @@ They provide unique benefits, like superb image quality, low latency, a good fea
 
 | Name                                                                    | Field of use    | Price | Overlay |
 | ----------------------------------------------------------------------- | --------------- | ----- | ------- |         
-| [Pi Cam V1(OV5647)](https://www.raspberrypi.org/documentation/hardware/camera/) |  | Normal          | $25   |   MMAL  |  
+| [Pi Cam V1(OV5647)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal          | $25   |   MMAL  |  
 | [Pi Cam V2(IMX219)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal          | $25   |   MMAL  |  
 | [Pi Cam HQ(IMX477)](https://www.raspberrypi.org/documentation/hardware/camera/) | Bigger Vehicles | $50   |   MMAL  |  
 
