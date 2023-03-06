@@ -1,14 +1,13 @@
-# Cameras
+# HDMI Cameras
 
-| Name | Sensor | Field of use | Price |
-| :--- | :--- | :--- | :--- |
-| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | CMOS | Good WDR | $75 |
-| [FF Split](https://a.aliexpress.com/_BPMdpz) | Unknown | Good WDR | $75 |
+| Name                                                                                                                                                                                                                                    | Sensor  | Field of use | Price |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------ | ----- |
+| [Hawkeye Firefly Split Mini Version 4K](https://www.fireflycameras.com/products/hawkeye-firefly-split-mini-version-4k-170-degree-hd-recording-dvr-fpv-camera-wdr-single-board-built-in-mic-low-latency-tv-output-for-rc-drone-airplane) | CMOS    | Good WDR     | $75   |
+| [FF Split](https://a.aliexpress.com/\_BPMdpz)                                                                                                                                                                                           | Unknown | Good WDR     | $75   |
 
 ## Overlay
 
 HDMI cameras need the MMAL Overlay
-
 
 ## HDMI Input
 
@@ -33,13 +32,12 @@ This was done by Bortek, using the Auvidea B102 with a Gopro4 camera.
 
 **These cameras do not work!:**
 
-* Samsung NX500 \(1080p60, framerate too high\)
-* Canon EOS M \(1080i, interlaced output is not supported by these adapters\)
-
+* Samsung NX500 (1080p60, framerate too high)
+* Canon EOS M (1080i, interlaced output is not supported by these adapters)
 
 ### DCDZ HDMI CSI-2 adapter
 
-![dcdz-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns_HDMI%20in%20Cards/dcdz-hdmi-csi.jpg)
+![dcdz-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/dcdz-hdmi-csi.jpg)
 
 AliExpress link: [DCDZ HDMI CSI-2 adapter](https://www.aliexpress.com/item/4000152180240.html)
 
@@ -49,7 +47,7 @@ Has a connector for both the Raspberry Pi Zero and full size Raspberry Pi models
 
 ### Geekworm HDMI CSI2 adapter
 
-![geekworm-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns_HDMI%20in%20Cards/geekworm-hdmi-csi.jpg)
+![geekworm-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/geekworm-hdmi-csi.jpg)
 
 Available on Amazon in the U.S., and is similar to the DCDZ adapter above.
 
@@ -57,7 +55,7 @@ Amazon store: [Geekworm HDMI CSI2 adapter](https://www.amazon.com/Geekworm-Raspb
 
 Geekworm store: [Geekworm HDMI CSI2 adapter](https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable)
 
-Has a connector compatible with the full size pi models. 
+Has a connector compatible with the full size pi models.
 
 ### Auvidea B102
 
@@ -71,22 +69,22 @@ More info: [Auvidea B101](https://auvidea.eu/b101-hdmi-to-csi-2-bridge-15-pin-fp
 
 Same basic capabilities as the others, has a connector compatible with the full size pi models.
 
-[Technical details](http://www.auvidea.eu/download/manual/B10x_technical_reference_1.3.pdf)
+[Technical details](http://www.auvidea.eu/download/manual/B10x\_technical\_reference\_1.3.pdf)
 
 ### Lintest Systems PiCapture HD1
 
 More info: [Lintest Systems PiCapture HD1](https://lintestsystems.com/products/picapture-hd1)
 
-This is a more complicated \(and expensive\) card, it supports HDMI just like the others \(with the same limitations\), but also supports analog component input, though it is unlikely that any camera worth putting on a drone will have component connections \(they were common on HDTVs and DVD players at one point\).
+This is a more complicated (and expensive) card, it supports HDMI just like the others (with the same limitations), but also supports analog component input, though it is unlikely that any camera worth putting on a drone will have component connections (they were common on HDTVs and DVD players at one point).
 
 The adapter has LEDs that will tell you whether the camera connection is OK.
 
 ## HDMI Cameras
 
-### [FireFly Split](https://a.aliexpress.com/_BPMdpz)
+### [FireFly Split](https://a.aliexpress.com/\_BPMdpz)
 
 An HDMI camera specifically designed for drones, has onboard recording to MicroSD on the camera itself, WDR support and weighs 60g.
 
 Be aware that some of these cameras have been shipped without HDMI output, however the link above is reported to be the correct HDMI model.
 
-**Note**: to use this camera for Open.HD you need an [HDMI Input](cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4k resolution, the Raspberry Pi is not capable of encoding 4k video. However some other boards supported by Open.HD like the Jetson Nano can handle it.
+**Note**: to use this camera for Open.HD you need an [HDMI Input](../../cameras.md#hdmi-input) board .Be aware that while the camera itself can do 4k resolution, the Raspberry Pi is not capable of encoding 4k video. However some other boards supported by Open.HD like the Jetson Nano can handle it.
