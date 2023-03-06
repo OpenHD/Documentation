@@ -13,5 +13,5 @@ After that, you can manually adjust you encoder bitrate in the CAM1 (optionally 
 Example of a camera properly adhering to the set encoder bitrate:\
 ![](<../.gitbook/assets/Screenshot from 2023-03-06 21-33-28.png>)\
 \
-4\) RTL8812AU (or other chips using the RTL88xxAU driver) are the only wifi card(s) supporting variable link rate(s). \
+4\) RTL8812AU (or other chips using the RTL88xxAU driver) are the only wifi card(s) supporting variable link rate(s). E.g. you can change the MCS index (modulation) and channel width (20Mhz or 40Mhz) on those cards, which increases / decreases the throughput (rate) of your RF link.\
 \
