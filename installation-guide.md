@@ -30,7 +30,7 @@ Open up the imager and select the latest OpenHD release from the drop down. The 
 ![](<.gitbook/assets/Screenshot from 2022-11-12 16-47-39.png>)
 
 Step 4:
-Insert your SD card into the card reader, and select it from the "Choose storage" option. If you are using a CM4, it'l show up like an SD card.
+Insert your SD card into the card reader, and select it from the "Choose storage" option. If you are using a CM4, it'll show up like an SD card.
 
 Step 5:
 Click on "Settings" on the lower right corner and select either air or ground (depending weather you want to flash an air or ground image). You cannot skip this step. For a functional OpenHD setup, you need to flash one Air unit (select air) and one Ground unit (select ground).

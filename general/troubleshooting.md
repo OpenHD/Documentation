@@ -37,7 +37,7 @@ Since Libcamerasrc doesn't have any support for settings, yet you can't change p
 
 #### Where are the extended settings for my veye camera
 
-We don't have extended i2c settings for veye cameras, since veye didn't integrate them in standart v4l2 controls.
+We don't have extended i2c settings for veye cameras, since veye didn't integrate them in standard v4l2 controls.
 
 #### Ground battery monitoring isn't working
 

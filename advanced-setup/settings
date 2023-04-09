@@ -5,7 +5,7 @@ description: What do all these settings do.
 # Settings
 
 ## WB LINK FREQ
-This inherrits all the settings for the WifiBoradcast Link
+This inherrits all the settings for the WifiBroadcast Link
 
 FIND AIR UNIT
 scans channels for the air-unit
@@ -14,7 +14,7 @@ Frequency
 needs to be set to a frequency the Wifi-Dongle supports
 
 Bandwith
-20MHZ more resilience, less data (Standart)
+20MHZ more resilience, less data (Standard)
 40MHZ more twice the bandwith, greater interference (only works on 8812au)
 
 MCs Index
