@@ -4,7 +4,7 @@
 
 Welcome to the Open.HD Introduction Page!
 
-OpenHD uses off-the-shelf Wi-Fi adapters available for purchase online, however it is not standard Wi-Fi, which is unsuitable for low-latency or very long distance transmission. Instead, Open.HD configures the Wi-Fi adapter in a way that is closer to a simple broadcast, much like analog video transmission hardware you may be using already.
+OpenHD is a Software/Suite to transmit Video,Rc-Link and Telemetry over long range. It is build with Drones in mind, but can be easily adapted to other usecases. We do this via off-the-shelf Wi-Fi adapters available for purchase online, however it is not standard Wi-Fi, which is unsuitable for low-latency or very long distance transmission. Instead, Open.HD configures the Wi-Fi adapter in a way that is closer to a simple broadcast, much like analog video transmission hardware you may be using already.
 
 High definition video, 2-way UAV telemetry, audio, and RC control signals can all be sent over a single transmission channel.
 
