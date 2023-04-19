@@ -1,20 +1,39 @@
 # Introduction
 
 ![](.gitbook/assets/plain\_openhd\_logo.jpg)
+###Welcome to OpenHD
 
-Welcome to the Open.HD Introduction Page!
+OpenHD is a suite of software designed for long-range video transmission, telemetry, and RC control. 
+While we originally designed it with hobbyist drones in mind, it can be adapted to a wide range of other applications as well.
 
-OpenHD is a Software/Suite to transmit Video,Rc-Link and Telemetry over long range. It is build with Drones in mind, but can be easily adapted to other usecases. We do this via off-the-shelf Wi-Fi adapters available for purchase online, however it is not standard Wi-Fi, which is unsuitable for low-latency or very long distance transmission. Instead, Open.HD configures the Wi-Fi adapter in a way that is closer to a simple broadcast, much like analog video transmission hardware you may be using already.
+###What Open.HD Can Do
 
-High definition video, 2-way UAV telemetry, audio, and RC control signals can all be sent over a single transmission channel.
+Our suite can transmit:
 
-A multi-platform [Open.HD app ](https://github.com/OpenHD/QOpenHD/releases)is available for live video with a customizable OSD.
+    High definition video (with multiple cameras)
+    Two-way UAV telemetry
+    Audio*
+    RC control signals
 
-**For support and further reading:**
+All of these signals can be sent over a single transmission channel.
+
+###How OpenHD Works
+
+We use off-the-shelf Wi-Fi adapters that are available for purchase online. However, we don't use standard Wi-Fi, which isn't well-suited for low-latency or long-distance transmissions. Instead, we configure the Wi-Fi adapter to operate like a simple broadcast, which is more similar to analog video transmission hardware.
+
+This configuration allows us to transmit high-quality video and other signals over long distances with low latency.
+
+###QOpenHD App
+
+We offer a multi-platform [app](https://github.com/OpenHD/QOpenHD/releases) with a customizable on-screen display (OSD) for live video. The app is designed to work seamlessly with our suite, and allows you to easily view and control your transmission.
+
+###Support and Further Reading
+
+If you need help or want to learn more, we offer several resources:
 
 * [OpenHD Forum](https://forum.openhdfpv.org/)
 * Public [Telegram](https://t.me/OpenHD\_User) and [Discord](https://discord.gg/P9kXs9N2RP) groups for lots of immediate interaction
-* Please document problems on [Github](https://github.com/OpenHD/Open.HD/issues)
+* Please document problems on [Github](https://github.com/OpenHD/OpenHD/issues)
 * First intro to Open.HD from CurryKitten on [Youtube](https://www.youtube.com/playlist?list=PL7WaECFssECJWfTc0vKYTfUdH5y8UgdI9)
 
 {% hint style="warning" %}
@@ -24,3 +43,6 @@ If you have a problem with a specific version of Open.HD, please check the name 
 {% hint style="info" %}
 If you activate debugging, detailed debug logs can be found on the SD-Card and should be provided, when discussing a problem.
 {% endhint %}
+
+We hope you find OpenHD useful, and we look forward to helping you get the most out of your long-range video transmission!
+
