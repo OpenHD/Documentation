@@ -14,12 +14,12 @@ OpenHD is a suite of software designed for long-range video transmission, teleme
 
 Our suite can transmit:
 
-```
+
 * High definition video (with multiple cameras)
 * Two-way UAV telemetry
 * Audio
 * RC control signals
-```
+
 
 All of these signals can be sent over a single transmission channel.
 
