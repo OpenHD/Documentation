@@ -34,8 +34,9 @@ gst-launch-1.0 v4l2src io-mode=dmabuf device=/dev/video0 ! "video/x-raw,format=(
 First thing you need to look after is that your SBC has a mipi-csi connector for plugging in low latency cameras.
 
 Sadly MIPI is only a connector standard, it doesn't mean that all mipi cameras can be connected.
-You need a Kernel Overlay (dto/dtbo/dts), with you can use to compile your kernel with camera support.* If you can't find any or do only find support for bad camera, you are stuck and can't just write the files yourself.
-For most Cameras you also need a tuning file, in which special parameters are setup.
+You need a Kernel Overlay (dto/dtbo/dts), with you can use to compile your kernel with camera support.
+* If you can't find any or do only find support for bad camera, you are stuck and can't just write the files yourself, since this needs deep insights in registers which are usually kept behind nda's.
+For most Cameras you also need a tuning file, in which special parameters are setup and a camera-driver.
 
 If the SBC-Vendor lists official Camera support the above step could not be necessary.
 
