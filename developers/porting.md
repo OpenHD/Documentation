@@ -100,3 +100,11 @@ it also needs modifications and you need a mkspecs configuation(for that platfor
 
 Then you need to figure out the dependencies (a good help are our  install_dep_ files)
 After you got everything prepared you can simply build QOpenHD with build_qmake.sh 
+
+### Finding a KMS-Plane for HW-decoding
+
+I usually use modetest to look at possible planes for kmssink.
+You need the package libdrm-tests.
+
+then execute "modetest -p" and check if the plane is behind qopenhd
+
