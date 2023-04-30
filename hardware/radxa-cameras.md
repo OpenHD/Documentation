@@ -9,7 +9,7 @@ We're already investing resources to bring more cameras in the future.
 Currently the Support is limited to 
 
 | Camera                                |  Recommended  |  Notes  |
-| ------------------------------------- |               | :-----: |
+| ------------------------------------- | :-----------: | :-----: |
 | IMX219                                |               |  1      |
 | IMX415*                               |       *       |         |
 
