@@ -23,7 +23,7 @@
     * [Ochin CM4 Carrier](hardware/ochin.md)
   * [Jetson](hardware/jetson.md)
   * [X86](hardware/X86.md)
-  * [Radxa](hardware/Advanced.md)
+  * [Radxa](hardware/radxa.md)
   * [Custom Hardware](hardware/custom-hardware.md)
 * [Cameras](hardware/cameras.md)
   * [Raspberry Pi CSI](hardware/raspberry-cameras.md)
