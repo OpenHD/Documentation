@@ -26,8 +26,9 @@ It depends. 1-3KM is easy to achieve, even with low power WiFi cards and the ant
 
 Carefully chosen WiFi cards, antennas, and optionally an antenna tracker should put 20km+ within reach. The current record is 75km on 5.8GHz frequency with a 30dbi gain panel antenna.
 
-[60km flight](https://youtu.be/bcYOgW3WmS4)
-[75km flight](https://youtu.be/IVSJwuuuo7o?t=78)
+- YouTube video of [60km flight](https://youtu.be/bcYOgW3WmS4)
+
+- YouTube video of [75km flight](https://youtu.be/IVSJwuuuo7o?t=78)
 
 #### How long does OpenHD take to regain a lost “connection”?
 
@@ -83,7 +84,7 @@ You can also run the groundstation (including QOpenHD) on different platforms, b
 
 #### Which WiFi adapters do I need?
 
-See the wiki: \[Supported WiFi Adapters]\(link of the wifi-card-page)
+See [Supported WiFi Adapters](../hardware/wifi-adapters.md).
 
 #### Can I use this other WiFi adapter that's not on the list?
 
@@ -125,7 +126,7 @@ Two WiFi adapters on the Ground are supported.
 * AliExpress
 * TaoBao (chinese marketplace)
 
-Due to the global chip shortage it is currently not that easy to buy all the required hardware. Try to use https://rpilocator.com/ or buy used hardware.
+Due to the global chip shortage it is currently not that easy to buy all the required hardware. Try to use [rpilocator](https://rpilocator.com/) or buy used hardware.
 
 Keep in mind that OpenHD 2.3 dropped support for Pi-Zero, Pi1 and Pi2 (lower than 1.2).
 
