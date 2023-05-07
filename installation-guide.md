@@ -41,8 +41,6 @@ Flash your image by clicking on "Write". This might take a while.
 
 ### Manual install:
 
-You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing.
-For air: Create a file called air.tx under /boot/OpenHD/
-For ground: Create a file ground.txt under /boot/OpenHD/
+You can always flash OpenHD image(s) with the flashing tool of your choice. Note that in this case, you have to manually specify weather you want to boot as air or ground after flashing. For air, create a file called air.tx under `/boot/OpenHD/`. For ground, create a file ground.txt under `/boot/OpenHD/`.
 
 Note: Filenames are case-sensitive. If you want to switch from air to ground, it is recommended to reflash your image, then create the air or ground file.

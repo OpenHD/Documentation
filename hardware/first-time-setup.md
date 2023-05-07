@@ -16,9 +16,9 @@ Assuming you are starting with nothing, we recommend you get the following Hardw
 
 * A Raspberry Pi4B for the Ground SBC
 * A SD-Card with at least 8GB of space
-* A Raspberry CM4 with EMMC
-* An ([Ochin](ochin.md)) board
-* We recommend fitting a cooler to the CM4, because it really can get hot.
+* A Raspberry CM4 with EMMC with:
+  * An [Ochin CM4 carrier](ochin.md) board
+  * We recommend fitting a cooler to the CM4, because it really can get hot.
 * Two WiFi cards that support the band you want to use. (See [WiFi Adapters](wifi-adapters.md))
 * An HDMI cable for connecting the Ground SBC to a screen
 * An HDMI capable screen (use your TV for testing!)
