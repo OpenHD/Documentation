@@ -48,11 +48,11 @@ Another consideration is the thermal "span" of the area in view of the thermal c
 
 **FLIR Tau 2 and range test**
 
-[![FLIR Tau 2 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-tau-2-flight-screenshot.jpg)](https://www.youtube.com/watch?v=WXKOqgxwp-c)
+[![FLIR Tau 2 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-tau-2-flight-screenshot.jpg?raw=true)](https://www.youtube.com/watch?v=WXKOqgxwp-c)
 
 **FLIR Boson 320 flight over a neighborhood**
 
-[![FLIR Boson 320 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320-flight.jpg)](https://www.youtube.com/watch?v=PQGDQzf-Z50)
+[![FLIR Boson 320 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320-flight.jpg)](https://www.youtube.com/watch?v=PQGDQzf-Z50?raw=true)
 
 ### Lenses
 
@@ -70,7 +70,7 @@ In some cases a thermal camera may require a different SBC, a video adapter of s
 
 #### FLIR One G2
 
-![flir one g2](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-one-g2.jpeg)
+![flir one g2](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-one-g2.jpeg?raw=true)
 
 These are designed to connect to a smartphone, there were iOS and Android versions with different connectors. The Android version has a standard Micro USB connector and can be connected to an OpenHD system with a USB OTG cable.
 
@@ -96,7 +96,7 @@ These are cheap, but have always had significant issues due to the lens and the 
 
 #### Seek Compact Pro \([manufacturer](https://www.thermal.com/compact-series.html), [Amazon](https://www.amazon.com/Seek-Thermal-CompactPRO-Resolution-Imaging/dp/B07V34RFLW)\)
 
-![Seek Compact Pro compared to Flir One G2](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/seek-compact-pro-compare.jpeg)
+![Seek Compact Pro compared to Flir One G2](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/seek-compact-pro-compare.jpeg?raw=true)
 
 Model numbers for these cameras _do not_ end with an X, e.g. UQ-AAA.
 
@@ -116,7 +116,7 @@ These are export controlled items because of the frame rate, you can buy them ea
 
 #### Hti-201 \([manufacturer](https://hti-instrument.com/products/ht-201-mobile-phone-thermal-imager)\)
 
-![Hti-201 Thermal Camera](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/hti-201.jpg)
+![Hti-201 Thermal Camera](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/hti-201.jpg?raw=true)
 
 These are basically clones of the Seek Compact Pro.
 
@@ -124,7 +124,7 @@ The camera housing has a very awkward shape compared to most other thermal camer
 
 #### Hti-301 \([manufacturer](https://hti-instrument.com/products/ht-301-mobile-phone-thermal-imager), [Amazon](https://www.amazon.com/Resolution-Infrared-Thermal-Smartphone-Hti-Xintai/dp/B07Z7J6LXD)\)
 
-![Hti-301 Thermal Camera](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/hti-301.jpg)
+![Hti-301 Thermal Camera](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/hti-301.jpg?raw=true)
 
 A very good thermal camera with 384x288 resolution and a fairly large germanium lens and a frame rate of 25hz. They are expensive compared to some others, but the thermal performance is very good.
 
@@ -134,7 +134,7 @@ Note that you may have trouble getting 25hz video streams out of these when used
 
 #### FLIR Boson 320 \([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-320)\)
 
-![FLIR Boson 320 Thermal Core](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320.jpg)
+![FLIR Boson 320 Thermal Core](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320.jpg?raw=true)
 
 A 320x256 thermal imager "core", full 60hz frame rate but FLIR makes a 9hz version as well. They are fairly expensive but have Germanium lenses.
 
@@ -146,7 +146,7 @@ These are export controlled items due to the very high frame rate.
 
 Real world flight video:
 
-[![FLIR Boson 320 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320-flight.jpg)](https://www.youtube.com/watch?v=PQGDQzf-Z50)
+[![FLIR Boson 320 flight](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320-flight.jpg?raw=true)](https://www.youtube.com/watch?v=PQGDQzf-Z50)
 
 #### FLIR Boson 640 \([manufacturer](https://www.flir.com/products/boson/), [GroupGets](https://store.groupgets.com/collections/frontpage/products/flir-boson-640)\)
 
