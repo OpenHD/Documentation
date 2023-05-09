@@ -26,10 +26,10 @@ If you are interested in cooperating with OpenHD, just write us a message at: de
 
 There are several repositories for different parts of the OpenHD system.
 The most important ones are:
-* [OpenHD/Open.HD](https://github.com/OpenHD/OpenHD), the main software which handles all the features that are needed to run the OpenHD project.
+* [OpenHD/OpenHD](https://github.com/OpenHD/OpenHD), the main software which handles all the features that are needed to run the OpenHD project.
 * [OpenHD/QOpenHD](https://github.com/OpenHD/QOpenHD), the GUI/Configuator app which displays the video and OSD, but is also the UI for OpenHD.
-* [OpenHD/Open.HD\_ImageBuilder](https://github.com/OpenHD/OpenHD_ImageBuilder), the repository containing the script which builds all our images.
-* [OpenHD/Open.HD\_KernelBuilder](https://github.com/OpenHD/OpenHD_KernelBuilder), the repository containing the script which builds all our kernels.
+* [OpenHD/OpenHD\_ImageBuilder](https://github.com/OpenHD/OpenHD_ImageBuilder), the repository containing the script which builds all our images.
+* [OpenHD/OpenHD\_KernelBuilder](https://github.com/OpenHD/OpenHD_KernelBuilder), the repository containing the script which builds all our kernels.
 
 ### Branches
 
@@ -41,7 +41,7 @@ The lead developers usually use branches like "consti-test", "rapha-test",... to
 
 This is not intended to be a full guide to using Github.
 
-To start start developing/fixing bugs, you should fork the [OpenHD/Open.HD](https://github.com/OpenHD/Open.HD) repository on Github _first_ before making any changes or cloning anything to your local machine, and then clone your fork rather than the main OpenHD/Open.HD repository. 
+To start start developing/fixing bugs, you should fork the [OpenHD/OpenHD](https://github.com/OpenHD/OpenHD) repository on Github _first_ before making any changes or cloning anything to your local machine, and then clone your fork rather than the main OpenHD/Open.HD repository. 
 
 
 **Make a new branch**
