@@ -39,20 +39,21 @@ The below link explains how the video quality is impacted under different scenar
 
 A typical question is related to the maximum range, link budget or system range have relation to three main elements: Transmitter power, Antenna gains, and Receiver sensitivity. The next formula can be used to calculate this:
 
-`R = 10^( (Lfs-LM-32.44-20*Log(f)) / 20)`
+$\qquad \Huge{R = 10^{\frac{RF_{HW} - LM - 32.44 - 20*log_{10}(f)}{20}}}$  
 
-`Lfs = Ptx + Gtx + Grx – Srx`
+$\qquad \large{RF_{HW} = P_{TX} + G_{TX} + G_{RX} - S_{RX}}$  
 
-where,
+where:
 
-* `R = range in Km`
-* `f = frequency used MHz`
-* `LM = Link Margin dB`
-* `Lfs = free space path loss dB`
-* `Gtx = Tx antenna gain dBi`
-* `Grx = Rx antenna gain dBi`
-* `Ptx = Tx power dBm`
-* `Srx = Sensitivity Rx`
+$\quad R \textnormal{ is the transmission range in km}$  
+$\quad f \textnormal{ is the frequency in MHz}$  
+$\quad LM \textnormal{ is the desired system Link Margin in dB}$  
+$\quad 32.44 \textnormal{ is the Friis constant for solving with units of km and MHz above}$  
+$\quad RF_{HW} \textnormal{ represents the RF Hardware (Radio / Antenna) parameters in dB}$  
+$\quad P_{TX} \textnormal{ is the Tx power in dBm}$  
+$\quad G_{TX} \textnormal{ is the Tx antenna gain in dBi}$  
+$\quad G_{RX} \textnormal{ is the Rx antenna gain in dBi}$  
+$\quad S_{RX} \textnormal{ is the Rx Sensitivity in dBm}$  
 
 | Ground Side antenna / Gain | Air Side antenna / Gain | Frequency GHz | Power TX mW | Theoretical range Km \* | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |

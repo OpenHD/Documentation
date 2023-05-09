@@ -18,7 +18,7 @@ The easiest way to reduce latency is to use OpenHD on a "potent" X86 Laptop, it'
 
 On a Jetson Nano as Air-SBC you can expect to lower the latency, but no official numbers are published yet.
 
-The lowest latency can be achieved on our custom hardware combined with a X86-Ground. There are no official numbers yet, but you can expect to cut your latency in half, which makes OpenHD repsonsive enough to fly on race/freestyle-setups. It's not released yet, but you can follow the project here: (https://www.patreon.com/OpenHD)
+The lowest latency can be achieved on our custom hardware combined with a X86-Ground. There are no official numbers yet, but you can expect to cut your latency in half, which makes OpenHD repsonsive enough to fly on race/freestyle-setups. It's not released yet, but you can follow our progress [on the OpenHD Hardware Patreon page](https://www.patreon.com/OpenHD).
 
 #### What kind of range can I expect?
 
