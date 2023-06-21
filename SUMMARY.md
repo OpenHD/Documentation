@@ -43,6 +43,9 @@
 ## Software Setup
 
 * [Telemetry](software-setup/telemetry-and-osd.md)
+* [Recording](software-setup/recording.md)
+* [TX-Power](software-setup/tx-power.md)
+* [MCS-Index](software-setup/mcs-via-rc.md)
 * [Joystick RC](software-setup/joystick-rc.md)
 * [Camera Settings](software-setup/camera-settings.md)
 * [Ethernet](software-setup/ethernet-hotspot.md)
