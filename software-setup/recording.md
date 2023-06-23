@@ -2,8 +2,8 @@ In OpenHD, there are 2 possible ways for recording your flight to share it on yo
 
 1) Air recording:
 Record video locally on your Air unit. This eliminates any breakups / interference that might happen during flight from the recorded video.
-NOTE 1) The RPI HW is not capable of recording the video with OSD - see 2) for that
-NOTE 2) The bitrate of the air recording is the same bitrate as used for transmission
+NOTE 1) The RPI HW is not capable of recording the video with OSD - see 2) for that \
+NOTE 2) The bitrate of the air recording is the same bitrate as used for transmission \
 
 2) Ground recording:
 Due to the HW limitation of RPI not being able to record Video + OSD at the same time, we recommend the following user-proven option:
