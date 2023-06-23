@@ -24,7 +24,7 @@
   * [X86](hardware/X86.md)
   * [Radxa](hardware/radxa.md)
   * [Custom Hardware](hardware/custom-hardware.md)
-  * [Discontinued Hardware]()
+  * [Discontinued Hardware](hardware/discontinued.md)
     * [Jetson](hardware/jetson.md)
 * [Cameras](hardware/cameras.md)
   * [Raspberry Pi CSI](hardware/raspberry-cameras.md)
