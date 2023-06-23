@@ -20,7 +20,7 @@ power of the wifi chip (before amplification). There are a couple of things to n
   You need to change the tx power after flashing yourself !
 
 Using the armed / disarmed TX power feature:
-On rtl8812au, you can specify different TX power levels for armed / disarmed state. To do so, leave WB_TX_PWR_IDX_O on LOW(25mW) and change TX_POWER_ARMED accordingly.
+On rtl8812au, you can specify different TX power levels for armed / disarmed state. To do so, leave TX_POWER_I on LOW(25mW) and change TX_POWER_I_ARMED accordingly.
 This avoids overheating on the bench, where there might be no adequate cooling.
 
 ASUS (measured) power table - 
