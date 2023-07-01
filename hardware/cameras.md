@@ -2,6 +2,8 @@
 
 OpenHD supports and recommends the following cameras on the Raspberry Pi:
 
+We also want to thank our cooperation partners for providing the Team with Prototypes and want to specifically thank [Arducam](https://www.arducam.com/openhd/) for helping us in developing cameras specifically to our need.
+
 {% hint style="info" %}
 ### Supported Cameras \*
 
@@ -10,13 +12,29 @@ Can be enabled and used easily (No custom scripting), in case things don't work 
 
 {% hint style="info" %}
 ### Recommended Cameras \*\*
-
-They provide unique benefits, like superb image quality, low latency, a good feature set and/or professional use cases.
+Among the available options, we highly recommend the top 3 cameras as they offer unparalleled versatility and optimization for OpenHD. These cameras stand out for their exceptional image quality, low latency, extensive feature set, and suitability for professional applications. If you are currently without a preferred camera choice, these top recommendations are guaranteed to provide unique benefits and fulfill your requirements.
 {% endhint %}
 
 ### Raspberry Pi CSI cameras
 
-<table><thead><tr><th>Vendor</th><th>Model</th><th>Field of use</th><th>Price</th><th data-type="rating" data-max="2">*/**</th><th>Overlay</th></tr></thead><tbody><tr><td>Raspberry Pi Foundation</td><td><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V1 (OV5647)</a></td><td>Normal</td><td>$25</td><td>1</td><td>MMAL</td></tr><tr><td>Raspberry Pi Foundation</td><td><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam V2 (IMX219)</a></td><td>Normal</td><td>$25</td><td>1</td><td>MMAL</td></tr><tr><td>Raspberry Pi Foundation</td><td><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Pi Cam HQ (IMX477)</a></td><td>HQ</td><td>$50</td><td>2</td><td>MMAL</td></tr><tr><td>Arducam</td><td><a href="https://www.arducam.com/product/arducam-12mp-imx477-mini-high-quality-camera-module-for-raspberry-pi/">IMX477 Mini</a></td><td>Normal</td><td>$75</td><td>2</td><td>libcamera_imx477</td></tr><tr><td>Arducam</td><td><a href="https://www.uctronics.com/arducam-for-raspberry-pi-ultra-low-light-camera-1080p-hd-wide-angle-pivariety-camera-module-based-on-1-2-7inch-2mp-starvis-sensor-imx462-compatible-with-raspberry-pi-isp-and-gstreamer-plugin.html">IMX462</a></td><td>Low Light</td><td>$60</td><td>2</td><td>libcamera_arducam</td></tr><tr><td>Arducam</td><td><a href="https://www.arducam.com/product/arducam-mini-16mp-imx519-camera-module-for-raspberry-pi-zero-b0391/">IMX519 MINI </a></td><td>HQ Mini<br>fixed focus</td><td>$35</td><td>2</td><td>libcamera_imx519</td></tr><tr><td>Arducam</td><td><a href="https://www.uctronics.com/presale-arducam-2mp-ultra-low-light-starvis-imx290-motorized-ir-cut-camera-for-raspberry-pi.html">STARVIS IMX290</a></td><td>Low Light</td><td>$30</td><td>2</td><td>libcamera_imx290</td></tr><tr><td>Arducam</td><td><a href="https://www.uctronics.com/presale-arducam-2mp-ultra-low-light-starvis-imx327-motorized-ir-cut-camera-for-raspberry-pi.html">STARVIS IMX327</a></td><td>Low Light</td><td>$30</td><td>2</td><td>libcamera_imx327</td></tr><tr><td>Arducam</td><td><a href="https://www.uctronics.com/arducam-2mp-ultra-low-light-starvis-imx462-motorized-ir-cut-camera-for-raspberry-pi.html">STARVIS IMX462</a></td><td>Ultra<br>Low Light</td><td>$60</td><td>2</td><td>libcamera_imx462</td></tr><tr><td>Innomaker</td><td><a href="https://www.inno-maker.com/product/mipi-cam-290/">IMX290</a></td><td>Low Light</td><td>$90</td><td>1</td><td>veye327</td></tr><tr><td>VEYE</td><td><a href="http://www.veye.cc/en/product/veye-mipi-327e/">IMX 327E</a></td><td>Low Light</td><td>$90</td><td>2</td><td>veye_cam2m</td></tr><tr><td>VEYE</td><td><a href="http://www.veye.cc/en/product/cs-mipi-imx307/">IMX307</a></td><td>Low Light, var. Framerate / Resolution</td><td>$60</td><td>2</td><td>veye_csimx307</td></tr><tr><td>VEYE</td><td><a href="http://www.veye.cc/en/product/veye-mipi-imx462/">IMX462</a></td><td>Ultra <br>Low Light</td><td>$80</td><td>2</td><td>veye_cam2m</td></tr><tr><td>VEYE</td><td><a href="http://www.veye.cc/en/product/veye-mipi-imx385/">IMX385</a></td><td>Ultra<br>Low Light</td><td>$80</td><td>2</td><td>veye_cam2m</td></tr></tbody></table>
+| Vendor                 | Model                                                         | Field of use                    | Price | */** | Overlay             |
+|------------------------|---------------------------------------------------------------|---------------------------------|-------|------|---------------------|
+| Arducam                | [Low-Light STARVIS (mini)](https://www.arducam.com/product/2mp-imx462-color-ultra-low-light-starvis-camera-module-with-141h-wide-angle-m12-lens-for-raspberry-pi/)  | LowLigt high WDR       | $40   | 2    | libcamera_ardu    |
+| Arducam                | [SkyMaster HDR](https://www.arducam.com/product/presalearducam-12mp-imx708-hdr-120-wide-angle-camera-module-with-m12-lens-for-raspberry-pi/)  | Highest Quality                          | $37   | 2    | libcamera_imx708    |
+| Arducam                | [SkyVision Pro](https://www.arducam.com/product/16mp-imx519-camera-module-with-m12-lens-wide-angle-color-rolling-shutter-for-raspberry-pi-and-openhd/)  | High Quality                          | $37   | 2    | libcamera_imx519    |
+| Arducam                | [IMX477M](https://www.arducam.com/product/12mp-imx477m-mini-wide-angle-camera-module-for-raspberry-pi/)  | low weight,small                          | $37   | 2    | libcamera_imx477    |
+| Raspberry Pi Foundation | [Pi Cam V1 (OV5647)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal                          | $25   | 1    | MMAL                |
+| Raspberry Pi Foundation | [Pi Cam V2 (IMX219)](https://www.raspberrypi.org/documentation/hardware/camera/) | Normal                          | $25   | 1    | MMAL                |
+| Raspberry Pi Foundation | [Pi Cam HQ (IMX477)](https://www.raspberrypi.org/documentation/hardware/camera/) | HQ                              | $50   | 2    | MMAL                |
+| Arducam                | [IMX477 Mini](https://www.arducam.com/product/arducam-12mp-imx477-mini-high-quality-camera-module-for-raspberry-pi/)  | Normal                          | $75   | 2    | libcamera_imx477    |
+| Arducam                | [IMX462](https://www.uctronics.com/arducam-for-raspberry-pi-ultra-low-light-camera-1080p-hd-wide-angle-pivariety-camera-module-based-on-1-2-7inch-2mp-starvis-sensor-imx462-compatible-with-raspberry-pi-isp-and-gstreamer-plugin.html)  | Low Light                       | $60   | 2    | libcamera_arducam   |
+| Arducam                | [IMX519 MINI](https://www.arducam.com/product/arducam-mini-16mp-imx519-camera-module-for-raspberry-pi-zero-b0391/) | HQ Mini<br>fixed focus          | $35   | 2    | libcamera_imx519    |
+| Arducam                | [STARVIS IMX290](https://www.uctronics.com/presale-arducam-2mp-ultra-low-light-starvis-imx290-motorized-ir-cut-camera-for-raspberry-pi.html) | Low Light                       | $30   | 2    | libcamera_imx290    |
+| Arducam                | [STARVIS IMX327](https://www.uctronics.com/presale-arducam-2mp-ultra-low-light-starvis-imx327-motorized-ir-cut-camera-for-raspberry-pi.html) | Low Light                       | $30   | 2    | libcamera_imx327    |
+| Arducam                | [STARVIS IMX462](https://www.uctronics.com/arducam-2mp-ultra-low-light-starvis-imx462-motorized-ir-cut-camera-for-raspberry-pi.html) | Ultra<br>Low Light               | $60   | 2    | libcamera_imx462    |
+| VEYE                   | [IMX 327E](http://www.veye.cc/en/product/veye-mipi-327e/)     | Low Light                       | $90   | 2    | veye_cam2m          |
+| VEYE                   | [IMX307](http://www.veye.cc/en/product/cs-mipi-imx307/)       | Low
+
 
 
 
