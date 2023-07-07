@@ -11,6 +11,8 @@ OpenHD has it's ethernet standardly activated as Client mode, this means you can
 
 ## Setup on Windows
 
+## Setup on Android
+
 #Active
 This mode is made for IP cameras or connecting perifials to the ethernet Port which do not have a DHCP server.
 The SBC will start it's on DHCP server and let's device connect to it.
