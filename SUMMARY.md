@@ -49,8 +49,9 @@
 * [MCS-Index](software-setup/mcs-via-rc.md)
 * [Joystick RC](software-setup/joystick-rc.md)
 * [Camera Settings](software-setup/camera-settings.md)
-* [Ethernet](software-setup/ethernet-hotspot.md)
-* [Wifi-Hotspot](software-setup/wifi-hotspot.md)
+* [Tethering](software-setup/ethernet-hotspot.md)
+  * [Ethernet](software-setup/ethernet-hotspot.md)
+  * [Wifi-Hotspot](software-setup/wifi-hotspot.md)
 * [Variable Bitrate](software-setup/variable-bitrate.md)
 
 ## Advanced Setup
