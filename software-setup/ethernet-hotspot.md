@@ -11,7 +11,24 @@ OpenHD has it's ethernet standardly activated as Client mode, this means you can
 
 ## Setup on Ubuntu
 
+1. Connect a Ethernet Cable from your Linux device to the SBC.
+2. Wait a little.
+3. Open a Terminal and type in "sudo arp-scan --interface=eth0 --localnet" PLEASE REPLACE ETH0 WITH THE CORRECT ADAPTER, WHICH CONNECTS TO THE SBC
+4. You can now test the connection with the device if you type in the ip into your webbrowser, it should forward you to our webinterface.
+
+
 ## Setup on Windows
+
+1. Connect a Ethernet Cable from your Windows device to the SBC.
+2. Search for view network connections.
+3. Go to the Settings of the Network connection which provides your Windows device with Internet
+4. Click on properties and share.
+5. Select your Ethernet-Connection with the SBC.
+6. Wait a little.
+7. Use a software to scan for devices on your System (recommendation AngryIpScanner) to search for active devices
+8. You can now test the connection with the device if you type in the ip into your webbrowser, it should forward you to our webinterface.
+9. (Sometimes not needed) edit the hardware.conf on your SBC and add the windows-ip to the forwarding IP-Adresses (usually 192.168.137.1)
+
 
 ## Setup on Android
 
@@ -42,9 +59,11 @@ Some carriers and manufacturers hide the tethering setting, also it's sometimes 
 {% endhint %}
 
 # Active
+
 This mode is made for IP cameras or connecting perifials to the ethernet Port which do not have a DHCP server.
 The SBC will start it's on DHCP server and let's device connect to it.
 
 {% hint style="warning" %}
 This removes the ability to share internet with the SBC.
 {% endhint %}
+

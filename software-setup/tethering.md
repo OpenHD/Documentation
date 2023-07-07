@@ -22,3 +22,7 @@ The password is openhd
 To enable the Wifi-Hotspot you need to enable it in Air(TMP) or Ground(TMP) 
 The standart IP for the SBC is 192.168.3.1.
 The password is openhdopenhd
+
+# Advanced configuation
+
+Sometimes the user may override protection-features like the wifi-hotspot being able to share Video/Telemetry or force OpenHD to send Video/Telemetry to a specific IP. This can be done in the hardware.conf on the SD-Card.
