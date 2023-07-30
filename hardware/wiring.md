@@ -14,7 +14,7 @@ It is also strongly recommended that you solder the USB data lines. On some wifi
 
 ### Example:
 
-<figure><img src="../.gitbook/assets/Connection Diagram.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Connection Diagram.png" alt=""><figcaption></figcaption></figure>
 
 ### Some tips to keep in mind
 
