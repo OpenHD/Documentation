@@ -23,7 +23,7 @@ Step 3: Make sure OpenHD detects and properly reads values from your joystick. I
 ![](<../.gitbook/assets/Screenshot from 2022-11-12 17-45-44.png>)\
 \
 Step 4: Validate Failsafe: OpenHD always sends RC joystick data as long as JOY_RC is eabled and a Joystick is connected. It stops sending data if you disconnect your Joystick, resulting in a failsafe on the supported FCs (TODO validate)._\
-__\
+\
 _Step 5: You can adjust the update rate in the same settings screen as JOY\_RC. Note that his setting is only available if you JOY\_RC is enabled. The update rate controlls how many_&#x20;
 
 ```

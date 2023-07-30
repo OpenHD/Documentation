@@ -1,8 +1,8 @@
 # Wiring
 
-### Wiring the system for stability
+### Wiring OpenHD
 
-While it may seem like you could just connect the wifi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple. The success of your project depends on **proper wiring and power supply**.&#x20;
+While it may seem like you could just connect the wifi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple. The success of your project depends on **proper wiring and power supply**.
 
 Some lower power wifi adapter such as the TPLink 722n may work out that way, but others may not. If your wifi adapter needs more power than it is able to draw from the Raspberry Pi USB port, you will see "interference" that isn't really interference, dropped video frames, and potentially sudden video blackout. **That could happen** _**during flight**_ **if you don't take some simple steps to avoid it**.
 
@@ -11,6 +11,10 @@ In addition, if the USB connection is briefly moved or subjected to vibration, i
 The solution for those kinds of problems is to solder power from a BEC or other 5v power supply, to the wifi adapter(s).
 
 It is also strongly recommended that you solder the USB data lines. On some wifi adapters this is easy because they have ready to use solder pads, or have a mini-USB connector on the adapter (in which case you don't have to solder anything to the adapter itself, just the other end of the cable).
+
+### Example:
+
+<figure><img src="../.gitbook/assets/Connection Diagram.svg" alt=""><figcaption></figcaption></figure>
 
 ### Some tips to keep in mind
 
@@ -33,10 +37,10 @@ It is also strongly recommended that you solder the USB data lines. On some wifi
 * The system can potentially interfere with 433Mhz, 868Mhz LRS, or GPS
   * If you encounter problems like this, consider separating, shielding or changing some of the components (ask us for help)
 
-![Wiring-Pi0\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi0_sm.jpg) ![Wiring-Pi3\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi3_sm.jpg) ![Wiring-052nh.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Propper%20Wiring/Wiring-052nh.jpg) ![Wiring-Pi1B.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Propper%20Wiring/Wiring-Pi1B.jpg)
+![Wiring-Pi0\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi0\_sm.jpg) ![Wiring-Pi3\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi3\_sm.jpg) ![Wiring-052nh.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-052nh.jpg) ![Wiring-Pi1B.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi1B.jpg)
 
 Example of a raspberry pi powered through the GPIO pins (+ 5V -> pin 4 / ground -> pin 6) :
 
-![groundPi\_power\_wiring.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Propper%20Wiring/Yes21_groundPi_power_wiring.jpg)
+![groundPi\_power\_wiring.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Yes21\_groundPi\_power\_wiring.jpg)
 
 The 3A BEC can also power a 7" HDMI screen with a micro USB connector.
