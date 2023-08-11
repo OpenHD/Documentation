@@ -77,8 +77,10 @@ The procedure to flash the CM4 eMMC it’s straightforward, what you need to do 
 
 ![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin7.png)
 
-1. Run the “RPiboot” software, downloaded from the Raspberry Pi website. After the software starts, the PC will see the partition of the eMMC like if it would an SD into the SDcard reader.
-2. Flash the eMMC using the OpenHD imageWriter.
+2. Run the “RPiboot” software, downloaded from the Raspberry Pi website. After the software starts, the PC will see the partition of the eMMC like if it would an SD into the SDcard reader.
+3. Flash the eMMC using the OpenHD imageWriter.
+
+OpenHd already includes the `dt-blob.bin` file, and 'dtoverlay=dwc2,dr_mode=host' has been enabled in 'boot/config.txt'.
 
 ### Connecting the CSI Camera:
 
