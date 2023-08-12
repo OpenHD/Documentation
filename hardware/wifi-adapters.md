@@ -46,7 +46,7 @@ Additional Wifi-Devices with reduced functions:
 | Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
 | Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
 | COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| Netgear A6100 | 5.8 - 2.4 *| ? | RTL8811AU |  | X |  |1x internal |
+| Netgear A6100 | 5.8 - 2.4 *| 50mw | RTL8811AU |  | X |  |1x internal |
 
 *we recommend using this Chipset in 5.8Ghz mode
 
