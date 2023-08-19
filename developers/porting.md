@@ -1,110 +1,102 @@
-# Running OpenHD and QOpenHD on "unsupported" Hardware WIP
+# Running OpenHD and QOpenHD on "unsupported" Hardware
 
-{% hint style="warning" %}
-This isn't a complete guide, also it does require deep insights how linux is working and needs manual debugging.
-{% endhint %}
+**Note: This guide is a work in progress and requires a deep understanding of Linux systems and manual debugging.**
 
-### What do we need before we can start porting OpenHD (for Air)
+## Introduction
 
-If you want to run OpenHD on "unsupported" hardware you need to first look at the specs of your device, it should have:
+Running OpenHD and QOpenHD on hardware that is not officially supported requires careful consideration of hardware specifications, Linux kernel behavior, and manual debugging. This guide outlines the essential requirements and steps to achieve this.
 
-1. camera support
-2. a hardware encoder which supports h264 and optionally h265 with at least 720/60fps
-3. a USB port
-4. at least 512MB RAM*
-5. a modern Linux kernel 5.0+ *
-6. a USB port
-7. you need to find a low latency Gstreamer encode pipeline**
+### Prerequisites
 
+Before attempting to run OpenHD on unsupported hardware, make sure your device meets the following criteria:
 
-*can also be done with less memory and a lower kernel number, but this will further complicate the situation
-**there is no general rule, how to find a low latency encoder, in general you need to look after it being HW-accelerated and test and optimize it
+1. **Camera Support:** Your hardware should have a mipi-csi connector for connecting low-latency cameras, parallel MIPI or other alternatives are not usable. (ov5647 is not a usable camera for outdoors)
 
+2. **NEON HW-Acceleration:** Ensure your hardware supports NEON HW-acceleration for OpenHD forward error correction, without it you won't have video at all.
 
-{% hint style="info" %}
-Here is a example pipeline, which was used on the raspberry pi for debugging:
+3. **Hardware Encoder:** The device must feature a hardware encoder capable of supporting h.264 and optionally h.265 formats at a minimum of 720/60fps.
 
-gst-launch-1.0 v4l2src io-mode=dmabuf device=/dev/video0 ! "video/x-raw,format=(string)UYVY, width=(int)1920, height=(int)1080,framerate=(fraction)30/1" ! v4l2h264enc extra-controls="controls,repeat_sequence_header=1,h264_profile=1,h264_level=11,video_bitrate=5000000,h264_i_frame_period=15,h264_minimum_qp_value=10" ! "video/x-h264,level=(string)4" ! queue ! h264parse config-interval=-1 ! rtph264pay mtu=1024 ! udpsink host=127.0.0.1 port=5500
-{% endhint %}
+4. **USB Port:** A USB port is required for interfacing with the Wifi Card.
 
+5. **Minimum RAM:** Your hardware should possess at least 512MB of RAM. Lower configurations can work but may complicate the process.
 
+6. **Modern Linux Kernel:** Make sure your hardware runs on a modern Linux kernel version 5.0 or higher for optimal compatibility.
 
-### Camera support
+7. **Gstreamer Encode Pipeline:** Find or create a low-latency Gstreamer encode pipeline that is hardware-accelerated for efficient video encoding.
 
-First thing you need to look after is that your SBC has a mipi-csi connector for plugging in low latency cameras.
+### Camera Support (Air)
 
-Sadly MIPI is only a connector standard, it doesn't mean that all mipi cameras can be connected.
-You need a Kernel Overlay (dto/dtbo/dts), with you can use to compile your kernel with camera support.
-* If you can't find any or do only find support for bad camera, you are stuck and can't just write the files yourself, since this needs deep insights in registers which are usually kept behind nda's.
-For most Cameras you also need a tuning file, in which special parameters are setup and a camera-driver.
+To enable camera support for OpenHD on unsupported hardware, follow these steps:
 
-If the SBC-Vendor lists official Camera support the above step could not be necessary.
+1. Verify if your Single Board Computer (SBC) has a mipi-csi connector compatible with low-latency cameras. (ov5647 is not a usable camera for outdoors)
 
-*This files are board specific, even if you find a SOC with the same processor you can not just use that, it includes specific things like the pin-out and much more.
+2. Create a Kernel Overlay (dto/dtbo/dts) that adds camera support to your kernel. This overlay will need to be used during kernel compilation.
 
-### What do we need before we can start porting OpenHD (for Ground)
+3. Look for official sensor support listed by the SBC vendor. These sensors can usually be used in OpenHD.
 
-For the ground we need to make sure that the SBC has a potent h264/h265 decoder, and a good documentation. 
+4. All cameras without inbuild ISP require a tuning file with special parameters. Ensure you have the necessary tuning file for your camera, SOC and ISP, it needs to be specifically tuned to your configuation. If there is no tuning fila available, you are out of luck, there are some companies which create these tuning files, but their services start at 10000USD and go way up with complexity and low order-numbers.
 
-1. find a low latency Gstreamer decode pipeline*
-2. look up how the compositor on you sbc works
-3. have a relative new Kernel (5.0+)[makes the experience easier]
+### Ground Setup
 
-* there is no general rule, how to find a low latency encoder, in general you need to look after it being HW-accelerated and test and optimize it
+For OpenHD on the ground, consider the following steps:
 
-{% hint style="info" %}
-Here is a example pipeline, which was used on the raspberry pi for debugging:
+1. **Decoder Support:** Make sure your SBC has a capable h.264/h.265 decoder and proper documentation.
 
-gst-launch-1.0 udpsrc port=5600 caps='application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264' ! rtph264depay ! 'video/x-h264,stream-format=byte-stream' ! fdsink | hello_video.bin
-{% endhint %}
+2. **Gstreamer Decode Pipeline:** Create a low-latency Gstreamer decode pipeline. Hardware acceleration should be a priority for optimal performance.
 
-The easiest way is to look if your SBC allows multiple layers in your compositor, which allow the video to run behind QT and make the QT background invisible.
+3. **Compositor Configuration:** Understand how the compositor on your SBC works, particularly if it supports multiple layers for smooth video playback behind other elements, for this you either need a custom decoder, which is capable to write directly into the compositor without checking for KMS-Master's or you need a compositor which allows multiple kms master.
 
-### Wifi-Drivers (Air/Ground)
+### WiFi Drivers (Air/Ground)
 
-First you need to think about what network card you want to use. 
-If you decide to just use the 8812au you're lucky and can install the driver quite easily.
+When dealing with WiFi drivers, consider these options:
 
-For 8812au, 8812bu you just need to use DKMS to compile the drivers from us :
-
-https://github.com/OpenHD/rtl8812au
-https://github.com/OpenHD/rtl88x2bu
-
-For atheros compatibility you need:
-1. the right firmware to be copied to the folder where your kernel loads the firmware file:
-https://github.com/OpenHD/OpenHD-KernelBuilder/tree/2.3.1-evo/overlay/lib/firmware/ath9k_htc
-2. you need to build a custom kernel and port a few kernel commits, we did (this is quite tricky, you can't just apply them and it works)
+- For 8812au or 8812bu chipsets, installation can be relatively straightforward.
+- compile the drivers using DKMS or make from the provided repositories:
+  - [rtl8812au](https://github.com/OpenHD/rtl8812au)
+  - [rtl88x2bu](https://github.com/OpenHD/rtl88x2bu)
 
 ### Compiling OpenHD (Air/Ground)
 
-If you have your drivers compiled, we can go on with compiling OpenHD from source.
+To compile OpenHD from source, follow these steps:
 
-1. you need to clone our github repository: https://github.com/OpenHD/OpenHD
-2. determine which dependencies you need (a good help are our  install_dep_ files)
-3. install the dependencies
-4. install a modern version of cmake
-5. execute build_cmake.sh 
+1. Clone the [OpenHD repository](https://github.com/OpenHD/OpenHD) (including submodules).
 
-Now you should have a base setup and just need to modify OpenHD with your pipelines, if you're lucky there are already some in there.
+2. Determine and install required dependencies. The `install_build_dep` file can be helpful for this.
+
+3. Install a modern version of CMake.
+
+4. Execute the `build_cmake.sh` script.
+
+This should set up the base environment, and you can modify OpenHD with your specific pipelines.
 
 ### Compiling QOpenHD
 
-Before starting to build QOpenHD we need to explain how QOpenHD runs on our SBC's.
+For compiling QOpenHD, the user needs to be aware of the following:
 
-1. we use QT 5.15.x, lower versions will not work*
-2. we use EGLFS for SBC'S to get the most out of that hardware*
-3. if you do not have support for multiple HW-layers, like on the Pi with KMS you need to write a decoder-helper which copies the video to a texture and build a renderer for it.
+1. Use QT version 5.15.x or higher.
 
-* if your linux is to old, you need to build QT yourself, this is a pretty intense process and can take up to 20h to build on lower end SBC'S (the pi4 needs about 8h)
-it also needs modifications and you need a mkspecs configuation(for that platform) to build QT on the hardware itself
+2. Employ EGLFS for SBCs to maximize hardware utilization.
 
-Then you need to figure out the dependencies (a good help are our  install_dep_ files)
-After you got everything prepared you can simply build QOpenHD with build_qmake.sh 
+3. Ensure support for multiple hardware layers to prevent high latency and software decoding.
 
-### Finding a KMS-Plane for HW-decoding
+4. Study the decode-services and integrate custom ones as needed.
 
-I usually use modetest to look at possible planes for kmssink.
-You need the package libdrm-tests.
+For compiling QOpenHD, follow these steps:
 
-then execute "modetest -p" and check if the plane is behind qopenhd
+1. Ensure the Linux system has a QT 5.15.x. installation
 
+2. Compile mavsdk with the necessary modifications.
+
+3. Compile QOpenHD using the `build_qmake.sh` script.
+
+### Finding KMS-Planes for HW Decoding
+
+To identify KMS-planes for hardware decoding, follow these steps:
+
+1. Install the `libdrm-tests` package.
+
+2. Use `modetest -p` to check for available planes for `kmssink`.
+
+## Conclusion
+
+Running OpenHD and QOpenHD on unsupported hardware requires a deep understanding of hardware capabilities, Linux kernel features, and the intricacies of video processing. By following the steps outlined in this guide, you can work towards achieving successful implementation on your chosen hardware. Keep in mind that the process may involve trial and error, as well as manual debugging to overcome potential challenges. Also keep in mind, that the developers can not help you with every step, if you are not capable of doing it without much help, please use the supported platforms.
