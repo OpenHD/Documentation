@@ -1,28 +1,81 @@
 # Features
 
+The following improvements have been made to the provided wiki page:
+
 ## Supported Devices:
 
 * [Raspberry](../hardware/raspberry.md)
 * [Radxa Rock 5](../hardware/radxa.md)
 * [X86 Devices](../hardware/X86.md)
 
+## List of Features in the Latest Evo Release
 
-The features as per the latest evo [release ](https://github.com/OpenHD/OpenHD/releases)include:
+The latest [Evo release](https://github.com/OpenHD/OpenHD/releases) of OpenHD incorporates a range of advanced features and capabilities:
 
-* We officially support Pi2B (version 1.2+) , Pi3B, Pi3B+, Pi3A+, Pi4,CM4 , Pi Zero 2, Nvidia Jetson Nano, Nvidia Jetson Nano 2GB,X86 as AIR and Pi3B, Pi3B+, Pi3A+, Pi4,CM4 ,X86 as Ground
-* Latency values are different with EVO and are currently changing a lot,and depend on the hardware choices, official numbers will follow later.
-* Support for 2.3/2.4/2.5GHz bands and 5.2-5.8GHz bands.
-* Range values could have changed with EVO, official numbers will follow later.
-* Configuration can be done from QOpenHD and the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/), no config files are needed anymore.
-* Flashing can and should be done with the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/)
-* Forwarding of video stream and telemetry data to 2nd device via: USB tethering, ethernet. Hotspot will follow later.
-* Bi-directional MAVLink telemetry support, compatible with most flight controllers.
-* FC-settings, video and telemetry are compatible with QGroundcontrol and don't need any modification.
-* Integrated high resolution fully customizeable OSD with support for MAVLink telemetry.
-* Realtime view of RSSI, packetloss, video bitrate and other important data in the OSD.
-* No issues as with standard WiFi, no disconnection, video freeze etc, video will recover quickly.
-* Live and responsive RSSI display with defective blocks and packetloss display.
-* Video reception is very stable even in difficult multipathing environments, no constant glitching as seen with analog FPV.
-* OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly.
-* Low-latency/high update-rate RC over wifibroadcast via USB-Joystick
-* Optimised FEC for most stable connection.
+### Enhanced Channel Support
+* OpenHD now supports all 2.4GHz and 5.8GHz channels, providing users with versatile frequency options.
+
+### Stable Video Reception
+* OpenHD ensures remarkably stable video reception even in challenging multipath environments. This stability eliminates the constant glitching commonly experienced with analog FPV systems.
+
+### Dual Camera Support
+* The platform offers dual camera support for a variety of [camera types](../hardware/cameras.md), including libcamera, veye, raspivid, USB, thermal, and unmanaged cameras.
+
+### Custom Camera Integration
+* OpenHD is developing[custom cameras](https://www.arducam.com/openhd/) together with arducam, specifically designed for the platform, expanding hardware choices for our users.
+
+### Two-Way Settings
+* Experience real two-way communication settings, enhancing control and customization options.
+
+### Integrated High-Resolution OSD
+* The OSD (On-Screen Display) features high-resolution visuals and is fully customizable. It also seamlessly integrates with MAVLink telemetry data.
+
+### Real-Time Telemetry Display
+* Users can monitor real-time data such as Received Signal Strength Indicator (RSSI), packet loss, video bitrate, and other critical information directly on the OSD.
+
+### Dynamic Adjustability
+* OpenHD enables real-time adjustments of various parameters, including TX power, modulation, video settings, camera configurations, and more.
+
+### Picture-in-Picture Functionality
+* Enjoy the benefits of an adjustable Picture-in-Picture feature for secondary video signals, enhancing situational awareness.
+
+### Reliable Video Link
+* OpenHD employs a unique wifibroadcast link with highly optimized FEC, that overcomes issues commonly associated with standard Wi-Fi connections, such as high latency, disconnections and video freezing. The system ensures rapid video recovery.
+
+### Secure Link
+* OpenHD provides mechanism's to ensure the security of your UAV, including verification and customizable encryption. Always providing a secure link which can not simply be overtaken by external signals. 
+
+### MAVLink Telemetry Support
+* Bidirectional MAVLink telemetry support is integrated, offering compatibility with a wide range of flight controllers, with remarkable stability.
+
+### Multi-Device Data Forwarding
+* Users can forward video streams and telemetry data to secondary devices using multiple methods, enhancing data accessibility and allowing for custom setups like FPV over the Internet.
+
+### Seamless QGroundControl Compatibility
+* FC (Flight Controller) settings, video parameters, and telemetry configurations seamlessly integrate with QGroundControl without requiring any modifications. For better integration with existing Groundstations.
+
+### Multi Platform Compatibility
+* OpenHD is programmed to work on various platforms, like the raspberry pi or X86 devices. On X86 we provide Images with preinstalled and tuned versions of QOpenHD,OpenHD,Inav,MissionPlanner,QGroundcontrol,...
+
+### OSD Clarity in Challenging Situations
+* The OSD overlay displayed on the receiver remains clear and functional even when video quality is compromised, ensuring essential flight information is still accessible.
+
+### Streamlined Configuration
+* Configuration tasks are simplified through the use of QOpenHD and the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/), eliminating the need for complex configuration files.
+
+### Efficient Flashing Process
+* OpenHD flashing is recommended to be performed using the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/) tool, streamlining the flashing procedure.
+
+### Low-Latency RC Control
+* Experience low-latency and high-update-rate remote control over the Wi-Fi broadcast link via USB joystick compatibility.
+
+### Optimized FEC
+* OpenHD employs an optimized Forward Error Correction (FEC) mechanism to ensure the most stable and reliable video transmission connections.
+
+### Dedicated Development Team, Beta Testers, and Vibrant Community
+
+* OpenHD benefits from a dedicated and specialized development team that continually strives to enhance the platform. Regular and frequent updates, along with feature improvements, are diligently implemented and tested by this skilled group.
+* Our will to always innovate, our supporters via [OpenCollective](https://opencollective.com/openhd) and [partners](https://openhdfpv.org/partners/), allow us to test, integrate, manufacture new and exiting hardware. In addition part of our team is working on [custom hardware](https://www.patreon.com/OpenHD), which allows us furter optimize and minimize hardware for OpenHD.
+* The OpenHD Community is a thriving and dynamic hub of support and knowledge. In the event of any challenges or issues, the community is always ready and willing to offer assistance and guidance.
+
+These features are just a collection of most notable features, which enhance the capabilities of OpenHD, making it a powerful and versatile choice for remote video transmission and telemetry in various applications.
