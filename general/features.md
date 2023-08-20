@@ -1,8 +1,8 @@
 # Features
 
 ## Supported Devices:
-* [Raspberry Pi](#/hardware/raspberry.md)
-* [Radxa Rock 5]
+* [Raspberry](../hardware/raspberry.md)
+* [Radxa Rock 5](../hardware/radxa.md)
 
 The features as per the latest evo [release ](https://github.com/OpenHD/OpenHD/releases)include:
 
