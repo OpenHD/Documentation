@@ -24,7 +24,7 @@ All of these signals can be sent over a single transmission channel and telemetr
 
 
 
-## How does the OpenHD Link work
+## How does the OpenHD link (wifibroadcast) work
 
 OpenHD employs readily available Wi-Fi adapters, although not in the standard manner commonly associated with everyday Wi-Fi usage. To ensure low-latency and long-distance transmissions, we configure these adapters to function akin to analog video transmission hardware. This innovative protocol, inspired by [befinitiv](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/), has been reimplemented by OpenHD for optimized performance.
 
