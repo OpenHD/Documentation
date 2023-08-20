@@ -5,9 +5,9 @@
 ## General
 
 * [Features](general/features.md)
-* [General-FAQ](general/faq.md)
-* [Software-FAQ](general/software-faq.md)
 * [Troubleshooting](general/troubleshooting.md)
+  * [General-FAQ](general/faq.md)
+  * [Software-FAQ](general/software-faq.md)
 * [Contributing](general/contributing.md)
 * [Team](general/team.md)
 
