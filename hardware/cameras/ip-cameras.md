@@ -1,8 +1,6 @@
 # IP cameras
 
-{% hint style="danger" %}
-IP camera support has limitations and should be chosen carefully, considering its disadvantages.
-{% endhint %}
+> :warning: **Important Note:** IP camera support has limitations and should be chosen carefully, considering its disadvantages.
 
 IP cameras cannot be automatically detected, as they lack a common protocol like USB cameras. They also require custom scripting for integration and lack support for dynamic bitrate adjustments.
 
