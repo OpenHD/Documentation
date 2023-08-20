@@ -26,6 +26,10 @@ Recommended Wifi-Dongles:
 | "Taobao Card" | 5.8 -2.4 *| 500mW | RTL8812AU | X | X | X | 2x u.fl |
 | ALFA AWUS1900 | 5.8 -2.4 *| 500mW | RTL8814AU | X | ? |  | 4x RP-SMA |
 | Tenda U12 | 5.8 -2.4 *| 100mW | RTL8812AU | X | X |  | 2x u.fl 2x internal |
+| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
+| Netgear A6100 | 5.8 - 2.4 *| 50mw | RTL8811AU |  | X |  |1x internal |
 
 *we recommend using this Chipset in 5.8Ghz mode
 
@@ -41,10 +45,7 @@ Additional Wifi-Devices with reduced functions:
 | TPLink TL-WN722N V1 | 2.3-2.4 | 60mW | AR9271 |  | X |  | 1x RP-SMA |
 | AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
 | AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
-| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| Netgear A6100 | 5.8 - 2.4 *| 50mw | RTL8811AU |  | X |  |1x internal |
+
 
 *we recommend using this Chipset in 5.8Ghz mode
 
@@ -56,47 +57,6 @@ This adapter is currently the most popular for OpenHD. Its small size makes it e
 
 * [FCC info](https://fccid.io/MSQ-USBAC56)
 * [WikiDevi](https://deviwiki.com/wiki/ASUS_USB-AC56)
-
-#### **AWUS036NHA**
-
-This adapter is highly recommended as it is easy to find and works well. Ideal for long range as it will provide around 280mW output power. Ranges of several kilometers have been reported \(with directional antennas though\).
-
-* [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=G%2Bnb%2FcnfLEByfpIAnz2OrQ%3D%3D&fcc_id=UQ23668)
-* [WikiDevi](https://wikidevi.com/wiki/ALFA_Network_AWUS036NHA)
-
-#### **Ubiquit Wifistations**
-
-This adapter is quite large, but seems to have a good quality amp on it. Useable TXPower is not yet determined, but should be slightly higher than the AWUSH036NHA.
-
-* [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=KhauP%2FSwGKHZGHiW1vSYvA%3D%3D&fcc_id=SWX-M2USB)
-* [WikiDevi](https://wikidevi.com/wiki/Ubiquiti_Networks_WiFiStation_EXT)
-
-#### **TL-WN722N V1**
-
-This adapter will provide around 60mW output power. Range should be roughly around 800-1000m with 2.1dbi stock antennas.
-
-* [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=%2BnZ3HSATHmzb0LSclLcZxA%3D%3D&fcc_id=TE7WN722NV2)
-* [WikiDevi](https://wikidevi.com/wiki/TP-LINK_TL-WN722N_v1.x)
-
-_**NOTE:**_ There have been reports that the TL-WN722N V1 seems to be replaced by V2 and V3 versions. These new versions use a completely different chipset and are _not_ compatible. Consider asking the seller for the version, if it says "V2" or "V3" on the back of the dongle it's the wrong chipset!
-
-_**NOTE:**_ The PCB antenna causes packetloss and bad reception under certain circumstances. It is recommended to disconnect the antenna by moving the SMD component as shown below: 
-
-![TP-Link\_722N-mod.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/TP-Link_722N-mod.jpg)
-
-#### AW-NU138
-
-This adapter is very small, output power about 50mW. The internal antenna can be de-soldered and replaced with an external antenna. Since it's very small it runs quite warm, good cooling is needed.
-
-* [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=ykivyt9MWET01uFkCm0wFQ%3D%3D&fcc_id=TLZ-NU138)
-* [WikiDevi](https://wikidevi.com/wiki/AzureWave_AW-NU138)
-
-#### AW-NU137
-
-Very similar to the NU138. Reported power is 70mW. I-PEX antenna connector allows for light weight build.
-
-* [FCC info](https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&RequestTimeout=500&calledFromFrame=Y&application_id=jytSwagyYGHU0hdXERQMgw%3D%3D&fcc_id=TLZ-NU137)
-* [WikiDevi](https://wikidevi.com/wiki/AzureWave_AW-NU137)
 
 #### Taobao Card
 
