@@ -1,13 +1,13 @@
 # IP cameras
 
 {% hint style="danger" %}
-IP-Camera support is currently under development and not ready yet.
+IP camera support has limitations and should be chosen carefully, considering its disadvantages.
 {% endhint %}
 
-IP cameras cannot be autodetected (since they don't share a common protocol, like USB cameras) and also require custom scripting
-(Editing settings / pipeline(s) manually via a text editor)
-They also don't support new features like changing the bitrate dynamically at run time. However, if you need to use an IP camera
-(for whatever reason) we will publish a howto (for advanced users) here shortly. 
+IP cameras cannot be automatically detected, as they lack a common protocol like USB cameras. They also require custom scripting for integration and lack support for dynamic bitrate adjustments.
+
+To implement IP cameras, you can utilize the [custom_unmanaged_camera.sh](custom-unmanaged-camera.md) script, which needs to be activated through the [hardware.conf](../hardware.md) configuration.
+
 
 # Warning
 
