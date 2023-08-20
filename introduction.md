@@ -52,5 +52,3 @@ If you need help or want to learn more, we offer several resources:
 > :warning: **Important Note:** Support for OpenHD 2.0.x is no longer provided.
 
 > :warning: **Important Note:** If you have a problem with a specific version of OpenHD, please check the name of the image you used to burn your SD cards and provide it to us in Telegram so we can help narrow down the cause and find a solution.
-
-We hope you find OpenHD useful, and we look forward to helping you get the most out of your long-range video transmission!
