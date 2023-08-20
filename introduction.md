@@ -49,16 +49,8 @@ If you need help or want to learn more, we offer several resources:
 * Please document problems on [Github](https://github.com/OpenHD/OpenHD/issues)
 * First intro to Open.HD from CurryKitten on [Youtube](https://www.youtube.com/playlist?list=PL7WaECFssECJWfTc0vKYTfUdH5y8UgdI9)
 
-{% hint style="warning" %}
-Support for OpenHD 2.0.x is no longer provided.
-{% endhint %}
+> :warning: **Important Note:** Support for OpenHD 2.0.x is no longer provided.
 
-{% hint style="warning" %}
-If you have a problem with a specific version of OpenHD, please check the name of the image you used to burn your SD cards and provide it to us in Telegram so we can help narrow down the cause and find a solution.
-{% endhint %}
-
-{% hint style="info" %}
-If you activate debugging, detailed debug logs can be found on the SD-Card and should be provided, when discussing a problem.
-{% endhint %}
+> :warning: **Important Note:** If you have a problem with a specific version of OpenHD, please check the name of the image you used to burn your SD cards and provide it to us in Telegram so we can help narrow down the cause and find a solution.
 
 We hope you find OpenHD useful, and we look forward to helping you get the most out of your long-range video transmission!
