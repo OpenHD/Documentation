@@ -20,7 +20,7 @@ Our suite can transmit:
 * Two-way OpenHD telemetry (General settings, range-adjustments, channel-changes, wifi-modulation,...)
 * RC control signals
 
-All of these signals can be sent over a single transmission channel and use MAVlink to ensure high compatibility and stability.
+All of these signals can be sent over a single transmission channel and telemetry is using MAVlink to ensure high compatibility and stability.
 
 
 
