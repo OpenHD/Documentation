@@ -30,7 +30,7 @@
   * [Raspberry Pi CSI](hardware/cameras/raspberry-cameras.md)
   * [Radxa Rock5](hardware/cameras/radxa-cameras.md)
   * [USB Cameras](hardware/cameras/usb-camera.md)
-  * [HDMI Cameras](hardware/cameras/README.md)
+  * [HDMI Cameras](hardware/cameras/hdmi-cameras-rpi.md)
     * [RPI HDMI to CSI](hardware/cameras/rpi-hdmi-to-csi.md)
   * [IP Cameras](hardware/cameras/ip-cameras.md)
   * [Special Purpose Cameras](hardware/cameras/special-camera.md)
