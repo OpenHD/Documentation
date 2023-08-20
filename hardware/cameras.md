@@ -26,12 +26,13 @@ OpenHD supports and recommends the following cameras on the Raspberry Pi:
 
 ### Thermal/USB Cameras
 
-| Name           | Lens         | Sensor   | Resolution | FPS      |
-| -------------- | ------------ | -------- | ---------- | -------- |
-| Hti-201        | Chalcogenide | Raytheon | 320x240    | 9hz      |
-| Hti-301        | Germanium    | iRay     | 384x288    | 25hz     |
-| FLIR Boson 320 | Germanium    | FLIR     | 320x256    | 9hz/60hz |
-| FLIR Boson 640 | Germanium    | FLIR     | 640x512    | 9hz/60hz |
+| Name             | Lens         | Sensor   | Resolution | FPS      |
+| --------------   | ------------ | -------- | ---------- | -------- |
+| Hti-201          | Chalcogenide | Raytheon | 320x240    | 9hz      |
+| Hti-301          | Germanium    | iRay     | 384x288    | 25hz     |
+| Infiray T2 search| Germanium    | iRay     | 256×192    | 25hz     |
+| FLIR Boson 320   | Germanium    | FLIR     | 320x256    | 9hz/60hz |
+| FLIR Boson 640   | Germanium    | FLIR     | 640x512    | 9hz/60hz |
 
 [more information](special-camera.md)
 
