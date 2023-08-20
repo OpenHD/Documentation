@@ -36,8 +36,6 @@ A latency test was conducted by Bortek using the Auvidea B102 with a GoPro4 came
 
 ### DCDZ HDMI CSI-2 Adapter
 
-![dcdz-hdmi-csi.jpg](https://github.com/OpenHD/OpenHD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/dcdz-hdmi-csi.jpg)
-
 AliExpress link: [DCDZ HDMI CSI-2 Adapter](https://www.aliexpress.com/item/4000152180240.html)
 
 This adapter is widely used for OpenHD. It's available through AliExpress and Taobao. Users in the U.S. or Europe may experience delays in obtaining them. For those regions, consider the similar geekworm board mentioned below, available on Amazon.
@@ -45,8 +43,6 @@ This adapter is widely used for OpenHD. It's available through AliExpress and Ta
 The adapter is compatible with both Raspberry Pi Zero and full-size Raspberry Pi models, setting it apart from other cards.
 
 ### Geekworm HDMI CSI2 Adapter
-
-![geekworm-hdmi-csi.jpg](https://github.com/OpenHD/Open.HD/raw/master/wiki-content/AddOns\_HDMI%20in%20Cards/geekworm-hdmi-csi.jpg)
 
 Available on Amazon in the U.S., this adapter is similar to the DCDZ adapter mentioned above. Amazon store link: [Geekworm HDMI CSI2 Adapter](https://www.amazon.com/Geekworm-Raspberry-Supports-1080p25fps-Compatible/dp/B0899L6ZXZ) Geekworm store link: [Geekworm HDMI CSI2 Adapter](https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable)
 
