@@ -28,7 +28,6 @@
     * [Jetson](hardware/jetson.md)
 * [Cameras](hardware/cameras.md)
   * [Raspberry Pi CSI](hardware/raspberry-cameras.md)
-  * [Jetson Nano CSI](hardware/jetson-cameras.md)
   * [Radxa Rock5](hardware/radxa-cameras.md)
   * [USB Cameras](hardware/usb-camera.md)
   * [HDMI Cameras](hardware/cameras/hdmi-camera/README.md)
