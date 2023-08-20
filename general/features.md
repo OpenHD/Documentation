@@ -1,6 +1,10 @@
 # Features
 
-The features as per the latest evo [release ](https://github.com/OpenHD/Open.HD/releases)include:
+## Supported Devices:
+* [Raspberry Pi](hardware/raspberry.md)
+* [Radxa Rock 5]
+
+The features as per the latest evo [release ](https://github.com/OpenHD/OpenHD/releases)include:
 
 * We officially support Pi2B (version 1.2+) , Pi3B, Pi3B+, Pi3A+, Pi4,CM4 , Pi Zero 2, Nvidia Jetson Nano, Nvidia Jetson Nano 2GB,X86 as AIR and Pi3B, Pi3B+, Pi3A+, Pi4,CM4 ,X86 as Ground
 * Latency values are different with EVO and are currently changing a lot,and depend on the hardware choices, official numbers will follow later.
