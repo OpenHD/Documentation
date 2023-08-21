@@ -19,7 +19,7 @@ For the best experience with OpenHD, flight controllers with an F405 or better c
 | Flight controllers   | 
 | --------------       |
 | [Speedybee F405 Wing](https://www.speedybee.com/speedybee-f405-wing-app-fixed-wing-flight-controller/) |
-| [SpeedyBee F405 Mini BLS 35A 20x20 Stack] (https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/) |
+| [SpeedyBee F405 Mini BLS 35A 20x20 Stack](https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/) |
 | [Mateksys F405-WTE](http://www.mateksys.com/?portfolio=f405-wte) |
 | [Mateksys H743-Wing](http://www.mateksys.com/?portfolio=h743-wing-v2) 
 
