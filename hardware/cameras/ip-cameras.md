@@ -2,7 +2,7 @@
 
 > :warning: **Important Note:** IP camera support has limitations and should be chosen carefully, considering its disadvantages.
 
-IP cameras cannot be automatically detected, as they lack a common protocol like USB cameras. They also require custom scripting for integration and lack support for dynamic bitrate adjustments.
+IP cameras cannot be automatically detected, as they lack a common protocol like USB cameras. They also require custom scripting for integration and lack support for bitrate adjustments, making them quite bad for long range sytems. They also don't support adjusting the keyframe interval, which can black out your video for several seconds when having any interference.
 
 To implement IP cameras, you can utilize the [custom_unmanaged_camera.sh](custom-unmanaged-camera.md) script, which needs to be activated through the [hardware.conf](../hardware.md) configuration.
 
