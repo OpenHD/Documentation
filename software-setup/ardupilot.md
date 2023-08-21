@@ -8,7 +8,7 @@ While Arduplane is a perfect choice for building complex and advanced planes and
 
 1. **Recommended Method**: Utilize the hardware UART from your air unit (e.g., Raspberry Pi) and one hardware UART from your flight controller.
 2. **Not Recommended**: Use a USB cable on a flight controller that supports it (e.g., PX4).
-3. Use a USB-UART programmer.
+3. **Not Recommended**: Use a USB-UART programmer.
 
 ### 1) Enable UART in OpenHD
 
@@ -18,7 +18,7 @@ UART telemetry is disabled in OpenHD by default. To enable it, use QOpenHD in th
 
 ### 2) Wiring
 
-Connect the TX pin of the serial port on your flight controller to the RX pin on the Pi. **Warning:** The Pi uses 3.3V logic level on the serial ports, so ensure your flight controller also uses 3.3V. Connecting 5V may damage the Pi's serial port. Refer to [https://pinout.xyz/](https://pinout.xyz/) for pinout details.
+Connect the TX pin of the serial port on your flight controller to the RX pin on the Pi. **Warning:** The Pi uses 3.3V logic level on the serial ports, so ensure your flight controller also uses 3.3V. Connecting 5V may damage the Pi's serial port. Refer to [Pinout](https://learn.microsoft.com/de-de/windows/iot-core/media/pinmappingsrpi/rp2_pinout.png) for pinout details.
 
 ## Configuration of Ardupilot
 
