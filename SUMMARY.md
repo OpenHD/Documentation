@@ -66,14 +66,13 @@
 
 ## Ground Station Software
 
-* [Standart](ground-station-software/standart/README.md)
-  * [QGroundControl](ground-station-software/qgroundcontrol.md)
-  * [Tower](ground-station-software/tower.md)
-  * [FPV\_VR](ground-station-software/fpv\_vr.md)
-  * [Advanced](ground-station-software/advanced/README.md)
-  * [Gstreamer](ground-station-software/standart/gstreamer.md)
-  * [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
-* [QOpenHD OSD backup](ground-station-software/qopenhd-osd-backup.md)
+* [QOpenHD](ground-station-software/qopenhd.md)
+  * [QOpenHD OSD backup](ground-station-software/qopenhd-osd-backup.md)
+* [QGroundControl](ground-station-software/qgroundcontrol.md)
+* [Tower](ground-station-software/tower.md)
+* [FPV\_VR](ground-station-software/fpv\_vr.md)
+* [Gstreamer](ground-station-software/standart/gstreamer.md)
+* [RaspberryPi Camera Viewer](ground-station-software/raspberrypi-camera-viewer.md)
 
 ## Developers Corner
 
