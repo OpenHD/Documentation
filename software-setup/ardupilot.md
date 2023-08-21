@@ -39,7 +39,7 @@ SR1_POSITION=2
 SR1_RAW_CTRL=0
 SR1_RAW_SENS=2
 SR1_RC_CHAN=2
-
+```
 
 Using the Config/Tuning -> Full Parameter Tree menu, modify the mentioned settings:
 
