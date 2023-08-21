@@ -38,6 +38,7 @@
   * [Custom Hardware](hardware/cameras/custom-cameras.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [Antennas](hardware/antennas.md)
+* [FlightControllers](hardware/flightControllers.md)
 * [Wiring](hardware/wiring.md)
 * [Displays](hardware/displays.md)
 * [Hardware.conf](hardware/hardware.conf.md)
@@ -45,7 +46,9 @@
 
 ## Software Setup
 
-* [Telemetry](software-setup/telemetry-and-osd.md)
+* [Inav](software-setup/inav.md)
+* [Ardupilot](software-setup/ardupilot.md)
+* [Betaflight](software-setup/betaflight.md)
 * [Recording](software-setup/recording.md)
 * [TX-Power](software-setup/tx-power.md)
 * [MCS-Index](software-setup/mcs-via-rc.md)
