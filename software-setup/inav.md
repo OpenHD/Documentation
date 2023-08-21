@@ -1,29 +1,33 @@
----
-description: Enable bidirectional telemetry between your FC and OpenHD
----
+# INAV: Intelligent Navigation System for Aerial Vehicles
 
-# Telemetry
+## General Information
 
-There are 2 ways to connect your OpenHD air unit to your FC:
+INAV, short for Intelligent Navigation System for Aerial Vehicles, is an open-source flight control software designed to navigate and stabilize fixed-wing and multirotor unmanned aerial vehicles (UAVs), including drones and RC airplanes. Developed and maintained by a community of hobbyists and enthusiasts, INAV has gained popularity within the DIY drone and RC aircraft community.
 
-1\) (Reccomended): Using the HW UART from your air unit (e.g. see below for RPI) and one HW UART from your FC\
-2\) (not recommended): Using an USB cable on FC that support it (e.g. PX4).\
+OpenHD recommends INAV due to its user-friendly configuration approach, which makes it suitable for beginners, while also offering extensive flexibility for experts.
 
+## Connecting INAV to OpenHD
 
-{% hint style="warning" %}
-With Ardupilot you may need to enable certain "stream rate" parameters on the flight controller. More information is available on the rc with mavlink page
-{% endhint %}
+To establish a connection between INAV and OpenHD, there are different methods available:
 
-## **1)** En**able UART in OpenHD**
+1. **Recommended Method**: Utilize the hardware UART from your air unit (e.g., Raspberry Pi) along with one hardware UART from your flight controller.
+2. **Not Recommended**: Use a USB cable on a flight controller that supports this approach (e.g., PX4).
+3. **Not Recommended**: Utilize a USB-UART programmer.
 
-By default, UART telemetry is disabled in OpenHD. You can enable it using QOpenHD in the AIR(TMP) Settings registry (FC\__UART\_CONN) and selecting serial0._\
-\
-_Make sure to select the baud rate matching your FC._
+### 1) Enabling UART in OpenHD
 
-![](<../.gitbook/assets/Screenshot from 2022-11-12 19-19-37.png>)
+By default, UART telemetry is disabled in OpenHD <2.5 . To enable it, navigate to the AIR(TMP) Settings registry using QOpenHD and select serial0. Be sure to set the correct baud rate that matches your flight controller.
+If you use 2.5 or higher versions telemetry is enabled from the start on Serial0.
 
-## 2) Wiring
+![Enable UART in OpenHD](../.gitbook/assets/Screenshot%20from%202022-11-12%2019-19-37.png)
 
-* Connect the serial port TX pin of your flight controller to the serial port RX pin on the Pi. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! So don't connect the + 5V ! (See [https://pinout.xyz/](https://pinout.xyz/) for pinout).\
+### 2) Wiring
 
+Connect the TX pin of the serial port on your flight controller to the RX pin on the Raspberry Pi. Important: The Raspberry Pi uses 3.3V logic level on its serial ports, so ensure that your flight controller also operates at 3.3V. Connecting a 5V logic level may damage the Raspberry Pi's serial port. Refer to the [Pinout](https://learn.microsoft.com/de-de/windows/iot-core/media/pinmappingsrpi/rp2_pinout.png) diagram for pinout details.
 
+## Configuration of INAV
+
+Configuring INAV is straightforward:
+
+1. Configure the port you've used to connect OpenHD to Mavlink, and INAV should start working.
+2. Note that there are still a few instances where INAV doesn't follow the official MavLink configuration. Due to this, you may need to enable the `enable_dirty_inav_hacks` option in OpenHD.
