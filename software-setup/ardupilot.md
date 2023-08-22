@@ -18,7 +18,10 @@ UART telemetry is disabled in OpenHD by default. To enable it, use QOpenHD in th
 
 ### 2) Wiring
 
-Connect the TX pin of the serial port on your flight controller to the RX pin on the Pi. **Warning:** The Pi uses 3.3V logic level on the serial ports, so ensure your flight controller also uses 3.3V. Connecting 5V may damage the Pi's serial port. Refer to [Pinout](https://learn.microsoft.com/de-de/windows/iot-core/media/pinmappingsrpi/rp2_pinout.png) for pinout details.
+Connect the TX pin of the serial port on your flight controller to the RX pin on the Pi. **Warning:** The Pi uses 3.3V logic level on the serial ports, so ensure your flight controller also uses 3.3V. Connecting 5V may damage the Pi's serial port. Refer to the Pinout diagram for pinout details.
+![RPI Pinout](../.gitbook/assets/rp2_pinout.png)
+
+
 
 ## Configuration of Ardupilot
 

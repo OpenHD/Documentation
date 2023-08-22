@@ -23,7 +23,10 @@ If you use 2.5 or higher versions telemetry is enabled from the start on Serial0
 
 ### 2) Wiring
 
-Connect the TX pin of the serial port on your flight controller to the RX pin on the Raspberry Pi. Important: The Raspberry Pi uses 3.3V logic level on its serial ports, so ensure that your flight controller also operates at 3.3V. Connecting a 5V logic level may damage the Raspberry Pi's serial port. Refer to the [Pinout](https://learn.microsoft.com/de-de/windows/iot-core/media/pinmappingsrpi/rp2_pinout.png) diagram for pinout details.
+Connect the TX pin of the serial port on your flight controller to the RX pin on the Raspberry Pi. Important: The Raspberry Pi uses 3.3V logic level on its serial ports, so ensure that your flight controller also operates at 3.3V. Connecting a 5V logic level may damage the Raspberry Pi's serial port. Refer to the Pinout diagram for pinout details.
+![RPI Pinout](../.gitbook/assets/rp2_pinout.png)
+
+
 
 ## Configuration of INAV
 
