@@ -34,6 +34,6 @@ Configuring INAV is straightforward:
 
 2. In the Ports tab of INAV Configurator, select MAVLink telemetry and set the baud rate for the port you used on the
 flight controller.
-![configuring the telemetry port in the telemetry tab](../.gitbook/assets/nav-ports-telemetry.png)
+![configuring the telemetry port in the telemetry tab](../.gitbook/assets/inav-ports-telemetry.png)
 
 3. Note that INAV reports its home position differently than the Mavlink documentation. Due to this, you may wish to enable the `enable_dirty_inav_hacks` option in OpenHD.
