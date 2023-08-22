@@ -29,5 +29,11 @@ Connect the TX pin of the serial port on your flight controller to the RX pin on
 
 Configuring INAV is straightforward:
 
-1. Configure the port you've used to connect OpenHD to Mavlink, and INAV should start working.
-2. Note that there are still a few instances where INAV doesn't follow the official MavLink configuration. Due to this, you may need to enable the `enable_dirty_inav_hacks` option in OpenHD.
+1. In the Configuration tab of INAV Configurator, turn telemetry on. Click Save & Reboot.
+![enabling telemetry in the configuration tab](../.gitbook/assets/inav-configuration-telemetry.png)
+
+2. In the Ports tab of INAV Configurator, select MAVLink telemetry and set the baud rate for the port you used on the
+flight controller.
+![configuring the telemetry port in the telemetry tab](../.gitbook/assets/nav-ports-telemetry.png)
+
+3. Note that INAV reports its home position differently than the Mavlink documentation. Due to this, you may wish to enable the `enable_dirty_inav_hacks` option in OpenHD.
