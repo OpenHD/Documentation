@@ -7,7 +7,7 @@ Supported Raspberry's for the AirSBC in descending order from good to worse
 | Raspberry Pi 3B+                      |         |
 | Raspberry Pi 3A                       |         |
 | Raspberry Pi Compute Module CM3+      |  1      |
-| Raspberry Pi 2B+                      |         |
+| Raspberry Pi 2B v1.2                  |         |
 | Raspberry Pi 3A+                      |         |
 | Raspberry Pi Zero 2                   |         |
 
