@@ -57,7 +57,9 @@ What cameras exactly are made for OpenHD?
 **OpenIPC** uses "hacked" IP-Cameras, and low latency implementations were only written for the IMX307.
 
 **WFB-NG** uses everything that is already compatible with the standard Raspberry Pi Kernel (v5.1).
+
 **Ruby FPV** uses the old OpenHD 4.9 kernel and utilizes every camera compatible with it
+
 **EZ-Wifibroadcast** uses everything that is already compatible with the standard Raspberry Pi Kernel (v4.x).
 
 
