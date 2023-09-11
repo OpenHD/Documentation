@@ -43,7 +43,7 @@
 
 ### Why is there such a big difference?
 
-OpenHD is actively cooperating with Veye-Imaging and Arducam, and develops custom cameras with Arducam. 
+**OpenHD** is actively cooperating with Veye-Imaging and Arducam, and develops custom cameras with **Arducam**. 
 
 What cameras exactly are made for OpenHD?
 
@@ -54,9 +54,12 @@ What cameras exactly are made for OpenHD?
 - IMX708
 - More will follow
 
-OpenIPC uses "hacked" IP-Cameras, and low latency implementations were only written for the IMX307.
+**OpenIPC** uses "hacked" IP-Cameras, and low latency implementations were only written for the IMX307.
 
-WFB-NG uses everything that is already compatible with the standard Raspberry Pi Kernel.
+**WFB-NG** uses everything that is already compatible with the standard Raspberry Pi Kernel (v5.1).
+**Ruby FPV** uses the old OpenHD 4.9 kernel and utilizes every camera compatible with it
+**EZ-Wifibroadcast** uses everything that is already compatible with the standard Raspberry Pi Kernel (v4.x).
+
 
 ## Installation and Configuration
 
