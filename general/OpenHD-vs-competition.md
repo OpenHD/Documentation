@@ -97,7 +97,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Because of its complex and undynamic setup, and very outdated/slim wiki, configuration is a pain, the user needs to connect and change the system manually for most things.
 
-**Ruby FPV**: Because of its neglect of modern systems and inability to change to newer kernels or devices, there is no upgrade path for new hardware. Since the license is quite non-standard and parts are not documented and not open source and only one developer, features are slowly integrated and a lot is not possible to be changed without a complete redesign (render method, camera-implementation, etc.).
+**Ruby FPV**: Because of its neglect of modern systems and inability to change to newer kernels or devices, there is no upgrade path for new hardware. Since the license is quite non-standard and parts are not documented and not open source and only one developer working on the project, features are slowly integrated and a lot is not possible to be changed without a complete redesign (render method, camera-implementation, etc.).
 
 **EZ-Wifibroadcast**: Because of its discontinuation 4 years ago, there is no real chance to get updates here.
 
