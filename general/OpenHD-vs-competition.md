@@ -107,10 +107,13 @@ WFB-NG uses everything that is already compatible with the standard Raspberry Pi
 **Ruby FPV**: Using discontinued rendering methods to draw over the HW-Compositor -> same latency like OpenHD, but no support for anything but the Pi 1-3.
 
 **EZ-Wifibroadcast**: Using discontinued rendering methods to draw over the HW-Compositor -> same latency like OpenHD, but no support for anything but the Pi 1-3.
+
 # Configuration and User Interfaces
 
+## OSD
+
 **QOpenHD**  
-![QOpenHD](../.gitbook/assets/qopenhd.jpg)
+![QOpenHD](../.gitbook/assets/qopenhd.png)
 
 **WFB-NG**  
 ![WFB-NG](https://github.com/svpcom/wfb-ng-osd/raw/master/scr2.png)
@@ -120,6 +123,8 @@ WFB-NG uses everything that is already compatible with the standard Raspberry Pi
 
 **EZ-Wifibroadcast**  
 ![EZ-Wifibroadcast](https://community.emlid.com/uploads/default/optimized/2X/5/55c264e08ba49f36f06b2a60dafbd99468db03bf_2_900x505.jpg)
+
+## Configuation
 
 **OpenHD**  
 ![OpenHD Configuration](../.gitbook/assets/Screenshot-2023-09-12-010357.png)
