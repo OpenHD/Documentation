@@ -45,7 +45,7 @@
 
 **OpenHD** is actively cooperating with **Veye-Imaging** and **Arducam**, and develops custom cameras with **Arducam**. 
 
-What cameras exactly are made for in cooperation with **OpenHD** and **Arducam**?
+What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 - IMX477m
 - IMX462
