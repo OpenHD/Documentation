@@ -91,7 +91,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 ## Main Disadvantages
 
-**OpenHD**: Because of its high complexity and intelligent FEC, it needs more processing power than lower complexity systems -> no support for hardware that is more than 10 years old. No easy Google-navigation (yet).
+**OpenHD**: Because of its high complexity and intelligent FEC, it needs more processing power than lower complexity systems -> no support for hardware that is more than 10 years old. And there is no easy Goggle-navigation (yet).
 
 **OpenIPC**: Because of its nature to hack IP cameras, high knowledge and good soldering and programming equipment are needed. No Groundstation with OSD yet (uses QOPENHD).
 
