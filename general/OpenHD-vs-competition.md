@@ -43,7 +43,7 @@
 
 ### Why is there such a big difference?
 
-**OpenHD** is actively cooperating with Veye-Imaging and Arducam, and develops custom cameras with **Arducam**. 
+**OpenHD** is actively cooperating with **Veye-Imaging** and **Arducam**, and develops custom cameras with **Arducam**. 
 
 What cameras exactly are made for OpenHD?
 
