@@ -1,4 +1,5 @@
-# Comparison of OpenIPC, OpenHD, WFB-NG, Ruby FPV, and EZ-Wifibroadcast
+# Comparison of:
+# OpenIPC, OpenHD, WFB-NG, Ruby FPV, and EZ-Wifibroadcast
 
 | Feature           | OpenHD               | OpenIPC               | WFB-NG                | Ruby FPV              | EZ-Wifibroadcast     |
 |-------------------|----------------------|-----------------------|------------------------|-----------------------|----------------------|
@@ -109,7 +110,7 @@ WFB-NG uses everything that is already compatible with the standard Raspberry Pi
 # Configuration and User Interfaces
 
 **QOpenHD**  
-![QOpenHD](https://camo.githubusercontent.com/a5da6f397bf836b94ad692f9c1df726e6370c94c2350ca8a894ab6e00a496f89/68747470733a2f2f313934353131393833392d66696c65732e676974626f6f6b2e696f2f7e2f66696c65732f76302f622f676974626f6f6b2d782d70726f642e61707073706f742e636f6d2f6f2f7370616365732532463852494d5533396d3447743176717a7a74346c6d25324675706c6f6164732532466769742d626c6f622d333533646666393438363661653264346138316661333332396bf39339cd82ffdf39d82b93b93e28bc513a9f4932e4d273b42.jpg)
+![QOpenHD](../.gitbook/assets/qopenhd.jpg)
 
 **WFB-NG**  
 ![WFB-NG](https://github.com/svpcom/wfb-ng-osd/raw/master/scr2.png)
@@ -121,7 +122,7 @@ WFB-NG uses everything that is already compatible with the standard Raspberry Pi
 ![EZ-Wifibroadcast](https://community.emlid.com/uploads/default/optimized/2X/5/55c264e08ba49f36f06b2a60dafbd99468db03bf_2_900x505.jpg)
 
 **OpenHD**  
-![OpenHD Configuration](.gitbook/assets/Screenshot-2023-09-12-010357.png)
+![OpenHD Configuration](../.gitbook/assets/Screenshot-2023-09-12-010357.png)
 
 **OpenIPC**  
 Text Files
