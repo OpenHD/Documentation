@@ -5,6 +5,7 @@
 ## General
 
 * [Features](general/features.md)
+* [OpenHD vs OpenIPC vs Wfb-ng vs Ruby](OpenHD-OpenIPC-WFB-NG-RUBYFPV.md)
 * [Troubleshooting](general/troubleshooting.md)
   * [General-FAQ](general/faq.md)
   * [Software-FAQ](general/software-faq.md)
