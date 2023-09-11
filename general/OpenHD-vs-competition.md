@@ -3,7 +3,7 @@
 
 | Feature           | OpenHD               | OpenIPC               | WFB-NG                | Ruby FPV              | EZ-Wifibroadcast     |
 |-------------------|----------------------|-----------------------|------------------------|-----------------------|----------------------|
-| Development       | Active, daily changes | Active, weekly changes | Inactive, monthly changes | Inactive, monthly changes | Inactive           |
+| Development       | Active, daily changes | Active, weekly changes | Active, monthly changes | Active, monthly changes | Inactive           |
 | Purpose           | Comprehensive FPV drone suite | Advanced IP camera firmware | FPV video link and OSD | FPV video link and OSD | FPV video link and OSD |
 | Hardware Support*  | Raspberry Pi 2, 3, 4, Zero 2, Rock5, X86 | IP cameras | Raspberry Pi 3, Zero2 | Raspberry Pi 2, 3, 4, Zero 1, 2 | Raspberry Pi 1A+, 1B+, 2B, 3B |
 | Supported Cameras* | Excellent | Adequate | Good | Adequate | Adequate |
