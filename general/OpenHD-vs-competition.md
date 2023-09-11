@@ -83,11 +83,11 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Modified version of the AirCrack driver, improved channels + static* TX-Power override [8812au].
 
-**Ruby FPV**: Using old OpenHD drivers based on a very old Aircrack driver, static* TX-Power override [8812au].
+**Ruby FPV**: Using old OpenHD drivers based on a very old Aircrack driver, reboot required on TX-Power override [8812au].
 
 **EZ-Wifibroadcast**: Fixed MCS, fixed tx-power, only 2.4GHz [ath9k].
 
-*For changing another device needs to be connected to both air and ground, and new levels must be set + a reboot is needed.
+*For changing, another device needs to be connected to both air and ground, and new levels must be set + a reboot is needed.
 
 ## Main Disadvantages
 
