@@ -1,22 +1,34 @@
-In OpenHD, there are 2 possible ways for recording your flight to share it on youtube and more.
+# OpenHD Flight Recording Options
 
-1) Air recording:
-Record video locally on your Air unit. This eliminates any breakups / interference that might happen during flight from the recorded video.
-NOTE 1) The RPI HW is not capable of recording the video with OSD - see 2) for that
-NOTE 2) The bitrate of the air recording is the same bitrate as used for transmission
+OpenHD offers two methods for recording your flight footage, whether for sharing on platforms like YouTube or for personal analysis.
 
-2) Ground recording:
-Due to the HW limitation of RPI not being able to record Video + OSD at the same time, we recommend the following user-proven option:
-Use QOpenHD on a tablet, android phone and a screen recorder (TODO which) to record the video and osd.
-If you are using a (strong) x86 laptop on the ground, you can obviosly also use the integrated screen recording.
+## 1. Air Recording
 
+Air recording involves capturing video locally on your Air unit. This method helps eliminate any potential breakups or interference that might occur during the flight, as it records directly from the transmitted video feed.
 
-Air recording - enable / disable:
-You can either manually enable / disable recording of your primary / secondary camera via QOpenHD, or (recommended) use the following feature:
-Automatically start / stop recording when you arm / disarm your FC.
-To use this feature, go to QOpenHD / CAMERA1 (or CAMERA2) and set V_AIR_RECORDING to AUTO(armed)
-Your air recording will now automaticallly start / stop when you arm / disarm your drone, and you can download the recording
-after flight. Note that when AUTO(armed) is enabled, the QOpenHD air recording widget should not be used
-( you can check the remaining space counter though to validate if air recording is working or not).
+**Note 1:** The Raspberry Pi (RPI) hardware is not capable of recording video with an on-screen display (OSD). Please refer to option 2 for OSD recording.
 
- NOTE: If there is not enough free space on your air unit (SD Card), air recording is automatically stopped.
+**Note 2:** The bitrate of the air recording is the same as the bitrate used for video transmission.
+
+## 2. Ground Recording
+
+Due to hardware limitations of the Raspberry Pi, which cannot record both video and OSD simultaneously, we recommend the following user-proven alternative:
+
+1. Use QOpenHD on a tablet or Android phone.
+2. Employ a screen recorder (specific application to be determined) to capture the video feed along with OSD data.
+
+If you have access to a (powerful) x86 laptop on the ground, you can also utilize its integrated screen recording capabilities, OBS is preinstalled on our images and recommended for perfect Hardware utilisation.
+
+### Air Recording - Enable/Disable:
+
+You can manage air recording by either manually enabling/disabling the recording of your primary or secondary camera via QOpenHD or by using the following recommended feature:
+
+- **Automatically Start/Stop Recording When Arming/Disarming:**
+  To enable this feature, follow these steps:
+  1. Open QOpenHD.
+  2. Go to the settings for CAMERA1 or CAMERA2.
+  3. Set V_AIR_RECORDING to AUTO(armed).
+
+With this setting, your air recording will automatically start when you arm your drone and stop when you disarm it. You can then download the recording after the flight. Note that when AUTO(armed) is enabled, it's best not to use the QOpenHD air recording widget; however, you can still check the remaining space counter to verify if air recording is functioning correctly.
+
+**Note:** If there is insufficient free space on your Air unit's SD card, air recording will automatically stop.
