@@ -19,7 +19,7 @@ Assuming you are starting with nothing, we recommend you get the following Hardw
 
 ### Air cheap
 {% hint style="warning" %}
-Pi Zero 1 are not supported you need the version 2 !
+Pi Zero 1 is not supported you need the version 2 !
 {% endhint %}
 
 * A Raspberry Pi Zero 2:
