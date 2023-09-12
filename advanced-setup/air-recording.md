@@ -1,35 +1,27 @@
 ---
-description: Air recording for youtube or similar (without OSD).
+description: Guide for Air Recording without OSD for YouTube or similar platforms.
 ---
 
-# Air recording
+# Air Recording Guide
 
-You can record your flight locally on your air unit with close to none performance hit. The recorded video uses the same bitrate like the video transmitted over the link, but is free of any breakups from packet loss (since it is recorded locally on your air unit, not your ground unit
+Record your flights locally on your air unit with minimal performance impact. The recorded video maintains the same bitrate as the transmitted video but is free from breakups due to packet loss since it's stored locally on your air unit, not the ground unit.
 
+To enable this feature:
 
+1. Enable video recording for a connected camera. In QOpenHD, navigate to **OpenHD Settings** > **Camera** and, using the parameter editor, set:
 
-To use this feature, \
-1\) Enable video recording for a connected camera - in QOpenHD, go to  OpenHD Settings / Camera and via the param editor, set
+V_AIR_RECORDING=Enabled
 
-```
-V_AIR_RECORDING=Enabled 
-```
+QOpenHD will now automatically start recording your camera's video during operation.
 
-Now openhd will automatically start recording your camera's video during operation\
-\
-2\) To download / view the recordings\
-Option a: After a flight, take the SD card out of your air unit and put it into a card reader\
-You can find the recordings under §SD\_CARD$/home/openhd/videos\
-\
-If you are using windows, you might have to use a tool like "diskinternals Linux reader":\
-\
-![](../.gitbook/assets/Screenshot-transfer-recordings-windows.jpg)\
-\
-Option b: After a flight, enable "wifi hotspot" on your air pi (requires pi with integrated wifi)\
-Connect phone or pc to pi's wifi, open a browser in your pc/phone, type in pi's address, you'll find it's web interface, you'll see a tab called Files, open it, there are the video files.\
-\
-\
+2. To access and view the recordings, you have two options:
+
+- **Option a**: After a flight, remove the SD card from your air unit and insert it into a card reader. You can find the recordings in the following directory: `SD_CARD/home/openhd/videos`.
+
+  If you are using Windows, you may need to use a tool like "diskinternals Linux reader."
+
+- **Option b**: After a flight, enable the "Wi-Fi hotspot" on your air Pi (requires a Pi with integrated Wi-Fi). Connect your phone or PC to the Pi's Wi-Fi network, open a web browser, enter the Pi's IP address. You will access its web interface, where you can find the video files.
 
 # Recording Widget
 
-You can now start the recording with the record widget, it also displays how much space is left on your card.
+You can now initiate recordings using the recording widget, which also displays the available space on your SD card.
