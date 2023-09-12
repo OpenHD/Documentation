@@ -16,5 +16,9 @@ As of now, OpenHD Evo does not offer specific setup options for configuring the 
 {% endhint %}
 
 {% hint style="warning" %}
+- **Warning**: Using the Wi-Fi hotspot will not give you telemetry and video, but is only there for debugging and the webui.
+{% endhint %}
+
+{% hint style="warning" %}
 - **Warning**: Using the Wi-Fi hotspot may interfere with your overall communication range. Exercise caution and deactivate the hotspot when not in use to avoid impacting your connection to the drone.
 {% endhint %}
