@@ -10,6 +10,9 @@ description: Welcome to OpenHD
 
 OpenHD is a suite of software designed for long-range video transmission, telemetry, and RC control. While we originally designed it with hobbyist drones in mind, it can be adapted to a wide range of other applications as well.
 
+{% embed url="https://www.youtube.com/watch?v=5Ht9P3uv5N4" %}
+
+
 ## What OpenHD Can Do
 
 Our suite can transmit:
