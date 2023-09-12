@@ -1,33 +1,43 @@
 ---
-description: Setup Joystick RC
+description: Setting Up Joystick RC Control
 ---
 
-# Joystick RC
+# Joystick RC Control
 
-WARNING: Beta Beta for now !!\
-\
-OpenHD supports RC over MAVLINK. This means you can connect a Joystick (e.g. your RC controller in joystick mode) to your ground station via USB and controll your drone directly via the OpenHD wifibroadcast link.\
-\
-NOTE: WiFi is not best suited for many small packets, as needed for RC. For the best experience, we recommend using a standard RC link on a different frequency than your OpenHD wifibroadcast link (e.g. 2.4G ELRS and 5.8G wifibroadcast).\
-\
-NOTE2: RC over MAVLINK is supported by INAV, Ardupilot and Pixhawk. It is not supported on betaflight.\
-\
-NOTE3: The RC data is always sent over the same UART telemetry connection between OpenHD and your FC as required for mavlink telemetry.\
-\
-Step 1: Enable joystick on your ground unit. In QOpenHD, go to the OpenHD settings page, GROUND (TMP) and set ENABLE\__JOY_\_RC to true. Reboot your ground station.\
-<img src="../.gitbook/assets/Screenshot from 2022-11-12 17-42-46.png" alt="" data-size="original">\
-\
-Step 2: Connect your Joystick to the ground station (For RC controllers, connect via USB and select Joystick mode.\
-\
-Step 3: Make sure OpenHD detects and properly reads values from your joystick. In QOpenHD / RC you can see the current readouts. Example TX16s connected with AETR and 18 channels:\
-![](<../.gitbook/assets/Screenshot from 2022-11-12 17-45-44.png>)\
-\
-Step 4: Validate Failsafe: OpenHD always sends RC joystick data as long as JOY_RC is eabled and a Joystick is connected. It stops sending data if you disconnect your Joystick, resulting in a failsafe on the supported FCs (TODO validate)._\
-\
-_Step 5: You can adjust the update rate in the same settings screen as JOY\_RC. Note that his setting is only available if you JOY\_RC is enabled. The update rate controlls how many_&#x20;
+**WARNING**: This feature is currently in beta. Please exercise caution and perform thorough testing.
 
-```
-MAVLINK_MSG_ID_RC_CHANNELS_OVERRIDE
-```
+OpenHD offers support for Remote Control (RC) input over MAVLINK, allowing you to connect a joystick (such as your RC controller in joystick mode) to your ground station via USB. This enables you to control your drone directly through the OpenHD wifibroadcast link.
 
-packets are broadcasted per second. \
+**NOTE**: It's important to be aware that WiFi may not be ideal for transmitting many small RC packets. For the best experience, it's recommended to use a standard RC link operating on a different frequency than your OpenHD wifibroadcast link. For example, you can use 2.4GHz ELRS for RC control and 5.8GHz for wifibroadcast.
+
+**NOTE 2**: RC over MAVLINK is supported by INAV, Ardupilot, and Pixhawk but is not supported on Betaflight.
+
+**NOTE 3**: RC data is transmitted over the same UART telemetry connection between OpenHD and your Flight Controller (FC) as required for MAVLINK telemetry.
+
+## Setup Steps
+
+### Step 1: Enable Joystick on Ground Unit
+
+1. In QOpenHD, navigate to the OpenHD settings page, specifically the GROUND (TMP) section.
+2. Set `ENABLE_JOY_RC` to true.
+3. Reboot your ground station.
+
+![Enable Joystick RC](../.gitbook/assets/Screenshot from 2022-11-12 17-42-46.png)
+
+### Step 2: Connect Your Joystick
+
+Connect your joystick to the ground station. For RC controllers, connect via USB and ensure you've selected Joystick mode.
+
+### Step 3: Verify Joystick Input
+
+Confirm that OpenHD detects and properly reads values from your joystick. In the QOpenHD interface, navigate to the RC section to view the current readouts. For example, if you're using a TX16s controller connected with AETR and 18 channels, you should see the input values.
+
+![Joystick Input Readouts](../.gitbook/assets/Screenshot from 2022-11-12 17-45-44.png)
+
+### Step 4: Validate Failsafe
+
+OpenHD continuously sends RC joystick data as long as `JOY_RC` is enabled, and a joystick is connected. It will stop sending data if the joystick is disconnected, triggering a failsafe on supported Flight Controllers (TODO: validate).
+
+### Step 5: Adjust Update Rate
+
+You can adjust the update rate in the same settings screen where you enabled `JOY_RC`. Note that this setting is only available when `JOY_RC` is enabled. The update rate controls how many MAVLINK_MSG_ID_RC_CHANNELS_OVERRIDE packets are broadcasted per second.

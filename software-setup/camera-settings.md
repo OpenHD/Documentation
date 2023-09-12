@@ -1,12 +1,31 @@
 ---
-description: Change Camera settings, like resolution, framerate,...
+description: Changing Camera Settings in OpenHD Evo
 ---
 
-# Camera Settings
+{% hint style="information" %}
+Settings do not work on unmanaged Cameras!
+{% endhint %}
 
-OpenHD evo allows you to change camera settings like resolution, framerate and more live without a reboot.\
-Example:\
-![](<../.gitbook/assets/Screenshot from 2022-11-12 19-26-07.png>)\
-\
-NOTE: While there is some user input validation(s), some parameters cannot be completely validated. It is recommended to have an eye on your video stream while chaning camera settings like resolution@framerate.\
-If your video stream "stops working" suddenly, check the log in QOpenHD - if there are many "restarting camera,check your parameters / conenction" errors you probably set an unsuported value (e.g. 720p120fps on rpi). In most cases, you can recover from this error by selecting a supported video resolution (like 720p30fps on rpi).
+# Camera Settings in OpenHD Evo
+
+OpenHD Evo provides you with the flexibility to adjust camera settings, such as resolution and framerate, in real-time without the need for a system reboot. These settings allow you to customize your video stream to meet your specific needs.
+
+# Picture Settings
+
+For Libcamera and Raspivid we have a lot of Picture settings to optimize your experience. These are located in the Camera Tab.
+
+
+**Example:**
+![Camera Settings](../.gitbook/assets/Screenshot from 2022-11-12 19-26-07.png)
+
+**Note**: While OpenHD Evo includes some user input validation, certain parameters cannot be fully validated due to the diverse range of hardware and configurations. Therefore, it is essential to monitor your video stream when making changes to settings like resolution and framerate.
+
+If your video stream suddenly stops working or experiences issues, follow these steps:
+
+1. **Check the Log in QOpenHD**: Look for error messages, particularly those mentioning "restarting camera, check your parameters/connection." This may indicate that you've selected an unsupported combination of settings.
+
+2. **Review and Adjust Settings**: If you encounter errors, review your camera settings. Ensure that you've selected a supported combination of resolution and framerate for your specific hardware. For example, setting 720p resolution at 120fps on a Raspberry Pi may lead to issues.
+
+By selecting a supported video resolution and framerate, such as 720p at 30fps on a Raspberry Pi, you can likely recover from errors and maintain a stable video stream.
+
+Customizing camera settings in OpenHD Evo empowers you to optimize your video feed for various scenarios and requirements.
