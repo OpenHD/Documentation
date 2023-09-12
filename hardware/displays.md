@@ -10,7 +10,7 @@ Virtually any screen/monitor connected to the HDMI port on your Pi will work. Ad
 
 On the Raspberry Pi, we're using the FKMS driver to enable low latency decoding. Some of the newer monitors require the KMS driver, which does not work with OpenHD. Only Official Raspberry Pi DSI monitors can use FKMS.
 
-- Zeiss Cinemizer OLED
+## Zeiss Cinemizer OLED
 
 Please note that the monitor has to be connected and powered before the Pi is powered on because the auto-detection only works at start-up. You can define your (custom) monitor resolution in `config.txt` statically to connect the monitor after the Pi is already running. Also, make sure to uncomment `hdmi_force_hotplug=1` to enable "hotplugging" for your HDMI monitor/goggles.
 
