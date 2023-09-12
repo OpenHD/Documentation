@@ -22,9 +22,13 @@ To use this configuration, your hardware should fulfill the following prerequisi
 2. Configure OpenHD for dual-camera usage. After performing these steps, your air unit will wait for up to 12 seconds at boot for exactly 2 auto-detectable cameras to become available (default is 1). With variable bitrate enabled, it will automatically recommend a matching bitrate to the secondary and primary cameras (default split: 60%:40%).
 
    2.1. Boot up your air and ground unit; you can do that without any or only one camera connected.
+   
    2.2. Inside QOpenHD, go to OpenHD -> Air and set V_N_CAMERAS to "DUAL."
+   
    2.3. Reboot your air and ground unit.
+   
    2.4. Validate by using the dummy camera feature: Reboot the air and ground without any cameras connected; you should now see 2 dummy camera streams and statistics for 2 streams in QOpenHD.
+   
    2.5. Power off your air unit and connect your 2 cameras, then reboot. OpenHD should now display your primary and secondary camera feeds coming from your 2 cameras.
 
 **Troubleshooting:** In case any of your cameras are not automatically detected at boot, OpenHD will create dummy cameras for them to avoid holding up the boot process indefinitely waiting for cameras. Read the setup pages specific to your cameras if they are not detected (e.g., a dummy camera is created instead).
