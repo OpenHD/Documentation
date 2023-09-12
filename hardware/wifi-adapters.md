@@ -1,92 +1,85 @@
+---
+description: WiFi Adapters for OpenHD Evo
+---
+
 # WiFi Adapters
 
-If you are new to OpenHD and not familiar with all the advantages/disadvantages of different wifi cards, get 2x ASUS USB-AC56 or a similar good quality adapter using the RTL8812AU chipset.
-Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! Every letter in the number above matters, they are not the same !
+If you are new to OpenHD and not familiar with all the advantages and disadvantages of different WiFi cards, consider getting 2x ASUS USB-AC56 or a similar high-quality adapter using the RTL8812AU chipset. Pay close attention to the version number of the WiFi adapter, as manufacturers often use different chipsets with varying version numbers. Each letter and number in the version matters; they are not the same.
 
-When choosing between 2.4G and 5.8G, while 2.4G offers better penetration than 5.8G, it much more suspectible to common sources of interference and it can be hard to find a not polluted channel on 2.4G. 5.8G also allows you to use your existing 2.4G RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.
+When choosing between 2.4GHz and 5.8GHz, keep in mind that while 2.4GHz offers better penetration, it is more susceptible to common sources of interference, and finding a clean channel on 2.4GHz can be challenging. 5.8GHz also allows you to use your existing 2.4GHz RC transmitters. For these reasons, many users currently prefer 5.8GHz for OpenHD.
 
-RX diversity:
-You can use either a wifi card with multiple antennas or multiple wifi cards on your ground station for RX diversity. However, it is easy to mess up things by improper wiring and/or using wrong antennas when using more than one rx card. We therefore do not recommend more than one card for new users.
-Also, while you can mix cards (given they support the same frequency) with different chipsets or even from different vendors, this is not recommended.
+## RX Diversity
 
-Since Version 2.3 various new Chipsets are supported, including:
+You can achieve RX diversity by using either a WiFi card with multiple antennas or multiple WiFi cards on your ground station. However, it's easy to make mistakes with improper wiring or using the wrong antennas when using more than one RX card. Therefore, we do not recommend using more than one card for new users. Mixing cards with different chipsets or from different vendors, even if they support the same frequency, is also not recommended.
 
-RTL8812AU
-RTL8812BU
-RTL8811AU
-AR9271
+## Supported Chipsets (Since Version 2.3)
 
+- RTL8812AU
+- RTL8812BU
+- RTL8811AU
+- AR9271
 
-Recommended Wifi-Dongles:
+## Recommended WiFi Dongles
 
-| Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ALFA AWUS036ACH | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
-| ASUS USB-AC56 | 5.8 -2.4 *| 500mw | RTL8812AU | X | X |  | 2x RP-SMA |
-| "Taobao Card" | 5.8 -2.4 *| 500mW | RTL8812AU | X | X | X | 2x u.fl |
-| ALFA AWUS1900 | 5.8 -2.4 *| 500mW | RTL8814AU | X | ? |  | 4x RP-SMA |
-| Tenda U12 | 5.8 -2.4 *| 100mW | RTL8812AU | X | X |  | 2x u.fl 2x internal |
-| Cudy AC 1300 | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| Aigital AC1200  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| COMFAST 1300Mbps  | 5.8 | ? low power | RTL8812BU |  | X |  | internal |
-| Netgear A6100 | 5.8 - 2.4 *| 50mw | RTL8811AU |  | X |  |1x internal |
+| Name               | Band       | TX Power | Chip      | STBC/LDPC | RC  | Need Heatsink | Antennas   |
+| :----------------- | :--------- | :------- | :-------- | :-------- | :-- | :------------ | :--------- |
+| ALFA AWUS036ACH    | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   |               | 2x RP-SMA  |
+| ASUS USB-AC56      | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   |               | 2x RP-SMA  |
+| "Taobao Card"      | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   | X             | 2x u.fl    |
+| ALFA AWUS1900      | 5.8 - 2.4* | 500mW    | RTL8814AU | X         | ?   |               | 4x RP-SMA  |
+| Tenda U12          | 5.8 - 2.4* | 100mW    | RTL8812AU | X         | X   |               | 2x u.fl 2x internal |
+| Cudy AC 1300       | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
+| Aigital AC1200     | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
+| COMFAST 1300Mbps   | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
+| Netgear A6100      | 5.8 - 2.4* | 50mW     | RTL8811AU |           | X   |               | 1x internal|
 
-*we recommend using this Chipset in 5.8Ghz mode
+*We recommend using this chipset in 5.8GHz mode.
 
-There are a lot more devices with are supported, this lists only show tested devices. 
+Please note that this list includes tested devices, but there are many more supported devices.
 
-Additional Wifi-Devices with reduced functions:
+## Additional WiFi Devices with Reduced Functions
 
-| Name | Band | TX Power | Chip | STBC/LDPC | RC | Need Heatsink | Antennas |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ALFA AWUS036NHA | 2.3-2.4 | 280mW | AR9271 |  | X |  | 1x RP-SMA |
-| Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
-| Ubiquiti Wifistation EXT | 2.3-2.4 | 800mW+ | AR9271 |  | X |  | 1x RP-SMA |
-| TPLink TL-WN722N V1 | 2.3-2.4 | 60mW | AR9271 |  | X |  | 1x RP-SMA |
-| AW-NU138 | 2.3-2.4 | 50mW | AR9271 |  | X | X | 1x Internal |
-| AW-NU137 | 2.3-2.4 | 70mW | AR9271 |  | X |  | 1x u.fl |
+| Name               | Band  | TX Power | Chip     | STBC/LDPC | RC  | Need Heatsink | Antennas   |
+| :----------------- | :---- | :------- | :------- | :-------- | :-- | :------------ | :--------- |
+| ALFA AWUS036NHA    | 2.3-2.4 | 280mW | AR9271 |           | X   |               | 1x RP-SMA  |
+| Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |         | X   |               | 1x RP-SMA  |
+| TPLink TL-WN722N V1 | 2.3-2.4 | 60mW  | AR9271 |           | X   |               | 1x RP-SMA  |
+| AW-NU138           | 2.3-2.4 | 50mW   | AR9271 |           | X   | X             | 1x Internal |
+| AW-NU137           | 2.3-2.4 | 70mW   | AR9271 |           | X   |               | 1x u.fl    |
 
+*We recommend using this chipset in 5.8GHz mode.
 
-*we recommend using this Chipset in 5.8Ghz mode
+These devices are supported but do not have all functions like 40MHz mode or different MCS-Indexes.
 
-These devices are supported, but doesn't have all functions like 40MHZ mode or different MCS-Indexes
+## ASUS AC56
 
-#### **ASUS AC56**
+The ASUS AC56 adapter is currently the most popular choice for OpenHD. Its small size makes it easy to fit into many builds, it uses 5.8GHz, and it is widely available. While the retail price can be high, it is often available used or on sale for $30 or less. It has one internal antenna, and the second antenna is optional, connecting with RP-SMA.
 
-This adapter is currently the most popular for OpenHD. Its small size makes it easy to fit into many builds, it uses 5.8ghz, and it is widely available. The retail price can be high, but it can often be found used or on sale for $30 or less. One antenna is internal, the 2nd is optional, and connects with RP-SMA.
+- [FCC info](https://fccid.io/MSQ-USBAC56)
+- [WikiDevi](https://deviwiki.com/wiki/ASUS_USB-AC56)
+- [Modification Page](https://forum.openhdfpv.org/t/asus-usb-ac56-wiring-antennas-etc/103)
 
-* [FCC info](https://fccid.io/MSQ-USBAC56)
-* [WikiDevi](https://deviwiki.com/wiki/ASUS_USB-AC56)
-* [Modification Page](https://forum.openhdfpv.org/t/asus-usb-ac56-wiring-antennas-etc/103)
+## Taobao Card
 
-
-#### Taobao Card
-
-![taobaocard.jpg](https://github.com/OpenHD/OpenHD/blob/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/taobaocard.jpg?raw=true)
+![Taobao Card](https://github.com/OpenHD/OpenHD/blob/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/taobaocard.jpg?raw=true)
 
 [Store link](https://a.aliexpress.com/_rIjofM)
 
-This is a generic RTL8812au card sold on Taobao, which is where the name comes from.
+The Taobao Card is a generic RTL8812AU card sold on Taobao, from which it gets its name. It is widely used and known to work well, but it tends to get hot. The reported power output is 500mW. This card requires soldered wiring, or the USB connection may disconnect before or even during flight. It supports 2x u.fl antenna connectors.
 
-It is a widely used card and known to work well, but it does tend to get hot. Reported power output is 500mW. This card _requires_ soldered wiring or the USB connection may disconnect before or even during flight.
+## Finding Alternatives
 
-It supports 2x u.fl antenna connectors.
+For affordable alternatives, check out computer stores and consider Aliexpress. Exercise caution, as some cards may have questionable quality. Generally, high-quality or brand-name modules with RTL8812AU chipsets perform best.
 
-### Finding alternatives
+To discover more about WiFi sticks and modules offered online, look for product numbers, chipsets, or FCC IDs. Search for high-resolution internal photos of the cards to identify the chipset and amplifiers used. You can also use helpful websites like:
 
-For cheap alternatives check out the usual computer stores and maybe consider Aliexpress. Be a little careful, some cards are of questionable quality. Generally, High-Quality/Brand Name modules with RTL8812au chipsets perform best.
+- [FCC ID](https://fccid.io/) (FCC documents with internal photos)
+- [WikiDevi](https://wikidevi.com/wiki/) (General information and sometimes photos)
 
-A good way to find out more about wifi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
+When you find photos, search for the amplifier numbers to find datasheets that provide rough estimates of the expected output power.
 
-Search the web for those numbers and also these two very helpful sites:
+Please consider reporting your findings if you've tried a WiFi card that is not listed here.
 
-* [https://fccid.io/](https://fccid.io/) \(FCC documents which contain internal photos\)
-* [https://wikidevi.com/wiki/](https://wikidevi.com/wiki/) \(general infos and sometimes photos\)
+## External Amplifiers
 
-When you have found photos, google for the numbers on the amps to find a datasheet giving a rough estimate about the expectable output power.
-
-It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
-
-### External amp
-
-Another way to increase output power is to use a low-power wifi stick combined with an external amplifier.
+Another way to increase output power is to use a low-power WiFi stick combined with an external amplifier.
