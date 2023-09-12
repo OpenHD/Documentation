@@ -14,6 +14,7 @@
 | Customization     | Extensive | Non-existent | Extensive | Non-existent | Adequate |
 | Updates           | Frequent | Periodic | Limited | Limited | Non-existent |
 | Open Source       | Yes | Partially | Yes | Partially | Yes |
+| Medium Range Setup Costs       | 79€ | 57€ | 150€ | 145€ | 145€ |
 
 *Only officially listed devices
 
