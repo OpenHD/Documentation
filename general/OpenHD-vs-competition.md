@@ -180,6 +180,7 @@ Total Cost: 57€
 **Ground**
 - [Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) - 44€
 - [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
+
 *Monitor is also needed, but for fairness, I'll not factor the price in.*
 
 **Air**
@@ -194,6 +195,7 @@ Total Cost (Air): 150€ + monitor
 **Ground**
 - [Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) - 44€
 - [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
+
 *Monitor is also needed, but for fairness, I'll not factor the price in.*
 
 **Air**
