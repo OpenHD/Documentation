@@ -147,100 +147,73 @@ Text Files
 Text Files
 
 
-## Medium Range Setup and costs:
+## Medium Range Setup and Costs
 
-**OpenHD**  
+### **OpenHD**
 
-#### Ground
+**Ground**
+- X86 Laptop
+- [Comfast Wifi Adapter 8812bu](https://aliexpress.com/item/1005001311214882.html) - 11€
 
-X86 Laptop 
-[Comfast Wifi Adapter 8812bu](https://aliexpress.com/item/1005001311214882.html) 11€ 
+**Air**
+- [Rpi-Zero2](https://shop.mchobby.be/en/pi-zero-12wwh/2334-raspberry-pi-zero-2-with-header-wireless-cam-conn-3232100023345.html) - 22€
+- [Arducam SkyMasterHDR](https://www.arducam.com/product/presalearducam-12mp-imx708-hdr-120-wide-angle-camera-module-with-m12-lens-for-raspberry-pi/) - 35€
+- [Comfast Wifi Adapter 8812bu](https://aliexpress.com/item/1005001311214882.html) - 11€
 
-#### Air
+Total Cost: 79€
 
-[Rpi-Zero2](https://shop.mchobby.be/en/pi-zero-12wwh/2334-raspberry-pi-zero-2-with-header-wireless-cam-conn-3232100023345.html) 22€
+### **OpenIPC**
 
-[Arducam SkyMasterHDR](https://www.arducam.com/product/presalearducam-12mp-imx708-hdr-120-wide-angle-camera-module-with-m12-lens-for-raspberry-pi/) 35€
+**Ground**
+- X86 Laptop
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
-[Comfast Wifi Adapter 8812bu](https://aliexpress.com/item/1005001311214882.html) 11€ 
+**Air**
+- [Imx307Lqr Goke Gk7205V200](https://aliexpress.com/item/1005005185165767.html) - 28€
+- [New Memory part](https://aliexpress.com/item/1005003093500630.html) - 3€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
--> 79€
+Total Cost: 57€
 
-**OpenIPC** 
+### **WFB-NG**
 
-#### Ground
+**Ground**
+- [Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) - 44€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
+*Monitor is also needed, but for fairness, I'll not factor the price in.*
 
-X86 Laptop 
+**Air**
+- [Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) - 18€
+- [Arducam IMX477 mini](https://www.uctronics.com/arducam-12mp-imx477-mini-high-quality-camera-module-for-raspberry-pi.html) - 75€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
+Total Cost (Air): 150€ + monitor
 
-#### Air
+### **Ruby FPV**
 
-[Imx307Lqr Goke Gk7205V200](https://aliexpress.com/item/1005005185165767.html) 28€
+**Ground**
+- [Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) - 44€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
+*Monitor is also needed, but for fairness, I'll not factor the price in.*
 
-[New Memory part](https://aliexpress.com/item/1005003093500630.html) 3€
+**Air**
+- [Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) - 18€
+- [Veye 327](https://www.amazon.com/VEYE-MIPI-327E-forRaspberry-Jetson-XavierNX-YT1-0-6I/dp/B08QHZCWSM?th=1) - 70€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
+Total Cost (Air): 145€ + monitor
 
--> 57€
+### **EZ-Wifibroadcast**
 
+**Ground**
+- [Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) - 44€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
-**WFB-NG** 
+*Monitor is also needed, but for fairness, I'll not factor the price in.*
 
-#### Ground
+**Air**
+- [Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) - 18€
+- [Veye 327](https://www.amazon.com/VEYE-MIPI-327E-forRaspberry-Jetson-XavierNX-YT1-0-6I/dp/B08QHZCWSM?th=1) - 70€
+- [Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) - 13€
 
-[Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) 44€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
-**Monitor is also needed, but for fairness I'll not factor the price in**
-
-#### Air
-
-[Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) 18€
-
-[Arducam IMX477 mini](https://www.uctronics.com/arducam-12mp-imx477-mini-high-quality-camera-module-for-raspberry-pi.html) 75€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
--> 150€ + monitor 
-
-
-**Ruby FPV**  
-
-#### Ground
-
-[Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) 44€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
-**Monitor is also needed, but for fairness I'll not factor the price in**
-
-#### Air
-
-[Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) 18€
-
-[Veye 327](https://www.amazon.com/VEYE-MIPI-327E-forRaspberry-Jetson-XavierNX-YT1-0-6I/dp/B08QHZCWSM?th=1) 70€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
--> 145€ + monitor 
-
-**EZ-Wifibroadcast**  
-
-#### Ground
-
-[Raspberry Pi 3](https://www.welectron.com/Raspberry-Pi-3-Modell-B-Made-in-UK_1) 44€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
-**Monitor is also needed, but for fairness I'll not factor the price in**
-
-#### Air
-[Rpi-Zero](https://www.reichelt.de/de/en/raspberry-pi-zero-w-v-1-1-1-ghz-512-mb-ram-wi-fi-bt-rasp-pi-zero-w-p256438.html) 18€
-
-[Veye 327](https://www.amazon.com/VEYE-MIPI-327E-forRaspberry-Jetson-XavierNX-YT1-0-6I/dp/B08QHZCWSM?th=1) 70€
-
-[Mini Realtek 8812AU](https://aliexpress.com/item/1005002595336788.html) 13€ 
-
--> 145€ + monitor 
+Total Cost (Air): 145€ + monitor
