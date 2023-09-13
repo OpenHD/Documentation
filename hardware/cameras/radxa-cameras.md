@@ -11,6 +11,8 @@ Currently, the camera support is limited to:
 | IMX219                   |             |   1   |
 | IMX415*                  |      *      |       |
 | Arducam IMX462 B0333     |      *      |   1   |
+| Arducam IMX708 B0310     |      *      |   1   |
+
 
 > **Note 1**: There currently appears to be no compatible adapter or camera with this sensor available for the Rock5.
 
