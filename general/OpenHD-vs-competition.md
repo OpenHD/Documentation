@@ -29,9 +29,11 @@
 
 **WFB-NG**: WFB-NG is a long-range packet radio link based on raw WiFi radio, accompanied by a few companion scripts and a Raspberry Pi 3 image (additional unofficial builds are available). Its primary focus is on the RF link, with basic OSD functionality for FPV use. WFB-NG is designed for developers who want to integrate it into their own systems. Its main selling point is a very optimized and slim link, which can be compiled (without the OSD) on many platforms.
 
-**Ruby FPV**: Ruby FPV is a dedicated FPV video and telemetry system designed for FPV enthusiasts. It features an extended and user-friendly OSD (and goggle navigation) and emphasizes package retransmission to improve video signal stability. It also has a relay mode. And OTA updates. The main selling points of Ruby FPV are its user-friendliness, Google-friendly features, and focus on delivering a reliable FPV experience.
+**Ruby FPV**: Ruby FPV is a dedicated FPV video and telemetry system designed for FPV enthusiasts. It features an extended and user-friendly OSD* and emphasizes package retransmission to improve video signal stability. It also has a relay mode. And OTA updates. The main selling points of Ruby FPV are its user-friendliness, Google-friendly features, and focus on delivering a reliable FPV experience. Just be prepared, that without soldered buttons you will not be able to use Ruby at all.
 
 **EZ-Wifibroadcast**: EZ-Wifibroadcast is the predecessor of OpenHD, laying the groundwork for what we now know as OpenHD. It was the first software focused on easing the configurability and usability of the Wifibroadcast-Link.
+
+* Ruby is the only software here, which is not usable without soldering Buttons to the Raspberry. There is no keyboard, mouse or touch control, so testing it out isn't that easy at all.
 
 ## Supported Camera Sensors
 
@@ -95,13 +97,13 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 ## Main Disadvantages
 
-**OpenHD**: Because of its high complexity and intelligent FEC, it needs more processing power than lower complexity systems -> no support for hardware that is more than 10 years old. And there is no easy Goggle-navigation (yet).
+**OpenHD**: Because of its high complexity and intelligent FEC, it needs more processing power than lower complexity systems -> no support for hardware that is more than 10 years old. Also the goggle-navigation is not finished, yet.
 
 **OpenIPC**: Because of its nature to hack IP cameras, high knowledge and good soldering and programming equipment are needed. No Groundstation with OSD yet (uses QOPENHD).It's also very limited in performance and space, which means that only the bare minimum functions are included and there isn't much space to add new ones, which means no dual Video no dynamic Settings, no high fec-percentages, no hotspots,no 40mhz mode, ...
 
 **WFB-NG**: Because of its complex and undynamic setup, and very outdated/slim wiki, configuration is a pain, the user needs to connect and change the system manually for most things.
 
-**Ruby FPV**: Because of its neglect of modern systems and inability to change to newer kernels or devices, there is no upgrade path for new hardware. Since the license is quite non-standard and parts are not documented and not open source and only one developer working on the project, features are slowly integrated and a lot is not possible to be changed without a complete redesign (render method, camera-implementation, etc.).
+**Ruby FPV**: Because of its neglect of modern systems and inability to change to newer kernels or devices, there is no upgrade path for new hardware. Since the license is quite non-standard and parts are not documented and not open source and only one developer working on the project, features are slowly integrated and a lot is not possible to be changed without a complete redesign (render method, camera-implementation, etc.). Also installing RubyFPV requires soldering buttons or buying a diy control board to use it at all.
 
 **EZ-Wifibroadcast**: Because of its discontinuation 4 years ago, there is no real chance to get updates here.
 
