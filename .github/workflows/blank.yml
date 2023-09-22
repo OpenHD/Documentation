@@ -16,3 +16,7 @@ jobs:
           export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
           brew update
           brew --version
+          brew install --head ortus-solutions/homebrew-boxtap/commandbox
+          box install gitbook-exporter
+          box update --system
+
