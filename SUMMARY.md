@@ -5,7 +5,7 @@
 ## General
 
 * [Features](general/features.md)
-* [OpenHD vs Alternatives](general/OpenHD-vs-competition.md)
+* [OpenHD vs Alternatives](general/OpenHD-vs-Alternatives.md)
 * [Troubleshooting](general/troubleshooting.md)
   * [General-FAQ](general/faq.md)
   * [Software-FAQ](general/software-faq.md)
