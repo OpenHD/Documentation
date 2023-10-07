@@ -54,7 +54,7 @@ Since we use very powerfull WiFi-Cards and most SBC's have limited USB-Output-Po
 
 ### Step 4: Flashing the Ground SBC for the first time
 
-First you should download our latest ([Image Writer](https://openhdfpv.org/downloads/)). Install it and configure it to boot as Ground, write it to your USB-Stick.
+First you should download our latest ([Image Writer](../downloads.md)). Install it and configure it to boot as Ground, write it to your USB-Stick.
 
 ### Step 5: Booting your Ground
 

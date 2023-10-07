@@ -15,7 +15,7 @@ description: Flashing Your Air and Ground Units with OpenHD Firmware
 # Installation Guide
 
 **Step 1:** 
-Download and install the latest OpenHD ImageWriter, which is based on the Raspberry Pi Imager, from [https://openhdfpv.org/downloads/](https://openhdfpv.org/downloads/).
+Download and install the latest OpenHD ImageWriter, which is based on the Raspberry Pi Imager, from [https://openhdfpv.org/downloads/](https://openhdfpv.org/downloads/) and [Backup Mirror](downloads.md).
 
 ![Download OpenHD ImageWriter](.gitbook/assets/Screenshot from 2022-11-12 16-46-44.png)
 

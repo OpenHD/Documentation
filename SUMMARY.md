@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](introduction.md)
+* [Downloads](downloads.md)
 
 ## General
 

@@ -61,10 +61,10 @@ The latest [Evo release](https://github.com/OpenHD/OpenHD/releases) of OpenHD in
 * The OSD overlay displayed on the receiver remains clear and functional even when video quality is compromised, ensuring essential flight information is still accessible.
 
 ### Streamlined Configuration
-* Configuration tasks are simplified through the use of QOpenHD and the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/), eliminating the need for complex configuration files.
+* Configuration tasks are simplified through the use of QOpenHD and the [OpenHD-ImageWriter](../downloads.md), eliminating the need for complex configuration files.
 
 ### Efficient Flashing Process
-* OpenHD flashing is recommended to be performed using the [OpenHD-ImageWriter](https://openhdfpv.org/downloads/) tool, streamlining the flashing procedure.
+* OpenHD flashing is recommended to be performed using the [OpenHD-ImageWriter](../downloads.md) tool, streamlining the flashing procedure.
 
 ### Low-Latency RC Control
 * Experience low-latency and high-update-rate remote control over the Wi-Fi broadcast link via USB joystick compatibility.
