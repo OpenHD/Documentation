@@ -22,7 +22,14 @@ jobs:
 
       - name: Generate Markdown File
         run: |
-          cat introduction.md > manual.md.fin
+          
+          cat mainpage.md > manual.md.fin
+          sed -n '/^## Table of Contents$/q;p' mainpage.md >> manual.md.fin
+          cat SUMMARY.md >> manual.md
+          sed -n '/^## About OpenHD/,$p' mainpage.md > manual.md.fin
+          cat introduction.md >> manual.md
+          cat downloads.md >> manual.md.fin
+          
           mv manual.md.fin manual.md
 
       - name: Generate PDF
