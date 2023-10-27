@@ -18,7 +18,7 @@ jobs:
           node-version: 14 # You can change the Node.js version as needed
 
       - name: Install Dependencies
-        run: npm install marked puppeteer-core --save
+        run: npm install markdown-pdf -g
 
       - name: Generate Markdown File
         run: |
@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate PDF
         run: |
-          npx puppeteer-core --no-sandbox manual.md manual.pdf
+          markdown-pdf manual.md
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
