@@ -39,7 +39,7 @@ jobs:
           cat general/faq.md >> manual.md.fin
           cat general/software-faq.md >> manual.md.fin
           cat general/contributing.md >> manual.md.fin
-          # cat general/team.md >> manual.md.fin
+          cat general/team.md >> manual.md.fin
           echo "#Installation" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
