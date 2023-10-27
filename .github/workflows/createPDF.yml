@@ -113,15 +113,15 @@ jobs:
           name: manual
           path: manual.pdf
 
-      - name: Upload to R2
-        shell: bash
+  release:
+    needs: generate-pdf
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: manual.pdf
+          title: "Release ${{ github.run_number }} - $(date +'%Y-%m-%d')"
         env:
-          aws_endpoint: "https://fra1.digitaloceanspaces.com"
-          aws_key_id: ${{ secrets.DIGITALOCEAN_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.DIGITALOCEAN_SECRET_ACCESS_KEY }}
-          aws_s3_bucket: openhd-images
-          AWS_EC2_METADATA_DISABLED: true
-        run: |
-          aws configure set aws_access_key_id $aws_key_id
-          aws configure set aws_secret_access_key $aws_secret_access_key 
-          aws s3 --endpoint-url $aws_endpoint cp manual.pdf s3://$aws_s3_bucket/manual.pdf
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
