@@ -94,7 +94,6 @@ jobs:
           echo "## Ground Station Software" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
-          cat ground-station-software/qopenhd.md >> manual.md.fin
           cat ground-station-software/qopenhd-osd-backup.md >> manual.md.fin
           cat ground-station-software/qgroundcontrol.md >> manual.md.fin
           cat ground-station-software/tower.md >> manual.md.fin
