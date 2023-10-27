@@ -132,6 +132,6 @@ jobs:
         with:
           files: manual.pdf
           tag_name: release
-          name: "Release ${{ github.run_number }} - $(date +'%Y-%m-%d')"
+          name: "OpenHD PDF"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
