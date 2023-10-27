@@ -23,56 +23,53 @@ jobs:
       - name: Generate Markdown File
         run: |
           
-          sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
-          cat SUMMARY.md >> manual.md.fin
-          sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
-          echo "## About OpenHD" >> manual.md.fin
-          cat introduction.md >> manual.md.fin
-          cat downloads.md >> manual.md.fin
-          echo "#General"
-          echo " --------------- "
-          echo " --------------- "
-          cat general/features.md >> manual.md.fin
-          cat general/OpenHD-vs-Alternatives.md >> manual.md.fin
-          cat general/troubleshooting.md >> manual.md.fin
-          cat general/faq.md >> manual.md.fin
-          cat general/software-faq.md >> manual.md.fin
-          cat general/contributing.md >> manual.md.fin
-          cat general/team.md >> manual.md.fin
-          echo "#Installation"
-          echo " --------------- "
-          echo " --------------- "
-          cat installation-guide.md >> manual.md.fin
-          echo "#Hardware"
-          echo " --------------- "
-          echo " --------------- "          
+          # sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
+          # cat SUMMARY.md >> manual.md.fin
+          # sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
+          # echo "## About OpenHD" >> manual.md.fin
+          # cat introduction.md >> manual.md.fin
+          # cat downloads.md >> manual.md.fin
+          # echo "#General"
+          # echo " --------------- "
+          # echo " --------------- "
+          # cat general/features.md >> manual.md.fin
+          # cat general/OpenHD-vs-Alternatives.md >> manual.md.fin
+          # cat general/troubleshooting.md >> manual.md.fin
+          # cat general/faq.md >> manual.md.fin
+          # cat general/software-faq.md >> manual.md.fin
+          # cat general/contributing.md >> manual.md.fin
+          # cat general/team.md >> manual.md.fin
+          # echo "#Installation"
+          # echo " --------------- "
+          # echo " --------------- "
+          # cat installation-guide.md >> manual.md.fin
+          # echo "#Hardware"
+          # echo " --------------- "
+          # echo " --------------- "          
+          # hardware/first-time-setup.md
+          # hardware/sbcs.md
+          # hardware/raspberry.md
+          # hardware/ochin.md
+          # hardware/X86.md
+          # hardware/radxa.md
+          # hardware/custom-hardware.md
+          # hardware/discontinued.md
+          # hardware/jetson.md
+          # hardware/cameras.md
+          # hardware/cameras/raspberry-cameras.md
+          # hardware/cameras/radxa-cameras.md
+          # hardware/cameras/usb-camera.md
+          # hardware/cameras/rpi-hdmi-to-csi.md
+          # hardware/cameras/hdmi-cameras-rpi.md
+          # hardware/cameras/ip-cameras.md
+          # hardware/cameras/special-camera.md
 
 
-          # Initialize variables
-          output_file=""
-          output_data=""
+          paste -d '\n' <(grep -E '^## ' SUMMARY.md) <(grep -oP '\[\K[^\]]+' SUMMARY.md) >> manual.md
 
-          # Read the SUMMARY.md file line by line
-          while IFS= read -r line; do
-            if [[ $line == "## "* ]]; then
-              # If a line starts with "##", create a new output file
-              if [ -n "$output_file" ]; then
-                echo -e "$output_data" > "$output_file"
-              fi
-              output_file="${line##"## "}"
-              output_data=""
-            else
-              # Append the line to the current output data
-              output_data+="$line\n"
-            fi
-          done < "SUMMARY.md"
 
-          # Write the last part
-          if [ -n "$output_file" ]; then
-            echo -e "$output_data" > "$output_file"
-          fi         
-          ls -a 
-          mv manual.md.fin manual.md
+
+          # mv manual.md.fin manual.md
 
       - name: Generate PDF
         run: |
