@@ -23,15 +23,7 @@ jobs:
 
       - name: Generate Markdown File
         run: |
-          find . -type f -name "*.md" -exec cat {} + > all_md_files.md
-
-      - name: Commit and Push Changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add all_md_files.md
-          git commit -m "Generate all_md_files.md"
-          git push
+          find . -type f -name "*.md" -exec cat {} + > all_md_files.final
 
       - name: Upload Generated Markdown File
         uses: actions/upload-artifact@v2
