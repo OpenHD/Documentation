@@ -87,22 +87,22 @@ jobs:
           # cat software-setup/ethernet-hotspot.md >> manual.md.fin
           # cat software-setup/wifi-hotspot.md >> manual.md.fin
           # cat software-setup/variable-bitrate.md >> manual.md.fin
-          echo "## Advanced Setup" >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          cat advanced-setup/air-recording.md >> manual.md.fin
-          cat advanced-setup/dual-camera.md >> manual.md.fin
-          echo "## Ground Station Software" >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          cat ground-station-software/qopenhd-osd-backup.md >> manual.md.fin
-          cat ground-station-software/qgroundcontrol.md >> manual.md.fin
-          cat ground-station-software/tower.md >> manual.md.fin
-          cat ground-station-software/fpv_vr.md >> manual.md.fin
-          echo "## Developers Corner" >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          echo " --------------- " >> manual.md.fin
-          cat developers/porting.md  >> manual.md.fin          
+          # echo "## Advanced Setup" >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # cat advanced-setup/air-recording.md >> manual.md.fin
+          # cat advanced-setup/dual-camera.md >> manual.md.fin
+          # echo "## Ground Station Software" >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # cat ground-station-software/qopenhd-osd-backup.md >> manual.md.fin
+          # cat ground-station-software/qgroundcontrol.md >> manual.md.fin
+          # cat ground-station-software/tower.md >> manual.md.fin
+          # cat ground-station-software/fpv_vr.md >> manual.md.fin
+          # echo "## Developers Corner" >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # echo " --------------- " >> manual.md.fin
+          # cat developers/porting.md  >> manual.md.fin          
           mv manual.md.fin manual.md
 
       - name: Generate PDF
