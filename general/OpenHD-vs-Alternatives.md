@@ -15,7 +15,7 @@
 | Updates           | Frequent | Periodic | Limited | Limited | Non-existent |
 | Open Source       | Yes | Partially | Yes | Partially | Yes |
 | Medium Range Setup Costs       | 79€ | 57€ | 150€ | 145€ | 145€ |
-| Latency on 720p (x86)  **   | 110 | 100 | 150 | ∞ | ∞ |
+| Latency on 720p (x86)  **   | 110 | 100 | 150 | NA | NA |
 | Latency on 720p (rpi)  **   | 120 | 120 | 120 | 125 | 120 |
 
 *Only officially listed devices
