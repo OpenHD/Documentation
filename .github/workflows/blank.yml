@@ -25,7 +25,7 @@ jobs:
           
           sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
           cat SUMMARY.md >> manual.md
-          sed -n '/^## About OpenHD/,$p' manual/mainpage.md > manual.md.fin
+          sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
           cat introduction.md >> manual.md
           cat downloads.md >> manual.md.fin
           mv manual.md.fin manual.md
