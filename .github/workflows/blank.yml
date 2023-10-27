@@ -18,16 +18,16 @@ jobs:
           node-version: 14 # You can change the Node.js version as needed
 
       - name: Install Dependencies
-        run: npm install markdown-pdf -g
+        run: sudo apt-get update && sudo apt-get install -y pandoc
 
       - name: Generate Markdown File
         run: |
-          find . -type f -name "*.md" -exec cat {} + > manual.md.fin
+          introduction > manual.md.fin
           mv manual.md.fin manual.md
 
       - name: Generate PDF
         run: |
-          markdown-pdf manual.md
+          pandoc -h manual.md -o manual.pdf
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
