@@ -23,53 +23,87 @@ jobs:
       - name: Generate Markdown File
         run: |
           
-          # sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
-          # cat SUMMARY.md >> manual.md.fin
-          # sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
-          # echo "## About OpenHD" >> manual.md.fin
-          # cat introduction.md >> manual.md.fin
-          # cat downloads.md >> manual.md.fin
-          # echo "#General"
-          # echo " --------------- "
-          # echo " --------------- "
-          # cat general/features.md >> manual.md.fin
-          # cat general/OpenHD-vs-Alternatives.md >> manual.md.fin
-          # cat general/troubleshooting.md >> manual.md.fin
-          # cat general/faq.md >> manual.md.fin
-          # cat general/software-faq.md >> manual.md.fin
-          # cat general/contributing.md >> manual.md.fin
-          # cat general/team.md >> manual.md.fin
-          # echo "#Installation"
-          # echo " --------------- "
-          # echo " --------------- "
-          # cat installation-guide.md >> manual.md.fin
-          # echo "#Hardware"
-          # echo " --------------- "
-          # echo " --------------- "          
-          # hardware/first-time-setup.md
-          # hardware/sbcs.md
-          # hardware/raspberry.md
-          # hardware/ochin.md
-          # hardware/X86.md
-          # hardware/radxa.md
-          # hardware/custom-hardware.md
-          # hardware/discontinued.md
-          # hardware/jetson.md
-          # hardware/cameras.md
-          # hardware/cameras/raspberry-cameras.md
-          # hardware/cameras/radxa-cameras.md
-          # hardware/cameras/usb-camera.md
-          # hardware/cameras/rpi-hdmi-to-csi.md
-          # hardware/cameras/hdmi-cameras-rpi.md
-          # hardware/cameras/ip-cameras.md
-          # hardware/cameras/special-camera.md
-
-
-          paste -d '\n' <(grep -E '^## ' SUMMARY.md) <(grep -oP '\[\K[^\]]+' SUMMARY.md) >> manual.md
-
-
-
-          # mv manual.md.fin manual.md
+          sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
+          cat SUMMARY.md >> manual.md.fin
+          sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
+          echo "## About OpenHD" >> manual.md.fin
+          cat introduction.md >> manual.md.fin
+          cat downloads.md >> manual.md.fin
+          echo "#General" >> manual.md.fin
+          echo " --------------- "
+          echo " --------------- "
+          cat general/features.md >> manual.md.fin
+          cat general/OpenHD-vs-Alternatives.md >> manual.md.fin
+          cat general/troubleshooting.md >> manual.md.fin
+          cat general/faq.md >> manual.md.fin
+          cat general/software-faq.md >> manual.md.fin
+          cat general/contributing.md >> manual.md.fin
+          cat general/team.md >> manual.md.fin
+          echo "#Installation" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          cat installation-guide.md >> manual.md.fin
+          echo "#Hardware" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          hardware/first-time-setup.md >> manual.md.fin
+          hardware/sbcs.md >> manual.md.fin
+          hardware/raspberry.md >> manual.md.fin
+          hardware/ochin.md >> manual.md.fin
+          hardware/X86.md >> manual.md.fin
+          hardware/radxa.md >> manual.md.fin
+          hardware/custom-hardware.md >> manual.md.fin
+          hardware/discontinued.md >> manual.md.fin
+          hardware/jetson.md >> manual.md.fin
+          hardware/cameras.md >> manual.md.fin
+          hardware/cameras/raspberry-cameras.md >> manual.md.fin
+          hardware/cameras/radxa-cameras.md >> manual.md.fin
+          hardware/cameras/usb-camera.md >> manual.md.fin
+          hardware/cameras/rpi-hdmi-to-csi.md >> manual.md.fin
+          hardware/cameras/hdmi-cameras-rpi.md >> manual.md.fin
+          hardware/cameras/ip-cameras.md >> manual.md.fin
+          hardware/cameras/special-camera.md >> manual.md.fin
+          hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
+          hardware/cameras/custom-cameras.md >> manual.md.fin
+          hardware/wifi-adapters.md >> manual.md.fin
+          hardware/antennas.md >> manual.md.fin
+          hardware/flightControllers.md >> manual.md.fin
+          hardware/wiring.md >> manual.md.fin
+          hardware/displays.md >> manual.md.fin
+          hardware/hardware.conf.md >> manual.md.fin
+          echo "## Software Setup" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          cat software-setup/inav.md >> manual.md.fin
+          cat software-setup/ardupilot.md >> manual.md.fin
+          cat software-setup/betaflight.md >> manual.md.fin
+          cat software-setup/recording.md >> manual.md.fin
+          cat software-setup/tx-power.md >> manual.md.fin
+          cat software-setup/mcs-via-rc.md >> manual.md.fin
+          cat software-setup/joystick-rc.md >> manual.md.fin
+          cat software-setup/camera-settings.md >> manual.md.fin
+          cat software-setup/tethering.md >> manual.md.fin
+          cat software-setup/ethernet-hotspot.md >> manual.md.fin
+          cat software-setup/wifi-hotspot.md >> manual.md.fin
+          cat software-setup/variable-bitrate.md >> manual.md.fin
+          echo "## Advanced Setup" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          cat advanced-setup/air-recording.md >> manual.md.fin
+          cat advanced-setup/dual-camera.md >> manual.md.fin
+          echo "## Ground Station Software" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          cat ground-station-software/qopenhd.md >> manual.md.fin
+          cat ground-station-software/qopenhd-osd-backup.md >> manual.md.fin
+          cat ground-station-software/qgroundcontrol.md >> manual.md.fin
+          cat ground-station-software/tower.md >> manual.md.fin
+          cat ground-station-software/fpv_vr.md >> manual.md.fin
+          echo "## Developers Corner" >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
+          cat developers/porting.md  >> manual.md.fin          
+          mv manual.md.fin manual.md
 
       - name: Generate PDF
         run: |
