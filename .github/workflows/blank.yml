@@ -2,8 +2,7 @@ name: Generate and Upload PDF
 
 on:
   push:
-    branches:
-      - main # Change this to your repository's main branch
+
 
 jobs:
   generate-pdf:
