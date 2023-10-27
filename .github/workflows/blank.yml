@@ -1,12 +1,12 @@
-name: Generate Markdown File
+name: Generate and Upload PDF
 
 on:
   push:
     branches:
-      - evo
+      - main # Change this to your repository's main branch
 
 jobs:
-  generate-markdown:
+  generate-pdf:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,17 +16,22 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 14 # You can change the Node.js version as needed
 
       - name: Install Dependencies
-        run: npm install marked --save
+        run: npm install marked puppeteer-core --save
 
       - name: Generate Markdown File
         run: |
-          find . -type f -name "*.md" -exec cat {} + > all_md_files.final
+          find . -type f -name "*.md" -exec cat {} + > manual.md.fin
+          mv manual.md.fin manual.md
 
-      - name: Upload Generated Markdown File
+      - name: Generate PDF
+        run: |
+          npx puppeteer-core --no-sandbox manual.md manual.pdf
+
+      - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: all_md_files
-          path: all_md_files.final
+          name: manual
+          path: manual.pdf
