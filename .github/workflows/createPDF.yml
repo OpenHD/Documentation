@@ -117,11 +117,19 @@ jobs:
     needs: generate-pdf
     runs-on: ubuntu-latest
     steps:
+      - name: Create Release Tag
+        run: git tag -a v0.1 -m "Version 0.1"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push Release Tag
+        run: git push --follow-tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           files: manual.pdf
-          title: "Release ${{ github.run_number }} - $(date +'%Y-%m-%d')"
+          name: "Release ${{ github.run_number }} - $(date +'%Y-%m-%d')"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
