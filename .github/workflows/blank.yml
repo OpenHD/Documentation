@@ -98,7 +98,7 @@ jobs:
           cat ground-station-software/qopenhd-osd-backup.md >> manual.md.fin
           cat ground-station-software/qgroundcontrol.md >> manual.md.fin
           # cat ground-station-software/tower.md >> manual.md.fin
-          # cat ground-station-software/fpv_vr.md >> manual.md.fin
+          cat ground-station-software/fpv_vr.md >> manual.md.fin
           echo "## Developers Corner" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
