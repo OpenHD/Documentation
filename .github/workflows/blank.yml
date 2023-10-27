@@ -75,12 +75,12 @@ jobs:
           echo "## Software Setup" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
-          cat software-setup/inav.md >> manual.md.fin
-          cat software-setup/ardupilot.md >> manual.md.fin
-          cat software-setup/betaflight.md >> manual.md.fin
-          cat software-setup/recording.md >> manual.md.fin
-          cat software-setup/tx-power.md >> manual.md.fin
-          cat software-setup/mcs-via-rc.md >> manual.md.fin
+          # cat software-setup/inav.md >> manual.md.fin
+          # cat software-setup/ardupilot.md >> manual.md.fin
+          # cat software-setup/betaflight.md >> manual.md.fin
+          # cat software-setup/recording.md >> manual.md.fin
+          # cat software-setup/tx-power.md >> manual.md.fin
+          # cat software-setup/mcs-via-rc.md >> manual.md.fin
           # cat software-setup/joystick-rc.md >> manual.md.fin
           # cat software-setup/camera-settings.md >> manual.md.fin
           # cat software-setup/tethering.md >> manual.md.fin
