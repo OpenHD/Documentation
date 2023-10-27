@@ -20,7 +20,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests markdown2pdf beautifulsoup4
+        pip install requests beautifulsoup4
+        # Install Pandoc
+        sudo apt-get update
+        sudo apt-get install -y pandoc
       working-directory: ${{ github.workspace }}
 
     - name: Generate PDF
@@ -51,8 +54,8 @@ jobs:
         # Save the modified SUMMARY.md
         echo -e "$SUMMARY_MD_CONTENT" > "${DOWNLOAD_DIR}/SUMMARY.md"
         
-        # Convert SUMMARY.md to PDF using markdown2pdf
-        markdown2pdf.convert "${DOWNLOAD_DIR}/SUMMARY.md" "${DOWNLOAD_DIR}/summary.pdf"
+        # Convert SUMMARY.md to PDF using Pandoc
+        pandoc "${DOWNLOAD_DIR}/SUMMARY.md" -o "${DOWNLOAD_DIR}/summary.pdf"
         
         echo "PDF generated: ${DOWNLOAD_DIR}/summary.pdf"
       working-directory: ${{ github.workspace }}
