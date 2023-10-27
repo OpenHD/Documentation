@@ -1,4 +1,4 @@
-name: Generate PDF from SUMMARY.md and Upload
+name: Generate PDF from SUMMARY.md
 
 on:
   push:
@@ -20,46 +20,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests beautifulsoup4
-        # Install Pandoc
-        sudo apt-get update
-        sudo apt-get install -y pandoc
-        # Install pdflatex
-        sudo apt-get install -y texlive-xetex
+        pip install requests beautifulsoup4 markdown2pdf
       working-directory: ${{ github.workspace }}
 
-    - name: Generate PDF
+    - name: Execute PDF generation script
       run: |
-        # Directory to store downloaded files
-        DOWNLOAD_DIR="downloaded_files"
-        mkdir -p "$DOWNLOAD_DIR"
-        
-        # Function to process links in SUMMARY.md
-        process_links() {
-            local content="$1"
-            while IFS= read -r -d $'\n' link; do
-                if [[ "$link" =~ ^\[[^\]]+\]:\ (.+)$ ]]; then
-                    link_url="${BASH_REMATCH[1]}"
-                    if [[ "$link_url" != http* ]]; then
-                        # Replace the link in the SUMMARY.md with the local file path
-                        content="${content//[$link]: $link_url/[$link]: $link_url}"
-                    fi
-                fi
-            done < <(echo -e "$content")
-            echo "$content"
-        }
-        
-        # Process links in SUMMARY.md
-        SUMMARY_MD_CONTENT="$(cat SUMMARY.md)"
-        SUMMARY_MD_CONTENT=$(process_links "$SUMMARY_MD_CONTENT")
-        
-        # Save the modified SUMMARY.md
-        echo -e "$SUMMARY_MD_CONTENT" > "${DOWNLOAD_DIR}/SUMMARY.md"
-        
-        # Convert SUMMARY.md to PDF using Pandoc
-        pandoc "${DOWNLOAD_DIR}/SUMMARY.md" -o "${DOWNLOAD_DIR}/summary.pdf"
-        
-        echo "PDF generated: ${DOWNLOAD_DIR}/summary.pdf"
+        python generate_pdf.py
       working-directory: ${{ github.workspace }}
 
     - name: Upload PDF
