@@ -64,14 +64,14 @@ jobs:
           # cat hardware/cameras/hdmi-cameras-rpi.md >> manual.md.fin
           # cat hardware/cameras/ip-cameras.md >> manual.md.fin
           # cat hardware/cameras/special-camera.md >> manual.md.fin
-          cat hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
+          # cat hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
           # cat hardware/cameras/custom-cameras.md >> manual.md.fin
           # cat hardware/wifi-adapters.md >> manual.md.fin
           # cat hardware/antennas.md >> manual.md.fin
-          cat hardware/flightControllers.md >> manual.md.fin
-          cat hardware/wiring.md >> manual.md.fin
-          cat hardware/displays.md >> manual.md.fin
-          cat hardware/hardware.conf.md >> manual.md.fin
+          # cat hardware/flightControllers.md >> manual.md.fin
+          # cat hardware/wiring.md >> manual.md.fin
+          # cat hardware/displays.md >> manual.md.fin
+          # cat hardware/hardware.conf.md >> manual.md.fin
           # echo "## Software Setup" >> manual.md.fin
           # echo " --------------- " >> manual.md.fin
           # echo " --------------- " >> manual.md.fin
