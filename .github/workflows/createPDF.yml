@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14 # You can change the Node.js version as needed
+          node-version: 16 # You can change the Node.js version as needed
 
       - name: Install Dependencies
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-extra texlive-latex-extra texlive-fonts-recommended 
@@ -113,10 +113,6 @@ jobs:
           name: manual
           path: manual.pdf
 
-  release:
-    needs: generate-pdf
-    runs-on: ubuntu-latest
-    steps:
       - name: Create Release Tag
         run: git tag -a v0.1 -m "Version 0.1"
         env:
