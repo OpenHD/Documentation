@@ -1,7 +1,3 @@
----
-description: Welcome to OpenHD
----
-
 # Introduction
 
 &#x20;
