@@ -66,8 +66,8 @@ jobs:
           # cat hardware/cameras/special-camera.md >> manual.md.fin
           cat hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
           # cat hardware/cameras/custom-cameras.md >> manual.md.fin
-          cat hardware/wifi-adapters.md >> manual.md.fin
-          cat hardware/antennas.md >> manual.md.fin
+          # cat hardware/wifi-adapters.md >> manual.md.fin
+          # cat hardware/antennas.md >> manual.md.fin
           cat hardware/flightControllers.md >> manual.md.fin
           cat hardware/wiring.md >> manual.md.fin
           cat hardware/displays.md >> manual.md.fin
