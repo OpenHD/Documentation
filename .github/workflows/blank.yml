@@ -30,8 +30,8 @@ jobs:
           cat introduction.md >> manual.md.fin
           cat downloads.md >> manual.md.fin
           echo "#General" >> manual.md.fin
-          echo " --------------- "
-          echo " --------------- "
+          echo " --------------- " >> manual.md.fin
+          echo " --------------- " >> manual.md.fin
           cat general/features.md >> manual.md.fin
           cat general/OpenHD-vs-Alternatives.md >> manual.md.fin
           cat general/troubleshooting.md >> manual.md.fin
@@ -46,31 +46,31 @@ jobs:
           echo "#Hardware" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
-          hardware/first-time-setup.md >> manual.md.fin
-          hardware/sbcs.md >> manual.md.fin
-          hardware/raspberry.md >> manual.md.fin
-          hardware/ochin.md >> manual.md.fin
-          hardware/X86.md >> manual.md.fin
-          hardware/radxa.md >> manual.md.fin
-          hardware/custom-hardware.md >> manual.md.fin
-          hardware/discontinued.md >> manual.md.fin
-          hardware/jetson.md >> manual.md.fin
-          hardware/cameras.md >> manual.md.fin
-          hardware/cameras/raspberry-cameras.md >> manual.md.fin
-          hardware/cameras/radxa-cameras.md >> manual.md.fin
-          hardware/cameras/usb-camera.md >> manual.md.fin
-          hardware/cameras/rpi-hdmi-to-csi.md >> manual.md.fin
-          hardware/cameras/hdmi-cameras-rpi.md >> manual.md.fin
-          hardware/cameras/ip-cameras.md >> manual.md.fin
-          hardware/cameras/special-camera.md >> manual.md.fin
-          hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
-          hardware/cameras/custom-cameras.md >> manual.md.fin
-          hardware/wifi-adapters.md >> manual.md.fin
-          hardware/antennas.md >> manual.md.fin
-          hardware/flightControllers.md >> manual.md.fin
-          hardware/wiring.md >> manual.md.fin
-          hardware/displays.md >> manual.md.fin
-          hardware/hardware.conf.md >> manual.md.fin
+          cat hardware/first-time-setup.md >> manual.md.fin
+          cat hardware/sbcs.md >> manual.md.fin
+          cat hardware/raspberry.md >> manual.md.fin
+          cat hardware/ochin.md >> manual.md.fin
+          cat hardware/X86.md >> manual.md.fin
+          cat hardware/radxa.md >> manual.md.fin
+          cat hardware/custom-hardware.md >> manual.md.fin
+          cat hardware/discontinued.md >> manual.md.fin
+          cat hardware/jetson.md >> manual.md.fin
+          cat hardware/cameras.md >> manual.md.fin
+          cat hardware/cameras/raspberry-cameras.md >> manual.md.fin
+          cat hardware/cameras/radxa-cameras.md >> manual.md.fin
+          cat hardware/cameras/usb-camera.md >> manual.md.fin
+          cat hardware/cameras/rpi-hdmi-to-csi.md >> manual.md.fin
+          cat hardware/cameras/hdmi-cameras-rpi.md >> manual.md.fin
+          cat hardware/cameras/ip-cameras.md >> manual.md.fin
+          cat hardware/cameras/special-camera.md >> manual.md.fin
+          cat hardware/cameras/custom-unmanaged-camera.md >> manual.md.fin
+          cat hardware/cameras/custom-cameras.md >> manual.md.fin
+          cat hardware/wifi-adapters.md >> manual.md.fin
+          cat hardware/antennas.md >> manual.md.fin
+          cat hardware/flightControllers.md >> manual.md.fin
+          cat hardware/wiring.md >> manual.md.fin
+          cat hardware/displays.md >> manual.md.fin
+          cat hardware/hardware.conf.md >> manual.md.fin
           echo "## Software Setup" >> manual.md.fin
           echo " --------------- " >> manual.md.fin
           echo " --------------- " >> manual.md.fin
