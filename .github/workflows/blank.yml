@@ -43,7 +43,35 @@ jobs:
           echo " --------------- "
           echo " --------------- "
           cat installation-guide.md >> manual.md.fin
-          
+          echo "#Hardware"
+          echo " --------------- "
+          echo " --------------- "          
+
+
+          # Initialize variables
+          output_file=""
+          output_data=""
+
+          # Read the SUMMARY.md file line by line
+          while IFS= read -r line; do
+            if [[ $line == "## "* ]]; then
+              # If a line starts with "##", create a new output file
+              if [ -n "$output_file" ]; then
+                echo -e "$output_data" > "$output_file"
+              fi
+              output_file="${line##"## "}"
+              output_data=""
+            else
+              # Append the line to the current output data
+              output_data+="$line\n"
+            fi
+          done < "SUMMARY.md"
+
+          # Write the last part
+          if [ -n "$output_file" ]; then
+            echo -e "$output_data" > "$output_file"
+          fi         
+          ls -a 
           mv manual.md.fin manual.md
 
       - name: Generate PDF
