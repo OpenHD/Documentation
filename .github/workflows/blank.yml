@@ -24,10 +24,8 @@ jobs:
         run: |
           mkdir ../.gitbook
           cp -Rfv  .gitbook/* ../.gitbook/
-          sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
+          cat manual/mainpage.md >> manual.md.fin
           cat SUMMARY.md >> manual.md.fin
-          sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
-          echo "## About OpenHD" >> manual.md.fin
           cat introduction.md >> manual.md.fin
           cat downloads.md >> manual.md.fin
           echo "#General" >> manual.md.fin
