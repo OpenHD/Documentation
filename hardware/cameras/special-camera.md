@@ -48,13 +48,13 @@ Here are brief descriptions of individual cameras mentioned earlier. Carefully r
 
 A high-quality thermal camera with 384x288 resolution, a large germanium lens, and a 25Hz frame rate. Though more expensive, its thermal performance is excellent. These cameras work as regular webcams, requiring no special driver.
 
-![Hti-301 Thermal Camera](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/hti-301.jpg?raw=true)
+![Hti-301 Thermal Camera](.gitbook/assets/hti-301.jpg)
 
 #### FLIR Boson 320
 
 A 320x256 thermal imager core with a 60Hz frame rate. Expensive but equipped with Germanium lenses. Primarily designed for integration in larger camera systems or drones. Requires an appropriate connection board. Export controlled due to the high frame rate.
 
-![FLIR Boson 320 Thermal Core](https://github.com/OpenHD/OpenHD/blob/fc9d050b3d8d9bc2493895b558ee2f13f6ec15b1/wiki-content/Thermal-Cameras/flir-boson-320.jpg?raw=true)
+![FLIR Boson 320 Thermal Core](.gitbook/assets/flir-boson-320.jpg)
 
 ### Lenses
 

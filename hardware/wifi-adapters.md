@@ -59,7 +59,7 @@ The ASUS AC56 adapter is currently the most popular choice for OpenHD. Its small
 
 ## Taobao Card
 
-![Taobao Card](https://github.com/OpenHD/OpenHD/blob/2.3-evo/wiki-content/Hardware_Supported%20WiFi%20adapters/taobaocard.jpg?raw=true)
+![Taobao Card](.gitbook/assets/taobaocard.jpg)
 
 [Store link](https://a.aliexpress.com/_rIjofM)
 

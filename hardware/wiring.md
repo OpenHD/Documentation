@@ -37,10 +37,10 @@ It is also strongly recommended that you solder the USB data lines. On some wifi
 * The system can potentially interfere with 433Mhz, 868Mhz LRS, or GPS
   * If you encounter problems like this, consider separating, shielding or changing some of the components (ask us for help)
 
-![Wiring-Pi0\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi0\_sm.jpg) ![Wiring-Pi3\_sm.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi3\_sm.jpg) ![Wiring-052nh.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-052nh.jpg) ![Wiring-Pi1B.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Wiring-Pi1B.jpg)
+![Wiring-Pi0\_sm.jpg](.gitbook/assets/Wiring-Pi0\_sm.jpg) ![Wiring-Pi3\_sm.jpg](.gitbook/assets/Wiring-Pi3\_sm.jpg) ![Wiring-052nh.jpg](.gitbook/assets/Wiring-052nh.jpg) ![Wiring-Pi1B.jpg](.gitbook/assets/Wiring-Pi1B.jpg)
 
 Example of a raspberry pi powered through the GPIO pins (+ 5V -> pin 4 / ground -> pin 6) :
 
-![groundPi\_power\_wiring.jpg](https://raw.githubusercontent.com/OpenHD/OpenHD/2.3-evo/wiki-content/Hardware\_Propper%20Wiring/Yes21\_groundPi\_power\_wiring.jpg)
+![groundPi\_power\_wiring.jpg](.gitbook/assets/Yes21\_groundPi\_power\_wiring.jpg)
 
 The 3A BEC can also power a 7" HDMI screen with a micro USB connector.

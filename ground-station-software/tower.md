@@ -17,5 +17,6 @@ For telemetry, set protocol to "UDP" and leave default server port 14550. Click 
 
 For video, change settings according to the following screenshots. Please note, the Tower App will not display the video stream if it doesn't receive telemetry. First make sure that telemetry works, then configure video!
 
-![Tower\_Settings\_Android\_2\_sm.png](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/GCS_Tower/Tower_Settings_Android_1_sm.png) ![Tower\_Settings\_Android\_2\_sm.png](https://github.com/HD-Fpv/Open.HD/raw/master/wiki-content/GCS_Tower/Tower_Settings_Android_2_sm.png)
+![Tower\_Settings\_Android\_2\_sm.png](.gitbook/assets/Tower_Settings_Android_1_sm.png) 
+![Tower\_Settings\_Android\_2\_sm.png](.gitbook/assets/Tower_Settings_Android_2_sm.png)
 

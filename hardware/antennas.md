@@ -65,5 +65,5 @@ where:
 
 To understand the impact in range against the transmitter power, the below logarithmic graph shows some calculations using different antenna sets:
 
-![range vs power graph](https://github.com/Andres-160/Open.HD/raw/master/wiki-content/Community_Pictures/FPV%20range.png)
+![range vs power graph](.gitbook/assets/FPVrange.png)
 
