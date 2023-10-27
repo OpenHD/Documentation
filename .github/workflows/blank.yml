@@ -22,7 +22,8 @@ jobs:
 
       - name: Generate Markdown File
         run: |
-          cp -Rf * ../
+          mkdir ../.gitbook
+          cp -Rfv  .gitbook/* ../.gitbook/
           sed -n '/^## Table of Contents$/q;p' manual/mainpage.md >> manual.md.fin
           cat SUMMARY.md >> manual.md.fin
           sed -n '/^## About OpenHD/,$p' manual/mainpage.md >> manual.md.fin
