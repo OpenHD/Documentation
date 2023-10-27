@@ -22,7 +22,7 @@ jobs:
 
       - name: Generate Markdown File
         run: |
-          introduction > manual.md.fin
+          cat introduction.md > manual.md.fin
           mv manual.md.fin manual.md
 
       - name: Generate PDF
