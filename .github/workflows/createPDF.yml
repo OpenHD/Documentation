@@ -113,6 +113,11 @@ jobs:
           name: manual
           path: manual.pdf
 
+      - name: Set Git User Identity
+        run: |
+          git config --global user.email "raphael@openhdfpv.org"
+          git config --global user.name "Raphael"
+
       - name: Create Release Tag
         run: git tag -a v0.1 -m "Version 0.1"
         env:
