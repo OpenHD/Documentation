@@ -1,8 +1,6 @@
 # Introduction
 
-&#x20;
-
-<figure><img src=".gitbook/assets/plain_openhd_logo.jpg" alt=""><figcaption></figcaption></figure>
+![OpenHD-Logo](.gitbook/assets/plain_openhd_logo.jpg)
 
 OpenHD is a suite of software designed for long-range video transmission, telemetry, and RC control. While we originally designed it with hobbyist drones in mind, it can be adapted to a wide range of other applications as well.
 
