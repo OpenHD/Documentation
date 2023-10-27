@@ -105,12 +105,12 @@ jobs:
           cat developers/porting.md  >> manual.md.fin          
           mv manual.md.fin manual.md
 
-      - name: Generate PDF
-        run: |
-          pandoc -s manual.md -o manual.pdf
+      # - name: Generate PDF
+      #   run: |
+      #     pandoc -s manual.md -o manual.pdf
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
         with:
           name: manual
-          path: manual.pdf
+          path: manual.md
