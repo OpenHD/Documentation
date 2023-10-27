@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate PDF
         run: |
-          pandoc -h manual.md -o manual.pdf
+          pandoc -s manual.md -o manual.pdf
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
