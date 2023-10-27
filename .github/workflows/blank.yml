@@ -24,6 +24,8 @@ jobs:
         # Install Pandoc
         sudo apt-get update
         sudo apt-get install -y pandoc
+        # Install pdflatex
+        sudo apt-get install -y texlive-xetex
       working-directory: ${{ github.workspace }}
 
     - name: Generate PDF
