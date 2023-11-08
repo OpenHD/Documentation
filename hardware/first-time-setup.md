@@ -30,7 +30,7 @@ Pi Zero 1 is not supported you need the version 2 !
 
 
 
-### Air more suffisticated (better for advanced features/dual Camera)
+### Air more sophisticated (better for advanced features/dual Camera)
 * A Raspberry CM4 with EMMC with:
   * An [Ochin CM4 carrier](ochin.md) board
   * We recommend fitting a cooler to the CM4, because it really can get hot.
