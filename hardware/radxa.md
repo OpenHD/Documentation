@@ -18,3 +18,13 @@ The following Radxa SBC models are currently supported:
 | --------------------- |
 | Radxa Rock5B          |
 | Radxa Rock5A          |
+
+The following Radxa SBC models are currently being worked on:
+
+| SBC                   | 
+| --------------------- |
+| Radxa CM3             |
+| Core3566*             |
+| Radxa Zero3W          |
+
+*not technically radxa but we run radxa software on that board, it's also not the best working board, so it may take a lot of time until it is perfectly supported
