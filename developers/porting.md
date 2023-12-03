@@ -97,6 +97,12 @@ To identify KMS-planes for hardware decoding, follow these steps:
 
 2. Use `modetest -p` to check for available planes for `kmssink`.
 
+### Debugging
+
+Logging is via standard Linux journalling
+
+1. Open a second terminal and type `journalctl -f` for "live" logs
+
 ## Conclusion
 
 Running OpenHD and QOpenHD on unsupported hardware requires a deep understanding of hardware capabilities, Linux kernel features, and the intricacies of video processing. By following the steps outlined in this guide, you can work towards achieving successful implementation on your chosen hardware. Keep in mind that the process may involve trial and error, as well as manual debugging to overcome potential challenges. Also keep in mind, that the developers can not help you with every step, if you are not capable of doing it without much help, please use the supported platforms.
