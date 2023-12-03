@@ -6,14 +6,20 @@ Virtually any screen/monitor connected to the HDMI port on your Pi will work. Ad
 
 > **Note 1**: The type and model of your monitor will affect the latency since response time, picture enhancement, and refresh rate will add latency. The best latency can be achieved with low response time, gaming monitors with a refresh rate of more than 120Hz.
 
-> **Screen scale**:
-On embedded devices (RPI, ROCK) you have to manually adjust your screen scale (scale of text, ui elements) in QOpenHD when using displays >720p.
-You can do so by going to OSD / Screen and adjust the screen scale.
+## Screen Scale
 
-Recommended values:
->=720p: Default (1.0)
->=1080p: 1.5
->=4k: 2.0
+When using QOpenHD on embedded devices such as RPI or ROCK with displays exceeding 720p resolution, it may be necessary to manually adjust the screen scale, affecting the size of text and UI elements.
+
+To make these adjustments, follow these steps:
+
+1. Navigate to OSD / Screen in the QOpenHD interface.
+2. Locate the option to adjust the screen scale.
+
+Recommended values for different resolutions:
+
+- ≥720p: Default (1.0)
+- ≥1080p: 1.5
+- ≥4k: 2.0
 
 ## DSI Displays
 
