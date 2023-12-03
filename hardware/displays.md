@@ -6,6 +6,15 @@ Virtually any screen/monitor connected to the HDMI port on your Pi will work. Ad
 
 > **Note 1**: The type and model of your monitor will affect the latency since response time, picture enhancement, and refresh rate will add latency. The best latency can be achieved with low response time, gaming monitors with a refresh rate of more than 120Hz.
 
+> **Note 2**:
+On embedded devices (RPI, ROCK) you have to manually adjust your screen scale (scale of text, ui elements) in QOpenHD when using displays >720p.
+You can do so by going to OSD / Screen and adjust the screen scale.
+
+Recommended values:
+<=720p: Default (1.0)
+>=1080p: 1.5
+>=4k: 2.0
+
 ## DSI Displays
 
 On the Raspberry Pi, we're using the FKMS driver to enable low latency decoding. Some of the newer monitors require the KMS driver, which does not work with OpenHD. Only Official Raspberry Pi DSI monitors can use FKMS.
