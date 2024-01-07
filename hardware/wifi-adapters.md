@@ -35,7 +35,7 @@ You can achieve RX diversity by using either a WiFi card with multiple antennas 
 
 Please note that this list includes tested devices, but there are many more supported devices.
 
-## Additional WiFi Devices with Reduced Functions
+## Additional WiFi Devices with Reduced Functions (might be discontinued soon)
 
 | Name               | Band  | TX Power | Chip     | STBC/LDPC | RC  | Need Heatsink | Antennas   |
 | :----------------- | :---- | :------- | :------- | :-------- | :-- | :------------ | :--------- |
