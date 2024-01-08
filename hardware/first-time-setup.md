@@ -73,7 +73,7 @@ If you're not using the Ochin board,you can jump to the next step. If you're usi
 
 ### Step 6: Flashing the Air SBC
 
-Use the ImageWriter, configure your SBC with the settings button and flash your device.
+Use the ImageWriter to select the correct image for the SBC you plan to use. Configure ImageWriter as follows: Set SBC to AIR. Write the image to the correct media, usually a microSD card. Boot the SBC using this media; the boot process may take several minutes.
 
 ### Step 7: Starting the Air SBC
 
