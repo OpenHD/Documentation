@@ -37,17 +37,7 @@ Please note that this list includes tested devices, but there are many more supp
 
 ## Additional WiFi Devices with Reduced Functions (might be discontinued soon)
 
-| Name               | Band  | TX Power | Chip     | STBC/LDPC | RC  | Need Heatsink | Antennas   |
-| :----------------- | :---- | :------- | :------- | :-------- | :-- | :------------ | :--------- |
-| ALFA AWUS036NHA    | 2.3-2.4 | 280mW | AR9271 |           | X   |               | 1x RP-SMA  |
-| Ubiquiti Wifistation | 2.3-2.4 | 800mW+ | AR9271 |         | X   |               | 1x RP-SMA  |
-| TPLink TL-WN722N V1 | 2.3-2.4 | 60mW  | AR9271 |           | X   |               | 1x RP-SMA  |
-| AW-NU138           | 2.3-2.4 | 50mW   | AR9271 |           | X   | X             | 1x Internal |
-| AW-NU137           | 2.3-2.4 | 70mW   | AR9271 |           | X   |               | 1x u.fl    |
-
-*We recommend using this chipset in 5.8GHz mode.
-
-These devices are supported but do not have all functions like 40MHz mode or different MCS-Indexes.
+Since with OpenHD 2.5 we started to utilize the Link a lot more efficient and allow settings like 40mhz and default to normal FPV/DJI/HDZERO/Walksnail.... frequencies the support for Atheros chipsets was dropped.
 
 ## ASUS AC56
 
