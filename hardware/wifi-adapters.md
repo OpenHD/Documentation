@@ -25,8 +25,8 @@ You can achieve RX diversity by using either a WiFi card with multiple antennas 
 | ASUS USB-AC56      | 5.8 - 2.4* | 500mW       | RTL8812AU | 1x RP-SMA 1x MS156           |
 | "Taobao Card"      | 5.8 - 2.4* | 500mW       | RTL8812AU | 2x u.fl                      |
 | ALFA AWUS1900      | 5.8 - 2.4* | 500mW       | RTL8814AU | 4x RP-SMA                    |
-| Tenda U12          | 5.8 - 2.4* | 100mW       | RTL8812AU | 2x MS156 2x internal         |
-| Cudy AC 1300       | 5.8        | ? low power | RTL8812BU | internal                     |
+| Tenda U12          | 5.8 - 2.4* | 60mW        | RTL8812AU | 2x MS156 2x internal         |
+| Cudy AC 1300       | 5.8        | <50mW       | RTL8812BU | internal                     |
 | Aigital AC1200     | 5.8        | ? low power | RTL8812BU | internal                     |
 | COMFAST 1300Mbps   | 5.8        | ? low power | RTL8812BU | internal                     |
 | D-Link DWA-182     | 5.8 - 2.4* | 70mW        | RTL8812BU | 2x internal                  |
