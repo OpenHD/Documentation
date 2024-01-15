@@ -19,25 +19,34 @@ You can achieve RX diversity by using either a WiFi card with multiple antennas 
 
 ## Recommended WiFi Dongles
 
-| Name               | Band       | TX Power | Chip      | STBC/LDPC | RC  | Need Heatsink | Antennas   |
-| :----------------- | :--------- | :------- | :-------- | :-------- | :-- | :------------ | :--------- |
-| ALFA AWUS036ACH    | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   |               | 2x RP-SMA  |
-| ASUS USB-AC56      | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   |               | 2x RP-SMA  |
-| "Taobao Card"      | 5.8 - 2.4* | 500mW    | RTL8812AU | X         | X   | X             | 2x u.fl    |
-| ALFA AWUS1900      | 5.8 - 2.4* | 500mW    | RTL8814AU | X         | ?   |               | 4x RP-SMA  |
-| Tenda U12          | 5.8 - 2.4* | 100mW    | RTL8812AU | X         | X   |               | 2x u.fl 2x internal |
-| Cudy AC 1300       | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
-| Aigital AC1200     | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
-| COMFAST 1300Mbps   | 5.8        | ? low power | RTL8812BU |           | X   |               | internal   |
-| Netgear A6100      | 5.8 - 2.4* | 50mW     | RTL8811AU |           | X   |               | 1x internal|
+| Name               | Band       | TX Power    | Chip      | Antennas                     |
+| :----------------- | :--------- | :-------    | :-------- | :--------------------------- |
+| ALFA AWUS036ACH    | 5.8 - 2.4* | 500mW       | RTL8812AU | 2x RP-SMA                    |
+| ASUS USB-AC56      | 5.8 - 2.4* | 500mW       | RTL8812AU | 1x RP-SMA 1x MS156           |
+| "Taobao Card"      | 5.8 - 2.4* | 500mW       | RTL8812AU | 2x u.fl                      |
+| ALFA AWUS1900      | 5.8 - 2.4* | 500mW       | RTL8814AU | 4x RP-SMA                    |
+| Tenda U12          | 5.8 - 2.4* | 100mW       | RTL8812AU | 2x MS156 2x internal         |
+| Cudy AC 1300       | 5.8        | ? low power | RTL8812BU | internal                     |
+| Aigital AC1200     | 5.8        | ? low power | RTL8812BU | internal                     |
+| COMFAST 1300Mbps   | 5.8        | ? low power | RTL8812BU | internal                     |
+| D-Link DWA-182     | 5.8 - 2.4* | 70mW        | RTL8812BU | 2x internal                  |
+| TP-LINK T3U Plus   | 5.8 - 2.4* | 40mW        | RTL8812BU | 2x u.fl 1x RP-SMA            |
+| TP-Link T3U        | 5.8 - 2.4* | 80mW        | RTL8812BU | 2x MS156 2x internal         |
+
 
 *We recommend using this chipset in 5.8GHz mode.
 
 Please note that this list includes tested devices, but there are many more supported devices.
 
-## Additional WiFi Devices with Reduced Functions (might be discontinued soon)
+## Additional WiFi Devices without STBC/LDPC
+| Name               | Band       | TX Power    | Chip      | Antennas                     |
+| :----------------- | :--------- | :-------    | :-------- | :--------------------------- |
+| Netgear A6100      | 5.8 - 2.4* | 50mW        | RTL8811AU | 1x internal                  |
 
-Since with OpenHD 2.5 we started to utilize the Link a lot more efficient and allow settings like 40mhz and default to normal FPV/DJI/HDZERO/Walksnail.... frequencies the support for Atheros chipsets was dropped.
+
+Since with OpenHD 2.5 we started to utilize the Link a lot more efficient and allow settings like 40mhz and default to normal FPV/DJI/HDZERO/Walksnail.... frequencies, which doesn't work at all with Atheros chipsets, so we decided to drop support for them.
+
+
 
 ## ASUS AC56
 
