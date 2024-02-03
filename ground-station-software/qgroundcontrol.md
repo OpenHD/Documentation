@@ -3,6 +3,7 @@
 To establish a connection between OpenHD and QGroundControl over Wi-Fi or Ethernet, follow these steps:
 
 1. Navigate to the "Comm Links" tab within QGroundControl and click on "Add" located in the lower part of the screen.
+
 ![QGC-Connection-Page](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC1.png)
 
 
@@ -13,17 +14,21 @@ To establish a connection between OpenHD and QGroundControl over Wi-Fi or Ethern
    - **Server Address:** Input "192.168.3.1".
    - **Port:** Set the port to "5760".
    - Click "OK" to confirm.
+
 ![QGC-Comm-Links](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC2.png)
 
 3. Click on "Connect" and wait for telemetry data to be received, which typically takes around 5 seconds.
+
 ![QGC-Connect](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC3.png)
 
 
 4. At this point, telemetry data should be available, but video may not be. Follow these steps to resolve this:
+
 ![QGC-Main-Page](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC4.png)
 
 
 5. Select "UDP" as the source and set the port to "5600".
+
 ![QGC-General-Page](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC5.png)
 
 
