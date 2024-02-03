@@ -17,7 +17,7 @@ To establish a connection between OpenHD and QGroundControl over Wi-Fi or Ethern
 
 ![QGC-Comm-Links](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC2.png)
 
-3. Click on "Connect" and wait for telemetry data to be received, which typically takes around 5 seconds.
+3. Click on "Connect" and wait for telemetry data to be received, which typically takes around 5 seconds, **don't go on with the next step until you are connected.**
 
 ![QGC-Connect](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC3.png)
 
