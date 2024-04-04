@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](introduction.md)
-* [Downloads](downloads.md)
+* [Downloads](https://openhdfpv.org/#downloads)
 
 ## General
 
