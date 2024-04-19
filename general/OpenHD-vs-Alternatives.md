@@ -6,46 +6,46 @@
 | Development       | Active, daily changes | Active, weekly changes | Active, monthly changes | Active, monthly changes | Inactive           |
 | Purpose           | Comprehensive FPV drone suite | IP camera firmware + FPV + OSD | FPV video link and OSD | FPV video link and OSD | FPV video link and OSD |
 | Hardware Support*  | Raspberry Pi 2, 3, 4, Zero 2, Rock5, X86, Radxa CM3, Zero3W, X20,... | some IP cameras | Raspberry Pi 2, 3, Zero 1, 2  | Raspberry Pi 2, 3, 4, Zero 1, 2 | Raspberry Pi 1A+, 1B+, 2B, 3B |
-| Supported Cameras* | Excellent | Adequate | Good | Adequate | Adequate |
-| Multicamera       | Yes | No | No | No | No |
-| Dynamic Settings  | Yes | No | No | Yes | No |
-| User-friendliness | 9 | 1 | 3 | 9 | 3 |
-| Control Range     | Long range | Limited | Long range | Limited | Long range |
-| Customization     | Extensive | very limited | Extensive | Limited | Adequate |
-| Updates           | Frequent | Periodic | Limited | Limited | Non-existent |
-| Open Source       | Yes | Partially | Yes | Partially | Yes |
-| Usual Setup Costs       | 57€*** | 87€*** | 150€*** | 145€*** | 145€*** |
+| Supported Cameras* | Excellent | Excellent | Excellent | Excellent | Adequate |
+| Multicamera       | Yes | Yes | No | No | No |
+| Dynamic Settings  | Yes | Yes | No | Yes | No |
+| User-friendliness | 9 | 5 | 3 | 9 | 3 |
+| Control Range *** | Long range | Long range | Long range | Long range**** | Long range |
+| Customization     | Extensive | Extensive | Extensive | Extensive | Adequate |
+| Updates           | Frequent (monthly) | Frequent (weekly) | Limited | Frequent (monthly) | Non-existent |
+| Open Source       | Yes | Partially | Yes | Yes | Yes |
+| Usual Setup Costs       | 57€*** | 87€*** | 150€*** | 100€*** | 145€*** |
 | Latency on 720p (x86)  **   | 110 | 100 | 150 | NA | NA |
-| Latency on 720p (rpi)  **   | 120 | 120 | 120 | 125 | 120 |
+| Latency on 720p (rpi)  **   | 120 | 70 | 120 | 125 | 120 |
 
 *Only officially listed devices
 *** prices are calculated and listed from the links on the bottom of the page, usual prices are used, no discounts or blackfriday sales
 **Measurements are done with the setup that is mentioned above ,osd,telemetry,FEC,link optimisations enabled with their standard groundstation, on QGroundControl or Mission Planner, the latency will be much higher.
+*** Using same same radio interfaces, same antennas, same tx power, same environment;
+**** When disabling adaptive video, adaptive radio link, retransmissions;
  
 
 ## Software Usage and Selling Points
 
 **OpenHD**: OpenHD is a comprehensive FPV suite that includes flashing software, a dynamic OSD, and ground station software. It offers multi-platform support, multi-ground station support, and external viewing and configuration on Android, Windows, and Mac, with planned support for iOS and web browsers. OpenHD is actively developed with a large and extensive community, developer group, and commercial partners. It also has a live Map, showing your live plane position. Its main selling points include daily development, multi-platform support, a vibrant community, and intense work on new drivers, hardware, SOCs, and custom cameras in collaboration with Veye-Imaging and Arducam. OpenHD is also building custom hardware specific for FPV usage, which is extremely small and powerful and also utilized Cameras which are specially made for the FPV application.
 
-**OpenIPC**: OpenIPC is advanced IP camera software known for its excellent usability and configurability, primarily focused on improving and enhancing functionality for security devices. A portion of OpenIPC, called "sandbox-fpv," adds FPV functionality to select OpenIPC devices. This feature is available for a few specific devices and can utilize a lite version of OpenHD or WFB-NG. When using the lite OpenHD version, it can be used with QOpenHD, the OpenHD Companion App. OpenIPC's main selling points are its usability, configurability, and security device enhancements. OpenIPC can also utilise special NVR board to view the Link with an osd.
+**OpenIPC**: OpenIPC is advanced IP camera software known for its excellent usability and configurability, primarily focused on improving and enhancing functionality for security devices. A portion of OpenIPC, called "sandbox-fpv," adds FPV functionality to select OpenIPC devices. This feature is available for a few specific devices and can utilize a lite version of OpenHD or WFB-NG. When using the lite OpenHD version, it can be used with QOpenHD, the OpenHD Companion App. OpenIPC's main selling points are its usability, configurability, extensive hardware platforms support and security device enhancements. OpenIPC can also utilise special NVR board to view the Link with an osd.
 
 **WFB-NG**: WFB-NG is a long-range packet radio link based on raw WiFi radio, accompanied by a few companion scripts and a Raspberry Pi 3 image (additional unofficial builds are available). Its primary focus is on the RF link, with basic OSD functionality for FPV use. WFB-NG is designed for developers who want to integrate it into their own systems. Its main selling point is a very optimized and slim link, which can be compiled (without the OSD) on many platforms.
 
-**Ruby FPV**: Ruby FPV is a dedicated FPV video and telemetry system designed for FPV enthusiasts. It features an extended and user-friendly OSD* and emphasizes package retransmission to improve video signal stability. It also has a relay mode. And OTA updates. The main selling points of Ruby FPV are its user-friendliness, Google-friendly features, and focus on delivering a reliable FPV experience. Just be prepared, that without soldered buttons you will not be able to use Ruby at all.
+**Ruby FPV**: Ruby FPV is a dedicated complete drone controll & FPV video system. It features an extended and user-friendly OSD and emphasizes package retransmission, adaptive video link, adaptive radio link to improve video signal stability. It also has a relay mode. And OTA updates. The main selling points of Ruby FPV are its user-friendliness, Google-friendly features, and focus on delivering a reliable FPV experience.
 
 **EZ-Wifibroadcast**: EZ-Wifibroadcast is the predecessor of OpenHD, laying the groundwork for what we now know as OpenHD. It was the first software focused on easing the configurability and usability of the Wifibroadcast-Link.
-
-* Ruby is the only software here, which is not usable without soldering Buttons to the Raspberry. There is no keyboard, mouse or touch control, so testing it out isn't that easy at all.
 
 ## Supported Camera Sensors
 
 **OpenHD**: OV5647, IMX219, IMX477, IMX477m, SC132, AR1335, AR1820HS, OG02B10, AR0234, OV2311,IMX230, IMX290, IMX298, IMX307, IMX327, IMX335, IMX385, IMX462, IMX519, IMX708 + "X20-Cameras"* HDMI-Cameras + IP Cameras + USB-Cameras + Thermal-Cameras
 
-**OpenIPC**: IMX307, IMX335
+**OpenIPC**: IMX307, IMX335, IMX 415
 
 **WFB-NG**: OV5647, IMX219, IMX477, IMX477m (red tint), IMX519 + HDMI-Cameras
 
-**Ruby FPV**: OV5647, IMX219, IMX477, IMX209, IMX327 + HDMI-Cameras
+**Ruby FPV**: OV5647, IMX219, IMX477, IMX209, IMX327 + HDMI-Cameras + OpenIPC cameras (see above)
 
 **EZ-Wifibroadcast**: OV5647, IMX219, IMX477, IMX209, IMX327 + HDMI-Cameras
 
@@ -64,11 +64,9 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 * These cameras are currently not named for various reasons, but will be updated when the embargo is lifted.
 
-**OpenIPC** uses "hacked" IP-Cameras, and low latency implementations were only written for the IMX307.
+**OpenIPC** uses custom firmware on regular IP-Cameras.
 
 **WFB-NG** uses everything that is already compatible with the standard Raspberry Pi Kernel (v5.1).
-
-**Ruby FPV** uses the old OpenHD 4.9 kernel and utilizes every camera compatible with it
 
 **EZ-Wifibroadcast** uses everything that is already compatible with the standard Raspberry Pi Kernel (v4.x).
 
@@ -81,7 +79,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Configuration is done via SSH on the devices. < 30min
 
-**Ruby FPV**: Configuration is done after flashing in the OSD. < 15min
+**Ruby FPV**: Configuration is done after flashing in the system on SD cards. < 15min
 
 **EZ-Wifibroadcast**: Configuration is done via config files on the SD card. < 15min
 
@@ -93,7 +91,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Modified version of the AirCrack driver, improved channels + static* TX-Power override [8812au].
 
-**Ruby FPV**: Using old OpenHD drivers based on a very old Aircrack driver, reboot required on TX-Power override [8812au].
+**Ruby FPV**: Depending on HW platform, uses modified version of the AirCrack driver, or WFB-Ng driver [8812au].
 
 **EZ-Wifibroadcast**: Fixed MCS, fixed tx-power, only 2.4GHz [ath9k].
 
@@ -107,7 +105,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Because of its complex and undynamic setup, and very outdated/slim wiki, configuration is a pain, the user needs to connect and change the system manually for most things.
 
-**Ruby FPV**: Because of its neglect of modern systems and inability to change to newer kernels or devices, there is no upgrade path for new hardware. Since the license is quite non-standard and parts are not documented and not open source and only one developer working on the project, features are slowly integrated and a lot is not possible to be changed without a complete redesign (render method, camera-implementation, etc.). Also installing RubyFPV requires soldering buttons or buying a diy control board to use it at all.
+**Ruby FPV**: 
 
 **EZ-Wifibroadcast**: Because of its discontinuation 4 years ago, there is no real chance to get updates here.
 
@@ -119,7 +117,7 @@ What cameras exactly are made in cooperation with **OpenHD** and **Arducam**?
 
 **WFB-NG**: Using a very old discontinued method to draw over the HW-Compositor -> same latency like OpenHD, but simpler OSD, and not usable on Pi 4 and newer kernels.
 
-**Ruby FPV**: Using discontinued rendering methods to draw over the HW-Compositor -> same latency like OpenHD, but no support for anything but the Pi 1-3.
+**Ruby FPV**: Using discontinued rendering methods to draw over the HW-Compositor -> same latency like OpenHD
 
 **EZ-Wifibroadcast**: Using discontinued rendering methods to draw over the HW-Compositor -> same latency like OpenHD, but no support for anything but the Pi 1-3.
 
