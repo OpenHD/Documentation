@@ -14,8 +14,6 @@ For more detailed documents, please follow the official GitHub links:
 
 ## Specifications
 
-## Specifications
-
 • 4x USB 2.0 480Mbps (4x SM04B-GHS-TB(LF)(SN) connectors)
 
 • 1x USB Type-C (for flashing eMMC)
