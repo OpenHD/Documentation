@@ -106,4 +106,4 @@ To connect the telemetry to the FC, use one of the available UART ports. The def
 
 ## Where to Buy the Ochin?
 
-[Purchase the Ochin CM4v2 board here](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html).
+[Purchase the Ochin CM4v2 board here](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-V2-for-Raspberry-Pi-CM4-p-5887.html).
