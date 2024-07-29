@@ -1,112 +1,97 @@
-The ochin_CM4v2 board is a carrier board for the Raspberry Pi CM4 module and is meant to expose the connections to the peripherals made available by the CM4 module.
+# ochin_CM4v2 Board
 
-It follows a summary which is intended to facilitate the installation and use of the ochin_CM4v2 with OpenHD software.
+The ochin_CM4v2 board is a carrier board for the Raspberry Pi CM4 module, designed to expose the connections to the peripherals made available by the CM4 module.
 
-For more detailed documents please follow the official GitHub link:  
+## Overview
+
+This summary is intended to facilitate the installation and use of the ochin_CM4v2 with OpenHD software.
+
+For more detailed documents, please follow the official GitHub links:  
 * [ochin_CM4v2 user manual](https://github.com/ochin-space/ochin-CM4v2/blob/master/%C3%B6ch%C3%ACn%20CM4v2%20-%20Manual.pdf)  
 * [ochin_CM4v2 quick start flashing guide](https://github.com/ochin-space/ochin-CM4v2/blob/master/%C3%B6ch%C3%ACn%20CM4v2%20-%20Quick%20Start%20Flashing%20Guide.png)  
 * [ochin_CM4v2 wiring and suggestions](https://github.com/ochin-space/ochin-CM4v2/blob/master/%C3%B6ch%C3%ACn%20CM4v2%20-%20Wiring%20and%20Suggestions.pdf)  
 * [ochin_CM4v2 GitHub repository](https://github.com/ochin-space/ochin-CM4v2)
 
-Specifications of ochin_CM4v2 carrier board:
-• 4x USB 2.0 480Mbps (4x SM04B-GHS-TB(LF)(SN) connectors)
-• 1x USB Type-C (for flashing eMMC)
-• 2x CSI camera (2x FH12-22S-0.5SH (55) connectors)
-• I2C1 (SM04B-GHS-TB(LF)(SN) connector)
-• SPI1 / 6 (SM06B-GHS-TB(LF)(SN) connector)
-• UART0 / 1 + Video Out (SM06B-GHS-TB(LF)(SN) connector)
-• UART4 / UART5 (SM06B-GHS-TB(LF)(SN) connector)
-• 1x Ethernet transformerless 100Base-T
-• 1x microHDMI
-• 2x general purpose LEDs
-• 1x RGB LED on external tiny board
-• 1x general purpose button on external tiny board
+## Specifications
 
+The ochin_CM4v2 carrier board includes the following features:
+* 4x USB 2.0 480Mbps (4x SM04B-GHS-TB(LF)(SN) connectors)
+* 1x USB Type-C (for flashing eMMC)
+* 2x CSI camera (2x FH12-22S-0.5SH (55) connectors)
+* I2C1 (SM04B-GHS-TB(LF)(SN) connector)
+* SPI1 / 6 (SM06B-GHS-TB(LF)(SN) connector)
+* UART0 / 1 + Video Out (SM06B-GHS-TB(LF)(SN) connector)
+* UART4 / UART5 (SM06B-GHS-TB(LF)(SN) connector)
+* 1x Ethernet transformerless 100Base-T
+* 1x microHDMI
+* 2x general purpose LEDs
+* 1x RGB LED on external tiny board
+* 1x general purpose button on external tiny board
 
-### Wiring
+## Wiring
 
-![wiring](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin1.png)
+![wiring](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-1.png)
+![ext-board](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-2.png)
+![underside](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-3.png)
+![button](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-4.png)
 
-### Important notices on the Ochin\_CM4
+## Preliminary Considerations
 
-1. The ochin\_CM4 has no video output, it is designed to be used on the “air” side only.
-2. The ochin\_CM4 does not have a slot for the microSD, it is therefore mandatory to use Raspberry Pi CM4 modules with eMMC (not lite).
-3. The Raspberry Pi CM4 module get pretty hot very quickly, please use an adequate heatsink.
-4. The ochin\_CM4 cannot be powered via the USB-C connector. The Type-C connector is only used for writing the eMMC.
-5. The CSI flat cable is very close to the USBs and it prone to RF noise. It’s suggested to shield the flat cable with copper tape (or at least alu tape);
-6. The USB WiFi dongle will drawn some Amps, please use supply cables of adequate size between the ochin\_CM4 board and the USB dongle.
+1. The ochin_CM4v2 now supports the uHDMI video output. It is designed to be used both on the “air” and on the “ground” side.
+2. The ochin_CM4 does not have a slot for the microSD; it is mandatory to use Raspberry Pi CM4 modules with eMMC (not lite).
+3. The Raspberry Pi CM4 module gets pretty hot very quickly, please use an adequate heatsink.
+4. The ochin_CM4 cannot be powered via the USB-C connector. The Type-C connector is only used for writing the eMMC.
+5. The CSI flat cable is very close to the USBs and is prone to RF noise. It’s suggested to shield the flat cable with copper tape (or at least alu tape).
+6. The USB WiFi dongle will draw some Amps, please use supply cables of adequate size between the ochin_CM4 board and the USB dongle.
 
-### Installation and connections:
+## Installation and Connections
 
-The ochin\_CM4 board is equipped with a 5VDC switching regulator, necessary to power the CM4 module and all the peripherals connected to it.
+### Power Supply
 
-The regulator is able to accept input voltages from 7.5VDC to 28VDC (LiPo from 2S to 7S) and provide output currents up to 7A.
+The ochin_CM4v2 board is equipped with a 5VDC switching regulator necessary to power the CM4 module and all the peripherals connected to it. The regulator can accept input voltages from 7.5VDC to 28VDC (LiPo from 2S to 7S) and provide output currents up to 7A. It is possible to use the VBUS of the USB ports also to power the WiFi module. The board is equipped with a current switch that cuts the VBUS for currents higher than 3A to protect the CM4 module. It is possible to bypass the current switch if more current is needed on the VBUS, waiving the VBUS safety (see the ochin_CM4 board manual).
 
-Thanks to the great power supplied by the regulator, it is possible to use the VBUS of the USB ports also to power the WiFi module, which is not normally recommended due to the large currents required by these modules.
+### CM4 Module Installation and Flash
 
-However it should be noted that, to protect the CM4 module from any problems on the VBUS, the board is equipped with a current switch, which cuts the VBUS for currents higher than 3A.
+The CM4 connectors are delicate and dense. Ensure no dust or debris is on the connectors before positioning the CM4 module. Gently place the module on the connectors until they snap into place. Press the two long edges of the CM4 module until the connectors are fully inserted. Limit disassembly to avoid damaging the connector contacts.
 
-This allows you to keep the CM4 module running even in the event of a short on the VBUS.
+![right](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-5.png)
+![wrong](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-6.png)
 
-For this reason it is good to be sure to never exceed 3A on the VBUS (it is rare for a module to reach this limit, in fact 3A at 5V are 15W of power drawn).
+To remove the CM4 module from the ochin board, use the proper extractor. The .STL files for printing the extractor can be found in the “3D” section of the GitHub repository.
 
-However, it is possible to bypass the current switch in case you need more current on the VBUS, waiving the VBUS safety (see the ochin\_CM4 board manual).
+![tools](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin5.png)
+![tools2](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin6.png)
+![tools3](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin7.png)
 
-### CM4 module installation
+### Flashing the CM4 eMMC
 
-The CM4 connectors are quite delicate and very dense, so you need to be careful.
+1. Power up the board with boot configuration as a “mass storage device”.
+   * Power off the board (no Vin connected)
+   * Press the “nRPiboot” button on the tiny external board and, keeping it pressed, power up the board using the “Vin” Connector.
+   * Connect the board to your PC using the USB Type-C port.
 
-Before positioning the CM4 module, it is advisable to check that there are no specks of dust or other things that could prevent contact of the pins, if necessary clean with a brush and air.
+![board](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochinv2-8.png)
 
-Place the module gently on the connectors until you feel they are seated in each other (there is a first zero force step where they snap into). When you are sure that the two boards are perfectly aligned and the connectors engaged, press the two long edges of the CM4 module until the connectors are fully inserted.
-
-It is advisable to limit the disassembly of the CM4 module as much as possible to avoid damaging the connector contacts.
-
-![right](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin2.png) ![wrong](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin3.png)
-
-To remove the CM4 module from the ochin board is always suggested to use the proper extractor.
-
-You can find the .STL files to print [here](https://github.com/ochin-space/ochin-CM4/tree/master/3d/Covers%20turrets%20and%20extractors).
-
-![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin4.png) ![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin5.png) ![extractor](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin6.png)
-
-### Flashing the Ochin
-
-The procedure to flash the CM4 eMMC it’s straightforward, what you need to do in synthesis is the following:
-
-1. Power up the board with boot configuration as “mass storage device”. • To do so you need to power off the board (no Vin connected) • Press the “nRPiboot” button and, keeping it pressed power up the board using the “Vin” Connector. • Connect the board to your PC using the USB Type-C port
-
-![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin7.png)
-
-2. Run the “RPiboot” software, downloaded from the Raspberry Pi website. After the software starts, the PC will see the partition of the eMMC like if it would an SD into the SDcard reader.
+2. Run the “RPiboot” software, downloaded from the Raspberry Pi [website](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe). The PC will see the eMMC partition as if it were an SD card in the SD card reader.
 3. Flash the eMMC using the OpenHD imageWriter.
 
-OpenHd already includes the `dt-blob.bin` file, and 'dtoverlay=dwc2,dr_mode=host' has been enabled in 'boot/config.txt'.
+### Connecting the CSI Camera
 
-### Connecting the CSI Camera:
+The CSI camera can be connected to one of the two FFC connectors. The copper contacts of the flat cable must be oriented PCB-side.
 
-The CSI camera can be connected to one of the two FFC connectors.
+### Connecting the WiFi Dongle
 
-If you want to use the "Camera0" connector, make sure that the two jumpers of the I2C (used for the camera config) are shorted.
+The WiFi dongle can be connected to one of the 4 USB connectors on the board. It is advisable to cut a USB extender and solder it to a GHS connector, keeping the wires on the connector side as short as possible.
 
-![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin8.png)
-
-### Connecting the WiFi dongle:
-
-The WiFi dongle can be connected to one of the 4 USB connectors on the board.
-
-In order to minimize the problems associated with connecting a "fast bus" such as USB, it is advisable to cut a USB extender and solder it to a GHS connector, leaving the wires on the connector side as short as possible.
-
-![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin10.png)
+![connection1](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin9.png)
+![connection2](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin10.png)
 
 ### Connecting the Telemetry
 
-To connect the telemetry to the FC it is possible to use one of the available UART ports, the UART used by default is UART0 / 1.
+To connect the telemetry to the FC, use one of the available UART ports. The default UART is UART0 / 1. Ensure that the logic levels of the FC UART are 0V-3V3, as the GPIOs of the CM4 module are not 5V tolerant.
 
-It is important to keep in mind that the GPIOs of the CM4 module are not 5V tolerant, it is therefore important to be sure that the logic levels of the FC UART are 0V-3V3.
+![telemetry](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin11.png)
 
-![boot](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/Ochin11.png)
+## Where to Buy the Ochin?
 
-### Where to buy the Ochin?
-
-[Here](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html)
+[Purchase the Ochin CM4v2 board here](https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html).
