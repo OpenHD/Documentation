@@ -6,7 +6,7 @@
 ## General
 
 * [Features](general/features.md)
-* [OpenHD vs Alternatives](general/OpenHD-vs-Alternatives.md)
+<!-- * [OpenHD vs Alternatives](general/OpenHD-vs-Alternatives.md) -->
 * [Troubleshooting](general/troubleshooting.md)
   * [General-FAQ](general/faq.md)
   * [Software-FAQ](general/software-faq.md)
@@ -23,6 +23,7 @@
 * [SBC's](hardware/sbcs.md)
   * [Raspberry](hardware/raspberry.md)
     * [Ochin CM4 Carrier](hardware/ochin.md)
+    * [Ochin CM4 Carrier v2](hardware/ochinv2.md)
   * [X86](hardware/X86.md)
   * [Radxa](hardware/radxa.md)
   * [Custom Hardware](hardware/custom-hardware.md)
