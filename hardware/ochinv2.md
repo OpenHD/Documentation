@@ -14,19 +14,31 @@ For more detailed documents, please follow the official GitHub links:
 
 ## Specifications
 
-The ochin_CM4v2 carrier board includes the following features:
-* 4x USB 2.0 480Mbps (4x SM04B-GHS-TB(LF)(SN) connectors)
-* 1x USB Type-C (for flashing eMMC)
-* 2x CSI camera (2x FH12-22S-0.5SH (55) connectors)
-* I2C1 (SM04B-GHS-TB(LF)(SN) connector)
-* SPI1 / 6 (SM06B-GHS-TB(LF)(SN) connector)
-* UART0 / 1 + Video Out (SM06B-GHS-TB(LF)(SN) connector)
-* UART4 / UART5 (SM06B-GHS-TB(LF)(SN) connector)
-* 1x Ethernet transformerless 100Base-T
-* 1x microHDMI
-* 2x general purpose LEDs
-* 1x RGB LED on external tiny board
-* 1x general purpose button on external tiny board
+## Specifications
+
+• 4x USB 2.0 480Mbps (4x SM04B-GHS-TB(LF)(SN) connectors)
+
+• 1x USB Type-C (for flashing eMMC)
+
+• 2x CSI camera (2x FH12-22S-0.5SH (55) connectors)
+
+• I2C1 (SM04B-GHS-TB(LF)(SN) connector)
+
+• SPI1 / 6 (SM06B-GHS-TB(LF)(SN) connector)
+
+• UART0 / 1 + Video Out (SM06B-GHS-TB(LF)(SN) connector)
+
+• UART4 / UART5 (SM06B-GHS-TB(LF)(SN) connector)
+
+• 1x Ethernet transformerless 100Base-T
+
+• 1x microHDMI
+
+• 2x general purpose LEDs
+
+• RGB LED on external tiny board
+
+• 1x general purpose button on external tiny board
 
 ## Wiring
 
