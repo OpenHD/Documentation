@@ -15,6 +15,25 @@ In Passive mode, OpenHD's Ethernet is configured as a client, allowing you to co
 2. Wait briefly.
 3. Open a terminal and enter the command: `sudo arp-scan --interface=eth0 --localnet` (**Replace ETH0 with the correct adapter connected to the SBC**).
 4. Test the connection by entering the SBC's IP address into your web browser; it should redirect you to the OpenHD web interface.
+### Tethering
+
+1. **Record IP Addresses:**  
+   Once connected, note the IP addresses of both devices:
+   - **SBC IP**: For example, `10.42.0.118`
+   - **Laptop IP**: For example, `10.42.0.1`
+   
+2. **Configure Forwarding in OpenHD:**  
+   SSH into the RPI (user and password is `openhd`).Open the `hardware.conf` file located in `/boot/openhd/` on your SBC. Modify the `NW_MANUAL_FORWARDING_IPS` IP address to point to your laptop’s IP:
+
+   ```bash
+   # Specify additional IP address(es) for video and telemetry forwarding.
+   # OpenHD can detect external devices based on the connection and platform.
+   # Only applicable on ground units.
+
+   NW_MANUAL_FORWARDING_IPS = 10.42.0.1  # Replace with your Ground Station IP (laptop)
+   ```
+
+This setup will ensure that video and telemetry data are directed to your laptop's IP, enhancing your tethered OpenHD experience.
 
 ### Setup on Windows
 
