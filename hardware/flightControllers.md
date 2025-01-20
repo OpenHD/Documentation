@@ -9,10 +9,10 @@ OpenHD supports a range of flight controllers through MavLink integration, with 
 | [PX4](../software-setup/px4.md)                  | Yes                          |
 | [Betaflight*](../software-setup/betaflight.md)          | No                           |
 
-> **Warning:** Betaflight support is currently not enabled, and the development team is actively working on enabling it. It's important to be aware that Betaflight doesn't allow for bidirectional MavLink, meaning that settings cannot be changed via MavLink, and OpenHD-RC functionality is not available.
+> **Warning:** Betaflight support is sometimes not great, we recommend using Inav or Ardupilot, Betaflight also doesn't allow for bidirectional MavLink, meaning that settings cannot be changed via MavLink, and OpenHD-RC functionality is not available.
 
 
-## Recommended Flight Controllers
+## Recommended Flight Controllers 
 
 For the best experience with OpenHD, flight controllers with an F405 or better chipset are recommended due to their processing power and compatibility with OpenHD features. These controllers are well-suited to provide a seamless integration between OpenHD and your aircraft.
 
