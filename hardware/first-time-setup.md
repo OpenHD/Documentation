@@ -34,7 +34,7 @@ Pi Zero 1 is not supported you need the version 2 !
 * A Raspberry CM4 with EMMC with:
   * An [Ochin CM4 carrier](ochin.md) board
   * We recommend fitting a cooler to the CM4, because it really can get hot.
-  * A 8812AU or 8812BU WiFi Card (See [WiFi Adapters](wifi-adapters.md))
+  * A 8812AU, 8812BU, 8811AU or 8814AU WiFi Card (See [WiFi Adapters](wifi-adapters.md))
 * A  ([supported Camera](../hardware/cameras/raspberry-cameras.md)) and the required cable (keep in mind, the Ochin uses a 22 Pin type B csi cable)
 * A soldering iron and required disposables for creating the connections to the Wifi-Card
 
