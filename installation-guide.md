@@ -30,8 +30,8 @@ If you're using the Ochin,or any other CM4 carrier you first need to install you
 **Step 2:**
 Open the image writer and select the latest OpenHD release from the drop-down menu. The image writer will automatically download the selected image. Alternatively, you can manually download the image and flash it using the "Custom image" selector. Ensure you unzip the image externally first and then select the .img file (not the .zip file).
 
-![Imagensbc](.gitbook/assets/Seleccionarimagen1.png)
-![Imagensbc](.gitbook/assets/seleccionarimagen2.png)
+![Choose OS](.gitbook/assets/Seleccionarimagen1.png)
+![Different sbcs images](.gitbook/assets/seleccionarimagen2.png)
 ![RPI images](.gitbook/assets/seleccionarimagen3.png)
 
 **Step 3:**
