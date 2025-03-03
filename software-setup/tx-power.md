@@ -25,7 +25,7 @@ OpenHD Evo offers robust support for RTL8812AU and RTL8812BU Wi-Fi cards, allowi
 ### Armed/Disarmed TX Power Feature
 
 OpenHD allow the user to select a power index when the UAV is disarmed and automatically encrease the power when armed. To do this:
-1. Click on "OpenHD" and then "LINK/QUICK", depending on if you want to edit air or ground click on "edit" on either of the two
+1. Click on "OpenHD" and then "LINK/QUICK", depending on if you want to edit air or ground click on "edit" on either of the two.
    
 ![TX Power](.gitbook/assets/TXpower.png)
 
