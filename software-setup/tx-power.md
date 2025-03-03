@@ -27,13 +27,13 @@ OpenHD Evo offers robust support for RTL8812AU and RTL8812BU Wi-Fi cards, allowi
 OpenHD allow the user to select a power index when the UAV is disarmed and automatically encrease the power when armed. To do this:
 1. Click on "OpenHD" and then "LINK/QUICK", depending on if you want to edit air or ground click on "edit" on either of the two.
    
-![TX power](.gitbook/assets/TXpower.jpg)
+![TX power](../.gitbook/assets/TXpower.jpg)
 
 2. Once the menu is open select your wifi card on the dropdown menu ("Please Select") and then select the power when arm and disarm (dont forget to click "save")
 When all updated you can also see the power saved in the box below
 
-![TX power menu](.gitbook/assets/TXpowermenu.jpg)
-![Example of settings](.gitbook/assets/settingsselected.jpg)
+![TX power menu](../.gitbook/assets/TXpowermenu.jpg)
+![Example of settings](../.gitbook/assets/settingsselected.jpg)
 
 
 ### ASUS (Measured) Power Table
