@@ -22,11 +22,15 @@ To address the limitations of Method 1, OpenHD allows you to configure your RC s
 
 Follow these steps to set up the MCS index adjustment via your RC channel switch:
 
-1. Ensure you have a free channel available on your RC transmitter that can be transmitted over your RC link. This setup works with both RC connections over OpenHD and other RC links like ExpressLRS, Crossfire, etc. The use of alternative RC links is recommended for long-range flights. For this example, we'll use Channel 7.
+1. Ensure you have a free channel available on your RC transmitter that can be transmitted over your RC link. This setup works with both RC connections over OpenHD and other RC links like ExpressLRS, Crossfire, etc. The use of alternative RC links is recommended for long-range flights. For this example, we'll use Channel 9.
 
-2. Verify that your RC channels are forwarded from the Flight Controller (FC) to the OpenHD Air unit. You can check this by going to QOpenHD, navigating to RC -> FC CHANNELS DEBUG, and confirming that moving channel 7 corresponds to channel 7 movements.
+2. Verify that your RC channels are forwarded from the Flight Controller (FC) to the OpenHD Air unit. You can check this by going to QOpenHD, navigating to RC -> FC CHANNELS DEBUG, and confirming that moving channel 9 corresponds to channel 9 movements.
 
-3. In the OpenHD interface on your Air unit, go to **OpenHD -> AIR** and change the setting **MCS_VIA_RC** from "DISABLED" to your selected channel (in this case, Channel 7).
+3. In the OpenHD interface on your Air unit, go to **OpenHD -> AIR** and change the setting **MCS_VIA_RC** from "DISABLED" to your selected channel (in this case, Channel 9).
+   
+![MCS settings](../.gitbook/assets/MCSsettings.png)
+![Channel selected](../.gitbook/assets/MCSChannelselection.png)
+![Setting done](../.gitbook/assets/Settingdone.png)
 
 ### PWM Value Mapping
 
