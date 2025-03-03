@@ -13,7 +13,7 @@ Assuming you are starting with nothing, we recommend you get the following Hardw
 ### Ground
 
 * A regular Laptop with disabled SecureBoot
-* A 8812AU or 8812BU WiFi Card (See [WiFi Adapters](wifi-adapters.md))
+* A 8812AU,8812BU,8811AU or 8814AU  WiFi Card (See [WiFi Adapters](wifi-adapters.md))
 * A fast USB stick, to write the OpenHD USB Image on
 
 
@@ -57,7 +57,7 @@ Is recommended to visit the wiring section to see how to connect everything
 
 ### Step 4: Flashing the Ground SBC for the first time
 
-Please refer to the ([Installation Guide](../hardware/installation-guide.md)) since its quite similar
+Please refer to the ([Installation Guide](../general/installation-guide.md)) since its quite similar
 {% hint style="warning" %}
 The flasing process can be much longer than on RPI
 {% endhint %}
@@ -79,7 +79,7 @@ If you're not using the Ochin board,you can jump to the next step. If you're usi
 
 ### Step 6.5: Flashing the Air SBC
 
-Please refer to the ([Installation Guide](../hardware/installation-guide.md)) 
+Please refer to the ([Installation Guide](../general/installation-guide.md)) 
 
 ### Step 7: Starting the Air SBC
 
