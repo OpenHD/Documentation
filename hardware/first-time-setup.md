@@ -83,8 +83,29 @@ Please refer to the ([Installation Guide](../installation-guide.md))
 
 ### Step 7: Starting the Air SBC
 
-The first boot will take several Minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct.
-If you haven't configured your camera correctly you'll see a black image that says "rebooting camera", in this case look into the "Air CAM 1" Menu in QOpenHD (the OpenHD Logo opens the Menu) and select the correct camera overlay in the V_OS_CAM_CONFIG menu. After this your SBC will reboot and start transmitting video.
+The first boot will take several minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct.
+
+### Problem 1: Not having image but you have connection
+
+To know if you at least have connection you can go to the tab "status" and if you can see both air and ground "live" both are connected and we can move on
+
+![Status](../.gitbook/assets/Status.jpg)
+
+If you haven't configured your camera correctly you'll see a black image that says "rebooting camera", in this case look into the "AIR CAM 1" Menu in QOpenHD (the OpenHD Logo opens the Menu) and select the correct camera overlay in the CAMERA_TYPE setting. After this your SBC will reboot and start transmitting video.
+
+![Camera selection](../.gitbook/assets/camera_selection1.jpg)
+![Camera selection](../.gitbook/assets/camera_selection2.jpg)
+
+### Problem 2: Having image but no telemetry
+
+If you dont have telemetry coming from your FC to the ground usually its and issue of wiring (refer to ([Wiring](../hardware/wiring.md)) to know how to connect the FC to the air, if not fixed it can be and issue with the baud rate of the uart (remember that needs to be the same) you can change it on OpenHD or on your FC, to change it on OpenHD you need to go to the "AIR" tab and then into the "FC_UART_BAUD"
+
+![Baud rate](../.gitbook/assets/Telemetry.jpg)
+
+### Step 8: Setting up the link
+
+OpenHD has a enormous amount of options but the most important ones are going to be explained here below
+
 
 {% hint style="info" %}
 If you have any issues now, please don't hesitate and write in our Chats, so we can help you get everything working correctly.
