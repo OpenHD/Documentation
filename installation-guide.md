@@ -49,7 +49,7 @@ Click on "Settings" in the lower-right corner and choose either "Air" or "Ground
 **Step 4.1:**
 In this step you can also select a binding phrase to improve the protection of the link (its not mandatory) both binding phrase on air and ground need to be the same (you CANT change it after without a reflash of both air and ground sds), if you want to use it just clicl on "set binding phrase" and write the phrase (max 10 characters)
 
-![Imagensbc](.gitbook/assets/seleccionarconfiguraciones2.png)
+![Binding phrase](.gitbook/assets/seleccionarconfiguraciones2.png)
 
 **Step 4.2:**
 For ground the settings are quite simple, just click on ground and then "SAVE"
