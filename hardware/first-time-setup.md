@@ -57,7 +57,7 @@ Is recommended to visit the wiring section to see how to connect everything
 
 ### Step 4: Flashing the Ground SBC for the first time
 
-Please refer to the ([Installation Guide](../software-setup/installation-guide.md)) since its quite similar
+Please refer to the ([Installation Guide](../hardware/installation-guide.md)) since its quite similar
 {% hint style="warning" %}
 The flasing process can be much longer than on RPI
 {% endhint %}
@@ -79,12 +79,12 @@ If you're not using the Ochin board,you can jump to the next step. If you're usi
 
 ### Step 6.5: Flashing the Air SBC
 
-Please refer to the ([Installation Guide](../software-setup/installation-guide.md)) 
+Please refer to the ([Installation Guide](../hardware/installation-guide.md)) 
 
 ### Step 7: Starting the Air SBC
 
 The first boot will take several Minutes, because initial configs and setups are executed. The SBC will reboot multiple times. OpenHD will automatically start to transmit Video, if everything is correct.
-If you haven't configured your camera correctly you'll see a test-picture, in this case look into the "Air CAM 1" Menu in QOpenHD (the OpenHD Logo opens the Menu) and select the correct camera overlay in the V_OS_CAM_CONFIG menu. After this your SBC will reboot and start transmitting video.
+If you haven't configured your camera correctly you'll see a black image that says "rebooting camera", in this case look into the "Air CAM 1" Menu in QOpenHD (the OpenHD Logo opens the Menu) and select the correct camera overlay in the V_OS_CAM_CONFIG menu. After this your SBC will reboot and start transmitting video.
 
 {% hint style="info" %}
 If you have any issues now, please don't hesitate and write in our Chats, so we can help you get everything working correctly.
