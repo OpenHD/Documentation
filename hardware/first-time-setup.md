@@ -57,7 +57,7 @@ Is recommended to visit the wiring section to see how to connect everything
 
 ### Step 4: Flashing the Ground SBC for the first time
 
-Please refer to the ([Installation Guide](../software-setup/installation-guide.md)) since its quite similar
+Please refer to the ([Installation Guide](../installation-guide.md)) since its quite similar
 {% hint style="warning" %}
 The flasing process can be much longer than on RPI
 {% endhint %}
@@ -79,7 +79,7 @@ If you're not using the Ochin board,you can jump to the next step. If you're usi
 
 ### Step 6.5: Flashing the Air SBC
 
-Please refer to the ([Installation Guide](../software-setup/installation-guide.md)) 
+Please refer to the ([Installation Guide](../installation-guide.md)) 
 
 ### Step 7: Starting the Air SBC
 
