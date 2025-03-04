@@ -66,7 +66,7 @@
 
 * [Air recording](advanced-setup/air-recording.md)
 * [Dual Camera](advanced-setup/dual-camera.md)
-
+* [Ground powwer monitoring](advanced-setup/ground-power-monitoring.md)
 ## Ground Station Software
 
 * [QOpenHD](ground-station-software/qopenhd.md)
