@@ -98,14 +98,49 @@ If you haven't configured your camera correctly you'll see a black image that sa
 
 ### Problem 2: Having image but no telemetry
 
-If you dont have telemetry coming from your FC to the ground usually its and issue of wiring (refer to ([Wiring](../hardware/wiring.md)) to know how to connect the FC to the air, if not fixed it can be and issue with the baud rate of the uart (remember that needs to be the same) you can change it on OpenHD or on your FC, to change it on OpenHD you need to go to the "AIR" tab and then into the "FC_UART_BAUD"
+If you dont have telemetry coming from your FC to the ground usually its an issue of wiring (refer to ([Wiring](../hardware/wiring.md)) to know how to connect the FC to the air, if not fixed it can be and issue with the baud rate of the uart (remember that needs to be the same) you can change it on OpenHD or on your FC, to change it on OpenHD you need to go to the "AIR" tab and then into the "FC_UART_BAUD"
 
-![Baud rate](../.gitbook/assets/Telemetry.jpg)
+([Installation Guide](../installation-guide.md)) 
 
 ### Step 8: Setting up the link
 
-OpenHD has a enormous amount of options but the most important ones are going to be explained here below
+OpenHD has a enormous amount of settings but the most important ones are going to be explained here below
 
+The first thing that almost everyone needs to set up its the power of the cards, the frecuency and STBC and LDPC, you can do all of it in a single tab located in "OPENHD" and "LINK/QUICK"
+Also you have the options "SCAN" and "ANALYZE" the first one its very handy to find the  frequency where your UAV is transmittings and the second one analyze all the wifi spectrum to find how pulluted are the wifi frequencies (it takes a while)
+
+![LINK/QUICK](../.gitbook/assets/Frequency_power_stbc.jpg)
+
+To change the power please refer to the ([TX POWER](../software-setup/tx-power.md)) 
+STBC and LDPC are two important parameters that needs to be turn on on both air and ground to improve wifi coverage and range by using the two antennas to receive and send at the same time, by default both are off because you CANT turn them on in rtl8811au because it only has one antenna
+
+Now we need to introduce is the "SIDEBAR" that opens in the side of your main screen to allow you to change important settings without lossing eye contact with the video
+To open it just click on the red circle
+
+![Sidebar](../.gitbook/assets/Sidebar.jpg)
+
+In this sidebar you can finish your configuration and also change settings while flying, you can move around it with the touch or with a mouse 
+In this firts tab called "LINK" you can select your wifi frequency (you cant change it while armed), channel width and bandwith
+
+![LINK](../.gitbook/assets/Sidebarsettings.jpg)
+
+In this tab called "VIDEO" you can select your resolution for the link and also rotate the camera if you wish (the resolution that you set here is also the resolution that is going to be recorded)
+
+![VIDEO](../.gitbook/assets/resolution_rotation.jpg)
+
+In the thrid tab called "CAMERA" you can change settings of the camera itself like saturation, contrast, sharpness and brightness
+
+![CAMERA](../.gitbook/assets/camera_settings.jpg)
+
+In the fourth tab called "AIR RECORDING" you can change settings regarding the air recording, in EVO we use air recording instead of ground recording like in 2.0 to improve the experience of the recording by removing the possible interference that can be present in the link
+By deafult is set to OFF but you can set it up ON or AUTO, in AUTO the system is going to start recording at the moment you arm the UAV
+
+![AIR RECORDING](../.gitbook/assets/air_recording.jpg)
+
+Other very important screen is the one where you can see statistics of the link, to open it click on the red circle
+
+![VIDEO STATISTICS](../.gitbook/assets/video_statistics.jpg)
+![VIDEO STATISTICS](../.gitbook/assets/statistics_video.jpg)
 
 {% hint style="info" %}
 If you have any issues now, please don't hesitate and write in our Chats, so we can help you get everything working correctly.
