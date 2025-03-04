@@ -67,6 +67,7 @@
 * [Air recording](advanced-setup/air-recording.md)
 * [Dual Camera](advanced-setup/dual-camera.md)
 * [Ground power monitoring](advanced-setup/ground-power-monitoring.md)
+* [Joystick](advanced-setup/Joystick.md)
 ## Ground Station Software
 
 * [QOpenHD](ground-station-software/qopenhd.md)
