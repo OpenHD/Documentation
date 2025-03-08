@@ -21,7 +21,11 @@ Our suite can transmit:
 
 All of these signals can be sent over a single transmission channel and telemetry is using MAVlink to ensure high compatibility and stability.
 
+## Openhd digital fpv record
 
+![55KM_Record](.gitbook/assets/Record_55Km.jpg)
+
+[Leaderboard]([https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/](https://sites.google.com/view/wbb-longrange/fixed-wing))
 
 ## How does the OpenHD link (wifibroadcast) work
 
