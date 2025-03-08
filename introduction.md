@@ -21,7 +21,7 @@ Our suite can transmit:
 
 All of these signals can be sent over a single transmission channel and telemetry is using MAVlink to ensure high compatibility and stability.
 
-## Openhd digital fpv world record 55km
+## OpenHD digital fpv world record 55km
 
 ![55KM_Record](.gitbook/assets/Record_55Km.jpg)
 
