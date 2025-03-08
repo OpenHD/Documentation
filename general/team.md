@@ -4,9 +4,7 @@
 
 [Thomas B](mailto:thomas@openhdfpv.org). Project Lead
 
-[Constantin G](mailto:constantin@openhdfpv.org). Lead Software Developer
-
-[Raphael S.](mailto:raphael@openhdfpv.org) Lead Platform Developer
+[Raphael S.](mailto:raphael@openhdfpv.org) Lead Developer
 
 [Max P.](mailto:max@openhdfpv.org) Lead Hardware Developer
 
