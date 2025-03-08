@@ -17,9 +17,9 @@ Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot t
 
 Set `FORWARD_STREAM=rtp` in openhd-settings-1.txt
 
-![RaspberryPiCameraViewer\_01.jpg](.gitbook/assets/RaspberryPiCameraViewer_01.jpg)
+![RaspberryPiCameraViewer\_01.jpg](../.gitbook/assets/RaspberryPiCameraViewer_01.jpg)
 
-![RaspberryPiCameraViewer\_02.jpg](.gitbook/assets/RaspberryPiCameraViewer_02.jpg)
+![RaspberryPiCameraViewer\_02.jpg](../.gitbook/assets/RaspberryPiCameraViewer_02.jpg)
 
-![RaspberryPiCameraViewer\_03.jpg](.gitbook/assets/RaspberryPiCameraViewer_03.jpg)
+![RaspberryPiCameraViewer\_03.jpg](../.gitbook/assets/RaspberryPiCameraViewer_03.jpg)
 
