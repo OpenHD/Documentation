@@ -16,12 +16,14 @@ You can achieve RX diversity by using either a WiFi card with multiple antennas 
 
 - RTL8812AU, RTL8814AU, RTL8811AU
 - RTL8812BU
+- RTL8812EU
 
 ## Recommended WiFi Dongles
 
 | Name               | Band       | TX Power    | Chip      | Antennas                     |
 | :----------------- | :--------- | :-------    | :-------- | :--------------------------- |
 | ALFA AWUS036ACH    | 5.8 - 2.4* | 500mW       | RTL8812AU | 2x RP-SMA                    |
+| BLM8812EU          | 5.8        | +800mW      | RTL8812EU | 2x u.fl                      |
 | ASUS USB-AC56      | 5.8 - 2.4* | 500mW       | RTL8812AU | 1x RP-SMA 1x MS156           |
 | "Taobao Card"      | 5.8 - 2.4* | 500mW       | RTL8812AU | 2x u.fl                      |
 | ALFA AWUS1900      | 5.8 - 2.4* | 500mW       | RTL8814AU | 4x RP-SMA                    |
