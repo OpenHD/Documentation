@@ -22,7 +22,7 @@ OpenHD offers support for Remote Control (RC) input over MAVLINK, allowing you t
 2. Set `ENABLE_JOY_RC` to true.
 3. Reboot your ground station.
 
-![Enable Joystick RC](../.gitbook/assets/Screenshot from 2022-11-12 17-42-46.png)
+![Enable Joystick RC](../.gitbook/assets/Screenshot_from_2022-11-12_17-42-46.png)
 
 ### Step 2: Connect Your Joystick
 
@@ -32,7 +32,7 @@ Connect your joystick to the ground station. For RC controllers, connect via USB
 
 Confirm that OpenHD detects and properly reads values from your joystick. In the QOpenHD interface, navigate to the RC section to view the current readouts. For example, if you're using a TX16s controller connected with AETR and 18 channels, you should see the input values.
 
-![Joystick Input Readouts](../.gitbook/assets/Screenshot from 2022-11-12 17-45-44.png)
+![Joystick Input Readouts](../.gitbook/assets/Screenshot_from_2022-11-12_17-45-44.png)
 
 ### Step 4: Validate Failsafe
 
