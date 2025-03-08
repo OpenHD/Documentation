@@ -74,8 +74,8 @@
   * [QOpenHD OSD backup](ground-station-software/qopenhd-osd-backup.md)
 * [QGroundControl](ground-station-software/qgroundcontrol.md)
 * [MissionPlanner](ground-station-software/mission-planner.md)
-* [Tower](ground-station-software/tower.md)
-* [FPV\_VR](ground-station-software/fpv\_vr.md)
+<!-- * [Tower](ground-station-software/tower.md) -->
+<!-- * [FPV\_VR](ground-station-software/fpv\_vr.md) -->
 
 ## Developers Corner
 
