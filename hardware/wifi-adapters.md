@@ -48,7 +48,13 @@ Please note that this list includes tested devices, but there are many more supp
 
 Since with OpenHD 2.5 we started to utilize the Link a lot more efficient and allow settings like 40mhz and default to normal FPV/DJI/HDZERO/Walksnail.... frequencies, which doesn't work at all with Atheros chipsets, so we decided to drop support for them.
 
+## BLM8812EU
 
+This chip is the most recent wifi chip available and one of the most potent ones, it has one of the best cost/performance relations.
+
+[Store link](https://es.aliexpress.com/item/1005007386940533.html?cn=e-c&af=%7B%22c%22%3A%228GUwguoP9hrel0fz1693862233%22%7D&aff_fcid=c17dec0d6db649df998a251cf12683a0-1741439858818-03617-_ol0Mdtc&aff_fsk=_ol0Mdtc&aff_platform=api-new-link-generate&sk=_ol0Mdtc&aff_trace_key=c17dec0d6db649df998a251cf12683a0-1741439858818-03617-_ol0Mdtc&terminal_id=b59d440c4b0e4e599065b35fb9f515c2&afSmartRedirect=y)
+
+![BLM8812EU](../.gitbook/assets/EU_chip.jpg)
 
 ## ASUS AC56
 
@@ -60,7 +66,7 @@ The ASUS AC56 adapter is currently the most popular choice for OpenHD. Its small
 
 ## Taobao Card
 
-![Taobao Card](.gitbook/assets/taobaocard.jpg)
+![Taobao Card](../.gitbook/assets/taobaocard.jpg)
 
 [Store link](https://a.aliexpress.com/_rIjofM)
 
@@ -79,6 +85,3 @@ When you find photos, search for the amplifier numbers to find datasheets that p
 
 Please consider reporting your findings if you've tried a WiFi card that is not listed here.
 
-## External Amplifiers
-
-Another way to increase output power is to use a low-power WiFi stick combined with an external amplifier.
