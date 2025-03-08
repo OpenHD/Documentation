@@ -2,6 +2,15 @@
 
 To establish a connection between OpenHD and QGroundControl over Wi-Fi or Ethernet, follow these steps:
 
+1. The Wifi hostpot is by default ON when disarm and OFF when arm because the possible interference, you can change it using the sidebar, if you want to use Ethernet just connect the cable
+2. Next power on your Air- and GroundPi
+3. Enter in the Ground tab and here change the settings "Ethernet" from disable to Hostpot or forward+internet, the last one is very handy to give internet to the pc from your phone 
+
+![Ground settings](../.gitbook/assets/Ground_hotspot.jpg)
+![Ground settings](../.gitbook/assets/Ground_forward.jpg)
+
+Now lets continue in QgroundControl:
+
 1. Navigate to the "Comm Links" tab within QGroundControl and click on "Add" located in the lower part of the screen.
 
 ![QGC-Connection-Page](https://raw.githubusercontent.com/OpenHD/Documentation/evo/.gitbook/assets/QGC1.png)
