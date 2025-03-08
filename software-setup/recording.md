@@ -23,12 +23,25 @@ If you have access to a (powerful) x86 laptop on the ground, you can also utiliz
 
 You can manage air recording by either manually enabling/disabling the recording of your primary or secondary camera via QOpenHD or by using the following recommended feature:
 
-- **Automatically Start/Stop Recording When Arming/Disarming:**
-  To enable this feature, follow these steps:
-  1. Open QOpenHD.
-  2. Go to the settings for CAMERA1 or CAMERA2.
-  3. Set V_AIR_RECORDING to AUTO(armed).
+Record your flights locally on your air unit with minimal performance impact. The recorded video maintains the same bitrate as the transmitted video but is free from breakups due to packet loss since it's stored locally on your air unit, not the ground unit.
 
-With this setting, your air recording will automatically start when you arm your drone and stop when you disarm it. You can then download the recording after the flight. Note that when AUTO(armed) is enabled, it's best not to use the QOpenHD air recording widget; however, you can still check the remaining space counter to verify if air recording is functioning correctly.
+To enable this feature:
+
+1. Enable video recording for a connected camera. You have two options or using the sidebar or the video statistic tab.
+You can set it to OFF, ON or Auto, in AUTO the system will start recording automatically when arm the UAV
+
+![Sidebar](../.gitbook/assets/air_recording.jpg)
+![Video Statistics](../.gitbook/assets/statistics_video.jpg)
+
+2. To access and view the recordings, you have two options:
+
+- **Option a**: After a flight, remove the SD card from your air unit and insert it into a card reader. You can find the recordings in the partition named "RECORDINGS".
+
+
+- **Option b**: After a flight, enable the "Wi-Fi hotspot" on your air Pi (requires a Pi with integrated Wi-Fi). Connect your phone or PC to the Pi's Wi-Fi network, open a web browser, enter the Pi's IP address. You will access its web interface, where you can find the video files.
+
+# Recording Widget
+
+You will see a red dot next to camera icon and MBits
 
 **Note:** If there is insufficient free space on your Air unit's SD card, air recording will automatically stop.
