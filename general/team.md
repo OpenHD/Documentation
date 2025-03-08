@@ -14,4 +14,4 @@
 
 Since OpenHD is an open source project, it's hard to name every person who contributed to OpenHD over the years, but here we want to add a few honorable mentions (for privacy reasons we'll only mention their nicknames)
 
-<figure><img src="../.gitbook/assets/wordcloud.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/wordcloud1.png" alt=""><figcaption></figcaption></figure>
