@@ -26,22 +26,9 @@ If it didn't you may have made an error while flashing, please remember selectin
 
 With OpenHD evo we stopped support on some platforms, all ARMv6 devices are not supported anymore.
 
-#### A strange test-picture is shown
-
-If you did not connect a camera or didn't select the correct overlay a test-picture is shown.
-Select the right overlay and check if your csi-cable is connected correctly.
-
-#### I can't find the settings for my libcamera camera
-
-Since Libcamerasrc doesn't have any support for settings, yet you can't change picture settings like exposure,rotation,.. in it. When they become available we're integrating them.
-
 #### Where are the extended settings for my veye camera
 
 We don't have extended i2c settings for veye cameras, since veye didn't integrate them in standard v4l2 controls.
-
-#### Ground battery monitoring isn't working
-
-Right now we do not have Battery monitoring on the ground, but this is currently in the works.
 
 #### I can't get my custom display to work
 
