@@ -25,7 +25,8 @@ All of these signals can be sent over a single transmission channel and telemetr
 
 ![55KM_Record](.gitbook/assets/Record_55Km.jpg)
 
-[Leaderboard]([https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/](https://sites.google.com/view/wbb-longrange/fixed-wing))
+[Leaderboard](https://sites.google.com/view/wbb-longrange/fixed-wing)
+
 
 ## How does the OpenHD link (wifibroadcast) work
 
