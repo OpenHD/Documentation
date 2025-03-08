@@ -24,6 +24,7 @@ Recommended values for different resolutions:
 ## DSI Displays
 
 On the Raspberry Pi, we're using the FKMS driver to enable low latency decoding. Some of the newer monitors require the KMS driver, which does not work with OpenHD. Only Official Raspberry Pi DSI monitors can use FKMS.
+Some DSI vertical displays are not supported since they are mnade to work vertically and cant be changed
 
 ## Zeiss Cinemizer OLED
 
