@@ -12,11 +12,12 @@ OpenHD Evo provides you with the flexibility to adjust camera settings, such as 
 
 # Picture Settings
 
-For Libcamera and Raspivid we have a lot of Picture settings to optimize your experience. These are located in the Camera Tab.
+For Libcamera and Raspivid we have a lot of Picture settings to optimize your experience. These are located in the Camera Tab or in the sidebar
 
 
 **Example:**
-![Camera Settings](../.gitbook/assets/Screenshot from 2022-11-12 19-26-07.png)
+![Camera Settings](../.gitbook/assets/camera_settings.jpg)
+![Camera Settings](../.gitbook/assets/resolution_rotation.jpg)
 
 **Note**: While OpenHD Evo includes some user input validation, certain parameters cannot be fully validated due to the diverse range of hardware and configurations. Therefore, it is essential to monitor your video stream when making changes to settings like resolution and framerate.
 
