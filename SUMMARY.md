@@ -37,7 +37,7 @@
     * [RPI HDMI to CSI](hardware/cameras/hdmi-cameras-rpi.md)
   * [IP Cameras](hardware/cameras/ip-cameras.md)
   * [Special Purpose Cameras](hardware/cameras/special-camera.md)
-  * [Custom Unmanaged Cameras](hardware/cameras/custom-unmanaged-camera.md)
+  <!-- * * [Custom Unmanaged Cameras](hardware/cameras/custom-unmanaged-camera.md)-->
   * [Custom Hardware](hardware/cameras/custom-cameras.md)
 * [WiFi Adapters](hardware/wifi-adapters.md)
 * [Antennas](hardware/antennas.md)
