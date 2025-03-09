@@ -3,7 +3,8 @@ Having a wide range of options is OpenHD hallmar and since we are focusing on in
 ![General view of the joystick](../.gitbook/assets/General_photo.jpg)
 
 The sidebar as is designed works like a organigramme so you only need "UP" "DOWN" "RIGHT" and "LEFT" to make all the changes ("ENTER" is there just for the future but now it doesnt do anything)
-You just need 4 buttons that shorts to ground a GPIO pin each time to make a mouvement
+You just need 4 buttons that shorts to ground a GPIO pin each time to make a mouvement.
+
 Here is the pinout:
 
 ![RPI_pinout](../.gitbook/assets/RPI_pinout.jpg)
