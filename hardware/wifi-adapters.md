@@ -52,9 +52,12 @@ Since with OpenHD 2.5 we started to utilize the Link a lot more efficient and al
 
 This chip is the most recent wifi chip available and one of the most potent ones, it has one of the best cost/performance relations.
 
+> :warning: **Important Note:** This wifi chip/module doesnt have FCC and CE certification to use or buy in EU so if you do that its within your own responsability .
+
 [Store link](https://es.aliexpress.com/item/1005007386940533.html?cn=e-c&af=%7B%22c%22%3A%228GUwguoP9hrel0fz1693862233%22%7D&aff_fcid=c17dec0d6db649df998a251cf12683a0-1741439858818-03617-_ol0Mdtc&aff_fsk=_ol0Mdtc&aff_platform=api-new-link-generate&sk=_ol0Mdtc&aff_trace_key=c17dec0d6db649df998a251cf12683a0-1741439858818-03617-_ol0Mdtc&terminal_id=b59d440c4b0e4e599065b35fb9f515c2&afSmartRedirect=y)
 
 ![BLM8812EU](../.gitbook/assets/EU_chip.jpg)
+
 
 ## ASUS AC56
 
