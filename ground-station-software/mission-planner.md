@@ -17,7 +17,10 @@ Mission Planner \(MP\) is a Ground Control Station \(GCS\) software for all type
 ## Setting up bi-directional telemetry with OpenHD.
 The first thing apart of obviusly download Mission planner you need to download a third-party software named Gstreamer [Gstreamer](https://gstreamer.freedesktop.org/).
 
-In order to use MP in conjunction with OpenHD it is necessary to forward all telemetry to the PC, you can do it over WIFI or over Ethernet. We recommend to use ETHERNET over WIFI because the hostpot wifi on the RPI is very very noisy and can interfere with the main link between air and ground. Al of the following settings are common to WIFI and ETHERNET.
+In order to use MP in conjunction with OpenHD it is necessary to forward all telemetry to the PC, you can do it over WIFI or over Ethernet. We recommend to use ETHERNET over WIFI because the hostpot wifi on the RPI is very very noisy and can interfere with the main link between air and ground. All of the following settings are common to WIFI and ETHERNET.
+
+> :warning: **Important Note:** Here´s what can happen if you use wifi as a connection method for external telemetry during flight.
+{% embed url="https://youtu.be/xjr56PovA8A" %}
 
 Now, Let's gets get started:
 
