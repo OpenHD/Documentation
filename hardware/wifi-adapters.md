@@ -12,7 +12,7 @@ When choosing between 2.4GHz and 5.8GHz, keep in mind that while 2.4GHz offers b
 
 You can achieve RX diversity by using either a WiFi card with multiple antennas or multiple WiFi cards on your ground station. However, it's easy to make mistakes with improper wiring or using the wrong antennas when using more than one RX card. Therefore, we do not recommend using more than one card for new users. Mixing cards with different chipsets or from different vendors, even if they support the same frequency, is also not recommended.
 
-## Supported Chipsets (Since Version 2.5)
+## Supported Chipsets (Since Version 2.6.3)
 
 - RTL8812AU, RTL8814AU, RTL8811AU
 - RTL8812BU
