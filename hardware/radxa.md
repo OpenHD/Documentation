@@ -28,3 +28,28 @@ The following Radxa SBC models are currently being worked on:
 | Radxa Zero3W          |
 
 *not technically radxa but we run radxa software on that board, it's also not the best working board, so it may take a lot of time until it is perfectly supported
+
+## Radxa Zero3W pins
+Even 7 keys mapped to GPIO pins, only Right/Left/Up/Down needed for joystick navigation.
+| Function     | Pin#  | Pin#  | Function     |
+| ---:         | :---: | :---: | :---         |
+|              | 1     | 2     |              |
+|              | 3     | 4     | 5V INPUT     |
+|              | 5     | 6     | GNS          |
+|              | 7     | 8     |              |
+|              | 9     | 10    |              |
+|              | 11    | 12    |              |
+|              | 13    | 14    |              |
+|              | 15    | 16    |              |
+|              | 17    | 18    |              |
+|              | 19    | 20    |              |
+|              | 21    | 22    | Del key      |
+|Backspace key | 23    | 24    |              |
+|              | 25    | 26    |              |
+|              | 27    | 28    |              |
+|              | 29    | 30    |              |
+|              | 31    | 32    |              |
+|              | 33    | 34    |              |
+|    Right key | 35    | 36    | Enter key    |
+|     Left key | 37    | 38    | Down key     |
+|              | 39    | 40    | Up key       |
