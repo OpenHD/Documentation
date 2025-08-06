@@ -1,4 +1,21 @@
-# Introduction
+# ⚠️ DOCUMENTATION MOVED - READ THIS FIRST!
+
+> ## 🔄 **This documentation is END OF LIFE and no longer maintained**
+> 
+> **The official OpenHD documentation has moved to:**  
+> **👉 [https://openhdfpv.org](https://openhdfpv.org) 👈**
+>
+> Please use the new documentation for:
+> - ✅ Up-to-date information
+> - ✅ Latest installation guides
+> - ✅ Modern troubleshooting
+> - ✅ Current hardware support
+>
+> **[📖 Read Full EOL Notice](EOL_NOTICE.md)**
+
+---
+
+# Introduction (LEGACY - NOT MAINTAINED)
 
 ![OpenHD-Logo](.gitbook/assets/plain_openhd_logo.jpg)
 

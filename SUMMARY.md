@@ -1,6 +1,17 @@
-# Table of contents
+# ⚠️ END OF LIFE - USE NEW DOCUMENTATION
 
-* [Introduction](introduction.md)
+> ## **🔄 This documentation is no longer maintained**
+> 
+> **Please use the new documentation at:**  
+> **👉 [https://openhdfpv.org](https://openhdfpv.org) 👈**
+>
+> **[📖 Read Full EOL Notice](EOL_NOTICE.md)**
+
+---
+
+# Table of contents (LEGACY - NOT MAINTAINED)
+
+* [⚠️ Introduction - READ FIRST](introduction.md)
 * [Downloads](https://openhdfpv.org/#downloads)
 
 ## General
