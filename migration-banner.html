@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .migration-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+            border-bottom: 3px solid #e55a2b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            animation: slideDown 0.5s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .migration-banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .migration-banner-text {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .migration-banner-icon {
+            font-size: 24px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .migration-banner-message {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .migration-banner-submessage {
+            font-size: 13px;
+            opacity: 0.95;
+            margin-top: 2px;
+        }
+        
+        .migration-banner-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .migration-banner-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .migration-banner-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .migration-banner-button.primary {
+            background: rgba(255, 255, 255, 0.95);
+            color: #ff6b35;
+            border-color: white;
+        }
+        
+        .migration-banner-button.primary:hover {
+            background: white;
+            color: #e55a2b;
+            transform: translateY(-2px) scale(1.05);
+        }
+        
+        .migration-banner-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+        
+        .migration-banner-close:hover {
+            opacity: 1;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .migration-banner {
+                padding: 12px 15px;
+            }
+            
+            .migration-banner-content {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+            
+            .migration-banner-text {
+                justify-content: center;
+                text-align: center;
+                min-width: unset;
+            }
+            
+            .migration-banner-actions {
+                justify-content: center;
+            }
+            
+            .migration-banner-button {
+                flex: 1;
+                justify-content: center;
+                min-width: 140px;
+            }
+        }
+        
+        /* Adjust page content to account for banner */
+        body {
+            margin-top: 90px !important;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                margin-top: 120px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="migration-banner" class="migration-banner">
+        <div class="migration-banner-content">
+            <div class="migration-banner-text">
+                <div class="migration-banner-icon">⚠️</div>
+                <div>
+                    <div class="migration-banner-message">
+                        This documentation is outdated and no longer maintained
+                    </div>
+                    <div class="migration-banner-submessage">
+                        A current version of this page is available in the new documentation
+                    </div>
+                </div>
+            </div>
+            <div class="migration-banner-actions">
+                <a href="#" id="new-page-link" class="migration-banner-button primary">
+                    📖 View Current Page
+                </a>
+                <a href="https://openhdfpv.org" class="migration-banner-button">
+                    🏠 Browse New Docs
+                </a>
+                <button class="migration-banner-close" onclick="dismissBanner()">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // URL Mapping from legacy to new documentation
+        const urlMappings = {
+            // Main pages
+            'introduction.md': 'introduction',
+            'installation-guide.md': 'installation-guide',
+            'downloads.md': 'downloads',
+            
+            // General
+            'general/faq.md': 'general/faq',
+            'general/software-faq.md': 'general/software-faq', 
+            'general/troubleshooting.md': 'general/troubleshooting',
+            'general/team.md': 'general/team',
+            'general/features.md': 'general/features',
+            'general/contributing.md': 'general/contributing',
+            
+            // Hardware
+            'hardware/first-time-setup.md': 'hardware/first-time-setup',
+            'hardware/raspberry.md': 'hardware/raspberry',
+            'hardware/radxa.md': 'hardware/radxa',
+            'hardware/cameras.md': 'hardware/cameras',
+            'hardware/cameras/raspberry-cameras.md': 'hardware/cameras/raspberry-cameras',
+            'hardware/cameras/radxa-cameras.md': 'hardware/cameras/radxa-cameras',
+            'hardware/cameras/usb-camera.md': 'hardware/cameras/usb-camera',
+            'hardware/cameras/ip-cameras.md': 'hardware/cameras/ip-cameras',
+            'hardware/cameras/hdmi-cameras-rpi.md': 'hardware/cameras/hdmi-cameras-rpi',
+            'hardware/cameras/special-camera.md': 'hardware/cameras/special-camera',
+            'hardware/cameras/custom-cameras.md': 'hardware/cameras/custom-cameras',
+            'hardware/wifi-adapters.md': 'hardware/wifi-adapters',
+            'hardware/antennas.md': 'hardware/antennas',
+            'hardware/displays.md': 'hardware/displays',
+            'hardware/wiring.md': 'hardware/wiring',
+            'hardware/flightControllers.md': 'hardware/flightControllers',
+            'hardware/sbcs.md': 'hardware/sbcs',
+            'hardware/X86.md': 'hardware/X86',
+            'hardware/jetson.md': 'hardware/jetson',
+            'hardware/ochin.md': 'hardware/ochin',
+            'hardware/ochinv2.md': 'hardware/ochinv2',
+            'hardware/custom-hardware.md': 'hardware/custom-hardware',
+            'hardware/discontinued.md': 'hardware/discontinued',
+            'hardware/hardware.conf.md': 'hardware/hardware.conf',
+            
+            // Software Setup
+            'software-setup/ardupilot.md': 'software-setup/ardupilot',
+            'software-setup/betaflight.md': 'software-setup/betaflight',
+            'software-setup/inav.md': 'software-setup/inav',
+            'software-setup/camera-settings.md': 'software-setup/camera-settings',
+            'software-setup/recording.md': 'software-setup/recording',
+            'software-setup/tx-power.md': 'software-setup/tx-power',
+            'software-setup/joystick-rc.md': 'software-setup/joystick-rc',
+            'software-setup/mcs-via-rc.md': 'software-setup/mcs-via-rc',
+            'software-setup/tethering.md': 'software-setup/tethering',
+            'software-setup/ethernet-hotspot.md': 'software-setup/ethernet-hotspot',
+            'software-setup/wifi-hotspot.md': 'software-setup/wifi-hotspot',
+            'software-setup/variable-bitrate.md': 'software-setup/variable-bitrate',
+            'software-setup/telemetry-and-osd.md': 'software-setup/telemetry-and-osd',
+            
+            // Advanced Setup  
+            'advanced-setup/air-recording.md': 'advanced-setup/air-recording',
+            'advanced-setup/dual-camera.md': 'advanced-setup/dual-camera',
+            'advanced-setup/ground-power-monitoring.md': 'advanced-setup/ground-power-monitoring',
+            'advanced-setup/Joystick.md': 'advanced-setup/Joystick',
+            
+            // Ground Station Software
+            'ground-station-software/mission-planner.md': 'ground-station-software/mission-planner',
+            'ground-station-software/qgroundcontrol.md': 'ground-station-software/qgroundcontrol',
+            'ground-station-software/gstreamer.md': 'ground-station-software/gstreamer',
+            'ground-station-software/raspberrypi-camera-viewer.md': 'ground-station-software/raspberrypi-camera-viewer',
+            'ground-station-software/qopenhd-osd-backup.md': 'ground-station-software/qopenhd-osd-backup',
+            
+            // Developers
+            'developers/porting.md': 'developers/porting',
+            'developers/radxa-commands.md': 'developers/radxa-commands',
+            'developers/wifi-adresses.md': 'developers/wifi-adresses'
+        };
+        
+        function getCurrentPageMapping() {
+            const currentPath = window.location.pathname;
+            const currentFile = currentPath.split('/').pop();
+            
+            // Try direct file mapping first
+            if (urlMappings[currentFile]) {
+                return 'https://openhdfpv.org/' + urlMappings[currentFile];
+            }
+            
+            // Try path-based mapping
+            const pathParts = currentPath.split('/');
+            const documentationIndex = pathParts.findIndex(part => part === 'Documentation' || part === 'Documentation_2-0');
+            
+            if (documentationIndex !== -1) {
+                const relativePath = pathParts.slice(documentationIndex + 1).join('/');
+                
+                // Remove .md extension if present
+                const cleanPath = relativePath.replace(/\.md$/, '');
+                
+                if (urlMappings[relativePath]) {
+                    return 'https://openhdfpv.org/' + urlMappings[relativePath];
+                }
+                
+                // Try building URL based on path structure
+                if (cleanPath && cleanPath !== '') {
+                    return 'https://openhdfpv.org/' + cleanPath;
+                }
+            }
+            
+            // Fallback to main documentation
+            return 'https://openhdfpv.org/introduction';
+        }
+        
+        function initializeBanner() {
+            const newPageLink = document.getElementById('new-page-link');
+            const newUrl = getCurrentPageMapping();
+            
+            if (newPageLink) {
+                newPageLink.href = newUrl;
+                
+                // Update button text if we found a specific mapping
+                if (!newUrl.endsWith('/introduction')) {
+                    newPageLink.innerHTML = '📖 View Updated Page';
+                }
+            }
+        }
+        
+        function dismissBanner() {
+            const banner = document.getElementById('migration-banner');
+            banner.style.transform = 'translateY(-100%)';
+            banner.style.opacity = '0';
+            setTimeout(() => {
+                banner.style.display = 'none';
+                document.body.style.marginTop = '0';
+            }, 300);
+            
+            // Remember dismissal for this session
+            sessionStorage.setItem('migration-banner-dismissed', 'true');
+        }
+        
+        // Check if banner was dismissed this session
+        function shouldShowBanner() {
+            return !sessionStorage.getItem('migration-banner-dismissed');
+        }
+        
+        // Initialize when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                if (shouldShowBanner()) {
+                    initializeBanner();
+                } else {
+                    const banner = document.getElementById('migration-banner');
+                    banner.style.display = 'none';
+                    document.body.style.marginTop = '0';
+                }
+            });
+        } else {
+            if (shouldShowBanner()) {
+                initializeBanner();
+            } else {
+                const banner = document.getElementById('migration-banner');
+                banner.style.display = 'none';
+                document.body.style.marginTop = '0';
+            }
+        }
+    </script>
+</body>
+</html>

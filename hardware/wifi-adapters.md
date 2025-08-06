@@ -4,6 +4,14 @@ description: WiFi Adapters for OpenHD Evo
 
 # WiFi Adapters
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 If you are new to OpenHD and not familiar with all the advantages and disadvantages of different WiFi cards, consider getting 2x ASUS USB-AC56 or a similar high-quality adapter using the RTL8812AU chipset. Pay close attention to the version number of the WiFi adapter, as manufacturers often use different chipsets with varying version numbers. Each letter and number in the version matters; they are not the same.
 
 When choosing between 2.4GHz and 5.8GHz, keep in mind that while 2.4GHz offers better penetration, it is more susceptible to common sources of interference, and finding a clean channel on 2.4GHz can be challenging. 5.8GHz also allows you to use your existing 2.4GHz RC transmitters. For these reasons, many users currently prefer 5.8GHz for OpenHD.

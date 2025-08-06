@@ -1,5 +1,13 @@
 # Troubleshooting
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 On this page we're documenting, the most appearing "bugs/issues" and how to fix them, also we're adding a little troubleshooting information, which will help to understand and document the issue you're having.
 
 #### WIFI-LED is off or not continiously on

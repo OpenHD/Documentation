@@ -1,5 +1,13 @@
 # Tethering (and other modes of connecting to OpenHD)
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Different to the working procedure of 2.0 in OpenHD evo is a lot more versatile. But some advanced features are not exposed in QOpenHD or not automatically enabled.
 
 We differenciate a little in the way that we do not automatically enable the wifi-hotspot. And we also do not stream Video/Telemetry over wifi, but use it mostly for our Webinterface to download Recordings, or debug and SSH-Access.

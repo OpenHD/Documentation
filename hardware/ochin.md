@@ -1,5 +1,13 @@
 # Ochin CM4 Carrier
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Öchin CM4 Carrier
 
 The [ochin\_CM4 board](https://github.com/ochin-space/ochin-CM4) is a carrier board for the Raspberry Pi CM4 module and is meant to expose the connections to the peripherals made available by the CM4 module.

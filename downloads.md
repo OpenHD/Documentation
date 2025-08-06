@@ -1,5 +1,13 @@
 # OpenHD Tools and Images Download Page
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Welcome to the OpenHD backup download page! In case our main website is down, you can still access the essential tools and latest stable releases of OpenHD here.
 
 # Downloads

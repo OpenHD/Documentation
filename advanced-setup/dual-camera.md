@@ -4,6 +4,14 @@ description: Dual camera setup process
 
 # Dual Camera
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Dual camera refers to the usage of a primary camera (recommended: RPI CSI) and a secondary camera, e.g. a thermal Camera (recommended: USB Thermal camera).
 
 To use this configuration, your hardware should fulfill the following prerequisites:

@@ -1,5 +1,13 @@
 # QGroundControl
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 To establish a connection between OpenHD and QGroundControl over Wi-Fi or Ethernet, follow these steps:
 
 1. The Wifi hostpot is by default ON when disarm and OFF when arm because the possible interference, you can change it using the sidebar, if you want to use Ethernet just connect the ethernet cable

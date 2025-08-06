@@ -1,5 +1,13 @@
 # Team
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ### The OpenHD Core Team consists of
 
 [Thomas B](mailto:thomas@openhdfpv.org). Project Lead

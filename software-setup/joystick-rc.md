@@ -4,6 +4,14 @@ description: Setting Up Joystick RC Control
 
 # Joystick RC Control
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 **WARNING**: This feature is currently in beta. Please exercise caution and perform thorough testing.
 
 OpenHD offers support for Remote Control (RC) input over MAVLINK, allowing you to connect a joystick (such as your RC controller in joystick mode) to your ground station via USB. This enables you to control your drone directly through the OpenHD wifibroadcast link.

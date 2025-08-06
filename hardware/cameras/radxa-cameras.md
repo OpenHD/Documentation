@@ -1,5 +1,13 @@
 # Cameras
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Overview
 
 As the Rock5 is a distinct platform and MIPI is not a plug-and-play system, we are awaiting official camera releases for compatibility. We are actively dedicating resources to introduce more camera options in the future.

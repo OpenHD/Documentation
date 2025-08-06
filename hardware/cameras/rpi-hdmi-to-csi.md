@@ -1,5 +1,13 @@
 # RPI HDMI to CSI Adapter: Unofficial Usage and Quirks
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The RPI HDMI to CSI adapter provides a means of interfacing HDMI output from cameras to the Raspberry Pi platform. However, it's important to note that this adapter is not officially supported by the Raspberry Pi Foundation, and as a result, it presents certain challenges and limitations. Here's a concise rundown of these quirks:
 
 1. **Encoder Bitrate Control**: One notable issue is the unreliable performance of the encoder bitrate control. This often results in fluctuations like overshoot and undershoot in the bit rate. To mitigate this problem, it is recommended to disable variable bitrate and instead manually set a conservative bitrate, such as 8 MBit/s for MCS3 encoding.

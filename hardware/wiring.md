@@ -1,5 +1,13 @@
 # Wiring
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ### Wiring OpenHD
 
 While it may seem like you could just connect the wifi adapter to one of the USB ports, supply power to the raspberry pi and go fly, it's not quite that simple. The success of your project depends on **proper wiring and power supply**.

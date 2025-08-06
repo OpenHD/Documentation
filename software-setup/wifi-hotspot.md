@@ -4,6 +4,14 @@ description: Using the Wi-Fi Hotspot in OpenHD Evo
 
 # Wi-Fi Hotspot in OpenHD Evo
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 As of now, OpenHD Evo does not offer specific setup options for configuring the Wi-Fi hotspot. However, you can connect to the hotspot with the following default credentials:
 
 - **SSID (Network Name)**: openhd

@@ -1,5 +1,13 @@
 # Custom Hardware
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 OpenHD custom hardware is an ongoing project that is currently being developed and funded through [https://www.patreon.com/OpenHD](https://www.patreon.com/OpenHD). The project aims to create a small and modular wireless high-definition video transmission system that is capable of transmitting and recording video in various resolutions and framerates with low latency capabilities.
 
 The system is specifically designed to fit into the standard 30.5x30.5mm FPV drone stack system, making it easy to integrate into existing drone setups. 

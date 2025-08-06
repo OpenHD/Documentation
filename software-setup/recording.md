@@ -1,5 +1,13 @@
 # OpenHD Flight Recording Options
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 OpenHD offers two methods for recording your flight footage, whether for sharing on platforms like YouTube or for personal analysis.
 
 ## 1. Air Recording

@@ -1,5 +1,13 @@
 # Cameras
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 As part of the larger OpenHD ecosystem, the OpenHD custom hardware project aims to develop a specialized camera designed to work seamlessly with the OpenHD Custom Hardware project.
 
 The custom cameras will be optimized for use in drone racing and aerial videography applications, offering high-quality imaging capabilities and low latency transmission. They will be designed to integrate seamlessly with the OpenHD Custom Hardware system, providing a complete end-to-end solution for drone enthusiasts.

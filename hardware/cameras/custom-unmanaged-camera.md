@@ -1,5 +1,13 @@
 # Custom Unmanaged Cameras
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 For advanced users, we have implemented "scripting support," which allows for custom camera pipelines, IP cameras, and general debugging.
 
 This feature requires disabling auto-detection and needs manual activation in the `hardware.conf` configuration file.

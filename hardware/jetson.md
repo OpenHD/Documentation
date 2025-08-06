@@ -1,3 +1,11 @@
+
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
 The Jetson Nano is a capable H265 encoding device, that's why we supported it in our 
 2.2-evo till 2.3-evo releases. 
 Since it is fundamently different and doesn't give any advantage on the Ground, we do not officially support it as GroundSBC.

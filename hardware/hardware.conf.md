@@ -1,5 +1,13 @@
 # OpenHD Hardware Configuration (hardware.conf)
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The **hardware.conf** file in OpenHD allows advanced users and developers to override default configurations and camera setups when the normal setup via the graphical user interface (GUI) isn't sufficient. It contains critical settings for managing Wi-Fi, cameras, network interfaces, and some generic options. Here are the important sections and parameters you need to understand:
 
 ## Wi-Fi Configuration

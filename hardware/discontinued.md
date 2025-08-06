@@ -1,5 +1,13 @@
 # Discontinued Hardware
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 As OpenHD continues to evolve and introduce new features that require enhanced performance, we have made the decision to discontinue support for certain hardware that was previously compatible with earlier versions.
 
 The following Single Board Computer (SBC) models are no longer supported:

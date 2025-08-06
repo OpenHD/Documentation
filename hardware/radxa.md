@@ -1,5 +1,13 @@
 # Radxa Rock SBC's
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The Radxa Single Board Computers (SBCs) are highly capable devices that offer significantly higher performance compared to the Raspberry Pi. Due to their impressive capabilities, we have incorporated support for Radxa SBCs in our 2.4-Evo releases and newer.
 
 However, it's important to note that the software development for Radxa SBCs is currently in its early stages. We recommend using them primarily on the ground where hardware decoding support is only partially functional. Despite this limitation, the performance is still superior to that of the Raspberry Pi.

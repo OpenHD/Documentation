@@ -4,6 +4,14 @@ description: Understanding Variable Bitrate in OpenHD Evo
 
 # Variable Bitrate in OpenHD Evo
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 One of the primary objectives of OpenHD Evo is to introduce support for variable bitrate, aiming to align with other commercial FPV systems. However, achieving this goal can be challenging due to the diverse range of devices and setups that OpenHD supports, many of which may not inherently support variable bitrate at the hardware level. Here's a quick guide for both experienced and new users to navigate this feature.
 
 1. **Default Variable Bitrate (As of 2.3.2)**:

@@ -1,5 +1,13 @@
 # FPV\_VR
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Displaying the video stream via _**FPV\_VR**_
 
 Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot to the GroundPi. USB tethering is more reliable and preferred.

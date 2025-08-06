@@ -1,5 +1,13 @@
 # CSI Camera Modes on Raspberry Pi
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 > :warning: **Important Note:** OpenHD does not support ANY autofocus cameras due to their impracticality on equipment with vibrations, such as drones. This restriction includes the official Raspberry Pi V3 lineup.
 
 On the Raspberry Pi, you have the option to choose between two CSI camera modes.

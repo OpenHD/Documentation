@@ -1,5 +1,13 @@
 # Running OpenHD and QOpenHD on "unsupported" Hardware
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 **Note: This guide is a work in progress and requires a deep understanding of Linux systems and manual debugging.**
 
 ## Introduction

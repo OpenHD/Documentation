@@ -4,6 +4,14 @@ description: Backup your QOpenHD OSD Settings
 
 # QOpenHD OSD backup
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Re-flashing the OpenHD Image will overwrite all previous Settings. However, you can backup your QOpenHD settings to a file and load this backup file after a re-flash.\
 NOTE: This only includes your QOpenHD specific settings, like color and position of OSD elements. It does not include OpenHD settings, like camera resolution, framerate, bandwidth, channel.\
 \

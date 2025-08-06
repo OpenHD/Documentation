@@ -1,3 +1,11 @@
+
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
 Supported Raspberry's for the AirSBC in descending order from good to worse 
 
 | SBC                                   |  Notes  |

@@ -1,5 +1,13 @@
 # SBC's
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 {% hint style="info" %}
 Single Board Computers are little computer's like the Raspberry Pi, which are build to run computing tasks efficiently and without additional components. For the sake of simplicity we also include X86-Computers to that definition, even if they aren't sbc's at all.
 {% endhint %}

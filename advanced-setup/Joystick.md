@@ -1,3 +1,11 @@
+
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
 Having a wide range of options is OpenHD hallmar and since we are focusing on introducing all the changes that a pilot would nedd to make during a flight in the sidebar, we are introducing the new Joystick to allow to make the changes without a touchscreen and without the mess that can be a mouse.
 
 ![General view of the joystick](../.gitbook/assets/General_photo.jpg)

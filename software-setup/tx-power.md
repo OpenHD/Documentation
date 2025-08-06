@@ -1,5 +1,13 @@
 # TX Power Configuration in OpenHD Evo
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 **NOTE**: When adjusting the TX (transmit) power settings, it is your responsibility to adhere to the rules and regulations of your country.
 
 OpenHD Evo provides the ability to configure the TX power of Wi-Fi cards that support runtime power adjustments. Additionally, RTL8812AU and RTL8812BU users can specify different TX power levels when the Flight Controller (FC) is armed or disarmed.

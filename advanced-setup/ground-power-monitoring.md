@@ -1,3 +1,11 @@
+
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
 To ensure you don't have surprise shutdowns on your Ground unit, it can be very convenient to monitor the Voltage and Current that are supplied to the system in the OSD
 
 ![OSD VIEW](../.gitbook/assets/Sidebarsettings.jpg)

@@ -1,5 +1,13 @@
 # Cameras
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 OpenHD supports and recommends the following cameras on the Raspberry Pi:
 
 ### Raspberry Pi CSI cameras

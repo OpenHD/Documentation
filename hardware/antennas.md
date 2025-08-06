@@ -1,5 +1,13 @@
 # Antennas
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The antennas are a key component for any radio link solution and the same for radio waves are applicable here. The right combination depends on the objectives, like short-range \(all-around flight\) or long-range flight for more advanced pilots. A good starting point is the default antennas for the wifi cards at the workbench \(omnidirectional\), once you get confident with the system during a line of sight and short flights, you can move with directional antennas.
 
 As nothing is free, changing your antennas is a trade-off, while omnidirectional antennas give you autonomy to fly around your position, these antennas offer limited range, on the other side directional antennas concentrate the radiated pattern and allow a long-range at the cost of the need of pointing the antennas precisely, in other words, more antenna gains more directional. For the high directive antenna, add components like trackers are recommended to keep always pointing the main antenna pattern lobule to the aircraft.

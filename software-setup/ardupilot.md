@@ -1,5 +1,13 @@
 # Ardupilot
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## General Information
 
 While Arduplane is a perfect choice for building complex and advanced planes and copters with advanced mission capabilities, we do not recommend using it as a beginner. If you are familiar with the software or require advanced features like sensors and mission planning, it is still a suitable option.

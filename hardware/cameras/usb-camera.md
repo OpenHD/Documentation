@@ -1,5 +1,13 @@
 # Cameras
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Overview
 
 OpenHD has the ability to automatically detect and utilize USB cameras that provide either raw uncompressed or pre-encoded (h264, h265, mjpeg) data streams. However, it's important to note the following potential limitations:

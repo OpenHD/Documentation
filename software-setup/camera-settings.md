@@ -8,6 +8,14 @@ Settings do not work on unmanaged Cameras!
 
 # Camera Settings in OpenHD Evo
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 OpenHD Evo provides you with the flexibility to adjust camera settings, such as resolution and framerate, in real-time without the need for a system reboot. These settings allow you to customize your video stream to meet your specific needs.
 
 # Picture Settings

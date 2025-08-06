@@ -1,5 +1,13 @@
 # Flight Controllers
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 OpenHD supports a range of flight controllers through MavLink integration, with a general recommendation of F405 or better controllers for optimal performance. The following flight controller software is currently supported:
 
 | Software             | Bidirectional MavLink Support |

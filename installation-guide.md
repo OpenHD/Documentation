@@ -4,6 +4,14 @@ description: Flashing Your Air and Ground Units with OpenHD Firmware
 
 # Flashing Your Air and Ground Units with OpenHD Firmware (Windows)
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Requirements:
 
 1. A Windows or Linux PC (Alternatively, see "Manual Install" below).

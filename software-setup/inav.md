@@ -1,5 +1,13 @@
 # INAV: Intelligent Navigation System for Aerial Vehicles
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## General Information
 
 INAV, short for Intelligent Navigation System for Aerial Vehicles, is an open-source flight control software designed to navigate and stabilize fixed-wing and multirotor unmanned aerial vehicles (UAVs), including drones and RC airplanes. Developed and maintained by a community of hobbyists and enthusiasts, INAV has gained popularity within the DIY drone and RC aircraft community.
