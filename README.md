@@ -1,6 +1,25 @@
-# Introduction
+# ⚠️ DOCUMENTATION MOVED - READ THIS FIRST!
+
+> ## 🔄 **This OpenHD 2.0 documentation is END OF LIFE and no longer maintained**
+> 
+> **The official OpenHD documentation has moved to:**  
+> **👉 [https://openhdfpv.org](https://openhdfpv.org) 👈**
+>
+> Please use the new documentation for:
+> - ✅ Up-to-date information for current OpenHD versions
+> - ✅ Latest installation guides and troubleshooting
+> - ✅ Modern UI with search functionality
+> - ✅ Mobile-friendly design
+>
+> **[📖 Read Full EOL Notice](../Documentation/EOL_NOTICE.md)**
+
+---
+
+# Introduction (LEGACY OpenHD 2.0 - NOT MAINTAINED)
 
 ![](.gitbook/assets/plain\_openhd\_logo.jpg)
+
+**⚠️ This is legacy documentation for OpenHD 2.0 which is no longer supported.**
 
 Welcome to the Open.HD Introduction Page!
 

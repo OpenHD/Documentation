@@ -1,6 +1,17 @@
-# Table of contents
+# ⚠️ END OF LIFE - USE NEW DOCUMENTATION
 
-* [Introduction](README.md)
+> ## **🔄 This OpenHD 2.0 documentation is no longer maintained**
+> 
+> **Please use the new documentation at:**  
+> **👉 [https://openhdfpv.org](https://openhdfpv.org) 👈**
+>
+> **[📖 Read Full EOL Notice](../Documentation/EOL_NOTICE.md)**
+
+---
+
+# Table of contents (LEGACY OpenHD 2.0 - NOT MAINTAINED)
+
+* [⚠️ Introduction - READ FIRST](README.md)
 
 ## General
 
