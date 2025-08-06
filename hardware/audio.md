@@ -1,5 +1,13 @@
 # Audio
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Not everybody uses this feature, but in some use cases it might be necessary to transmit Audio from the Air unit to the Ground unit as well. This is disabled by default as there are many options that can not be auto detected.
 
 ### Microphones

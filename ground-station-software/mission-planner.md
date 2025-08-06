@@ -1,5 +1,13 @@
 # Mission Planner
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Introduction
 
 Mission Planner (MP) is a Ground Control Station (GCS) software for all types of vehicles based upon the [ArduPilot](http://ardupilot.org/) open source autopilot system, e.g. [ArduPlane](http://ardupilot.org/plane/index.html), [ArduCopter](http://ardupilot.org/copter/index.html), [ArduRover](http://ardupilot.org/rover/index.html) or newest to the family [ArduSub](https://www.ardusub.com/). It is compatible with Windows only. It can be used as a configuration utility or as a dynamic control supplement for your autonomous vehicle. Here are just a few things you can do with MP:

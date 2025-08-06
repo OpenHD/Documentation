@@ -1,5 +1,13 @@
 # LTE Connection
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ### Fundamentals of LTE
 
 An LTE stick connected to the Air unit is part of a ZeroTier \( ZT \) network. Any other devices connected to the ZeroTier network can receive data from the Air unit. Any device with a data connection can view video \(no telemetry or RC yet\) via QOpen.HD app. As of now only one ZeroTier connected device can receive LTE video.

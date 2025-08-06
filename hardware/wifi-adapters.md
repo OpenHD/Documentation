@@ -1,5 +1,13 @@
 # WiFi Adapters
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Pay attention to the version number of the WiFi adapter, manufacturers often use a completely different chipset with a different version number! We highly recommend at least 2 WiFi cards on the GroundPi. This will enable diversity and give you significant gains! The Pi3 can support 2-3 USB connections, and the Pi4 can support 4 or more.
 
 When choosing between 2.4 and 5.8ghz, know that 2.4 will get better range, but is susceptible to more common sources of interference. 2.4ghz RC transmitters and many common WiFi signals will interfere with 2.4ghz OpenHD. 5.8 WiFi is less common, for now, and it also conflicts less with most popular RC transmitters. For those reasons, more people currently choose 5.8 for OpenHD.

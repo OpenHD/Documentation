@@ -4,6 +4,14 @@ description: This page describes the QOpen.HD application
 
 # QOpen.HD \(recommended\)
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The default Ground Station software is already included in the downloaded image! In fact, you've probably been looking at it when using Open.HD for some time now.
 
 ![Get a new image for this!](../.gitbook/assets/image%20%285%29.png)

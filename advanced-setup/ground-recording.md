@@ -1,5 +1,13 @@
 # Ground Recording
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Open.HD automatically stores video and telemetry in a temporary storage while it is being received from the Air SBC.&#x20;
 
 To **save** video, telemetry and screenshots to a USB memory stick, simply **plug** the USB drive into the Ground SBC **AFTER** you are done flying. After a few **seconds**, a **message** should appear and the recorded video will start **playing** on the HDMI screen while being **saved** to USB. A message will appear when it is **done** saving.

@@ -1,5 +1,13 @@
 # Displays
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## Supported Display Options
 
 Virtually any screen/monitor connected to the HDMI port on your Pi will work. Besides that the following displays have been successfully tested:

@@ -1,5 +1,13 @@
 # USB Tethering
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 While it is possible to connect a Phone or Tablet wirelessly through the WiFi Hotspot functionality, using a USB tethering solution is actually recommended. Disabling the WiFi Hotspot will reduce any interference in the reception of the signals from the Air SBC.
 
 * Connect your Android smartphone or tablet via USB to the Ground SBC.

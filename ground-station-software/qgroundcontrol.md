@@ -1,5 +1,13 @@
 # QGroundControl
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ### Displaying the video stream via _**QGroundControl**_
 
 {% hint style="info" %}

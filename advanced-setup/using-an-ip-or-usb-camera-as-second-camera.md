@@ -1,5 +1,13 @@
 # Using an IP or USB Camera as second camera
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 This describes the case where you have a CSI camera connected AND want to connect a USB or IP camera as well. The Open.HD system allows you to view both streams simultaneously \(using Picture in Picture\) and to switch between both streams for the main display. This is often used with Thermal cameras or an extra rear facing camera on a plane.
 
 {% hint style="warning" %}

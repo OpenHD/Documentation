@@ -1,5 +1,13 @@
 # Making a Release
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 In order to push to the cloudsmith package group that is NOT for testing you have to create a tag in github from a terminal. It cannot be a lightweight tag. Correct format is:\
 `git tag -a 2.0.9 -m "2.0.9"`\
 \

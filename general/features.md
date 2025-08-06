@@ -1,5 +1,13 @@
 # Features
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 The features as per the latest [release ](https://github.com/OpenHD/Open.HD/releases)include:
 
 * [x] Supports the following single board computers (SBC):\

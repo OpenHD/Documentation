@@ -1,5 +1,13 @@
 # Building an Image
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 This is one of the first things any new comer to the developer side of the project will want to attempt. This image builder is really designed to distribute images. It takes a base image, downloads and installs packages we need (some our own and others from sources), then applies patches and other changes to suit our needs.
 
 As of now in all repos “master” branch is referred to as 3.0 and is the new stuff. Branch “2.0” is the working current version of OpenHD for the pi as of this writing. In a few places (cloudsmith or maybe droneio) there are “2.1” references which again is the “new” 3.0

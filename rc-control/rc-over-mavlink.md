@@ -1,5 +1,13 @@
 # RC over MAVLink
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 {% hint style="info" %}
 Follow the instructions for [general ](general.md)RC setup first.
 {% endhint %}

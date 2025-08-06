@@ -1,5 +1,13 @@
 # SmartSync
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 ## What is SmartSync and why do I need it?
 
 To understand the need for SmartSync we need to refresh the basics.

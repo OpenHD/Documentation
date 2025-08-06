@@ -1,5 +1,13 @@
 # Bidirectional Telemetry
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Bi-directional telemetry allows you to send messages from your Ground Station Software to the Flight Controller connected to the Air SBC.
 
 ### Enabling bidirectional telemetry

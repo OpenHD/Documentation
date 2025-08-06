@@ -1,5 +1,13 @@
 # Bandwidth switching
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 This is an **experimental** functionality that allows you to switch the WiFi **channel width** being used for the **transmission** from the Air unit to the Ground. The available bandwidths are:
 
 5 MHz, 10 MHz and 20 MHz

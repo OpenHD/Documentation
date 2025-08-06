@@ -1,5 +1,13 @@
 # Using only an IP Camera
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Open.HD currently detects whether it is an Air or Ground unit by looking for an CSI camera. If one is found, the system assumes the role of the Air unit. When you use an IP camera as the main camera, the system will not find a CSI connected camera and will assume the role of Ground unit.
 
 To prevent this, place a file called `air.txt` on the `boot` partition of the SD Card you use in the Air SBC. This forces the Open.HD system into Air unit mode.

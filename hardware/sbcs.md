@@ -1,5 +1,13 @@
 # Supported SBC's
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 While support for SBC's other than the Raspberry Pi is underway, currently the only officially supported devices are:
 
 | SBC                                   | AIR | GROUND | Notes |

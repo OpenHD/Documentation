@@ -1,5 +1,13 @@
 # General
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 Open.HD is capable of direct control of your model by transmitting your control data alongside the HD video stream. This potentially means that only a single HF-Link between ground and aircraft is required for all your needs. Essentially there are two ways in which Open.HD facilitates RC control, RC via mavlink (Ardupilot) or RC via a serial protocol (iNAV, Betaflight, Cleanflight).
 
 * If you have a flight controller which **can** be controlled by **MAVLink** RC\_CHANNELS\_OVERRIDE messages then that is the **recommended** solution. Since the RC\_CHANNELS\_OVERRIDE is an implementation of the bi-directional MAVLink telemetry protocol both Telemetry and RC can happily co-exist on the very same transmission medium. (See [RC over MAVLink](rc-over-mavlink.md))

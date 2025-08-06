@@ -1,5 +1,13 @@
 # The Open.HD Ecosystem
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 **Github, Docker, Drone.io, Cloudsmith & Co.**
 
 Github is where all of our code is stored. "Master" branches are the new future 3.0 OpenHD and is unfinished. 2.0 branches are where the current working code resides.

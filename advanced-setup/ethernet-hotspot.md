@@ -1,5 +1,13 @@
 # Ethernet Hotspot
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 In some cases you want to use the Ethernet port of the Ground SBC to connect to a laptop for instance. In this case you can enable the Ethernet Hotspot.
 
 {% tabs %}

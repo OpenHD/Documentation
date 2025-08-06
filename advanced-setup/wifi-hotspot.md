@@ -1,5 +1,13 @@
 # WiFi Hotspot
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 To make it easy to connect a Phone or Tablet to your Ground SBC in order to view the video or change settings or even run your Ground Control software the system allows for a WiFi Hotspot by default.
 
 You can change the way the Hotspot behaves by changing the `WIFI_HOTSPOT` parameter. It takes the following values:

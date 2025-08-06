@@ -1,5 +1,13 @@
 # Change packet source on a Pi
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 In order to change where apt or apt-get pull the openhd packages \(to test a custom package for instance\) you might want to alter the package-repo path in: `/etc/apt/sources.list.d/openhd-2-0.list`
 
 The default for 2.0.8 is:

@@ -4,6 +4,14 @@ description: Open.HD for Dummies (for Marvin Lange)
 
 # Getting Started
 
+<!-- LEGACY DOCUMENTATION NOTICE -->
+> ⚠️ **This documentation is outdated!** A current version is available at [openhdfpv.org](https://openhdfpv.org)
+> 
+> [📖 **View Updated Version of This Page** →](https://openhdfpv.org)
+
+---
+
+
 When a project reaches a certain stage, the number of options can be very overwhelming. This section of the documentation is intended to help guide newcomers towards their first functional Open.HD implementation.
 
 {% hint style="warning" %}
